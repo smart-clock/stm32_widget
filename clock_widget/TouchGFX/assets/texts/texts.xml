@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.22.1">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_S74C" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Confused</Translation>
+      </Text>
+      <Text Id="__SingleUse_ND7Z" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Happy</Translation>
+      </Text>
+      <Text Id="__SingleUse_8EYN" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Heart</Translation>
+      </Text>
+      <Text Id="__SingleUse_7BPM" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Sad</Translation>
+      </Text>
+      <Text Id="__SingleUse_REOE" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Bored</Translation>
+      </Text>
+      <Text Id="__SingleUse_YQDU" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Angry</Translation>
+      </Text>
+      <Text Id="__SingleUse_MIYH" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Blink</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>
