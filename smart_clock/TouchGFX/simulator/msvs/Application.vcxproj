@@ -21,12 +21,12 @@
     <ClCompile Include="..\..\generated\gui_generated\src\common\FrontendApplicationBase.cpp"/>
     <ClCompile Include="..\..\gui\src\model\Model.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
-    <ClCompile Include="..\..\gui\src\robot_screen\RobotPresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\robot_screen\RobotView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\robot_screen\RobotViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\user_screen\UserPresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\user_screen\UserView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\user_screen\UserViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemeView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\customtheme_screen\customThemeViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemeView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\robottheme_screen\robotThemeViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -177,12 +177,12 @@
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\robot_screen\RobotPresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\robot_screen\RobotView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\robot_screen\RobotViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\user_screen\UserPresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\user_screen\UserView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\user_screen\UserViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemeView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\customtheme_screen\customThemeViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemeView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\robottheme_screen\robotThemeViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

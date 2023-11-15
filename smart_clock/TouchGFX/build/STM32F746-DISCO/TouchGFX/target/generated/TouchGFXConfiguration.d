@@ -47,10 +47,10 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
- TouchGFX/gui/include/gui/user_screen/UserView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/user_screen/UserViewBase.hpp \
+ TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- TouchGFX/gui/include/gui/user_screen/UserPresenter.hpp \
+ TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
@@ -58,10 +58,11 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- TouchGFX/gui/include/gui/robot_screen/RobotView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/robot_screen/RobotViewBase.hpp \
- TouchGFX/gui/include/gui/robot_screen/RobotPresenter.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp \
+ TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp \
+ TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp \
  TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
@@ -198,13 +199,13 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
-TouchGFX/gui/include/gui/user_screen/UserView.hpp:
+TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/user_screen/UserViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
 
 Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-TouchGFX/gui/include/gui/user_screen/UserPresenter.hpp:
+TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
@@ -220,13 +221,15 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
-TouchGFX/gui/include/gui/robot_screen/RobotView.hpp:
+TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/robot_screen/RobotViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:
 
-TouchGFX/gui/include/gui/robot_screen/RobotPresenter.hpp:
+TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

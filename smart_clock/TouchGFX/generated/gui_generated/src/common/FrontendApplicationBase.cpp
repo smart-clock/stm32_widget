@@ -9,10 +9,10 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/user_screen/UserView.hpp>
-#include <gui/user_screen/UserPresenter.hpp>
-#include <gui/robot_screen/RobotView.hpp>
-#include <gui/robot_screen/RobotPresenter.hpp>
+#include <gui/customtheme_screen/customThemeView.hpp>
+#include <gui/customtheme_screen/customThemePresenter.hpp>
+#include <gui/robottheme_screen/robotThemeView.hpp>
+#include <gui/robottheme_screen/robotThemePresenter.hpp>
 
 using namespace touchgfx;
 
@@ -32,15 +32,15 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// User
+// robotTheme
 
-void FrontendApplicationBase::gotoUserScreenNoTransition()
+void FrontendApplicationBase::gotorobotThemeScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoUserScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotorobotThemeScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoUserScreenNoTransitionImpl()
+void FrontendApplicationBase::gotorobotThemeScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<UserView, UserPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<robotThemeView, robotThemePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

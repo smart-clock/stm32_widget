@@ -544,29 +544,29 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/customThemePresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/customtheme_screen/customThemePresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/customThemeView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/customtheme_screen/customThemeView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/Model.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/model/Model.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/RobotPresenter.cpp</name>
+			<name>Application/User/gui/robotThemePresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/robot_screen/RobotPresenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/robottheme_screen/robotThemePresenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/RobotView.cpp</name>
+			<name>Application/User/gui/robotThemeView.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/robot_screen/RobotView.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/UserPresenter.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/user_screen/UserPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/UserView.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/user_screen/UserView.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>
@@ -644,14 +644,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/RobotViewBase.cpp</name>
+			<name>Application/User/generated/customThemeViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/robot_screen/RobotViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/UserViewBase.cpp</name>
+			<name>Application/User/generated/robotThemeViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/user_screen/UserViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/BitmapDatabase.cpp</name>
@@ -672,176 +672,6 @@
 			<name>Application/User/generated/image_alternate_theme_images_widgets_swipecontainer_medium_on_active.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_swipecontainer_medium_on_active.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-090.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-090.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-091.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-091.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-092.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-092.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-093.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-093.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-094.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-094.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-095.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-095.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-096.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-096.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-097.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-097.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-098.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-098.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-099.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-099.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-100.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-100.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-101.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-101.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-102.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-102.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-103.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-103.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-104.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-104.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-105.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-105.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-106.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-106.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-107.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-107.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-108.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-108.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-109.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-109.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-110.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-110.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-111.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-111.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-112.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-112.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-113.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-113.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-114.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-114.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-115.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-115.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-116.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-116.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-117.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-117.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-118.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-118.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-119.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-119.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-120.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-120.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-121.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-121.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-122.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-122.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_ezgif-frame-123.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ezgif-frame-123.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_manggom.cpp</name>

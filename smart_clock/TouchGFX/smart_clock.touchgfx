@@ -2,7 +2,7 @@
   "Application": {
     "Screens": [
       {
-        "Name": "User",
+        "Name": "customTheme",
         "Components": [
           {
             "Type": "SwipeContainer",
@@ -155,18 +155,139 @@
         "Interactions": []
       },
       {
-        "Name": "Robot",
+        "Name": "robotTheme",
         "Components": [
           {
-            "Type": "AnimatedImage",
-            "Name": "animatedImage1",
+            "Type": "SwipeContainer",
+            "Name": "swipeContainer1",
             "Width": 480,
             "Height": 272,
-            "FileNameFirst": "ezgif-frame-090.png",
-            "FileNameLast": "ezgif-frame-123.png",
-            "UpdateTicksInterval": 100,
-            "StartOnLoad": true,
-            "LoopEnabled": true
+            "SwipeCutoff": 50,
+            "ShowPageIndicator": true,
+            "PageIndicatorX": 170,
+            "PageIndicatorY": 247,
+            "CenteredX": true,
+            "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
+            "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
+            "EndSwipeElasticWidth": 50,
+            "SelectedPage": "homePage1",
+            "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "homePage1",
+                "Width": 480,
+                "Height": 272,
+                "Components": [
+                  {
+                    "Type": "Video",
+                    "Name": "videoSad",
+                    "Width": 480,
+                    "Height": 272,
+                    "VideoFileName": "sad.avi",
+                    "AutoPlay": true
+                  },
+                  {
+                    "Type": "Video",
+                    "Name": "videoHeart",
+                    "Width": 480,
+                    "Height": 272,
+                    "VideoFileName": "heart.avi",
+                    "AutoPlay": true
+                  },
+                  {
+                    "Type": "Video",
+                    "Name": "videoHappy",
+                    "Width": 480,
+                    "Height": 272,
+                    "VideoFileName": "happy.avi",
+                    "AutoPlay": true
+                  },
+                  {
+                    "Type": "Video",
+                    "Name": "videoConfused",
+                    "Width": 480,
+                    "Height": 272,
+                    "VideoFileName": "confused.avi",
+                    "AutoPlay": true
+                  },
+                  {
+                    "Type": "Video",
+                    "Name": "videoBored",
+                    "Width": 480,
+                    "Height": 272,
+                    "VideoFileName": "bored.avi",
+                    "AutoPlay": true
+                  },
+                  {
+                    "Type": "Video",
+                    "Name": "videoBlink",
+                    "Width": 480,
+                    "Height": 272,
+                    "VideoFileName": "blink.avi",
+                    "AutoPlay": true
+                  },
+                  {
+                    "Type": "Video",
+                    "Name": "videoDaily",
+                    "Width": 480,
+                    "Height": 272,
+                    "VideoFileName": "daily.avi",
+                    "AutoPlay": true
+                  },
+                  {
+                    "Type": "Video",
+                    "Name": "videoAngry",
+                    "Width": 480,
+                    "Height": 272,
+                    "VideoFileName": "angry.avi",
+                    "AutoPlay": true
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "swipeContainer1Page6",
+                "Width": 480,
+                "Height": 272,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "swipeContainer1Page5",
+                "Width": 480,
+                "Height": 272,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "swipeContainer1Page4",
+                "Width": 480,
+                "Height": 272,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "swipeContainer1Page3",
+                "Width": 480,
+                "Height": 272,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "swipeContainer1Page2",
+                "Width": 480,
+                "Height": 272,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "swipeContainer1Page1",
+                "Width": 480,
+                "Height": 272,
+                "Components": []
+              }
+            ]
           },
           {
             "Type": "TextArea",
@@ -185,7 +306,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1_1",
+            "Name": "textClock",
             "Width": 61,
             "Height": 23,
             "TextId": "__SingleUse_R0HK",
@@ -195,10 +316,31 @@
               "Green": 255,
               "Blue": 255
             },
-            "AutoSize": true
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_3WKT",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_EK8A",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "function1"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],
@@ -208,7 +350,7 @@
       "Height": 272
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "User",
+    "StartupScreenName": "robotTheme",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

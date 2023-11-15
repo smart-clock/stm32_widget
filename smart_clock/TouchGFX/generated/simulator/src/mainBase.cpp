@@ -17,12 +17,18 @@
 #define fopen_s(pFile, filename, mode) (((*(pFile)) = fopen((filename), (mode))) == NULL)
 #endif
 touchgfx::LCD16bpp lcd;
-const uint8_t* video_a_bin_start;
-const uint8_t* video_rain_480x272_bin_start;
+const uint8_t* video_angry_bin_start;
+const uint8_t* video_blink_bin_start;
+const uint8_t* video_bored_bin_start;
+const uint8_t* video_confused_bin_start;
+const uint8_t* video_daily_bin_start;
+const uint8_t* video_happy_bin_start;
+const uint8_t* video_heart_bin_start;
+const uint8_t* video_sad_bin_start;
 
 uint32_t lineBuffer[10000];
-SoftwareMJPEGDecoder *mjpegDecoders[1];
-DirectFrameBufferVideoController<1, Bitmap::RGB565> controller;
+SoftwareMJPEGDecoder *mjpegDecoders[8];
+DirectFrameBufferVideoController<8, Bitmap::RGB565> controller;
 
 VideoController& VideoController::getInstance()
 {
@@ -31,15 +37,21 @@ VideoController& VideoController::getInstance()
 
 void setupVideoDecoder(touchgfx::HAL& hal)
 {
-    for(int i = 0; i < 1; i++)
+    for(int i = 0; i < 8; i++)
     {
         mjpegDecoders[i] = new SoftwareMJPEGDecoder((uint8_t*)lineBuffer);
         controller.addDecoder(*mjpegDecoders[i], i);
     }
 
     char videoFileName[400];
-    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "a.bin"), &video_a_bin_start, video_a_bin_length);
-    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "rain_480x272.bin"), &video_rain_480x272_bin_start, video_rain_480x272_bin_length);
+    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "angry.bin"), &video_angry_bin_start, video_angry_bin_length);
+    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "blink.bin"), &video_blink_bin_start, video_blink_bin_length);
+    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "bored.bin"), &video_bored_bin_start, video_bored_bin_length);
+    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "confused.bin"), &video_confused_bin_start, video_confused_bin_length);
+    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "daily.bin"), &video_daily_bin_start, video_daily_bin_length);
+    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "happy.bin"), &video_happy_bin_start, video_happy_bin_length);
+    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "heart.bin"), &video_heart_bin_start, video_heart_bin_length);
+    setupVideo(static_cast<touchgfx::HALSDL2&>(hal).localFileName(videoFileName, 400, "sad.bin"), &video_sad_bin_start, video_sad_bin_length);
 }
 
 void setupVideo(const char* videoFileName, const uint8_t** videoBuffer, uint32_t videoLength)
@@ -70,6 +82,8 @@ void setupSimulator(int argc, char** argv, touchgfx::HAL& hal)
     // Initialize SDL
     bool sdl_init_result = static_cast<touchgfx::HALSDL2&>(hal).sdl_init(argc, argv);
     assert(sdl_init_result && "Error during SDL initialization");
+
+    setupVideoDecoder(hal);
 }
 
 touchgfx::LCD& setupLCD()

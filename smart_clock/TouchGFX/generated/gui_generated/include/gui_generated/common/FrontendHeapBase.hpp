@@ -12,10 +12,10 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/user_screen/UserView.hpp>
-#include <gui/user_screen/UserPresenter.hpp>
-#include <gui/robot_screen/RobotView.hpp>
-#include <gui/robot_screen/RobotPresenter.hpp>
+#include <gui/customtheme_screen/customThemeView.hpp>
+#include <gui/customtheme_screen/customThemePresenter.hpp>
+#include <gui/robottheme_screen/robotThemeView.hpp>
+#include <gui/robottheme_screen/robotThemePresenter.hpp>
 
 
 /**
@@ -38,8 +38,8 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< UserView,
-            touchgfx::meta::TypeList< RobotView,
+    typedef touchgfx::meta::TypeList< customThemeView,
+            touchgfx::meta::TypeList< robotThemeView,
             touchgfx::meta::Nil >
             > GeneratedViewTypes;
 
@@ -52,8 +52,8 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< UserPresenter,
-            touchgfx::meta::TypeList< RobotPresenter,
+    typedef touchgfx::meta::TypeList< customThemePresenter,
+            touchgfx::meta::TypeList< robotThemePresenter,
             touchgfx::meta::Nil >
             > GeneratedPresenterTypes;
 
@@ -77,7 +77,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoUserScreenNoTransition();
+        app.gotorobotThemeScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

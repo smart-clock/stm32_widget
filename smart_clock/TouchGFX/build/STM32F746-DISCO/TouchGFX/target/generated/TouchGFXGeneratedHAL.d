@@ -44,10 +44,10 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
- TouchGFX/gui/include/gui/user_screen/UserView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/user_screen/UserViewBase.hpp \
+ TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- TouchGFX/gui/include/gui/user_screen/UserPresenter.hpp \
+ TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
@@ -57,10 +57,11 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- TouchGFX/gui/include/gui/robot_screen/RobotView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/robot_screen/RobotViewBase.hpp \
- TouchGFX/gui/include/gui/robot_screen/RobotPresenter.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp \
+ TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp \
+ TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp \
@@ -87,8 +88,6 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp \
  TouchGFX/target/generated/DoubleBufferedVideoController.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
  TouchGFX/target/generated/MJPEGDecoder.hpp \
  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
@@ -225,13 +224,13 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
-TouchGFX/gui/include/gui/user_screen/UserView.hpp:
+TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/user_screen/UserViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
 
 Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-TouchGFX/gui/include/gui/user_screen/UserPresenter.hpp:
+TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
@@ -251,13 +250,15 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
-TouchGFX/gui/include/gui/robot_screen/RobotView.hpp:
+TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/robot_screen/RobotViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:
 
-TouchGFX/gui/include/gui/robot_screen/RobotPresenter.hpp:
+TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:
 
@@ -310,10 +311,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainte
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp:
 
 TouchGFX/target/generated/DoubleBufferedVideoController.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
 
 TouchGFX/target/generated/MJPEGDecoder.hpp:
 

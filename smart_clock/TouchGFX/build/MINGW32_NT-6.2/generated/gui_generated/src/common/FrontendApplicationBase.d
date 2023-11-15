@@ -41,10 +41,10 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
- gui/include/gui/user_screen/UserView.hpp \
- generated/gui_generated/include/gui_generated/user_screen/UserViewBase.hpp \
+ gui/include/gui/customtheme_screen/customThemeView.hpp \
+ generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/user_screen/UserPresenter.hpp \
+ gui/include/gui/customtheme_screen/customThemePresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
@@ -54,10 +54,12 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- gui/include/gui/robot_screen/RobotView.hpp \
- generated/gui_generated/include/gui_generated/robot_screen/RobotViewBase.hpp \
- gui/include/gui/robot_screen/RobotPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp \
+ gui/include/gui/robottheme_screen/robotThemeView.hpp \
+ generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp \
+ gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
@@ -146,13 +148,13 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
-gui/include/gui/user_screen/UserView.hpp:
+gui/include/gui/customtheme_screen/customThemeView.hpp:
 
-generated/gui_generated/include/gui_generated/user_screen/UserViewBase.hpp:
+generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/user_screen/UserPresenter.hpp:
+gui/include/gui/customtheme_screen/customThemePresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
@@ -172,13 +174,17 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
-gui/include/gui/robot_screen/RobotView.hpp:
+gui/include/gui/robottheme_screen/robotThemeView.hpp:
 
-generated/gui_generated/include/gui_generated/robot_screen/RobotViewBase.hpp:
+generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:
 
-gui/include/gui/robot_screen/RobotPresenter.hpp:
+gui/include/gui/robottheme_screen/robotThemePresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:
 

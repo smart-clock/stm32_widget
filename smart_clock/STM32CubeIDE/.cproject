@@ -137,8 +137,14 @@
                   <additionalInput kind="additionalinput" paths="$(LIBS)"/>
                 </inputType>
                 <option valueType="userObjs" IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.additionalobjs.8178899230" name="Additional object files" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.additionalobjs" useByScannerDiscovery="false">
-                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/a.bin.o"/>
-                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/rain_480x272.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/angry.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/blink.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/bored.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/confused.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/daily.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/happy.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/heart.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/sad.bin.o"/>
                 </option>
               </tool>
               <tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver.146535021" name="MCU GCC Archiver" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver"/>
@@ -285,8 +291,14 @@
                   <additionalInput kind="additionalinput" paths="$(LIBS)"/>
                 </inputType>
                 <option valueType="userObjs" IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.additionalobjs.4520302239" name="Additional object files" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.additionalobjs" useByScannerDiscovery="false">
-                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/a.bin.o"/>
-                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/rain_480x272.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/angry.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/blink.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/bored.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/confused.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/daily.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/happy.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/heart.bin.o"/>
+                  <listOptionValue builtIn="false" value="../../TouchGFX/generated/videos/obj/sad.bin.o"/>
                 </option>
               </tool>
               <tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver.508445338" name="MCU GCC Archiver" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver"/>

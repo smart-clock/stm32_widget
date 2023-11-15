@@ -6,6 +6,12 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_EK8A" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_3WKT" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
       <Text Id="__SingleUse_9NSZ" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">11/16 Thu</Translation>
       </Text>
@@ -16,7 +22,7 @@
         <Translation Language="GB">70%</Translation>
       </Text>
       <Text Id="__SingleUse_R0HK" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">09:24</Translation>
+        <Translation Language="GB">&lt;hour&gt;:&lt;min&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_ADZB" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">70%</Translation>

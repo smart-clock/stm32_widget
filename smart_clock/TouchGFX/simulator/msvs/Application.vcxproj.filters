@@ -172,29 +172,29 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>73C92E31-C637-A0F0-EB92-0E4CDCB4C2C3</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\robot_screen">
-      <UniqueIdentifier>113F7595-E63A-9AE3-5354-F18773446A3A</UniqueIdentifier>
+    <Filter Include="Header Files\gui\robottheme_screen">
+      <UniqueIdentifier>D2FF0E87-28A7-08FC-FCC6-BCDA7708A06F</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\robot_screen">
-      <UniqueIdentifier>D00E5D5B-B7E7-850C-D8BA-868079F72F81</UniqueIdentifier>
+    <Filter Include="Source Files\gui\customtheme_screen">
+      <UniqueIdentifier>04AC47B1-D8C9-2440-E712-7AE366D70E37</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\user_screen">
-      <UniqueIdentifier>5C7D28C1-75F0-218A-4B18-4C023F9C089C</UniqueIdentifier>
+    <Filter Include="Header Files\gui\customtheme_screen">
+      <UniqueIdentifier>C84FE18E-F46E-3D01-194B-B338C2045A41</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\user_screen">
-      <UniqueIdentifier>31F69658-C2E3-5E18-0CCB-6623715ED22A</UniqueIdentifier>
+    <Filter Include="Source Files\gui\robottheme_screen">
+      <UniqueIdentifier>28A5DA21-77E5-C8F7-018A-476CDB8C2337</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\user_screen">
-      <UniqueIdentifier>BAD907E0-9EBB-0436-8DB7-9995775E4B2E</UniqueIdentifier>
+    <Filter Include="Header Files\generated\gui_generated\customtheme_screen">
+      <UniqueIdentifier>BD33F923-98B1-0074-9C3A-000DCB23728F</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\robot_screen">
-      <UniqueIdentifier>0DFB2224-C96F-5268-E07C-4915B7DA504B</UniqueIdentifier>
+    <Filter Include="Header Files\generated\gui_generated\robottheme_screen">
+      <UniqueIdentifier>7CECBB5B-A37C-407D-BA2E-4D655871559E</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\robot_screen">
-      <UniqueIdentifier>B6978862-4F62-F9FC-4835-FB01F69F363C</UniqueIdentifier>
+    <Filter Include="Source Files\generated\gui_generated\customtheme_screen">
+      <UniqueIdentifier>6365D9E8-7E62-5004-F03C-33BEA90E7403</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\user_screen">
-      <UniqueIdentifier>B055A3ED-35D6-D76C-64A2-953467ED08CA</UniqueIdentifier>
+    <Filter Include="Source Files\generated\gui_generated\robottheme_screen">
+      <UniqueIdentifier>329A8759-52A8-1CC2-64EC-E886306545ED</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -228,23 +228,23 @@
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\robot_screen\RobotPresenter.cpp">
-      <Filter>Source Files\gui\robot_screen</Filter>
+    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemePresenter.cpp">
+      <Filter>Source Files\gui\customtheme_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\robot_screen\RobotView.cpp">
-      <Filter>Source Files\gui\robot_screen</Filter>
+    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemeView.cpp">
+      <Filter>Source Files\gui\customtheme_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\robot_screen\RobotViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\robot_screen</Filter>
+    <ClCompile Include="..\..\generated\gui_generated\src\customtheme_screen\customThemeViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\customtheme_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\user_screen\UserPresenter.cpp">
-      <Filter>Source Files\gui\user_screen</Filter>
+    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemePresenter.cpp">
+      <Filter>Source Files\gui\robottheme_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\user_screen\UserView.cpp">
-      <Filter>Source Files\gui\user_screen</Filter>
+    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemeView.cpp">
+      <Filter>Source Files\gui\robottheme_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\user_screen\UserViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\user_screen</Filter>
+    <ClCompile Include="..\..\generated\gui_generated\src\robottheme_screen\robotThemeViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\robottheme_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -688,23 +688,23 @@
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\robot_screen\RobotPresenter.hpp">
-      <Filter>Header Files\gui\robot_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemePresenter.hpp">
+      <Filter>Header Files\gui\customtheme_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\robot_screen\RobotView.hpp">
-      <Filter>Header Files\gui\robot_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemeView.hpp">
+      <Filter>Header Files\gui\customtheme_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\robot_screen\RobotViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\robot_screen</Filter>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\customtheme_screen\customThemeViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\customtheme_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\user_screen\UserPresenter.hpp">
-      <Filter>Header Files\gui\user_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemePresenter.hpp">
+      <Filter>Header Files\gui\robottheme_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\user_screen\UserView.hpp">
-      <Filter>Header Files\gui\user_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemeView.hpp">
+      <Filter>Header Files\gui\robottheme_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\user_screen\UserViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\user_screen</Filter>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\robottheme_screen\robotThemeViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\robottheme_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
