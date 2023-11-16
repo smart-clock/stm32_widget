@@ -76,10 +76,44 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  TouchGFX/gui/include/gui/screen7_screen/Screen7View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/screen7_screen/Screen7ViewBase.hpp \
  TouchGFX/gui/include/gui/screen7_screen/Screen7Presenter.hpp \
- TouchGFX/generated/images/include/BitmapDatabase.hpp \
- TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
+ TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp \
+ TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
+ TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
+ TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ TouchGFX/gui/include/gui/containers/CustomContainer1.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
+ TouchGFX/generated/images/include/BitmapDatabase.hpp \
+ TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
  TouchGFX/target/generated/STM32DMA.hpp TouchGFX/target/TouchGFXHAL.hpp \
  TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
  TouchGFX/target/STM32TouchController.hpp \
@@ -270,13 +304,81 @@ TouchGFX/generated/gui_generated/include/gui_generated/screen7_screen/Screen7Vie
 
 TouchGFX/gui/include/gui/screen7_screen/Screen7Presenter.hpp:
 
-TouchGFX/generated/images/include/BitmapDatabase.hpp:
+TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp:
 
-TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:
+
+TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
+TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
+
+TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+TouchGFX/gui/include/gui/containers/CustomContainer1.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
 
 Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
+
+TouchGFX/generated/images/include/BitmapDatabase.hpp:
+
+TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
 
 TouchGFX/target/generated/STM32DMA.hpp:
 

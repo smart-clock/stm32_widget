@@ -17,7 +17,7 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoScreen1ScreenNoTransition();
+        gotocustomThemeScreenNoTransition();
     }
 
     // Screen1
@@ -40,6 +40,9 @@ public:
 
     // Screen7
     void gotoScreen7ScreenNoTransition();
+
+    // customTheme
+    void gotocustomThemeScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -66,6 +69,9 @@ protected:
 
     // Screen7
     void gotoScreen7ScreenNoTransitionImpl();
+
+    // customTheme
+    void gotocustomThemeScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

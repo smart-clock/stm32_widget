@@ -23,6 +23,10 @@
 #include <gui/screen6_screen/Screen6Presenter.hpp>
 #include <gui/screen7_screen/Screen7View.hpp>
 #include <gui/screen7_screen/Screen7Presenter.hpp>
+#include <gui/robottheme_screen/robotThemeView.hpp>
+#include <gui/robottheme_screen/robotThemePresenter.hpp>
+#include <gui/customtheme_screen/customThemeView.hpp>
+#include <gui/customtheme_screen/customThemePresenter.hpp>
 
 using namespace touchgfx;
 
@@ -131,4 +135,17 @@ void FrontendApplicationBase::gotoScreen7ScreenNoTransition()
 void FrontendApplicationBase::gotoScreen7ScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<Screen7View, Screen7Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// customTheme
+
+void FrontendApplicationBase::gotocustomThemeScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotocustomThemeScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotocustomThemeScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<customThemeView, customThemePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

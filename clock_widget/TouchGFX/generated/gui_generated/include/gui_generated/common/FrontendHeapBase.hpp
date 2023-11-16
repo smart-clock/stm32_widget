@@ -26,6 +26,10 @@
 #include <gui/screen6_screen/Screen6Presenter.hpp>
 #include <gui/screen7_screen/Screen7View.hpp>
 #include <gui/screen7_screen/Screen7Presenter.hpp>
+#include <gui/robottheme_screen/robotThemeView.hpp>
+#include <gui/robottheme_screen/robotThemePresenter.hpp>
+#include <gui/customtheme_screen/customThemeView.hpp>
+#include <gui/customtheme_screen/customThemePresenter.hpp>
 
 
 /**
@@ -55,7 +59,9 @@ public:
             touchgfx::meta::TypeList< Screen5View,
             touchgfx::meta::TypeList< Screen6View,
             touchgfx::meta::TypeList< Screen7View,
-            touchgfx::meta::Nil > > > > > >
+            touchgfx::meta::TypeList< robotThemeView,
+            touchgfx::meta::TypeList< customThemeView,
+            touchgfx::meta::Nil > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -74,7 +80,9 @@ public:
             touchgfx::meta::TypeList< Screen5Presenter,
             touchgfx::meta::TypeList< Screen6Presenter,
             touchgfx::meta::TypeList< Screen7Presenter,
-            touchgfx::meta::Nil > > > > > >
+            touchgfx::meta::TypeList< robotThemePresenter,
+            touchgfx::meta::TypeList< customThemePresenter,
+            touchgfx::meta::Nil > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -97,7 +105,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoScreen1ScreenNoTransition();
+        app.gotocustomThemeScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

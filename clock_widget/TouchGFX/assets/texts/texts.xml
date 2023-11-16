@@ -6,6 +6,75 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_O6L1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">188.01</Translation>
+      </Text>
+      <Text Id="__SingleUse_L5RK" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">AAPL</Translation>
+      </Text>
+      <Text Id="__SingleUse_8G7L" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">7min</Translation>
+      </Text>
+      <Text Id="__SingleUse_RAV5" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">20min</Translation>
+      </Text>
+      <Text Id="__SingleUse_GGVL" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">school</Translation>
+      </Text>
+      <Text Id="__SingleUse_5HYN" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">8:00</Translation>
+      </Text>
+      <Text Id="__SingleUse_M735" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">8:00 school</Translation>
+      </Text>
+      <Text Id="__SingleUse_CH1L" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Stop</Translation>
+      </Text>
+      <Text Id="__SingleUse_5Q6Y" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Start</Translation>
+      </Text>
+      <Text Id="__SingleUse_OFEW" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Minute</Translation>
+      </Text>
+      <Text Id="__SingleUse_NACA" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Hour</Translation>
+      </Text>
+      <Text Id="__SingleUse_M5S3" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_DC0X" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_ODYK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Heavy Rain</Translation>
+      </Text>
+      <Text Id="__SingleUse_PGHS" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">26C</Translation>
+      </Text>
+      <Text Id="__SingleUse_WA69" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">14:20</Translation>
+      </Text>
+      <Text Id="__SingleUse_FGEO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">78%</Translation>
+      </Text>
+      <Text Id="__SingleUse_1C1Q" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">11/16 Thu</Translation>
+      </Text>
+      <Text Id="__SingleUse_YWFN" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">14:20</Translation>
+      </Text>
+      <Text Id="__SingleUse_2C21" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">11/16 Thu</Translation>
+      </Text>
+      <Text Id="__SingleUse_B95S" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">78%</Translation>
+      </Text>
+      <Text Id="__SingleUse_U1E6" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">14:20</Translation>
+      </Text>
+      <Text Id="__SingleUse_92FF" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">14:20</Translation>
+      </Text>
       <Text Id="__SingleUse_S74C" Alignment="Center" TypographyId="Large">
         <Translation Language="GB">Confused</Translation>
       </Text>

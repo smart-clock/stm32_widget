@@ -256,6 +256,42 @@
     <Filter Include="Header Files\generated\gui_generated\screen7_screen">
       <UniqueIdentifier>3D3A52EB-E63F-23A5-4913-BE36B8BDD8ED</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\customtheme_screen">
+      <UniqueIdentifier>D23B31C6-D704-19BF-D173-F860FF3CD706</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\robottheme_screen">
+      <UniqueIdentifier>13B6067C-C878-0FDF-DFB2-E5F8B83C922C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\customtheme_screen">
+      <UniqueIdentifier>F710F23E-E0C3-C32F-2CF8-31CBE25E31C0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\robottheme_screen">
+      <UniqueIdentifier>85A27AD8-3061-32D1-D904-44E8239430CC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\customtheme_screen">
+      <UniqueIdentifier>F5D71857-3F28-48B9-2CA5-48D189FAD862</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\customtheme_screen">
+      <UniqueIdentifier>C57DA2BF-B9C3-DC3D-5491-6CA267B5FEAC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\robottheme_screen">
+      <UniqueIdentifier>E4782820-E110-F0F4-A414-52A40E707682</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\robottheme_screen">
+      <UniqueIdentifier>8EC3F755-6CC7-C0F2-F511-A46A2B690DD8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\containers">
+      <UniqueIdentifier>DADAFCC6-81CD-284E-E9A8-CF493B056259</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\containers">
+      <UniqueIdentifier>5D89CB04-FCA1-6C6C-BE22-E9EE5EDEEA32</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\containers">
+      <UniqueIdentifier>6350A4AE-CCE0-9174-F013-F65DF75D60CE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\containers">
+      <UniqueIdentifier>2B706141-6B3B-0FAC-ECE4-A4F880674FBC</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -350,6 +386,30 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen7_screen\Screen7ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen7_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemePresenter.cpp">
+      <Filter>Source Files\gui\customtheme_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemeView.cpp">
+      <Filter>Source Files\gui\customtheme_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\customtheme_screen\customThemeViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\customtheme_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemePresenter.cpp">
+      <Filter>Source Files\gui\robottheme_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemeView.cpp">
+      <Filter>Source Files\gui\robottheme_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\robottheme_screen\robotThemeViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\robottheme_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer1Base.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -855,6 +915,30 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen7_screen\Screen7ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen7_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemePresenter.hpp">
+      <Filter>Header Files\gui\customtheme_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemeView.hpp">
+      <Filter>Header Files\gui\customtheme_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\customtheme_screen\customThemeViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\customtheme_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemePresenter.hpp">
+      <Filter>Header Files\gui\robottheme_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemeView.hpp">
+      <Filter>Header Files\gui\robottheme_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\robottheme_screen\robotThemeViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\robottheme_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer1Base.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
