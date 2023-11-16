@@ -6,6 +6,105 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_3EUR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Prev</Translation>
+      </Text>
+      <Text Id="__SingleUse_5X4S" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Next</Translation>
+      </Text>
+      <Text Id="__SingleUse_QAZQ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Prev</Translation>
+      </Text>
+      <Text Id="__SingleUse_E9ZS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Next</Translation>
+      </Text>
+      <Text Id="__SingleUse_UZWN" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Prev</Translation>
+      </Text>
+      <Text Id="__SingleUse_MF1T" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Next</Translation>
+      </Text>
+      <Text Id="__SingleUse_102P" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Prev</Translation>
+      </Text>
+      <Text Id="__SingleUse_YAMU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Prev</Translation>
+      </Text>
+      <Text Id="__SingleUse_BWGY" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Next</Translation>
+      </Text>
+      <Text Id="__SingleUse_HZLU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Prev</Translation>
+      </Text>
+      <Text Id="__SingleUse_MX5Z" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Next</Translation>
+      </Text>
+      <Text Id="__SingleUse_UAKL" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Next</Translation>
+      </Text>
+      <Text Id="__SingleUse_ASYU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Eyes</Translation>
+      </Text>
+      <Text Id="__SingleUse_QZZ1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Clock</Translation>
+      </Text>
+      <Text Id="__SingleUse_5M0W" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Eyes</Translation>
+      </Text>
+      <Text Id="__SingleUse_49KS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Theme</Translation>
+      </Text>
+      <Text Id="__SingleUse_DIQX" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Theme</Translation>
+      </Text>
+      <Text Id="__SingleUse_70FQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">14:20</Translation>
+      </Text>
+      <Text Id="__SingleUse_6CI5" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">78%</Translation>
+      </Text>
+      <Text Id="__SingleUse_WA0J" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">188.01</Translation>
+      </Text>
+      <Text Id="__SingleUse_A88N" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">AAPL</Translation>
+      </Text>
+      <Text Id="__SingleUse_T14E" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">7min</Translation>
+      </Text>
+      <Text Id="__SingleUse_05J5" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">20min</Translation>
+      </Text>
+      <Text Id="__SingleUse_1ZAU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">school</Translation>
+      </Text>
+      <Text Id="__SingleUse_UXV2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">8:00</Translation>
+      </Text>
+      <Text Id="__SingleUse_Z6K2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Stop</Translation>
+      </Text>
+      <Text Id="__SingleUse_T6AO" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Start</Translation>
+      </Text>
+      <Text Id="__SingleUse_AAS9" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZGZA" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Minute</Translation>
+      </Text>
+      <Text Id="__SingleUse_UTRY" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Hour</Translation>
+      </Text>
+      <Text Id="__SingleUse_FI0U" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_CW4O" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Heavy Rain</Translation>
+      </Text>
+      <Text Id="__SingleUse_EI1R" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">26C</Translation>
+      </Text>
       <Text Id="__SingleUse_O6L1" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">188.01</Translation>
       </Text>
@@ -50,18 +149,6 @@
       </Text>
       <Text Id="__SingleUse_PGHS" Alignment="Center" TypographyId="Large">
         <Translation Language="GB">26C</Translation>
-      </Text>
-      <Text Id="__SingleUse_WA69" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">14:20</Translation>
-      </Text>
-      <Text Id="__SingleUse_FGEO" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">78%</Translation>
-      </Text>
-      <Text Id="__SingleUse_1C1Q" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">11/16 Thu</Translation>
-      </Text>
-      <Text Id="__SingleUse_YWFN" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">14:20</Translation>
       </Text>
       <Text Id="__SingleUse_2C21" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">11/16 Thu</Translation>

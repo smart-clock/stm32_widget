@@ -17,29 +17,46 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotocustomThemeScreenNoTransition();
+        gotorobotThemeScreenNoTransition();
     }
 
     // Screen1
-    void gotoScreen1ScreenNoTransition();
+    void gotoScreen1ScreenSlideTransitionWest();
+
+    void gotoScreen1ScreenSlideTransitionNorth();
 
     // Screen2
-    void gotoScreen2ScreenNoTransition();
+    void gotoScreen2ScreenSlideTransitionEast();
+
+    void gotoScreen2ScreenSlideTransitionWest();
 
     // Screen3
-    void gotoScreen3ScreenNoTransition();
+    void gotoScreen3ScreenSlideTransitionEast();
+
+    void gotoScreen3ScreenSlideTransitionWest();
 
     // Screen4
-    void gotoScreen4ScreenNoTransition();
+    void gotoScreen4ScreenSlideTransitionEast();
+
+    void gotoScreen4ScreenSlideTransitionWest();
 
     // Screen5
-    void gotoScreen5ScreenNoTransition();
+    void gotoScreen5ScreenSlideTransitionEast();
+
+    void gotoScreen5ScreenSlideTransitionWest();
 
     // Screen6
-    void gotoScreen6ScreenNoTransition();
+    void gotoScreen6ScreenSlideTransitionEast();
+
+    void gotoScreen6ScreenSlideTransitionWest();
 
     // Screen7
-    void gotoScreen7ScreenNoTransition();
+    void gotoScreen7ScreenSlideTransitionEast();
+
+    // robotTheme
+    void gotorobotThemeScreenNoTransition();
+
+    void gotorobotThemeScreenSlideTransitionSouth();
 
     // customTheme
     void gotocustomThemeScreenNoTransition();
@@ -50,25 +67,42 @@ protected:
     Model& model;
 
     // Screen1
-    void gotoScreen1ScreenNoTransitionImpl();
+    void gotoScreen1ScreenSlideTransitionWestImpl();
+
+    void gotoScreen1ScreenSlideTransitionNorthImpl();
 
     // Screen2
-    void gotoScreen2ScreenNoTransitionImpl();
+    void gotoScreen2ScreenSlideTransitionEastImpl();
+
+    void gotoScreen2ScreenSlideTransitionWestImpl();
 
     // Screen3
-    void gotoScreen3ScreenNoTransitionImpl();
+    void gotoScreen3ScreenSlideTransitionEastImpl();
+
+    void gotoScreen3ScreenSlideTransitionWestImpl();
 
     // Screen4
-    void gotoScreen4ScreenNoTransitionImpl();
+    void gotoScreen4ScreenSlideTransitionEastImpl();
+
+    void gotoScreen4ScreenSlideTransitionWestImpl();
 
     // Screen5
-    void gotoScreen5ScreenNoTransitionImpl();
+    void gotoScreen5ScreenSlideTransitionEastImpl();
+
+    void gotoScreen5ScreenSlideTransitionWestImpl();
 
     // Screen6
-    void gotoScreen6ScreenNoTransitionImpl();
+    void gotoScreen6ScreenSlideTransitionEastImpl();
+
+    void gotoScreen6ScreenSlideTransitionWestImpl();
 
     // Screen7
-    void gotoScreen7ScreenNoTransitionImpl();
+    void gotoScreen7ScreenSlideTransitionEastImpl();
+
+    // robotTheme
+    void gotorobotThemeScreenNoTransitionImpl();
+
+    void gotorobotThemeScreenSlideTransitionSouthImpl();
 
     // customTheme
     void gotocustomThemeScreenNoTransitionImpl();

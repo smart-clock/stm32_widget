@@ -4,8 +4,8 @@
 #include <gui_generated/screen7_screen/Screen7ViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <videos/VideoDatabase.hpp>
-#include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <images/BitmapDatabase.hpp>
 
 Screen7ViewBase::Screen7ViewBase() :
     buttonCallback(this, &Screen7ViewBase::buttonCallbackHandler)
@@ -20,16 +20,19 @@ Screen7ViewBase::Screen7ViewBase() :
     videoSad.play();
     add(videoSad);
 
-    buttonPrev.setXY(12, 223);
-    buttonPrev.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID));
-    buttonPrev.setAction(buttonCallback);
-    add(buttonPrev);
-
     textVideo.setXY(202, 0);
     textVideo.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textVideo.setLinespacing(0);
     textVideo.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7BPM));
     add(textVideo);
+
+    buttonPrev.setXY(0, 212);
+    buttonPrev.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonPrev.setLabelText(touchgfx::TypedText(T___SINGLEUSE_3EUR));
+    buttonPrev.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonPrev.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonPrev.setAction(buttonCallback);
+    add(buttonPrev);
 }
 
 Screen7ViewBase::~Screen7ViewBase()
@@ -46,9 +49,9 @@ void Screen7ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
     if (&src == &buttonPrev)
     {
-        //Prev
+        //goToScreen6
         //When buttonPrev clicked change screen to Screen6
-        //Go to Screen6 with no screen transition
-        application().gotoScreen6ScreenNoTransition();
+        //Go to Screen6 with screen transition towards West
+        application().gotoScreen6ScreenSlideTransitionWest();
     }
 }

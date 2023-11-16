@@ -14,17 +14,6 @@
             "Loop": true
           },
           {
-            "Type": "Button",
-            "Name": "buttonNext",
-            "X": 430,
-            "Y": 226,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
             "Type": "TextArea",
             "Name": "textVideo",
             "X": 191,
@@ -38,19 +27,76 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonClock",
+            "Y": 213,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_QZZ1",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonNext",
+            "X": 383,
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_UAKL",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "goToScreen2",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonNext"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen2"
+            }
+          },
+          {
+            "InteractionName": "goToRobotTheme",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonClock"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "robotTheme"
             }
           }
         ]
@@ -68,26 +114,47 @@
             "Loop": true
           },
           {
-            "Type": "Button",
-            "Name": "buttonPrev",
-            "X": 12,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
+            "Type": "ButtonWithLabel",
+            "Name": "buttonNext",
+            "X": 383,
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_MX5Z",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           },
           {
-            "Type": "Button",
-            "Name": "buttonNext",
-            "X": 431,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
+            "Type": "ButtonWithLabel",
+            "Name": "buttonPrev",
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_HZLU",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           },
           {
             "Type": "TextArea",
@@ -107,26 +174,28 @@
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "goToScreen1",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonPrev"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen1"
             }
           },
           {
-            "InteractionName": "Interaction2",
+            "InteractionName": "goToScreen3",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonNext"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen3"
             }
           }
@@ -145,28 +214,6 @@
             "Loop": true
           },
           {
-            "Type": "Button",
-            "Name": "buttonPrev",
-            "X": 12,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "Button",
-            "Name": "buttonNext",
-            "X": 431,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
             "Type": "TextArea",
             "Name": "textVideo",
             "X": 181,
@@ -180,30 +227,75 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonPrev",
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_YAMU",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonNext",
+            "X": 383,
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_BWGY",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
         "Interactions": [
           {
-            "InteractionName": "Prev",
+            "InteractionName": "goToScreen2",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonPrev"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen2"
             }
           },
           {
-            "InteractionName": "Next",
+            "InteractionName": "goToScreen4",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonNext"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen4"
             }
           }
@@ -222,28 +314,6 @@
             "Loop": true
           },
           {
-            "Type": "Button",
-            "Name": "buttonPrev",
-            "X": 12,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "Button",
-            "Name": "buttonNext",
-            "X": 431,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
             "Type": "TextArea",
             "Name": "textVideo",
             "X": 147,
@@ -257,30 +327,75 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonNext",
+            "X": 383,
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_MF1T",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonPrev",
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_102P",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
         "Interactions": [
           {
-            "InteractionName": "Prev",
+            "InteractionName": "goToScreen3",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonPrev"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen3"
             }
           },
           {
-            "InteractionName": "Next",
+            "InteractionName": "goToScreen5",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonNext"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen5"
             }
           }
@@ -299,28 +414,6 @@
             "Loop": true
           },
           {
-            "Type": "Button",
-            "Name": "buttonPrev",
-            "X": 12,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "Button",
-            "Name": "buttonNext",
-            "X": 431,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
             "Type": "TextArea",
             "Name": "textVideo",
             "X": 176,
@@ -334,30 +427,75 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonNext",
+            "X": 383,
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_E9ZS",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonPrev",
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_UZWN",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
         "Interactions": [
           {
-            "InteractionName": "Prev",
+            "InteractionName": "goToScreen4",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonPrev"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen4"
             }
           },
           {
-            "InteractionName": "Next",
+            "InteractionName": "goToScreen6",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonNext"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen6"
             }
           }
@@ -376,28 +514,6 @@
             "Loop": true
           },
           {
-            "Type": "Button",
-            "Name": "buttonPrev",
-            "X": 12,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "Button",
-            "Name": "buttonNext",
-            "X": 431,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
             "Type": "TextArea",
             "Name": "textVideo",
             "X": 185,
@@ -411,30 +527,75 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonNext",
+            "X": 383,
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_5X4S",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonPrev",
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_QAZQ",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
         "Interactions": [
           {
-            "InteractionName": "Prev",
+            "InteractionName": "goToScreen5",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonPrev"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen5"
             }
           },
           {
-            "InteractionName": "Next",
+            "InteractionName": "goToScreen7",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonNext"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen7"
             }
           }
@@ -453,17 +614,6 @@
             "Loop": true
           },
           {
-            "Type": "Button",
-            "Name": "buttonPrev",
-            "X": 12,
-            "Y": 223,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
             "Type": "TextArea",
             "Name": "textVideo",
             "X": 202,
@@ -477,18 +627,40 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonPrev",
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_3EUR",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
         "Interactions": [
           {
-            "InteractionName": "Prev",
+            "InteractionName": "goToScreen6",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonPrev"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen6"
             }
           }
@@ -496,7 +668,20 @@
       },
       {
         "Name": "robotTheme",
+        "CanvasBufferSize": 7200,
         "Components": [
+          {
+            "Type": "Box",
+            "Name": "whiteBackground",
+            "Width": 480,
+            "Height": 272,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 128
+          },
           {
             "Type": "SwipeContainer",
             "Name": "swipeContainer1",
@@ -510,123 +695,668 @@
             "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "swipeContainer1Page1",
+            "SelectedPage": "homePage1",
             "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
             "Components": [
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page1",
+                "Name": "homePage1",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
-                    "Type": "Image",
-                    "Name": "background1",
+                    "Type": "Video",
+                    "Name": "videoBlink",
                     "Width": 480,
                     "Height": 272,
-                    "RelativeFilename": "manggom.png"
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textHomeClock",
-                    "X": 180,
-                    "Y": 100,
-                    "Width": 118,
-                    "Height": 48,
-                    "TextId": "__SingleUse_YWFN",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textDate",
-                    "X": 186,
-                    "Y": 151,
-                    "Width": 106,
-                    "Height": 20,
-                    "TextId": "__SingleUse_1C1Q",
-                    "TextRotation": "0",
-                    "AutoSize": true
+                    "VideoFileName": "blink.avi",
+                    "AutoPlay": true
                   }
                 ]
               },
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page2",
+                "Name": "whetherPage2",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
-                    "Type": "Image",
+                    "Type": "Box",
                     "Name": "background2",
                     "Width": 480,
-                    "Height": 272,
-                    "RelativeFilename": "manggom.png",
-                    "Alpha": 128
+                    "Height": 272
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageRaining",
+                    "X": 70,
+                    "Y": 72,
+                    "Width": 128,
+                    "Height": 128,
+                    "RelativeFilename": "rain_128X128.png"
+                  },
+                  {
+                    "Type": "Box",
+                    "Name": "box1",
+                    "X": 239,
+                    "Y": 72,
+                    "Width": 139,
+                    "Height": 128,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Alpha": 174
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textDegree",
+                    "X": 253,
+                    "Y": 88,
+                    "Width": 78,
+                    "Height": 48,
+                    "TextId": "__SingleUse_EI1R",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textWhether",
+                    "X": 253,
+                    "Y": 137,
+                    "Width": 114,
+                    "Height": 24,
+                    "TextId": "__SingleUse_CW4O",
+                    "TextRotation": "0",
+                    "AutoSize": true
                   }
                 ]
               },
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page3",
+                "Name": "clockPage3",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
-                    "Type": "Image",
+                    "Type": "Box",
                     "Name": "background3",
                     "Width": 480,
-                    "Height": 272,
-                    "RelativeFilename": "manggom.png",
-                    "Alpha": 128
+                    "Height": 272
+                  },
+                  {
+                    "Type": "Box",
+                    "Name": "box1_1",
+                    "X": 111,
+                    "Y": 48,
+                    "Width": 100,
+                    "Height": 128,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Alpha": 180
+                  },
+                  {
+                    "Type": "Box",
+                    "Name": "box1_1_1",
+                    "X": 267,
+                    "Y": 48,
+                    "Width": 100,
+                    "Height": 128,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Alpha": 180
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textHour",
+                    "X": 136,
+                    "Y": 112,
+                    "Width": 50,
+                    "Height": 48,
+                    "TextId": "__SingleUse_FI0U",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textHourCaption",
+                    "X": 137,
+                    "Y": 72,
+                    "Width": 49,
+                    "Height": 24,
+                    "TextId": "__SingleUse_UTRY",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textMinuteCaption",
+                    "X": 283,
+                    "Y": 72,
+                    "Width": 68,
+                    "Height": 24,
+                    "TextId": "__SingleUse_ZGZA",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textMinute",
+                    "X": 292,
+                    "Y": 112,
+                    "Width": 50,
+                    "Height": 48,
+                    "TextId": "__SingleUse_AAS9",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "buttonHourUp",
+                    "X": 61,
+                    "Y": 84,
+                    "Width": 32,
+                    "Height": 19,
+                    "Pressed": "Up_arrow_pressed.png",
+                    "Released": "Up_arrow.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "buttonHourDown",
+                    "X": 61,
+                    "Y": 136,
+                    "Width": 32,
+                    "Height": 19,
+                    "Pressed": "Down_arrow_pressed.png",
+                    "Released": "Down_arrow.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "buttonMinuteDown",
+                    "X": 388,
+                    "Y": 136,
+                    "Width": 32,
+                    "Height": 19,
+                    "Pressed": "Down_arrow_pressed.png",
+                    "Released": "Down_arrow.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "buttonMinuteUp",
+                    "X": 388,
+                    "Y": 84,
+                    "Width": 32,
+                    "Height": 19,
+                    "Pressed": "Up_arrow_pressed.png",
+                    "Released": "Up_arrow.png"
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Name": "buttonStart",
+                    "X": 113,
+                    "Y": 183,
+                    "Width": 97,
+                    "Height": 60,
+                    "Pressed": "btn_round_pressed.png",
+                    "Released": "btn_round.png",
+                    "TextId": "__SingleUse_T6AO",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0"
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Name": "buttonStop",
+                    "X": 270,
+                    "Y": 183,
+                    "Width": 97,
+                    "Height": 60,
+                    "Pressed": "btn_round_pressed.png",
+                    "Released": "btn_round.png",
+                    "TextId": "__SingleUse_Z6K2",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0"
                   }
                 ]
               },
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page4",
+                "Name": "SchedulePage4",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
-                    "Type": "Image",
+                    "Type": "Box",
                     "Name": "background4",
                     "Width": 480,
-                    "Height": 272,
-                    "RelativeFilename": "manggom.png",
-                    "Alpha": 128
+                    "Height": 272
+                  },
+                  {
+                    "Type": "ScrollList",
+                    "Name": "scrollList1",
+                    "X": 203,
+                    "Y": 30,
+                    "Width": 210,
+                    "Height": 200,
+                    "ItemTemplateName": "CustomContainer1",
+                    "NumberofItems": 10,
+                    "Easing": "Back",
+                    "EasingOption": "Out",
+                    "SwipeAcceleration": 1.0,
+                    "DragAcceleration": 1.0
+                  },
+                  {
+                    "Type": "Box",
+                    "Name": "boxScheduleBack",
+                    "X": 43,
+                    "Y": 86,
+                    "Width": 116,
+                    "Height": 77,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textScheduleTime",
+                    "X": 53,
+                    "Y": 100,
+                    "Width": 48,
+                    "Height": 24,
+                    "TextId": "__SingleUse_UXV2",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textSchedule",
+                    "X": 53,
+                    "Y": 130,
+                    "Width": 62,
+                    "Height": 24,
+                    "TextId": "__SingleUse_1ZAU",
+                    "TextRotation": "0",
+                    "AutoSize": true
                   }
                 ]
               },
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page5",
+                "Name": "BusPage5",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
-                    "Type": "Image",
+                    "Type": "Box",
                     "Name": "background5",
                     "Width": 480,
-                    "Height": 272,
-                    "RelativeFilename": "manggom.png",
-                    "Alpha": 128
+                    "Height": 272
+                  },
+                  {
+                    "Type": "Circle",
+                    "Name": "circleFill1",
+                    "X": 81,
+                    "Y": 149,
+                    "Width": 80,
+                    "Height": 80,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "CenterX": 40.0,
+                    "CenterY": 40.0,
+                    "Radius": 25.0,
+                    "EndAngle": 360.0,
+                    "CapPrecision": "Butt"
+                  },
+                  {
+                    "Type": "Circle",
+                    "Name": "circleOutLine1",
+                    "X": 81,
+                    "Y": 149,
+                    "Width": 80,
+                    "Height": 80,
+                    "Color": {
+                      "Red": 106,
+                      "Green": 204,
+                      "Blue": 140
+                    },
+                    "CenterX": 40.0,
+                    "CenterY": 40.0,
+                    "Radius": 25.0,
+                    "LineWidth": 5.0,
+                    "EndAngle": 360.0,
+                    "CapPrecision": "Butt"
+                  },
+                  {
+                    "Type": "Line",
+                    "Name": "lineUp1",
+                    "X": 101,
+                    "Y": 186,
+                    "Width": 43,
+                    "Height": 47,
+                    "Color": {
+                      "Red": 106,
+                      "Green": 204,
+                      "Blue": 140
+                    },
+                    "StartX": 30.0,
+                    "StartY": 5.0,
+                    "EndX": 15.0,
+                    "EndY": 20.0,
+                    "LineWidth": 5.0,
+                    "LineEndingStyle": "Round"
+                  },
+                  {
+                    "Type": "Line",
+                    "Name": "lineDown1",
+                    "X": 111,
+                    "Y": 169,
+                    "Width": 50,
+                    "Height": 46,
+                    "Color": {
+                      "Red": 106,
+                      "Green": 204,
+                      "Blue": 140
+                    },
+                    "StartX": 5.0,
+                    "StartY": 5.0,
+                    "EndX": 20.0,
+                    "EndY": 20.0,
+                    "LineWidth": 5.0,
+                    "LineEndingStyle": "Round"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "bus1",
+                    "X": 89,
+                    "Y": 100,
+                    "Width": 64,
+                    "Height": 64,
+                    "RelativeFilename": "bus_64x64.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "bus2",
+                    "X": 206,
+                    "Y": 100,
+                    "Width": 64,
+                    "Height": 64,
+                    "RelativeFilename": "bus_64x64.png"
+                  },
+                  {
+                    "Type": "Circle",
+                    "Name": "circleFill2",
+                    "X": 198,
+                    "Y": 149,
+                    "Width": 80,
+                    "Height": 80,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "CenterX": 40.0,
+                    "CenterY": 40.0,
+                    "Radius": 25.0,
+                    "EndAngle": 360.0,
+                    "CapPrecision": "Butt"
+                  },
+                  {
+                    "Type": "Circle",
+                    "Name": "circleOutLine2",
+                    "X": 198,
+                    "Y": 149,
+                    "Width": 80,
+                    "Height": 80,
+                    "Color": {
+                      "Red": 106,
+                      "Green": 204,
+                      "Blue": 140
+                    },
+                    "CenterX": 40.0,
+                    "CenterY": 40.0,
+                    "Radius": 25.0,
+                    "LineWidth": 5.0,
+                    "EndAngle": 360.0,
+                    "CapPrecision": "Butt"
+                  },
+                  {
+                    "Type": "Line",
+                    "Name": "lineDown2",
+                    "X": 228,
+                    "Y": 169,
+                    "Width": 50,
+                    "Height": 46,
+                    "Color": {
+                      "Red": 106,
+                      "Green": 204,
+                      "Blue": 140
+                    },
+                    "StartX": 5.0,
+                    "StartY": 5.0,
+                    "EndX": 20.0,
+                    "EndY": 20.0,
+                    "LineWidth": 5.0,
+                    "LineEndingStyle": "Round"
+                  },
+                  {
+                    "Type": "Line",
+                    "Name": "lineUp2",
+                    "X": 218,
+                    "Y": 186,
+                    "Width": 43,
+                    "Height": 47,
+                    "Color": {
+                      "Red": 106,
+                      "Green": 204,
+                      "Blue": 140
+                    },
+                    "StartX": 30.0,
+                    "StartY": 5.0,
+                    "EndX": 15.0,
+                    "EndY": 20.0,
+                    "LineWidth": 5.0,
+                    "LineEndingStyle": "Round"
+                  },
+                  {
+                    "Type": "Circle",
+                    "Name": "circleFill3",
+                    "X": 318,
+                    "Y": 149,
+                    "Width": 80,
+                    "Height": 80,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "CenterX": 40.0,
+                    "CenterY": 40.0,
+                    "Radius": 25.0,
+                    "EndAngle": 360.0,
+                    "CapPrecision": "Butt"
+                  },
+                  {
+                    "Type": "Circle",
+                    "Name": "circleFill3_1",
+                    "X": 318,
+                    "Y": 148,
+                    "Width": 80,
+                    "Height": 80,
+                    "Color": {
+                      "Red": 106,
+                      "Green": 204,
+                      "Blue": 140
+                    },
+                    "CenterX": 40.0,
+                    "CenterY": 40.0,
+                    "Radius": 7.0,
+                    "EndAngle": 360.0,
+                    "CapPrecision": "Butt"
+                  },
+                  {
+                    "Type": "Circle",
+                    "Name": "circleOutLine3",
+                    "X": 318,
+                    "Y": 149,
+                    "Width": 80,
+                    "Height": 80,
+                    "Color": {
+                      "Red": 106,
+                      "Green": 204,
+                      "Blue": 140
+                    },
+                    "CenterX": 40.0,
+                    "CenterY": 40.0,
+                    "Radius": 25.0,
+                    "LineWidth": 5.0,
+                    "EndAngle": 360.0,
+                    "CapPrecision": "Butt"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "busTime1",
+                    "X": 90,
+                    "Y": 64,
+                    "Width": 63,
+                    "Height": 24,
+                    "TextId": "__SingleUse_05J5",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "busTime2",
+                    "X": 214,
+                    "Y": 64,
+                    "Width": 50,
+                    "Height": 24,
+                    "TextId": "__SingleUse_T14E",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
                   }
                 ]
               },
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page6",
+                "Name": "StockPage6",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
-                    "Type": "Image",
+                    "Type": "Box",
                     "Name": "background6",
                     "Width": 480,
-                    "Height": 272,
-                    "RelativeFilename": "manggom.png",
-                    "Alpha": 128
+                    "Height": 272
+                  },
+                  {
+                    "Type": "DynamicGraph",
+                    "Name": "dynamicGraph1",
+                    "X": -129,
+                    "Y": 67,
+                    "Width": 609,
+                    "Height": 206,
+                    "DataSeed": -891326662,
+                    "NumberOfValues": 100,
+                    "MaxY": 100.0,
+                    "Precision": "1",
+                    "UseCustomVisibleDataPointRange": true,
+                    "LastIndex": 50,
+                    "XAxisScale": 1.0,
+                    "InsertRandomValues": true,
+                    "GraphType": "GraphWrapClear",
+                    "GraphDrawers": [
+                      {
+                        "Type": "AreaDrawer",
+                        "FileNameImage": "",
+                        "Color": {
+                          "Red": 87,
+                          "Green": 181,
+                          "Blue": 107
+                        },
+                        "Alpha": 115
+                      },
+                      {
+                        "Type": "LineDrawer",
+                        "LineWidth": 3,
+                        "FileNameImage": "",
+                        "Color": {
+                          "Red": 87,
+                          "Green": 181,
+                          "Blue": 107
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textStock",
+                    "X": 20,
+                    "Y": 48,
+                    "Width": 100,
+                    "Height": 48,
+                    "TextId": "__SingleUse_A88N",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textStockValue",
+                    "X": 20,
+                    "Y": 96,
+                    "Width": 72,
+                    "Height": 24,
+                    "TextId": "__SingleUse_WA0J",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 240,
+                      "Green": 60,
+                      "Blue": 60
+                    },
+                    "AutoSize": true
                   }
                 ]
               }
@@ -637,22 +1367,112 @@
             "Name": "textBattery",
             "X": 432,
             "Width": 48,
-            "Height": 20,
-            "TextId": "__SingleUse_FGEO",
+            "Height": 24,
+            "TextId": "__SingleUse_6CI5",
             "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
             "AutoSize": true
           },
           {
             "Type": "TextArea",
             "Name": "textClock",
             "Width": 61,
-            "Height": 20,
-            "TextId": "__SingleUse_WA69",
+            "Height": 24,
+            "TextId": "__SingleUse_70FQ",
             "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
             "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonTheme",
+            "X": 383,
+            "Y": 215,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_DIQX",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonEyes",
+            "Y": 213,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_5M0W",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "changeToCustom",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonTheme"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "customTheme"
+            }
+          },
+          {
+            "InteractionName": "blink",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 180
+            },
+            "Action": {
+              "Type": "ActionPlay",
+              "ActionComponent": "videoBlink"
+            }
+          },
+          {
+            "InteractionName": "goToEyeDemo",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonEyes"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
       },
       {
         "Name": "customTheme",
@@ -1379,9 +2199,78 @@
             "TextId": "__SingleUse_92FF",
             "TextRotation": "0",
             "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonTheme",
+            "X": 383,
+            "Y": 213,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_49KS",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonEyes",
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "TextId": "__SingleUse_ASYU",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "changeToRobot",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonTheme"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "robotTheme"
+            }
+          },
+          {
+            "InteractionName": "goToEyeDemo",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonEyes"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [
@@ -1430,7 +2319,7 @@
       "Height": 272
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "customTheme",
+    "StartupScreenName": "robotTheme",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

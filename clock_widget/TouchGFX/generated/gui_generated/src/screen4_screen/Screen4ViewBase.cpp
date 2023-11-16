@@ -4,8 +4,8 @@
 #include <gui_generated/screen4_screen/Screen4ViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <videos/VideoDatabase.hpp>
-#include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <images/BitmapDatabase.hpp>
 
 Screen4ViewBase::Screen4ViewBase() :
     buttonCallback(this, &Screen4ViewBase::buttonCallbackHandler)
@@ -20,21 +20,27 @@ Screen4ViewBase::Screen4ViewBase() :
     videoConfused.play();
     add(videoConfused);
 
-    buttonPrev.setXY(12, 223);
-    buttonPrev.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID));
-    buttonPrev.setAction(buttonCallback);
-    add(buttonPrev);
-
-    buttonNext.setXY(431, 223);
-    buttonNext.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID));
-    buttonNext.setAction(buttonCallback);
-    add(buttonNext);
-
     textVideo.setXY(147, 0);
     textVideo.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textVideo.setLinespacing(0);
     textVideo.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S74C));
     add(textVideo);
+
+    buttonNext.setXY(383, 212);
+    buttonNext.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonNext.setLabelText(touchgfx::TypedText(T___SINGLEUSE_MF1T));
+    buttonNext.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonNext.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonNext.setAction(buttonCallback);
+    add(buttonNext);
+
+    buttonPrev.setXY(0, 212);
+    buttonPrev.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonPrev.setLabelText(touchgfx::TypedText(T___SINGLEUSE_102P));
+    buttonPrev.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonPrev.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonPrev.setAction(buttonCallback);
+    add(buttonPrev);
 }
 
 Screen4ViewBase::~Screen4ViewBase()
@@ -51,16 +57,16 @@ void Screen4ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
     if (&src == &buttonPrev)
     {
-        //Prev
+        //goToScreen3
         //When buttonPrev clicked change screen to Screen3
-        //Go to Screen3 with no screen transition
-        application().gotoScreen3ScreenNoTransition();
+        //Go to Screen3 with screen transition towards West
+        application().gotoScreen3ScreenSlideTransitionWest();
     }
     if (&src == &buttonNext)
     {
-        //Next
+        //goToScreen5
         //When buttonNext clicked change screen to Screen5
-        //Go to Screen5 with no screen transition
-        application().gotoScreen5ScreenNoTransition();
+        //Go to Screen5 with screen transition towards East
+        application().gotoScreen5ScreenSlideTransitionEast();
     }
 }

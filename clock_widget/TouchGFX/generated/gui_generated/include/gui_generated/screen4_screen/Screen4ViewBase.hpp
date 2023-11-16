@@ -9,8 +9,8 @@
 #include <gui/screen4_screen/Screen4Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/VideoWidget.hpp>
-#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class Screen4ViewBase : public touchgfx::View<Screen4Presenter>
 {
@@ -29,9 +29,9 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::VideoWidget videoConfused;
-    touchgfx::Button buttonPrev;
-    touchgfx::Button buttonNext;
     touchgfx::TextArea textVideo;
+    touchgfx::ButtonWithLabel buttonNext;
+    touchgfx::ButtonWithLabel buttonPrev;
 
 private:
 

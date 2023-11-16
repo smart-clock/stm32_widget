@@ -115,6 +115,8 @@ protected:
     touchgfx::TextArea textStockValue;
     touchgfx::TextArea textBattery;
     touchgfx::TextArea textClock;
+    touchgfx::ButtonWithLabel buttonTheme;
+    touchgfx::ButtonWithLabel buttonEyes;
 
 private:
 
@@ -128,11 +130,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<customThemeViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
+    touchgfx::Callback<customThemeViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

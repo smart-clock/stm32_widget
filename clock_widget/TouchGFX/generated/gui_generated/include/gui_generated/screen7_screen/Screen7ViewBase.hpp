@@ -9,8 +9,8 @@
 #include <gui/screen7_screen/Screen7Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/VideoWidget.hpp>
-#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class Screen7ViewBase : public touchgfx::View<Screen7Presenter>
 {
@@ -29,8 +29,8 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::VideoWidget videoSad;
-    touchgfx::Button buttonPrev;
     touchgfx::TextArea textVideo;
+    touchgfx::ButtonWithLabel buttonPrev;
 
 private:
 

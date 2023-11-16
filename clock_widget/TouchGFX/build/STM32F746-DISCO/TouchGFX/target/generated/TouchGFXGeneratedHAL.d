@@ -38,6 +38,9 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -52,11 +55,12 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
  TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp \
@@ -82,14 +86,9 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
- TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  TouchGFX/gui/include/gui/containers/CustomContainer1.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
@@ -111,6 +110,9 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
+ TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
+ TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp \
@@ -247,6 +249,12 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
+Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
+
 TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -275,15 +283,17 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:
 
@@ -335,21 +345,11 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
-TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
-
-TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 TouchGFX/gui/include/gui/containers/CustomContainer1.hpp:
 
@@ -392,6 +392,12 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndCle
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
+
+TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
+
+TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:
 

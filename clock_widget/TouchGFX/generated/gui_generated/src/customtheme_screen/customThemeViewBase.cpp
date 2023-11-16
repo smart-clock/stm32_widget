@@ -8,7 +8,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 customThemeViewBase::customThemeViewBase() :
-    updateItemCallback(this, &customThemeViewBase::updateItemCallbackHandler)
+    updateItemCallback(this, &customThemeViewBase::updateItemCallbackHandler),
+    buttonCallback(this, &customThemeViewBase::buttonCallbackHandler)
 {
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
     
@@ -474,6 +475,22 @@ customThemeViewBase::customThemeViewBase() :
     textClock.setLinespacing(0);
     textClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_92FF));
     add(textClock);
+
+    buttonTheme.setXY(383, 213);
+    buttonTheme.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonTheme.setLabelText(touchgfx::TypedText(T___SINGLEUSE_49KS));
+    buttonTheme.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonTheme.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonTheme.setAction(buttonCallback);
+    add(buttonTheme);
+
+    buttonEyes.setXY(0, 212);
+    buttonEyes.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonEyes.setLabelText(touchgfx::TypedText(T___SINGLEUSE_ASYU));
+    buttonEyes.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonEyes.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonEyes.setAction(buttonCallback);
+    add(buttonEyes);
 }
 
 customThemeViewBase::~customThemeViewBase()
@@ -487,6 +504,24 @@ void customThemeViewBase::setupScreen()
     for (int i = 0; i < scrollList1ListItems.getNumberOfDrawables(); i++)
     {
         scrollList1ListItems[i].initialize();
+    }
+}
+
+void customThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &buttonTheme)
+    {
+        //changeToRobot
+        //When buttonTheme clicked change screen to robotTheme
+        //Go to robotTheme with no screen transition
+        application().gotorobotThemeScreenNoTransition();
+    }
+    if (&src == &buttonEyes)
+    {
+        //goToEyeDemo
+        //When buttonEyes clicked change screen to Screen1
+        //Go to Screen1 with screen transition towards North
+        application().gotoScreen1ScreenSlideTransitionNorth();
     }
 }
 

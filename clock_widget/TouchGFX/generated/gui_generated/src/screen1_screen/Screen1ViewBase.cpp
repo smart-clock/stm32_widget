@@ -4,8 +4,8 @@
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <videos/VideoDatabase.hpp>
-#include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <images/BitmapDatabase.hpp>
 
 Screen1ViewBase::Screen1ViewBase() :
     buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
@@ -20,16 +20,27 @@ Screen1ViewBase::Screen1ViewBase() :
     videoBlink.play();
     add(videoBlink);
 
-    buttonNext.setXY(430, 226);
-    buttonNext.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID));
-    buttonNext.setAction(buttonCallback);
-    add(buttonNext);
-
     textVideo.setXY(191, 0);
     textVideo.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textVideo.setLinespacing(0);
     textVideo.setTypedText(touchgfx::TypedText(T___SINGLEUSE_MIYH));
     add(textVideo);
+
+    buttonClock.setXY(0, 213);
+    buttonClock.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonClock.setLabelText(touchgfx::TypedText(T___SINGLEUSE_QZZ1));
+    buttonClock.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonClock.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonClock.setAction(buttonCallback);
+    add(buttonClock);
+
+    buttonNext.setXY(383, 212);
+    buttonNext.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonNext.setLabelText(touchgfx::TypedText(T___SINGLEUSE_UAKL));
+    buttonNext.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonNext.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonNext.setAction(buttonCallback);
+    add(buttonNext);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -46,9 +57,16 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
     if (&src == &buttonNext)
     {
-        //Interaction1
+        //goToScreen2
         //When buttonNext clicked change screen to Screen2
-        //Go to Screen2 with no screen transition
-        application().gotoScreen2ScreenNoTransition();
+        //Go to Screen2 with screen transition towards East
+        application().gotoScreen2ScreenSlideTransitionEast();
+    }
+    if (&src == &buttonClock)
+    {
+        //goToRobotTheme
+        //When buttonClock clicked change screen to robotTheme
+        //Go to robotTheme with screen transition towards South
+        application().gotorobotThemeScreenSlideTransitionSouth();
     }
 }

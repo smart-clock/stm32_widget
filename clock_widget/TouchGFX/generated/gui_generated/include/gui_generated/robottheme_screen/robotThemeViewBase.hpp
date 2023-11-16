@@ -10,8 +10,18 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/containers/SwipeContainer.hpp>
 #include <touchgfx/containers/Container.hpp>
+#include <touchgfx/widgets/VideoWidget.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/containers/scrollers/ScrollList.hpp>
+#include <gui/containers/CustomContainer1.hpp>
+#include <touchgfx/widgets/canvas/Circle.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
+#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/GraphElements.hpp>
 
 class robotThemeViewBase : public touchgfx::View<robotThemePresenter>
 {
@@ -19,6 +29,12 @@ public:
     robotThemeViewBase();
     virtual ~robotThemeViewBase();
     virtual void setupScreen();
+
+    virtual void scrollList1UpdateItem(CustomContainer1& item, int16_t itemIndex)
+    {
+        // Override and implement this function in robotTheme
+    }
+    virtual void handleTickEvent();
 
 protected:
     FrontendApplication& application() {
@@ -29,25 +45,104 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
+    touchgfx::Box whiteBackground;
     touchgfx::SwipeContainer swipeContainer1;
-    touchgfx::Container swipeContainer1Page1;
-    touchgfx::Image background1;
-    touchgfx::TextArea textHomeClock;
-    touchgfx::TextArea textDate;
-    touchgfx::Container swipeContainer1Page2;
-    touchgfx::Image background2;
-    touchgfx::Container swipeContainer1Page3;
-    touchgfx::Image background3;
-    touchgfx::Container swipeContainer1Page4;
-    touchgfx::Image background4;
-    touchgfx::Container swipeContainer1Page5;
-    touchgfx::Image background5;
-    touchgfx::Container swipeContainer1Page6;
-    touchgfx::Image background6;
+    touchgfx::Container homePage1;
+    touchgfx::VideoWidget videoBlink;
+    touchgfx::Container whetherPage2;
+    touchgfx::Box background2;
+    touchgfx::Image imageRaining;
+    touchgfx::Box box1;
+    touchgfx::TextArea textDegree;
+    touchgfx::TextArea textWhether;
+    touchgfx::Container clockPage3;
+    touchgfx::Box background3;
+    touchgfx::Box box1_1;
+    touchgfx::Box box1_1_1;
+    touchgfx::TextArea textHour;
+    touchgfx::TextArea textHourCaption;
+    touchgfx::TextArea textMinuteCaption;
+    touchgfx::TextArea textMinute;
+    touchgfx::Button buttonHourUp;
+    touchgfx::Button buttonHourDown;
+    touchgfx::Button buttonMinuteDown;
+    touchgfx::Button buttonMinuteUp;
+    touchgfx::ButtonWithLabel buttonStart;
+    touchgfx::ButtonWithLabel buttonStop;
+    touchgfx::Container SchedulePage4;
+    touchgfx::Box background4;
+    touchgfx::ScrollList scrollList1;
+    touchgfx::DrawableListItems<CustomContainer1, 6> scrollList1ListItems;
+    touchgfx::Box boxScheduleBack;
+    touchgfx::TextArea textScheduleTime;
+    touchgfx::TextArea textSchedule;
+    touchgfx::Container BusPage5;
+    touchgfx::Box background5;
+    touchgfx::Circle circleFill1;
+    touchgfx::PainterRGB565 circleFill1Painter;
+    touchgfx::Circle circleOutLine1;
+    touchgfx::PainterRGB565 circleOutLine1Painter;
+    touchgfx::Line lineUp1;
+    touchgfx::PainterRGB565 lineUp1Painter;
+    touchgfx::Line lineDown1;
+    touchgfx::PainterRGB565 lineDown1Painter;
+    touchgfx::Image bus1;
+    touchgfx::Image bus2;
+    touchgfx::Circle circleFill2;
+    touchgfx::PainterRGB565 circleFill2Painter;
+    touchgfx::Circle circleOutLine2;
+    touchgfx::PainterRGB565 circleOutLine2Painter;
+    touchgfx::Line lineDown2;
+    touchgfx::PainterRGB565 lineDown2Painter;
+    touchgfx::Line lineUp2;
+    touchgfx::PainterRGB565 lineUp2Painter;
+    touchgfx::Circle circleFill3;
+    touchgfx::PainterRGB565 circleFill3Painter;
+    touchgfx::Circle circleFill3_1;
+    touchgfx::PainterRGB565 circleFill3_1Painter;
+    touchgfx::Circle circleOutLine3;
+    touchgfx::PainterRGB565 circleOutLine3Painter;
+    touchgfx::TextArea busTime1;
+    touchgfx::TextArea busTime2;
+    touchgfx::Container StockPage6;
+    touchgfx::Box background6;
+    touchgfx::GraphWrapAndClear<100> dynamicGraph1;
+    touchgfx::GraphElementLine dynamicGraph1Line1;
+    touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
+    touchgfx::GraphElementArea dynamicGraph1Area1;
+    touchgfx::PainterRGB565 dynamicGraph1Area1Painter;
+    touchgfx::TextArea textStock;
+    touchgfx::TextArea textStockValue;
     touchgfx::TextArea textBattery;
     touchgfx::TextArea textClock;
+    touchgfx::ButtonWithLabel buttonTheme;
+    touchgfx::ButtonWithLabel buttonEyes;
 
 private:
+
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint32_t CANVAS_BUFFER_SIZE = 7200;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<robotThemeViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
+    touchgfx::Callback<robotThemeViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+
+    /*
+     * Tick Counter Declarations
+     */
+    static const uint32_t TICK_BLINK_INTERVAL = 180;
+    uint32_t frameCountBlinkInterval;
 
 };
 

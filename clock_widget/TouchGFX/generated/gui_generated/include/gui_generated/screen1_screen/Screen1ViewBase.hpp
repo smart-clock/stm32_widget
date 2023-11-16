@@ -9,8 +9,8 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/VideoWidget.hpp>
-#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -29,8 +29,9 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::VideoWidget videoBlink;
-    touchgfx::Button buttonNext;
     touchgfx::TextArea textVideo;
+    touchgfx::ButtonWithLabel buttonClock;
+    touchgfx::ButtonWithLabel buttonNext;
 
 private:
 

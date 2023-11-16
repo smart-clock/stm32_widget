@@ -779,16 +779,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/SVGDatabase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_alternate_theme_images_widgets_button_icon_round_micro_fill_normal.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_round_micro_fill_normal.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/generated/image_alternate_theme_images_widgets_swipecontainer_medium_off_normal.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_swipecontainer_medium_off_normal.cpp</locationURI>

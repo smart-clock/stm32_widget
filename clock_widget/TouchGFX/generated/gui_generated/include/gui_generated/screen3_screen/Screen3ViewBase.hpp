@@ -9,8 +9,8 @@
 #include <gui/screen3_screen/Screen3Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/VideoWidget.hpp>
-#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class Screen3ViewBase : public touchgfx::View<Screen3Presenter>
 {
@@ -29,9 +29,9 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::VideoWidget videoBored;
-    touchgfx::Button buttonPrev;
-    touchgfx::Button buttonNext;
     touchgfx::TextArea textVideo;
+    touchgfx::ButtonWithLabel buttonPrev;
+    touchgfx::ButtonWithLabel buttonNext;
 
 private:
 

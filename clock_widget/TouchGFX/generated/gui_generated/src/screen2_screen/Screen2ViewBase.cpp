@@ -20,15 +20,21 @@ Screen2ViewBase::Screen2ViewBase() :
     videoAngry.play();
     add(videoAngry);
 
-    buttonPrev.setXY(12, 223);
-    buttonPrev.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID));
-    buttonPrev.setAction(buttonCallback);
-    add(buttonPrev);
-
-    buttonNext.setXY(431, 223);
-    buttonNext.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID));
+    buttonNext.setXY(383, 212);
+    buttonNext.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonNext.setLabelText(touchgfx::TypedText(T___SINGLEUSE_MX5Z));
+    buttonNext.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonNext.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     buttonNext.setAction(buttonCallback);
     add(buttonNext);
+
+    buttonPrev.setXY(0, 212);
+    buttonPrev.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonPrev.setLabelText(touchgfx::TypedText(T___SINGLEUSE_HZLU));
+    buttonPrev.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonPrev.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonPrev.setAction(buttonCallback);
+    add(buttonPrev);
 
     textVideo.setXY(181, 0);
     textVideo.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -51,16 +57,16 @@ void Screen2ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
     if (&src == &buttonPrev)
     {
-        //Interaction1
+        //goToScreen1
         //When buttonPrev clicked change screen to Screen1
-        //Go to Screen1 with no screen transition
-        application().gotoScreen1ScreenNoTransition();
+        //Go to Screen1 with screen transition towards West
+        application().gotoScreen1ScreenSlideTransitionWest();
     }
     if (&src == &buttonNext)
     {
-        //Interaction2
+        //goToScreen3
         //When buttonNext clicked change screen to Screen3
-        //Go to Screen3 with no screen transition
-        application().gotoScreen3ScreenNoTransition();
+        //Go to Screen3 with screen transition towards East
+        application().gotoScreen3ScreenSlideTransitionEast();
     }
 }
