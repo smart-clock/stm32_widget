@@ -1,5 +1,0 @@
-../../TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:28:13:customThemePresenter::~customThemePresenter()	1
-C:/TouchGFXProjects/smart_clock/smart_clock/TouchGFX/gui/src/customtheme_screen/customThemePresenter.cpp:10:6:virtual void customThemePresenter::activate()	1
-../../TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:28:13:virtual customThemePresenter::~customThemePresenter()	1
-../../TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:28:13:virtual void* customThemePresenter::_ZThn4_N20customThemePresenterD1Ev()	1
-C:/TouchGFXProjects/smart_clock/smart_clock/TouchGFX/gui/src/customtheme_screen/customThemePresenter.cpp:4:1:customThemePresenter::customThemePresenter(customThemeView&)	1
