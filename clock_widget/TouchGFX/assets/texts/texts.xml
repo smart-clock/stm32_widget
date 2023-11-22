@@ -6,6 +6,9 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_PQN4" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_3EUR" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Prev</Translation>
       </Text>
@@ -48,13 +51,7 @@
       <Text Id="__SingleUse_QZZ1" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Clock</Translation>
       </Text>
-      <Text Id="__SingleUse_5M0W" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Eyes</Translation>
-      </Text>
       <Text Id="__SingleUse_49KS" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Theme</Translation>
-      </Text>
-      <Text Id="__SingleUse_DIQX" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Theme</Translation>
       </Text>
       <Text Id="__SingleUse_70FQ" Alignment="Left" TypographyId="Default">
@@ -80,24 +77,6 @@
       </Text>
       <Text Id="__SingleUse_UXV2" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">8:00</Translation>
-      </Text>
-      <Text Id="__SingleUse_Z6K2" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Stop</Translation>
-      </Text>
-      <Text Id="__SingleUse_T6AO" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Start</Translation>
-      </Text>
-      <Text Id="__SingleUse_AAS9" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">00</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZGZA" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Minute</Translation>
-      </Text>
-      <Text Id="__SingleUse_UTRY" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Hour</Translation>
-      </Text>
-      <Text Id="__SingleUse_FI0U" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_CW4O" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Heavy Rain</Translation>
@@ -187,7 +166,7 @@
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>

@@ -75,69 +75,28 @@ robotThemeViewBase::robotThemeViewBase() :
     background3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     clockPage3.add(background3);
 
-    box1_1.setPosition(111, 48, 100, 128);
-    box1_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    box1_1.setAlpha(180);
-    clockPage3.add(box1_1);
+    digitalClock.setPosition(140, 75, 200, 50);
+    digitalClock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    digitalClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PQN4));
+    digitalClock.displayLeadingZeroForHourIndicator(true);
+    digitalClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
+    digitalClock.setTime24Hour(0, 0, 0);
+    clockPage3.add(digitalClock);
 
-    box1_1_1.setPosition(267, 48, 100, 128);
-    box1_1_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    box1_1_1.setAlpha(180);
-    clockPage3.add(box1_1_1);
+    buttonReset.setXY(288, 145);
+    buttonReset.setBitmaps(touchgfx::Bitmap(BITMAP_RESET_RELEASED_64X64_ID), touchgfx::Bitmap(BITMAP_RESET_PRESSED_64X64_ID));
+    buttonReset.setAction(buttonCallback);
+    clockPage3.add(buttonReset);
 
-    textHour.setXY(136, 112);
-    textHour.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textHour.setLinespacing(0);
-    textHour.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FI0U));
-    clockPage3.add(textHour);
-
-    textHourCaption.setXY(137, 72);
-    textHourCaption.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textHourCaption.setLinespacing(0);
-    textHourCaption.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UTRY));
-    clockPage3.add(textHourCaption);
-
-    textMinuteCaption.setXY(283, 72);
-    textMinuteCaption.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textMinuteCaption.setLinespacing(0);
-    textMinuteCaption.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZGZA));
-    clockPage3.add(textMinuteCaption);
-
-    textMinute.setXY(292, 112);
-    textMinute.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textMinute.setLinespacing(0);
-    textMinute.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AAS9));
-    clockPage3.add(textMinute);
-
-    buttonHourUp.setXY(61, 84);
-    buttonHourUp.setBitmaps(touchgfx::Bitmap(BITMAP_UP_ARROW_ID), touchgfx::Bitmap(BITMAP_UP_ARROW_PRESSED_ID));
-    clockPage3.add(buttonHourUp);
-
-    buttonHourDown.setXY(61, 136);
-    buttonHourDown.setBitmaps(touchgfx::Bitmap(BITMAP_DOWN_ARROW_ID), touchgfx::Bitmap(BITMAP_DOWN_ARROW_PRESSED_ID));
-    clockPage3.add(buttonHourDown);
-
-    buttonMinuteDown.setXY(388, 136);
-    buttonMinuteDown.setBitmaps(touchgfx::Bitmap(BITMAP_DOWN_ARROW_ID), touchgfx::Bitmap(BITMAP_DOWN_ARROW_PRESSED_ID));
-    clockPage3.add(buttonMinuteDown);
-
-    buttonMinuteUp.setXY(388, 84);
-    buttonMinuteUp.setBitmaps(touchgfx::Bitmap(BITMAP_UP_ARROW_ID), touchgfx::Bitmap(BITMAP_UP_ARROW_PRESSED_ID));
-    clockPage3.add(buttonMinuteUp);
-
-    buttonStart.setXY(113, 183);
-    buttonStart.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
-    buttonStart.setLabelText(touchgfx::TypedText(T___SINGLEUSE_T6AO));
-    buttonStart.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonStart.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    clockPage3.add(buttonStart);
-
-    buttonStop.setXY(270, 183);
-    buttonStop.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
-    buttonStop.setLabelText(touchgfx::TypedText(T___SINGLEUSE_Z6K2));
-    buttonStop.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonStop.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    buttonStop.setXY(208, 145);
+    buttonStop.setBitmaps(touchgfx::Bitmap(BITMAP_STOP_RELEASED_64X64_ID), touchgfx::Bitmap(BITMAP_STOP_PRESSED_64X64_ID));
+    buttonStop.setAction(buttonCallback);
     clockPage3.add(buttonStop);
+
+    buttonPlay.setXY(128, 145);
+    buttonPlay.setBitmaps(touchgfx::Bitmap(BITMAP_PLAY_RELEASED_64X64_ID), touchgfx::Bitmap(BITMAP_PLAY_PRESSED_64X64_ID));
+    buttonPlay.setAction(buttonCallback);
+    clockPage3.add(buttonPlay);
 
     swipeContainer1.add(clockPage3);
 
@@ -448,7 +407,7 @@ robotThemeViewBase::robotThemeViewBase() :
 
     swipeContainer1.add(StockPage6);
 
-    swipeContainer1.setSelectedPage(0);
+    swipeContainer1.setSelectedPage(2);
     add(swipeContainer1);
 
     textBattery.setXY(432, 0);
@@ -462,22 +421,6 @@ robotThemeViewBase::robotThemeViewBase() :
     textClock.setLinespacing(0);
     textClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_70FQ));
     add(textClock);
-
-    buttonTheme.setXY(383, 215);
-    buttonTheme.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
-    buttonTheme.setLabelText(touchgfx::TypedText(T___SINGLEUSE_DIQX));
-    buttonTheme.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonTheme.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonTheme.setAction(buttonCallback);
-    add(buttonTheme);
-
-    buttonEyes.setXY(0, 213);
-    buttonEyes.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
-    buttonEyes.setLabelText(touchgfx::TypedText(T___SINGLEUSE_5M0W));
-    buttonEyes.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonEyes.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonEyes.setAction(buttonCallback);
-    add(buttonEyes);
 }
 
 robotThemeViewBase::~robotThemeViewBase()
@@ -496,19 +439,26 @@ void robotThemeViewBase::setupScreen()
 
 void robotThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &buttonTheme)
+    if (&src == &buttonPlay)
     {
-        //changeToCustom
-        //When buttonTheme clicked change screen to customTheme
-        //Go to customTheme with no screen transition
-        application().gotocustomThemeScreenNoTransition();
+        //stopWatchPlay
+        //When buttonPlay clicked call virtual function
+        //Call buttonPlayClicked
+        buttonPlayClicked();
     }
-    if (&src == &buttonEyes)
+    if (&src == &buttonStop)
     {
-        //goToEyeDemo
-        //When buttonEyes clicked change screen to Screen1
-        //Go to Screen1 with screen transition towards North
-        application().gotoScreen1ScreenSlideTransitionNorth();
+        //stopWatchStop
+        //When buttonStop clicked call virtual function
+        //Call buttonStopClicked
+        buttonStopClicked();
+    }
+    if (&src == &buttonReset)
+    {
+        //stopWatchReset
+        //When buttonReset clicked call virtual function
+        //Call buttonResetClicked
+        buttonResetClicked();
     }
 }
 

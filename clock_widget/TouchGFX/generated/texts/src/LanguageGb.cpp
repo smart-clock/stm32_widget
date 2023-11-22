@@ -10,6 +10,7 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
+    168, // T___SINGLEUSE_PQN4: "<>"
     146, // T___SINGLEUSE_3EUR: "Prev"
     141, // T___SINGLEUSE_5X4S: "Next"
     146, // T___SINGLEUSE_QAZQ: "Prev"
@@ -24,9 +25,7 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     141, // T___SINGLEUSE_UAKL: "Next"
     131, // T___SINGLEUSE_ASYU: "Eyes"
     86,  // T___SINGLEUSE_QZZ1: "Clock"
-    131, // T___SINGLEUSE_5M0W: "Eyes"
     110, // T___SINGLEUSE_49KS: "Theme"
-    110, // T___SINGLEUSE_DIQX: "Theme"
     56,  // T___SINGLEUSE_70FQ: "14:20"
     160, // T___SINGLEUSE_6CI5: "78%"
     42,  // T___SINGLEUSE_WA0J: "188.01"
@@ -35,12 +34,6 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     62,  // T___SINGLEUSE_05J5: "20min"
     5,   // T___SINGLEUSE_1ZAU: "school"
     121, // T___SINGLEUSE_UXV2: "8:00"
-    151, // T___SINGLEUSE_Z6K2: "Stop"
-    104, // T___SINGLEUSE_T6AO: "Start"
-    123, // T___SINGLEUSE_AAS9: "00"
-    49,  // T___SINGLEUSE_ZGZA: "Minute"
-    136, // T___SINGLEUSE_UTRY: "Hour"
-    123, // T___SINGLEUSE_FI0U: "00"
     12,  // T___SINGLEUSE_CW4O: "Heavy Rain"
     156, // T___SINGLEUSE_EI1R: "26C"
     42,  // T___SINGLEUSE_O6L1: "188.01"

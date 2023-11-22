@@ -1,0 +1,5 @@
+Z:/Github/stm32_widget/clock_widget/Core/Src/main.c:684:6:StartDefaultTask	8	static
+Z:/Github/stm32_widget/clock_widget/Core/Src/main.c:231:6:SystemClock_Config	88	static
+Z:/Github/stm32_widget/clock_widget/Core/Src/main.c:128:5:main	120	static,ignoring_inline_asm
+Z:/Github/stm32_widget/clock_widget/Core/Src/main.c:740:6:HAL_TIM_PeriodElapsedCallback	0	static
+Z:/Github/stm32_widget/clock_widget/Core/Src/main.c:757:6:Error_Handler	0	static

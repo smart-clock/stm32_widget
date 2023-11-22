@@ -13,8 +13,8 @@
 #include <touchgfx/widgets/VideoWidget.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/Button.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
 #include <gui/containers/CustomContainer1.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
@@ -35,6 +35,22 @@ public:
         // Override and implement this function in robotTheme
     }
     virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void buttonPlayClicked()
+    {
+        // Override and implement this function in robotTheme
+    }
+    virtual void buttonStopClicked()
+    {
+        // Override and implement this function in robotTheme
+    }
+    virtual void buttonResetClicked()
+    {
+        // Override and implement this function in robotTheme
+    }
 
 protected:
     FrontendApplication& application() {
@@ -57,18 +73,10 @@ protected:
     touchgfx::TextArea textWhether;
     touchgfx::Container clockPage3;
     touchgfx::Box background3;
-    touchgfx::Box box1_1;
-    touchgfx::Box box1_1_1;
-    touchgfx::TextArea textHour;
-    touchgfx::TextArea textHourCaption;
-    touchgfx::TextArea textMinuteCaption;
-    touchgfx::TextArea textMinute;
-    touchgfx::Button buttonHourUp;
-    touchgfx::Button buttonHourDown;
-    touchgfx::Button buttonMinuteDown;
-    touchgfx::Button buttonMinuteUp;
-    touchgfx::ButtonWithLabel buttonStart;
-    touchgfx::ButtonWithLabel buttonStop;
+    touchgfx::DigitalClock digitalClock;
+    touchgfx::Button buttonReset;
+    touchgfx::Button buttonStop;
+    touchgfx::Button buttonPlay;
     touchgfx::Container SchedulePage4;
     touchgfx::Box background4;
     touchgfx::ScrollList scrollList1;
@@ -115,8 +123,6 @@ protected:
     touchgfx::TextArea textStockValue;
     touchgfx::TextArea textBattery;
     touchgfx::TextArea textClock;
-    touchgfx::ButtonWithLabel buttonTheme;
-    touchgfx::ButtonWithLabel buttonEyes;
 
 private:
 

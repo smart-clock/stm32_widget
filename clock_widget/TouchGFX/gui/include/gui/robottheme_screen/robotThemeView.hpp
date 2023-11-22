@@ -11,7 +11,19 @@ public:
     virtual ~robotThemeView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+
+    virtual void handleTickEvent();
+    
+    virtual void buttonPlayClicked();
+    virtual void buttonStopClicked();
+    virtual void buttonResetClicked();
 protected:
+    int tickCounter;
+    int stopWatchHours;
+    int stopWatchMinutes;
+    int stopWatchSeconds;
+
+    bool isStopWatchPlay = false;
 };
 
 #endif // ROBOTTHEMEVIEW_HPP

@@ -36,17 +36,23 @@ const uint16_t BITMAP_MAP_32_ID = 26;
 const uint16_t BITMAP_MAP_48_ID = 27;
 const uint16_t BITMAP_PLAY_32_ID = 28;
 const uint16_t BITMAP_PLAY_48_ID = 29;
-const uint16_t BITMAP_POWER_32_ID = 30;
-const uint16_t BITMAP_POWER_48_ID = 31;
-const uint16_t BITMAP_RAIN_128X128_ID = 32;
-const uint16_t BITMAP_SETTINGS_32_ID = 33;
-const uint16_t BITMAP_SETTINGS_48_ID = 34;
-const uint16_t BITMAP_TOOLS_32_ID = 35;
-const uint16_t BITMAP_TOOLS_48_ID = 36;
-const uint16_t BITMAP_UP_ARROW_ID = 37;
-const uint16_t BITMAP_UP_ARROW_PRESSED_ID = 38;
-const uint16_t BITMAP_USER_32_ID = 39;
-const uint16_t BITMAP_USER_48_ID = 40;
+const uint16_t BITMAP_PLAY_PRESSED_64X64_ID = 30;
+const uint16_t BITMAP_PLAY_RELEASED_64X64_ID = 31;
+const uint16_t BITMAP_POWER_32_ID = 32;
+const uint16_t BITMAP_POWER_48_ID = 33;
+const uint16_t BITMAP_RAIN_128X128_ID = 34;
+const uint16_t BITMAP_RESET_PRESSED_64X64_ID = 35;
+const uint16_t BITMAP_RESET_RELEASED_64X64_ID = 36;
+const uint16_t BITMAP_SETTINGS_32_ID = 37;
+const uint16_t BITMAP_SETTINGS_48_ID = 38;
+const uint16_t BITMAP_STOP_PRESSED_64X64_ID = 39;
+const uint16_t BITMAP_STOP_RELEASED_64X64_ID = 40;
+const uint16_t BITMAP_TOOLS_32_ID = 41;
+const uint16_t BITMAP_TOOLS_48_ID = 42;
+const uint16_t BITMAP_UP_ARROW_ID = 43;
+const uint16_t BITMAP_UP_ARROW_PRESSED_ID = 44;
+const uint16_t BITMAP_USER_32_ID = 45;
+const uint16_t BITMAP_USER_48_ID = 46;
 
 namespace BitmapDatabase
 {

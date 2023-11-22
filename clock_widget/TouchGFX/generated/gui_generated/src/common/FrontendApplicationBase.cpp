@@ -226,16 +226,3 @@ void FrontendApplicationBase::gotorobotThemeScreenSlideTransitionSouthImpl()
 {
     touchgfx::makeTransition<robotThemeView, robotThemePresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
-
-// customTheme
-
-void FrontendApplicationBase::gotocustomThemeScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotocustomThemeScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotocustomThemeScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<customThemeView, customThemePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}

@@ -829,9 +829,39 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_manggom.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_play_pressed_64x64.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_play_pressed_64x64.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_play_released_64x64.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_play_released_64x64.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_rain_128X128.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_rain_128X128.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_reset_pressed_64x64.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_reset_pressed_64x64.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_reset_released_64x64.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_reset_released_64x64.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_stop_pressed_64x64.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_stop_pressed_64x64.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_stop_released_64x64.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_stop_released_64x64.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Blue_Backgrounds_Main_bg_texture_480x272px.cpp</name>

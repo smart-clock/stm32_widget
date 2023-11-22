@@ -18,7 +18,7 @@
             "Name": "textVideo",
             "X": 191,
             "Width": 98,
-            "Height": 48,
+            "Height": 49,
             "TextId": "__SingleUse_MIYH",
             "TextRotation": "0",
             "Color": {
@@ -695,7 +695,7 @@
             "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "homePage1",
+            "SelectedPage": "clockPage3",
             "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
             "Components": [
               {
@@ -786,160 +786,50 @@
                     "Height": 272
                   },
                   {
-                    "Type": "Box",
-                    "Name": "box1_1",
-                    "X": 111,
-                    "Y": 48,
-                    "Width": 100,
-                    "Height": 128,
-                    "Color": {
+                    "Type": "DigitalClock",
+                    "Name": "digitalClock",
+                    "X": 140,
+                    "Y": 75,
+                    "Width": 200,
+                    "Height": 50,
+                    "TextColor": {
                       "Red": 255,
                       "Green": 255,
                       "Blue": 255
                     },
-                    "Alpha": 180
-                  },
-                  {
-                    "Type": "Box",
-                    "Name": "box1_1_1",
-                    "X": 267,
-                    "Y": 48,
-                    "Width": 100,
-                    "Height": 128,
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "Alpha": 180
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textHour",
-                    "X": 136,
-                    "Y": 112,
-                    "Width": 50,
-                    "Height": 48,
-                    "TextId": "__SingleUse_FI0U",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textHourCaption",
-                    "X": 137,
-                    "Y": 72,
-                    "Width": 49,
-                    "Height": 24,
-                    "TextId": "__SingleUse_UTRY",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textMinuteCaption",
-                    "X": 283,
-                    "Y": 72,
-                    "Width": 68,
-                    "Height": 24,
-                    "TextId": "__SingleUse_ZGZA",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textMinute",
-                    "X": 292,
-                    "Y": 112,
-                    "Width": 50,
-                    "Height": 48,
-                    "TextId": "__SingleUse_AAS9",
-                    "TextRotation": "0",
-                    "AutoSize": true
+                    "TextId": "__SingleUse_PQN4",
+                    "DisplaySeconds": true,
+                    "DisplayLeadingZeroForHourIndicator": true
                   },
                   {
                     "Type": "Button",
-                    "Name": "buttonHourUp",
-                    "X": 61,
-                    "Y": 84,
-                    "Width": 32,
-                    "Height": 19,
-                    "Pressed": "Up_arrow_pressed.png",
-                    "Released": "Up_arrow.png"
+                    "Name": "buttonReset",
+                    "X": 288,
+                    "Y": 145,
+                    "Width": 64,
+                    "Height": 64,
+                    "Pressed": "reset_pressed_64x64.png",
+                    "Released": "reset_released_64x64.png"
                   },
                   {
                     "Type": "Button",
-                    "Name": "buttonHourDown",
-                    "X": 61,
-                    "Y": 136,
-                    "Width": 32,
-                    "Height": 19,
-                    "Pressed": "Down_arrow_pressed.png",
-                    "Released": "Down_arrow.png"
-                  },
-                  {
-                    "Type": "Button",
-                    "Name": "buttonMinuteDown",
-                    "X": 388,
-                    "Y": 136,
-                    "Width": 32,
-                    "Height": 19,
-                    "Pressed": "Down_arrow_pressed.png",
-                    "Released": "Down_arrow.png"
-                  },
-                  {
-                    "Type": "Button",
-                    "Name": "buttonMinuteUp",
-                    "X": 388,
-                    "Y": 84,
-                    "Width": 32,
-                    "Height": 19,
-                    "Pressed": "Up_arrow_pressed.png",
-                    "Released": "Up_arrow.png"
-                  },
-                  {
-                    "Type": "ButtonWithLabel",
-                    "Name": "buttonStart",
-                    "X": 113,
-                    "Y": 183,
-                    "Width": 97,
-                    "Height": 60,
-                    "Pressed": "btn_round_pressed.png",
-                    "Released": "btn_round.png",
-                    "TextId": "__SingleUse_T6AO",
-                    "ReleasedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "PressedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "TextRotation": "0"
-                  },
-                  {
-                    "Type": "ButtonWithLabel",
                     "Name": "buttonStop",
-                    "X": 270,
-                    "Y": 183,
-                    "Width": 97,
-                    "Height": 60,
-                    "Pressed": "btn_round_pressed.png",
-                    "Released": "btn_round.png",
-                    "TextId": "__SingleUse_Z6K2",
-                    "ReleasedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "PressedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "TextRotation": "0"
+                    "X": 208,
+                    "Y": 145,
+                    "Width": 64,
+                    "Height": 64,
+                    "Pressed": "stop_pressed_64x64.png",
+                    "Released": "stop_released_64x64.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "buttonPlay",
+                    "X": 128,
+                    "Y": 145,
+                    "Width": 64,
+                    "Height": 64,
+                    "Pressed": "play_pressed_64x64.png",
+                    "Released": "play_released_64x64.png"
                   }
                 ]
               },
@@ -1390,64 +1280,9 @@
               "Blue": 255
             },
             "AutoSize": true
-          },
-          {
-            "Type": "ButtonWithLabel",
-            "Name": "buttonTheme",
-            "X": 383,
-            "Y": 215,
-            "Width": 97,
-            "Height": 60,
-            "Pressed": "btn_round_pressed.png",
-            "Released": "btn_round.png",
-            "TextId": "__SingleUse_DIQX",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0"
-          },
-          {
-            "Type": "ButtonWithLabel",
-            "Name": "buttonEyes",
-            "Y": 213,
-            "Width": 97,
-            "Height": 60,
-            "Pressed": "btn_round_pressed.png",
-            "Released": "btn_round.png",
-            "TextId": "__SingleUse_5M0W",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0"
           }
         ],
         "Interactions": [
-          {
-            "InteractionName": "changeToCustom",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonTheme"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "customTheme"
-            }
-          },
           {
             "InteractionName": "blink",
             "Trigger": {
@@ -1460,16 +1295,36 @@
             }
           },
           {
-            "InteractionName": "goToEyeDemo",
+            "InteractionName": "stopWatchPlay",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "buttonEyes"
+              "TriggerComponent": "buttonPlay"
             },
             "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionSlide",
-              "ScreenTransitionDirection": "North",
-              "ActionComponent": "Screen1"
+              "Type": "ActionCustom",
+              "FunctionName": "buttonPlayClicked"
+            }
+          },
+          {
+            "InteractionName": "stopWatchStop",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonStop"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonStopClicked"
+            }
+          },
+          {
+            "InteractionName": "stopWatchReset",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonReset"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonResetClicked"
             }
           }
         ]
@@ -1503,7 +1358,7 @@
             "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "homePage1",
+            "SelectedPage": "clockPage3",
             "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
             "Components": [
               {
@@ -1525,7 +1380,7 @@
                     "X": 180,
                     "Y": 100,
                     "Width": 118,
-                    "Height": 48,
+                    "Height": 49,
                     "TextId": "__SingleUse_U1E6",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -1586,7 +1441,7 @@
                     "X": 253,
                     "Y": 88,
                     "Width": 78,
-                    "Height": 48,
+                    "Height": 49,
                     "TextId": "__SingleUse_PGHS",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -1652,7 +1507,7 @@
                     "X": 136,
                     "Y": 112,
                     "Width": 50,
-                    "Height": 48,
+                    "Height": 49,
                     "TextId": "__SingleUse_DC0X",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -1685,7 +1540,7 @@
                     "X": 292,
                     "Y": 112,
                     "Width": 50,
-                    "Height": 48,
+                    "Height": 49,
                     "TextId": "__SingleUse_M5S3",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -2161,7 +2016,7 @@
                     "X": 20,
                     "Y": 48,
                     "Width": 100,
-                    "Height": 48,
+                    "Height": 49,
                     "TextId": "__SingleUse_L5RK",
                     "TextRotation": "0",
                     "AutoSize": true

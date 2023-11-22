@@ -58,9 +58,6 @@ public:
 
     void gotorobotThemeScreenSlideTransitionSouth();
 
-    // customTheme
-    void gotocustomThemeScreenNoTransition();
-
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -103,9 +100,6 @@ protected:
     void gotorobotThemeScreenNoTransitionImpl();
 
     void gotorobotThemeScreenSlideTransitionSouthImpl();
-
-    // customTheme
-    void gotocustomThemeScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

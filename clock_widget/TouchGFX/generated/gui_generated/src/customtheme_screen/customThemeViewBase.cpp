@@ -461,7 +461,7 @@ customThemeViewBase::customThemeViewBase() :
 
     swipeContainer1.add(StockPage6);
 
-    swipeContainer1.setSelectedPage(0);
+    swipeContainer1.setSelectedPage(2);
     add(swipeContainer1);
 
     textBattery.setXY(432, 0);
