@@ -1,0 +1,10 @@
+clock_widget/TouchGFX/build/bin/
+clock_widget/TouchGFX/build/MINGW32_NT-6.2/
+clock_widget/TouchGFX/build/STM32F746-DISCO
+
+clock_widget/TouchGFX/generated/
+clock_widget/TouchGFX/generated/gui_generated/
+clock_widget/TouchGFX/generated/images/
+clock_widget/TouchGFX/generated/texts
+
+clock_widget/STM32CubeIDE/
