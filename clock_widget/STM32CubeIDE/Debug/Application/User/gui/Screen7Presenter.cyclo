@@ -1,5 +1,0 @@
-../../TouchGFX/gui/include/gui/screen7_screen/Screen7Presenter.hpp:28:13:Screen7Presenter::~Screen7Presenter()	1
-Z:/Github/stm32_widget/clock_widget/TouchGFX/gui/src/screen7_screen/Screen7Presenter.cpp:10:6:virtual void Screen7Presenter::activate()	1
-../../TouchGFX/gui/include/gui/screen7_screen/Screen7Presenter.hpp:28:13:virtual Screen7Presenter::~Screen7Presenter()	1
-../../TouchGFX/gui/include/gui/screen7_screen/Screen7Presenter.hpp:28:13:virtual void* Screen7Presenter::_ZThn4_N16Screen7PresenterD1Ev()	1
-Z:/Github/stm32_widget/clock_widget/TouchGFX/gui/src/screen7_screen/Screen7Presenter.cpp:4:1:Screen7Presenter::Screen7Presenter(Screen7View&)	1

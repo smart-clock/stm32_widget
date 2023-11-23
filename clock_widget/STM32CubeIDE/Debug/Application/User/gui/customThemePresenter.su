@@ -1,5 +1,0 @@
-../../TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:28:13:customThemePresenter::~customThemePresenter()	0	static
-Z:/Github/stm32_widget/clock_widget/TouchGFX/gui/src/customtheme_screen/customThemePresenter.cpp:10:6:virtual void customThemePresenter::activate()	0	static
-../../TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:28:13:virtual customThemePresenter::~customThemePresenter()	8	static
-../../TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:28:13:virtual void* customThemePresenter::_ZThn4_N20customThemePresenterD1Ev()	0	static
-Z:/Github/stm32_widget/clock_widget/TouchGFX/gui/src/customtheme_screen/customThemePresenter.cpp:4:1:customThemePresenter::customThemePresenter(customThemeView&)	8	static
