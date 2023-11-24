@@ -142,8 +142,8 @@ robotThemeViewBase::robotThemeViewBase() :
     gaugeTimer.getArc().setCapPrecision(180);
     timerPage4.add(gaugeTimer);
 
-    textTimer.setXY(210, 136);
-    textTimer.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textTimer.setXY(320, 30);
+    textTimer.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textTimer.setLinespacing(0);
     touchgfx::Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_T1W6).getText());
     textTimer.setWildcard1(textTimerBuffer1);

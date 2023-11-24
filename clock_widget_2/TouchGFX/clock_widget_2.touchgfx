@@ -251,12 +251,17 @@
                   {
                     "Type": "TextArea",
                     "Name": "textTimer",
-                    "X": 210,
-                    "Y": 136,
+                    "X": 320,
+                    "Y": 30,
                     "Width": 61,
                     "Height": 24,
                     "TextId": "__SingleUse_S02A",
                     "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
                     "AutoSize": true,
                     "Wildcard1": {
                       "TextId": "__SingleUse_T1W6",

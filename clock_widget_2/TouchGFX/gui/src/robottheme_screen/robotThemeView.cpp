@@ -11,6 +11,8 @@ robotThemeView::robotThemeView() :
 
     this->timerMax = false;
     this->timerMin = false;
+
+    this->timerStart = false;
 }
 
 void robotThemeView::setupScreen()
@@ -61,13 +63,37 @@ void robotThemeView::handleTickEvent()
             }
         }
     }
-    else
-    {
 
+    if(timerStart)
+    {
+        tickCounter++;
+        if(tickCounter % 60 == 0)
+        {
+            if(timerMinute > 0 && timerSecond == 0)
+            {
+                timerMinute--;
+                timerSecond = 59;
+            }
+            else if(timerMinute == 0)
+            {
+                timerStart = false;
+            }
+            else
+            {
+                timerSecond--;
+            }
+        }
     }
 
     // Update the clock
     digitalClock.setTime24Hour(stopWatchHours, stopWatchMinutes, stopWatchSeconds);
+
+    // Update timer
+    Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
+    textTimer.invalidate();
+    Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%02d", timerSecond);
+    textTimer.invalidate();
+    gaugeTimer.setValue(timerMinute*6);
 }
 
 void robotThemeView::buttonPlayClicked()
@@ -90,13 +116,11 @@ void robotThemeView::buttonResetClicked()
 
 void robotThemeView::buttonTimerMaxClicked()
 {
-    if(timerMinute != 60)
-    {
-        gaugeTimer.setValue(360);
-        Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", 60);
-        textTimer.invalidate();
-        timerMinute = 60;
-    }
+    gaugeTimer.setValue(360);
+    Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", 60);
+    textTimer.invalidate();
+    timerMinute = 60;
+    timerSecond = 0;
 }
 
 void robotThemeView::bottonTimerMinClicked()
@@ -104,6 +128,8 @@ void robotThemeView::bottonTimerMinClicked()
     gaugeTimer.setValue(0);
     Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", 0);
     textTimer.invalidate();
+    timerMinute = 0;
+    timerSecond = 0;
 }
 
 void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
@@ -119,6 +145,7 @@ void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
             timerMinuteDrag = false;
             timerMax = false;
             timerMin = false;
+            timerStart = true;
         }
     }
 }
@@ -143,13 +170,8 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
 
         if(timerMax)
         {
-            if(timerMinute != 60)
-            {
-                Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", 60);
-                textTimer.invalidate();
-                gaugeTimer.setValue(360);
-                timerMinute = 60;
-            }
+            gaugeTimer.setValue(360);
+            timerMinute = 60;
         }
         else if(timerMin)
         {
@@ -162,11 +184,12 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
             timerMinute = curAngleOfTimer/6;
         }
 
-        if(timerMinute != 60)
-        {
-            Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
-            textTimer.invalidate();
-        }
+        Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
+        textTimer.invalidate();
+
+        timerSecond = 0;
+        Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%02d", timerSecond);
+        textTimer.invalidate();
 
         prevAngleOfTimer = curAngleOfTimer;
     }
