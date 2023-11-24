@@ -54,6 +54,14 @@ public:
     {
         // Override and implement this function in robotTheme
     }
+    virtual void buttonTimerMaxClicked()
+    {
+        // Override and implement this function in robotTheme
+    }
+    virtual void bottonTimerMinClicked()
+    {
+        // Override and implement this function in robotTheme
+    }
 
 protected:
     FrontendApplication& application() {
@@ -83,7 +91,7 @@ protected:
     touchgfx::Container timerPage4;
     touchgfx::Box boxTimerBackground;
     touchgfx::Button buttonTimerMax;
-    touchgfx::Button buttonTimerMax_1;
+    touchgfx::Button buttonTimerMin;
     touchgfx::Circle circleGaugeBackground;
     touchgfx::PainterRGB565 circleGaugeBackgroundPainter;
     touchgfx::ClickListener< touchgfx::Gauge > gaugeTimer;

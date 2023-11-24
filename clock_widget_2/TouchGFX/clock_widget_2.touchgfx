@@ -183,22 +183,22 @@
                   {
                     "Type": "Button",
                     "Name": "buttonTimerMax",
-                    "X": 61,
+                    "X": 60,
                     "Y": 170,
                     "Width": 50,
                     "Height": 50,
-                    "Pressed": "__generated\\icon_theme_images_av_play_circle_outline_50_50_FFFFFF.svg.png",
-                    "Released": "__generated\\icon_theme_images_av_play_circle_filled_50_50_FFFFFF.svg.png"
+                    "Pressed": "__generated\\icon_theme_images_content_add_circle_outline_50_50_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_content_add_circle_50_50_FFFFFF.svg.png"
                   },
                   {
                     "Type": "Button",
-                    "Name": "buttonTimerMax_1",
-                    "X": 367,
+                    "Name": "buttonTimerMin",
+                    "X": 370,
                     "Y": 170,
                     "Width": 50,
                     "Height": 50,
-                    "Pressed": "__generated\\icon_theme_images_av_play_circle_outline_50_50_FFFFFF.svg.png",
-                    "Released": "__generated\\icon_theme_images_av_play_circle_filled_50_50_FFFFFF.svg.png"
+                    "Pressed": "__generated\\icon_theme_images_content_remove_circle_outline_50_50_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_content_remove_circle_50_50_FFFFFF.svg.png"
                   },
                   {
                     "Type": "Circle",
@@ -763,6 +763,28 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "buttonResetClicked"
+            }
+          },
+          {
+            "InteractionName": "timerMax",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonTimerMax"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonTimerMaxClicked"
+            }
+          },
+          {
+            "InteractionName": "timerMin",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonTimerMin"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "bottonTimerMinClicked"
             }
           }
         ]

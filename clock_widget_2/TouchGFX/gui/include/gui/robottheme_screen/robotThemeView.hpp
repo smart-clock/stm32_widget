@@ -18,6 +18,9 @@ public:
     virtual void buttonStopClicked();
     virtual void buttonResetClicked();
 
+    virtual void buttonTimerMaxClicked();
+    virtual void bottonTimerMinClicked();
+
     virtual void handleDragEvent(const DragEvent& Event);
 protected:
     int tickCounter;

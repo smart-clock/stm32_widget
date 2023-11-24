@@ -106,13 +106,15 @@ robotThemeViewBase::robotThemeViewBase() :
     boxTimerBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     timerPage4.add(boxTimerBackground);
 
-    buttonTimerMax.setXY(61, 170);
-    buttonTimerMax.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
+    buttonTimerMax.setXY(60, 170);
+    buttonTimerMax.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_ADD_CIRCLE_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_ADD_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
+    buttonTimerMax.setAction(buttonCallback);
     timerPage4.add(buttonTimerMax);
 
-    buttonTimerMax_1.setXY(367, 170);
-    buttonTimerMax_1.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
-    timerPage4.add(buttonTimerMax_1);
+    buttonTimerMin.setXY(370, 170);
+    buttonTimerMin.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_REMOVE_CIRCLE_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_REMOVE_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
+    buttonTimerMin.setAction(buttonCallback);
+    timerPage4.add(buttonTimerMin);
 
     circleGaugeBackground.setPosition(140, 24, 200, 200);
     circleGaugeBackground.setCenter(100, 100);
@@ -512,6 +514,20 @@ void robotThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& s
         //When buttonReset clicked call virtual function
         //Call buttonResetClicked
         buttonResetClicked();
+    }
+    if (&src == &buttonTimerMax)
+    {
+        //timerMax
+        //When buttonTimerMax clicked call virtual function
+        //Call buttonTimerMaxClicked
+        buttonTimerMaxClicked();
+    }
+    if (&src == &buttonTimerMin)
+    {
+        //timerMin
+        //When buttonTimerMin clicked call virtual function
+        //Call bottonTimerMinClicked
+        bottonTimerMinClicked();
     }
 }
 

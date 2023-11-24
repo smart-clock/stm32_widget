@@ -88,6 +88,24 @@ void robotThemeView::buttonResetClicked()
     stopWatchSeconds = 0;
 }
 
+void robotThemeView::buttonTimerMaxClicked()
+{
+    if(timerMinute != 60)
+    {
+        gaugeTimer.setValue(360);
+        Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", 60);
+        textTimer.invalidate();
+        timerMinute = 60;
+    }
+}
+
+void robotThemeView::bottonTimerMinClicked()
+{
+    gaugeTimer.setValue(0);
+    Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", 0);
+    textTimer.invalidate();
+}
+
 void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
 {
     if(&g == &gaugeTimer)
@@ -125,8 +143,13 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
 
         if(timerMax)
         {
-            gaugeTimer.setValue(360);
-            timerMinute = 60;
+            if(timerMinute != 60)
+            {
+                Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", 60);
+                textTimer.invalidate();
+                gaugeTimer.setValue(360);
+                timerMinute = 60;
+            }
         }
         else if(timerMin)
         {
@@ -139,8 +162,11 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
             timerMinute = curAngleOfTimer/6;
         }
 
-        Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
-        textTimer.invalidate();
+        if(timerMinute != 60)
+        {
+            Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
+            textTimer.invalidate();
+        }
 
         prevAngleOfTimer = curAngleOfTimer;
     }
