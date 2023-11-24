@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:28:13:robotThemePresenter::~robotThemePresenter()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemePresenter.cpp:10:6:virtual void robotThemePresenter::activate()	1
+../../TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:28:13:virtual robotThemePresenter::~robotThemePresenter()	1
+../../TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:28:13:virtual void* robotThemePresenter::_ZThn4_N19robotThemePresenterD1Ev()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemePresenter.cpp:4:1:robotThemePresenter::robotThemePresenter(robotThemeView&)	1
