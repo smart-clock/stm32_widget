@@ -35,6 +35,10 @@ protected:
 
     bool timerMinuteDrag;
     int8_t timerMinute;
+    int curAngleOfTimer;
+    int prevAngleOfTimer;
+    bool timerMax;
+    bool timerMin;
 };
 
 #endif // ROBOTTHEMEVIEW_HPP

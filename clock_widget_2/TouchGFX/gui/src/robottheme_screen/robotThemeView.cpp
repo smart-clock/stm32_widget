@@ -5,6 +5,12 @@ robotThemeView::robotThemeView() :
 {
     this->timerMinuteDrag = false;
     this->timerMinute = 0;
+
+    this->curAngleOfTimer = 0;
+    this->prevAngleOfTimer = 0;
+
+    this->timerMax = false;
+    this->timerMin = false;
 }
 
 void robotThemeView::setupScreen()
@@ -93,6 +99,8 @@ void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
         else if(e.getType() == ClickEvent::RELEASED)
         {
             timerMinuteDrag = false;
+            timerMax = false;
+            timerMin = false;
         }
     }
 }
@@ -102,15 +110,38 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
     int16_t timerDragX = Event.getNewX();
     int16_t timerDragY = Event.getNewY();
 
-
     if(timerMinuteDrag)
     {
-        int currentAngleOfTimer = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
-        gaugeTimer.setValue(currentAngleOfTimer);
+        curAngleOfTimer = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
 
-        timerMinute = currentAngleOfTimer/6;
+        if(prevAngleOfTimer > 340 && curAngleOfTimer < 20)
+        {
+            timerMax = true;
+        }
+        else if(prevAngleOfTimer < 20 && curAngleOfTimer > 340)
+        {
+            timerMin = true;
+        }
+
+        if(timerMax)
+        {
+            gaugeTimer.setValue(360);
+            timerMinute = 60;
+        }
+        else if(timerMin)
+        {
+            gaugeTimer.setValue(0);
+            timerMinute = 0;
+        }
+        else
+        {
+            gaugeTimer.setValue(curAngleOfTimer);
+            timerMinute = curAngleOfTimer/6;
+        }
 
         Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
         textTimer.invalidate();
+
+        prevAngleOfTimer = curAngleOfTimer;
     }
 }
