@@ -33,14 +33,14 @@ protected:
     static const uint32_t TICK_BLINK_INTERVAL = 180;
     uint32_t frameCountBlinkInterval;
 
-    bool timerMinuteDrag;
-    int8_t timerMinute;
-    int8_t timerSecond;
-    int curAngleOfTimer;
-    int prevAngleOfTimer;
-    bool timerMax;
-    bool timerMin;
-    bool timerStart;
+    bool timerWidgetDrag; // Issue #18
+    int8_t timerMinute; // display value
+    int8_t timerSecond; // display value
+    int timerOfCurAng; // current angle
+    int timerOfPreAng; // previous angle
+    bool timerMax; // max drag limit
+    bool timerMin; // min drag limit
+    bool timerStart; // timer start flag
     int timerCounter;
 
     Callback<robotThemeView, const Gauge&, const ClickEvent&> gaugeClickCallback;

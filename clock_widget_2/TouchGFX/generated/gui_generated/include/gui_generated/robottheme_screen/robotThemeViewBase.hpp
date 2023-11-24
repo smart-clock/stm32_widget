@@ -82,13 +82,13 @@ protected:
     touchgfx::Box box1;
     touchgfx::TextArea textDegree;
     touchgfx::TextArea textWhether;
-    touchgfx::Container stopWatchPage3;
+    touchgfx::Container swipeStopWatch;
     touchgfx::Box background3;
     touchgfx::DigitalClock digitalClock;
     touchgfx::Button buttonReset;
     touchgfx::Button buttonStop;
     touchgfx::Button buttonPlay;
-    touchgfx::Container timerPage4;
+    touchgfx::Container swipeTimer;
     touchgfx::Box boxTimerBackground;
     touchgfx::Button buttonTimerMax;
     touchgfx::Button buttonTimerMin;
@@ -97,6 +97,7 @@ protected:
     touchgfx::ClickListener< touchgfx::Gauge > gaugeTimer;
     touchgfx::PainterRGB565 gaugeTimerPainter;
     touchgfx::TextAreaWithTwoWildcards textTimer;
+    touchgfx::Container swipeAlarm;
     touchgfx::Container SchedulePage4;
     touchgfx::Box background4;
     touchgfx::ScrollList scrollList1;

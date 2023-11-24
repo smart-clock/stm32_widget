@@ -24,13 +24,13 @@
             "Height": 272,
             "SwipeCutoff": 50,
             "ShowPageIndicator": true,
-            "PageIndicatorX": 170,
+            "PageIndicatorX": 160,
             "PageIndicatorY": 250,
             "CenteredX": true,
             "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "timerPage4",
+            "SelectedPage": "swipeAlarm",
             "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
             "Components": [
               {
@@ -110,7 +110,7 @@
               },
               {
                 "Type": "Container",
-                "Name": "stopWatchPage3",
+                "Name": "swipeStopWatch",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
@@ -124,7 +124,7 @@
                     "Type": "DigitalClock",
                     "Name": "digitalClock",
                     "X": 140,
-                    "Y": 75,
+                    "Y": 85,
                     "Width": 200,
                     "Height": 50,
                     "TextColor": {
@@ -139,38 +139,38 @@
                   {
                     "Type": "Button",
                     "Name": "buttonReset",
-                    "X": 288,
-                    "Y": 145,
-                    "Width": 64,
-                    "Height": 64,
-                    "Pressed": "reset_pressed_64x64.png",
-                    "Released": "reset_released_64x64.png"
+                    "X": 290,
+                    "Y": 161,
+                    "Width": 50,
+                    "Height": 50,
+                    "Pressed": "__generated\\icon_theme_images_av_loop_50_50_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_av_replay_circle_filled_50_50_FFFFFF.svg.png"
                   },
                   {
                     "Type": "Button",
                     "Name": "buttonStop",
-                    "X": 208,
-                    "Y": 145,
-                    "Width": 64,
-                    "Height": 64,
-                    "Pressed": "stop_pressed_64x64.png",
-                    "Released": "stop_released_64x64.png"
+                    "X": 215,
+                    "Y": 159,
+                    "Width": 50,
+                    "Height": 50,
+                    "Pressed": "__generated\\icon_theme_images_av_pause_circle_outline_50_50_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_av_pause_circle_filled_50_50_FFFFFF.svg.png"
                   },
                   {
                     "Type": "Button",
                     "Name": "buttonPlay",
-                    "X": 128,
-                    "Y": 145,
-                    "Width": 64,
-                    "Height": 64,
-                    "Pressed": "play_pressed_64x64.png",
-                    "Released": "play_released_64x64.png"
+                    "X": 140,
+                    "Y": 161,
+                    "Width": 50,
+                    "Height": 50,
+                    "Pressed": "__generated\\icon_theme_images_av_play_circle_outline_50_50_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_av_play_circle_filled_50_50_FFFFFF.svg.png"
                   }
                 ]
               },
               {
                 "Type": "Container",
-                "Name": "timerPage4",
+                "Name": "swipeTimer",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
@@ -275,6 +275,13 @@
                     }
                   }
                 ]
+              },
+              {
+                "Type": "Container",
+                "Name": "swipeAlarm",
+                "Width": 480,
+                "Height": 272,
+                "Components": []
               },
               {
                 "Type": "Container",

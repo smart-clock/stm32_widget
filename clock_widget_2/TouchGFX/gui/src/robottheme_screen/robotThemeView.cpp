@@ -3,16 +3,14 @@
 robotThemeView::robotThemeView() : 
     gaugeClickCallback(this, &robotThemeView::gaugeClickHandler)
 {
-    this->timerMinuteDrag = false;
+    this->timerWidgetDrag = false;
     this->timerMinute = 0;
-
-    this->curAngleOfTimer = 0;
-    this->prevAngleOfTimer = 0;
-
+    this->timerOfCurAng = 0;
+    this->timerOfPreAng = 0;
     this->timerMax = false;
     this->timerMin = false;
-
     this->timerStart = false;
+    this->timerCounter = 0;
 }
 
 void robotThemeView::setupScreen()
@@ -46,7 +44,6 @@ void robotThemeView::handleTickEvent()
     if(isStopWatchPlay)
     {
         tickCounter++;
-
         if(tickCounter % 60 == 0)
         {
             if(++stopWatchSeconds >= 60)
@@ -66,8 +63,8 @@ void robotThemeView::handleTickEvent()
 
     if(timerStart)
     {
-        tickCounter++;
-        if(tickCounter % 60 == 0)
+        timerCounter++;
+        if(timerCounter % 60 == 0)
         {
             if(timerMinute > 0 && timerSecond == 0)
             {
@@ -138,11 +135,11 @@ void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
     {
         if(e.getType() == ClickEvent::PRESSED)
         {
-            timerMinuteDrag = true;
+            timerWidgetDrag = true;
         }
         else if(e.getType() == ClickEvent::RELEASED)
         {
-            timerMinuteDrag = false;
+            timerWidgetDrag = false;
             timerMax = false;
             timerMin = false;
             timerStart = true;
@@ -155,15 +152,15 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
     int16_t timerDragX = Event.getNewX();
     int16_t timerDragY = Event.getNewY();
 
-    if(timerMinuteDrag)
+    if(timerWidgetDrag)
     {
-        curAngleOfTimer = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
+        timerOfCurAng = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
 
-        if(prevAngleOfTimer > 340 && curAngleOfTimer < 20)
+        if(timerOfPreAng > 340 && timerOfCurAng < 20)
         {
             timerMax = true;
         }
-        else if(prevAngleOfTimer < 20 && curAngleOfTimer > 340)
+        else if(timerOfPreAng < 20 && timerOfCurAng > 340)
         {
             timerMin = true;
         }
@@ -180,8 +177,8 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
         }
         else
         {
-            gaugeTimer.setValue(curAngleOfTimer);
-            timerMinute = curAngleOfTimer/6;
+            gaugeTimer.setValue(timerOfCurAng);
+            timerMinute = timerOfCurAng/6;
         }
 
         Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
@@ -191,6 +188,6 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
         Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%02d", timerSecond);
         textTimer.invalidate();
 
-        prevAngleOfTimer = curAngleOfTimer;
+        timerOfPreAng = timerOfCurAng;
     }
 }

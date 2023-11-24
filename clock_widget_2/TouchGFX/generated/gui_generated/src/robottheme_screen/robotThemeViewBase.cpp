@@ -26,7 +26,7 @@ robotThemeViewBase::robotThemeViewBase() :
 
     swipeContainerWidget.setXY(0, 0);
     swipeContainerWidget.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_OFF_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_ON_ACTIVE_ID));
-    swipeContainerWidget.setPageIndicatorXY(170, 250);
+    swipeContainerWidget.setPageIndicatorXY(160, 250);
     swipeContainerWidget.setSwipeCutoff(50);
     swipeContainerWidget.setEndSwipeElasticWidth(50);
 
@@ -69,52 +69,52 @@ robotThemeViewBase::robotThemeViewBase() :
 
     swipeContainerWidget.add(whetherPage2);
 
-    stopWatchPage3.setWidth(480);
-    stopWatchPage3.setHeight(272);
+    swipeStopWatch.setWidth(480);
+    swipeStopWatch.setHeight(272);
     background3.setPosition(0, 0, 480, 272);
     background3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    stopWatchPage3.add(background3);
+    swipeStopWatch.add(background3);
 
-    digitalClock.setPosition(140, 75, 200, 50);
+    digitalClock.setPosition(140, 85, 200, 50);
     digitalClock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     digitalClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PQN4));
     digitalClock.displayLeadingZeroForHourIndicator(true);
     digitalClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
     digitalClock.setTime24Hour(0, 0, 0);
-    stopWatchPage3.add(digitalClock);
+    swipeStopWatch.add(digitalClock);
 
-    buttonReset.setXY(288, 145);
-    buttonReset.setBitmaps(touchgfx::Bitmap(BITMAP_RESET_RELEASED_64X64_ID), touchgfx::Bitmap(BITMAP_RESET_PRESSED_64X64_ID));
+    buttonReset.setXY(290, 161);
+    buttonReset.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_REPLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_LOOP_50_50_FFFFFF_SVG_ID));
     buttonReset.setAction(buttonCallback);
-    stopWatchPage3.add(buttonReset);
+    swipeStopWatch.add(buttonReset);
 
-    buttonStop.setXY(208, 145);
-    buttonStop.setBitmaps(touchgfx::Bitmap(BITMAP_STOP_RELEASED_64X64_ID), touchgfx::Bitmap(BITMAP_STOP_PRESSED_64X64_ID));
+    buttonStop.setXY(215, 159);
+    buttonStop.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PAUSE_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PAUSE_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
     buttonStop.setAction(buttonCallback);
-    stopWatchPage3.add(buttonStop);
+    swipeStopWatch.add(buttonStop);
 
-    buttonPlay.setXY(128, 145);
-    buttonPlay.setBitmaps(touchgfx::Bitmap(BITMAP_PLAY_RELEASED_64X64_ID), touchgfx::Bitmap(BITMAP_PLAY_PRESSED_64X64_ID));
+    buttonPlay.setXY(140, 161);
+    buttonPlay.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
     buttonPlay.setAction(buttonCallback);
-    stopWatchPage3.add(buttonPlay);
+    swipeStopWatch.add(buttonPlay);
 
-    swipeContainerWidget.add(stopWatchPage3);
+    swipeContainerWidget.add(swipeStopWatch);
 
-    timerPage4.setWidth(480);
-    timerPage4.setHeight(272);
+    swipeTimer.setWidth(480);
+    swipeTimer.setHeight(272);
     boxTimerBackground.setPosition(0, 0, 480, 272);
     boxTimerBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    timerPage4.add(boxTimerBackground);
+    swipeTimer.add(boxTimerBackground);
 
     buttonTimerMax.setXY(60, 170);
     buttonTimerMax.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_ADD_CIRCLE_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_ADD_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
     buttonTimerMax.setAction(buttonCallback);
-    timerPage4.add(buttonTimerMax);
+    swipeTimer.add(buttonTimerMax);
 
     buttonTimerMin.setXY(370, 170);
     buttonTimerMin.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_REMOVE_CIRCLE_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_REMOVE_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
     buttonTimerMin.setAction(buttonCallback);
-    timerPage4.add(buttonTimerMin);
+    swipeTimer.add(buttonTimerMin);
 
     circleGaugeBackground.setPosition(140, 24, 200, 200);
     circleGaugeBackground.setCenter(100, 100);
@@ -123,7 +123,7 @@ robotThemeViewBase::robotThemeViewBase() :
     circleGaugeBackground.setArc(0, 360);
     circleGaugeBackgroundPainter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     circleGaugeBackground.setPainter(circleGaugeBackgroundPainter);
-    timerPage4.add(circleGaugeBackground);
+    swipeTimer.add(circleGaugeBackground);
 
     gaugeTimer.setBackground(touchgfx::Bitmap(BITMAP_CLOCK_ID));
     gaugeTimer.setPosition(140, 24, 200, 200);
@@ -140,7 +140,7 @@ robotThemeViewBase::robotThemeViewBase() :
     gaugeTimer.getArc().setRadius(0);
     gaugeTimer.getArc().setLineWidth(140);
     gaugeTimer.getArc().setCapPrecision(180);
-    timerPage4.add(gaugeTimer);
+    swipeTimer.add(gaugeTimer);
 
     textTimer.setXY(320, 30);
     textTimer.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -151,9 +151,13 @@ robotThemeViewBase::robotThemeViewBase() :
     textTimer.setWildcard2(textTimerBuffer2);
     textTimer.resizeToCurrentText();
     textTimer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S02A));
-    timerPage4.add(textTimer);
+    swipeTimer.add(textTimer);
 
-    swipeContainerWidget.add(timerPage4);
+    swipeContainerWidget.add(swipeTimer);
+
+    swipeAlarm.setWidth(480);
+    swipeAlarm.setHeight(272);
+    swipeContainerWidget.add(swipeAlarm);
 
     SchedulePage4.setWidth(480);
     SchedulePage4.setHeight(272);
@@ -462,7 +466,7 @@ robotThemeViewBase::robotThemeViewBase() :
 
     swipeContainerWidget.add(StockPage6);
 
-    swipeContainerWidget.setSelectedPage(3);
+    swipeContainerWidget.setSelectedPage(4);
     add(swipeContainerWidget);
 
     textBattery.setXY(432, 0);
