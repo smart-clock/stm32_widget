@@ -32,6 +32,9 @@ protected:
 
     Callback<robotThemeView, const Gauge&, const ClickEvent&> gaugeClickCallback;
     void gaugeClickHandler(const Gauge& g, const ClickEvent& e);
+
+    bool timerMinuteDrag;
+    int8_t timerMinute;
 };
 
 #endif // ROBOTTHEMEVIEW_HPP

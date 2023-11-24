@@ -176,7 +176,7 @@
                 "Components": [
                   {
                     "Type": "Box",
-                    "Name": "timerBackground",
+                    "Name": "boxTimerBackground",
                     "Width": 480,
                     "Height": 272
                   },
@@ -261,12 +261,12 @@
                     "Wildcard1": {
                       "TextId": "__SingleUse_T1W6",
                       "UseBuffer": true,
-                      "BufferSize": 3
+                      "BufferSize": 10
                     },
                     "Wildcard2": {
                       "TextId": "__SingleUse_HY8M",
                       "UseBuffer": true,
-                      "BufferSize": 3
+                      "BufferSize": 10
                     }
                   }
                 ]

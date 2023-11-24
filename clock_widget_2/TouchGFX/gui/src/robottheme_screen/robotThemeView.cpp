@@ -3,7 +3,8 @@
 robotThemeView::robotThemeView() : 
     gaugeClickCallback(this, &robotThemeView::gaugeClickHandler)
 {
-
+    this->timerMinuteDrag = false;
+    this->timerMinute = 0;
 }
 
 void robotThemeView::setupScreen()
@@ -15,7 +16,6 @@ void robotThemeView::setupScreen()
     stopWatchSeconds = digitalClock.getCurrentSecond();
 
     gaugeTimer.setClickAction(gaugeClickCallback);
-
 }
 
 void robotThemeView::tearDownScreen()
@@ -88,11 +88,11 @@ void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
     {
         if(e.getType() == ClickEvent::PRESSED)
         {
-            int16_t timerClickX = e.getX();
-            int16_t timerClickY = e.getY();
-
-            int currentAngleOfTimer = CWRUtil::angle<int>(timerClickX - 144, timerClickY - 133);
-            gaugeTimer.setValue(currentAngleOfTimer);
+            timerMinuteDrag = true;
+        }
+        else if(e.getType() == ClickEvent::RELEASED)
+        {
+            timerMinuteDrag = false;
         }
     }
 }
@@ -102,6 +102,15 @@ void robotThemeView::handleDragEvent(const DragEvent& Event)
     int16_t timerDragX = Event.getNewX();
     int16_t timerDragY = Event.getNewY();
 
-    int currentAngleOfTimer = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
-    gaugeTimer.setValue(currentAngleOfTimer);
+
+    if(timerMinuteDrag)
+    {
+        int currentAngleOfTimer = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
+        gaugeTimer.setValue(currentAngleOfTimer);
+
+        timerMinute = currentAngleOfTimer/6;
+
+        Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
+        textTimer.invalidate();
+    }
 }

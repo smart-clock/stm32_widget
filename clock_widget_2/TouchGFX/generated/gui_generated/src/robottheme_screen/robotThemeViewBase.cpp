@@ -102,9 +102,9 @@ robotThemeViewBase::robotThemeViewBase() :
 
     timerPage4.setWidth(480);
     timerPage4.setHeight(272);
-    timerBackground.setPosition(0, 0, 480, 272);
-    timerBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    timerPage4.add(timerBackground);
+    boxTimerBackground.setPosition(0, 0, 480, 272);
+    boxTimerBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    timerPage4.add(boxTimerBackground);
 
     buttonTimerMax.setXY(61, 170);
     buttonTimerMax.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));

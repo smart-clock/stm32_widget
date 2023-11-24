@@ -754,6 +754,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_clock.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_gradientBackground.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_gradientBackground.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_manggom.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_manggom.cpp</locationURI>

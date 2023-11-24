@@ -81,7 +81,7 @@ protected:
     touchgfx::Button buttonStop;
     touchgfx::Button buttonPlay;
     touchgfx::Container timerPage4;
-    touchgfx::Box timerBackground;
+    touchgfx::Box boxTimerBackground;
     touchgfx::Button buttonTimerMax;
     touchgfx::Button buttonTimerMax_1;
     touchgfx::Circle circleGaugeBackground;
@@ -139,9 +139,9 @@ protected:
     /*
      * Wildcard Buffers
      */
-    static const uint16_t TEXTTIMERBUFFER1_SIZE = 3;
+    static const uint16_t TEXTTIMERBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
-    static const uint16_t TEXTTIMERBUFFER2_SIZE = 3;
+    static const uint16_t TEXTTIMERBUFFER2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textTimerBuffer2[TEXTTIMERBUFFER2_SIZE];
 
 private:
