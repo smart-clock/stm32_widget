@@ -461,7 +461,7 @@ customThemeViewBase::customThemeViewBase() :
 
     swipeContainer1.add(StockPage6);
 
-    swipeContainer1.setSelectedPage(2);
+    swipeContainer1.setSelectedPage(0);
     add(swipeContainer1);
 
     textBattery.setXY(432, 0);
@@ -489,7 +489,6 @@ customThemeViewBase::customThemeViewBase() :
     buttonEyes.setLabelText(touchgfx::TypedText(T___SINGLEUSE_ASYU));
     buttonEyes.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     buttonEyes.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonEyes.setAction(buttonCallback);
     add(buttonEyes);
 }
 
@@ -515,13 +514,6 @@ void customThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& 
         //When buttonTheme clicked change screen to robotTheme
         //Go to robotTheme with no screen transition
         application().gotorobotThemeScreenNoTransition();
-    }
-    if (&src == &buttonEyes)
-    {
-        //goToEyeDemo
-        //When buttonEyes clicked change screen to Screen1
-        //Go to Screen1 with screen transition towards North
-        application().gotoScreen1ScreenSlideTransitionNorth();
     }
 }
 

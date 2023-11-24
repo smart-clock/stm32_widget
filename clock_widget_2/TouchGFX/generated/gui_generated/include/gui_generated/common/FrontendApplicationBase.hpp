@@ -20,86 +20,16 @@ public:
         gotorobotThemeScreenNoTransition();
     }
 
-    // Screen1
-    void gotoScreen1ScreenSlideTransitionWest();
-
-    void gotoScreen1ScreenSlideTransitionNorth();
-
-    // Screen2
-    void gotoScreen2ScreenSlideTransitionEast();
-
-    void gotoScreen2ScreenSlideTransitionWest();
-
-    // Screen3
-    void gotoScreen3ScreenSlideTransitionEast();
-
-    void gotoScreen3ScreenSlideTransitionWest();
-
-    // Screen4
-    void gotoScreen4ScreenSlideTransitionEast();
-
-    void gotoScreen4ScreenSlideTransitionWest();
-
-    // Screen5
-    void gotoScreen5ScreenSlideTransitionEast();
-
-    void gotoScreen5ScreenSlideTransitionWest();
-
-    // Screen6
-    void gotoScreen6ScreenSlideTransitionEast();
-
-    void gotoScreen6ScreenSlideTransitionWest();
-
-    // Screen7
-    void gotoScreen7ScreenSlideTransitionEast();
-
     // robotTheme
     void gotorobotThemeScreenNoTransition();
-
-    void gotorobotThemeScreenSlideTransitionSouth();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // Screen1
-    void gotoScreen1ScreenSlideTransitionWestImpl();
-
-    void gotoScreen1ScreenSlideTransitionNorthImpl();
-
-    // Screen2
-    void gotoScreen2ScreenSlideTransitionEastImpl();
-
-    void gotoScreen2ScreenSlideTransitionWestImpl();
-
-    // Screen3
-    void gotoScreen3ScreenSlideTransitionEastImpl();
-
-    void gotoScreen3ScreenSlideTransitionWestImpl();
-
-    // Screen4
-    void gotoScreen4ScreenSlideTransitionEastImpl();
-
-    void gotoScreen4ScreenSlideTransitionWestImpl();
-
-    // Screen5
-    void gotoScreen5ScreenSlideTransitionEastImpl();
-
-    void gotoScreen5ScreenSlideTransitionWestImpl();
-
-    // Screen6
-    void gotoScreen6ScreenSlideTransitionEastImpl();
-
-    void gotoScreen6ScreenSlideTransitionWestImpl();
-
-    // Screen7
-    void gotoScreen7ScreenSlideTransitionEastImpl();
-
     // robotTheme
     void gotorobotThemeScreenNoTransitionImpl();
-
-    void gotorobotThemeScreenSlideTransitionSouthImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

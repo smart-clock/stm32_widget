@@ -42,18 +42,13 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/screen1_scre
  TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
- TouchGFX/generated/videos/include/videos/VideoDatabase.hpp \
- TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
- TouchGFX/generated/images/include/images/BitmapDatabase.hpp
+ TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
 
@@ -139,9 +134,9 @@ TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
@@ -149,16 +144,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 
-TouchGFX/generated/videos/include/videos/VideoDatabase.hpp:
-
 TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
-
-TouchGFX/generated/images/include/images/BitmapDatabase.hpp:

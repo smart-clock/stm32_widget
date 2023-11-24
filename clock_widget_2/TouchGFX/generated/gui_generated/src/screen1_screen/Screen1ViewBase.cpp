@@ -3,44 +3,26 @@
 /*********************************************************************************/
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include <videos/VideoDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
-#include <images/BitmapDatabase.hpp>
 
-Screen1ViewBase::Screen1ViewBase() :
-    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
+Screen1ViewBase::Screen1ViewBase()
 {
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    videoBlink.setPosition(0, 0, 480, 272);
-    videoBlink.setVideoData(video_blink_bin_start, video_blink_bin_length);
-    videoBlink.setRepeat(true);
-    videoBlink.play();
-    add(videoBlink);
+    box.setPosition(0, 0, 480, 272);
+    box.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    add(box);
 
-    textVideo.setXY(191, 0);
-    textVideo.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textVideo.setLinespacing(0);
-    textVideo.setTypedText(touchgfx::TypedText(T___SINGLEUSE_MIYH));
-    add(textVideo);
-
-    buttonClock.setXY(0, 213);
-    buttonClock.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
-    buttonClock.setLabelText(touchgfx::TypedText(T___SINGLEUSE_QZZ1));
-    buttonClock.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonClock.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonClock.setAction(buttonCallback);
-    add(buttonClock);
-
-    buttonNext.setXY(383, 212);
-    buttonNext.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
-    buttonNext.setLabelText(touchgfx::TypedText(T___SINGLEUSE_UAKL));
-    buttonNext.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonNext.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonNext.setAction(buttonCallback);
-    add(buttonNext);
+    textArea1.setXY(123, 105);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AFRB).getText());
+    textArea1.setWildcard(textArea1Buffer);
+    textArea1.resizeToCurrentText();
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_I7O6));
+    add(textArea1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -51,22 +33,4 @@ Screen1ViewBase::~Screen1ViewBase()
 void Screen1ViewBase::setupScreen()
 {
 
-}
-
-void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
-{
-    if (&src == &buttonNext)
-    {
-        //goToScreen2
-        //When buttonNext clicked change screen to Screen2
-        //Go to Screen2 with screen transition towards East
-        application().gotoScreen2ScreenSlideTransitionEast();
-    }
-    if (&src == &buttonClock)
-    {
-        //goToRobotTheme
-        //When buttonClock clicked change screen to robotTheme
-        //Go to robotTheme with screen transition towards South
-        application().gotorobotThemeScreenSlideTransitionSouth();
-    }
 }

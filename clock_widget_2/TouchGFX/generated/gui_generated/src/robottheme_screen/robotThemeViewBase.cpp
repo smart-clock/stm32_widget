@@ -106,17 +106,15 @@ robotThemeViewBase::robotThemeViewBase() :
     timerBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     timerPage4.add(timerBackground);
 
-    buttonTimerReset.setXY(314, 145);
-    buttonTimerReset.setBitmaps(touchgfx::Bitmap(BITMAP_RESET_RELEASED_64X64_ID), touchgfx::Bitmap(BITMAP_RESET_PRESSED_64X64_ID));
-    timerPage4.add(buttonTimerReset);
+    buttonTimerMax.setXY(61, 170);
+    buttonTimerMax.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
+    timerPage4.add(buttonTimerMax);
 
-    textClock_1.setXY(288, 72);
-    textClock_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textClock_1.setLinespacing(0);
-    textClock_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S02A));
-    timerPage4.add(textClock_1);
+    buttonTimerMax_1.setXY(367, 170);
+    buttonTimerMax_1.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
+    timerPage4.add(buttonTimerMax_1);
 
-    circleGaugeBackground.setPosition(44, 33, 200, 200);
+    circleGaugeBackground.setPosition(140, 24, 200, 200);
     circleGaugeBackground.setCenter(100, 100);
     circleGaugeBackground.setRadius(100);
     circleGaugeBackground.setLineWidth(0);
@@ -126,9 +124,9 @@ robotThemeViewBase::robotThemeViewBase() :
     timerPage4.add(circleGaugeBackground);
 
     gaugeTimer.setBackground(touchgfx::Bitmap(BITMAP_CLOCK_ID));
-    gaugeTimer.setPosition(44, 33, 200, 200);
+    gaugeTimer.setPosition(140, 24, 200, 200);
     gaugeTimer.setCenter(100, 100);
-    gaugeTimer.setStartEndAngle(0, 360);
+    gaugeTimer.setStartEndAngle(-2, 358);
     gaugeTimer.setRange(0, 360);
     gaugeTimer.setValue(0);
     gaugeTimer.setNeedle(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_GAUGE_MEDIUM_NEEDLES_SMOOTH_ID, 7, 67);
@@ -141,6 +139,17 @@ robotThemeViewBase::robotThemeViewBase() :
     gaugeTimer.getArc().setLineWidth(140);
     gaugeTimer.getArc().setCapPrecision(180);
     timerPage4.add(gaugeTimer);
+
+    textTimer.setXY(210, 136);
+    textTimer.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textTimer.setLinespacing(0);
+    touchgfx::Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_T1W6).getText());
+    textTimer.setWildcard1(textTimerBuffer1);
+    touchgfx::Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_HY8M).getText());
+    textTimer.setWildcard2(textTimerBuffer2);
+    textTimer.resizeToCurrentText();
+    textTimer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S02A));
+    timerPage4.add(textTimer);
 
     swipeContainerWidget.add(timerPage4);
 

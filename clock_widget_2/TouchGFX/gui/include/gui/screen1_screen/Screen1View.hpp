@@ -11,7 +11,10 @@ public:
     virtual ~Screen1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+
+    void boxClickHandler(const Box& b, const ClickEvent& e);
 protected:
+    Callback<Screen1View, const Box&, const ClickEvent&> boxClickedCallback;
 };
 
 #endif // SCREEN1VIEW_HPP

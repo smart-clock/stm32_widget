@@ -18,6 +18,8 @@
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/Gauge.hpp>
+#include <touchgfx/mixins/ClickListener.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
 #include <gui/containers/CustomContainer1.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
@@ -80,12 +82,13 @@ protected:
     touchgfx::Button buttonPlay;
     touchgfx::Container timerPage4;
     touchgfx::Box timerBackground;
-    touchgfx::Button buttonTimerReset;
-    touchgfx::TextArea textClock_1;
+    touchgfx::Button buttonTimerMax;
+    touchgfx::Button buttonTimerMax_1;
     touchgfx::Circle circleGaugeBackground;
     touchgfx::PainterRGB565 circleGaugeBackgroundPainter;
-    touchgfx::Gauge gaugeTimer;
+    touchgfx::ClickListener< touchgfx::Gauge > gaugeTimer;
     touchgfx::PainterRGB565 gaugeTimerPainter;
+    touchgfx::TextAreaWithTwoWildcards textTimer;
     touchgfx::Container SchedulePage4;
     touchgfx::Box background4;
     touchgfx::ScrollList scrollList1;
@@ -132,6 +135,14 @@ protected:
     touchgfx::TextArea textStockValue;
     touchgfx::TextArea textBattery;
     touchgfx::TextArea textClock;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TEXTTIMERBUFFER1_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
+    static const uint16_t TEXTTIMERBUFFER2_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar textTimerBuffer2[TEXTTIMERBUFFER2_SIZE];
 
 private:
 

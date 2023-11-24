@@ -17,6 +17,8 @@ public:
     virtual void buttonPlayClicked();
     virtual void buttonStopClicked();
     virtual void buttonResetClicked();
+
+    virtual void handleDragEvent(const DragEvent& Event);
 protected:
     int tickCounter;
     int stopWatchHours;
@@ -27,6 +29,9 @@ protected:
     
     static const uint32_t TICK_BLINK_INTERVAL = 180;
     uint32_t frameCountBlinkInterval;
+
+    Callback<robotThemeView, const Gauge&, const ClickEvent&> gaugeClickCallback;
+    void gaugeClickHandler(const Gauge& g, const ClickEvent& e);
 };
 
 #endif // ROBOTTHEMEVIEW_HPP

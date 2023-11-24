@@ -6,53 +6,26 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_S02A" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">30:00</Translation>
+      <Text Id="__SingleUse_HY8M" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_T1W6" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_AFRB" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_I7O6" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_S02A" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;min&gt;:&lt;sec&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_PQN4" Alignment="Center" TypographyId="Large">
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_3EUR" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Prev</Translation>
-      </Text>
-      <Text Id="__SingleUse_5X4S" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Next</Translation>
-      </Text>
-      <Text Id="__SingleUse_QAZQ" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Prev</Translation>
-      </Text>
-      <Text Id="__SingleUse_E9ZS" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Next</Translation>
-      </Text>
-      <Text Id="__SingleUse_UZWN" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Prev</Translation>
-      </Text>
-      <Text Id="__SingleUse_MF1T" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Next</Translation>
-      </Text>
-      <Text Id="__SingleUse_102P" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Prev</Translation>
-      </Text>
-      <Text Id="__SingleUse_YAMU" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Prev</Translation>
-      </Text>
-      <Text Id="__SingleUse_BWGY" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Next</Translation>
-      </Text>
-      <Text Id="__SingleUse_HZLU" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Prev</Translation>
-      </Text>
-      <Text Id="__SingleUse_MX5Z" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Next</Translation>
-      </Text>
-      <Text Id="__SingleUse_UAKL" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Next</Translation>
-      </Text>
       <Text Id="__SingleUse_ASYU" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Eyes</Translation>
-      </Text>
-      <Text Id="__SingleUse_QZZ1" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Clock</Translation>
       </Text>
       <Text Id="__SingleUse_49KS" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Theme</Translation>
@@ -144,31 +117,10 @@
       <Text Id="__SingleUse_92FF" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">14:20</Translation>
       </Text>
-      <Text Id="__SingleUse_S74C" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">Confused</Translation>
-      </Text>
-      <Text Id="__SingleUse_ND7Z" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">Happy</Translation>
-      </Text>
-      <Text Id="__SingleUse_8EYN" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">Heart</Translation>
-      </Text>
-      <Text Id="__SingleUse_7BPM" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">Sad</Translation>
-      </Text>
-      <Text Id="__SingleUse_REOE" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">Bored</Translation>
-      </Text>
-      <Text Id="__SingleUse_YQDU" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">Angry</Translation>
-      </Text>
-      <Text Id="__SingleUse_MIYH" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">Blink</Translation>
-      </Text>
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
   </Typographies>

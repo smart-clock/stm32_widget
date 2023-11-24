@@ -1,6 +1,7 @@
 #include <gui/robottheme_screen/robotThemeView.hpp>
 
-robotThemeView::robotThemeView()
+robotThemeView::robotThemeView() : 
+    gaugeClickCallback(this, &robotThemeView::gaugeClickHandler)
 {
 
 }
@@ -12,13 +13,15 @@ void robotThemeView::setupScreen()
     stopWatchHours = digitalClock.getCurrentHour();
     stopWatchMinutes = digitalClock.getCurrentMinute();
     stopWatchSeconds = digitalClock.getCurrentSecond();
+
+    gaugeTimer.setClickAction(gaugeClickCallback);
+
 }
 
 void robotThemeView::tearDownScreen()
 {
     robotThemeViewBase::tearDownScreen();
 }
-
 
 void robotThemeView::handleTickEvent()
 {
@@ -77,4 +80,28 @@ void robotThemeView::buttonResetClicked()
     stopWatchHours = 0;
     stopWatchMinutes = 0;
     stopWatchSeconds = 0;
+}
+
+void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
+{
+    if(&g == &gaugeTimer)
+    {
+        if(e.getType() == ClickEvent::PRESSED)
+        {
+            int16_t timerClickX = e.getX();
+            int16_t timerClickY = e.getY();
+
+            int currentAngleOfTimer = CWRUtil::angle<int>(timerClickX - 144, timerClickY - 133);
+            gaugeTimer.setValue(currentAngleOfTimer);
+        }
+    }
+}
+
+void robotThemeView::handleDragEvent(const DragEvent& Event)
+{
+    int16_t timerDragX = Event.getNewX();
+    int16_t timerDragY = Event.getNewY();
+
+    int currentAngleOfTimer = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
+    gaugeTimer.setValue(currentAngleOfTimer);
 }
