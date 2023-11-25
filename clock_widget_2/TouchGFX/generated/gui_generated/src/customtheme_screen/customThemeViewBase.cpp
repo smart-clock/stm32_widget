@@ -158,7 +158,7 @@ customThemeViewBase::customThemeViewBase() :
     background4.setAlpha(128);
     SchedulePage4.add(background4);
 
-    scrollList1.setPosition(203, 30, 210, 200);
+    scrollList1.setPosition(203, 30, 150, 200);
     scrollList1.setHorizontal(false);
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
@@ -167,8 +167,6 @@ customThemeViewBase::customThemeViewBase() :
     scrollList1.setNumberOfItems(10);
     scrollList1.setPadding(0, 0);
     scrollList1.setSnapping(false);
-    scrollList1.setDrawableSize(40, 0);
-    scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
     SchedulePage4.add(scrollList1);
 
     boxScheduleBack.setPosition(43, 86, 116, 77);
@@ -461,7 +459,7 @@ customThemeViewBase::customThemeViewBase() :
 
     swipeContainer1.add(StockPage6);
 
-    swipeContainer1.setSelectedPage(0);
+    swipeContainer1.setSelectedPage(5);
     add(swipeContainer1);
 
     textBattery.setXY(432, 0);
@@ -500,10 +498,6 @@ customThemeViewBase::~customThemeViewBase()
 void customThemeViewBase::setupScreen()
 {
     scrollList1.initialize();
-    for (int i = 0; i < scrollList1ListItems.getNumberOfDrawables(); i++)
-    {
-        scrollList1ListItems[i].initialize();
-    }
 }
 
 void customThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -519,8 +513,5 @@ void customThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& 
 
 void customThemeViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
 {
-    if (items == &scrollList1ListItems)
-    {
-        scrollList1UpdateItem(scrollList1ListItems[containerIndex], itemIndex);
-    }
+
 }

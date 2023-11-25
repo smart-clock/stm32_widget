@@ -147,47 +147,59 @@ void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
     }
 }
 
-void robotThemeView::handleDragEvent(const DragEvent& Event)
+// handleDragEvent 오버라이딩 시에 Scroll Wheel 위젯 애니매이션 자연스럽지 않음 #20
+// void robotThemeView::handleDragEvent(const DragEvent& Event)
+// {
+
+//     if(timerWidgetDrag)
+//     {
+//         int16_t timerDragX = Event.getNewX();
+//         int16_t timerDragY = Event.getNewY();
+
+//         timerOfCurAng = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
+
+//         if(timerOfPreAng > 340 && timerOfCurAng < 20)
+//         {
+//             timerMax = true;
+//         }
+//         else if(timerOfPreAng < 20 && timerOfCurAng > 340)
+//         {
+//             timerMin = true;
+//         }
+
+//         if(timerMax)
+//         {
+//             gaugeTimer.setValue(360);
+//             timerMinute = 60;
+//         }
+//         else if(timerMin)
+//         {
+//             gaugeTimer.setValue(0);
+//             timerMinute = 0;
+//         }
+//         else
+//         {
+//             gaugeTimer.setValue(timerOfCurAng);
+//             timerMinute = timerOfCurAng/6;
+//         }
+
+//         Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
+//         textTimer.invalidate();
+
+//         timerSecond = 0;
+//         Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%02d", timerSecond);
+//         textTimer.invalidate();
+
+//         timerOfPreAng = timerOfCurAng;
+//     }
+// }
+
+void robotThemeView::hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex)
 {
-    int16_t timerDragX = Event.getNewX();
-    int16_t timerDragY = Event.getNewY();
+    item.setIndex(itemIndex);
+}
 
-    if(timerWidgetDrag)
-    {
-        timerOfCurAng = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
-
-        if(timerOfPreAng > 340 && timerOfCurAng < 20)
-        {
-            timerMax = true;
-        }
-        else if(timerOfPreAng < 20 && timerOfCurAng > 340)
-        {
-            timerMin = true;
-        }
-
-        if(timerMax)
-        {
-            gaugeTimer.setValue(360);
-            timerMinute = 60;
-        }
-        else if(timerMin)
-        {
-            gaugeTimer.setValue(0);
-            timerMinute = 0;
-        }
-        else
-        {
-            gaugeTimer.setValue(timerOfCurAng);
-            timerMinute = timerOfCurAng/6;
-        }
-
-        Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
-        textTimer.invalidate();
-
-        timerSecond = 0;
-        Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%02d", timerSecond);
-        textTimer.invalidate();
-
-        timerOfPreAng = timerOfCurAng;
-    }
+void robotThemeView::hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
+{
+    item.setIndex(itemIndex);
 }

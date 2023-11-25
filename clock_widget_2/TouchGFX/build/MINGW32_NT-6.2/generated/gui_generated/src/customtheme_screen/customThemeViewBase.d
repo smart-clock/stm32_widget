@@ -56,8 +56,6 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/customtheme_screen/customThemeV
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- gui/include/gui/containers/CustomContainer1.hpp \
- generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
@@ -193,10 +191,6 @@ gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-gui/include/gui/containers/CustomContainer1.hpp:
-
-generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 

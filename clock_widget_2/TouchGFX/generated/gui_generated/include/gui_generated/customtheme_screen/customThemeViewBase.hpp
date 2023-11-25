@@ -15,7 +15,6 @@
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
-#include <gui/containers/CustomContainer1.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
@@ -28,11 +27,6 @@ public:
     customThemeViewBase();
     virtual ~customThemeViewBase();
     virtual void setupScreen();
-
-    virtual void scrollList1UpdateItem(CustomContainer1& item, int16_t itemIndex)
-    {
-        // Override and implement this function in customTheme
-    }
 
 protected:
     FrontendApplication& application() {
@@ -72,7 +66,6 @@ protected:
     touchgfx::Container SchedulePage4;
     touchgfx::Image background4;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<CustomContainer1, 6> scrollList1ListItems;
     touchgfx::Box boxScheduleBack;
     touchgfx::TextArea textScheduleTime;
     touchgfx::TextArea textSchedule;

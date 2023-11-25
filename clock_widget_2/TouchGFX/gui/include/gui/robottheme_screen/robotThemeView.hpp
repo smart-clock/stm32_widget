@@ -21,7 +21,12 @@ public:
     virtual void buttonTimerMaxClicked();
     virtual void bottonTimerMinClicked();
 
-    virtual void handleDragEvent(const DragEvent& Event);
+    // virtual void handleDragEvent(const DragEvent& Event);
+
+    virtual void hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex);
+    virtual void hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
+    // virtual void minuteScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex);
+    // virtual void minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
 protected:
     int tickCounter;
     int stopWatchHours;

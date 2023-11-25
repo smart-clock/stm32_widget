@@ -15,13 +15,13 @@ Screen1ViewBase::Screen1ViewBase()
     box.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     add(box);
 
-    textArea1.setXY(123, 105);
+    textArea1.setXY(0, 0);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea1.setLinespacing(0);
-    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AFRB).getText());
+    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_MRC1).getText());
     textArea1.setWildcard(textArea1Buffer);
     textArea1.resizeToCurrentText();
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_I7O6));
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZMY2));
     add(textArea1);
 }
 

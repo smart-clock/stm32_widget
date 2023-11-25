@@ -157,6 +157,69 @@ robotThemeViewBase::robotThemeViewBase() :
 
     swipeAlarm.setWidth(480);
     swipeAlarm.setHeight(272);
+    boxAlarmBackground.setPosition(0, 0, 480, 272);
+    boxAlarmBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    swipeAlarm.add(boxAlarmBackground);
+
+    background6_1.setXY(0, 0);
+    background6_1.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM_ID));
+    background6_1.setAlpha(112);
+    swipeAlarm.add(background6_1);
+
+    hourScrollWheel.setPosition(55, 61, 110, 150);
+    hourScrollWheel.setHorizontal(false);
+    hourScrollWheel.setCircular(false);
+    hourScrollWheel.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    hourScrollWheel.setSwipeAcceleration(10);
+    hourScrollWheel.setDragAcceleration(10);
+    hourScrollWheel.setNumberOfItems(12);
+    hourScrollWheel.setSelectedItemOffset(35);
+    hourScrollWheel.setSelectedItemExtraSize(0, 0);
+    hourScrollWheel.setSelectedItemMargin(0, 0);
+    hourScrollWheel.setDrawableSize(80, 0);
+    hourScrollWheel.setDrawables(hourScrollWheelListItems, updateItemCallback,
+    
+                          hourScrollWheelSelectedListItems, updateItemCallback);
+    hourScrollWheel.animateToItem(0, 0);
+    swipeAlarm.add(hourScrollWheel);
+
+    minuteScrollWheel.setPosition(190, 61, 110, 150);
+    minuteScrollWheel.setHorizontal(false);
+    minuteScrollWheel.setCircular(false);
+    minuteScrollWheel.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    minuteScrollWheel.setSwipeAcceleration(10);
+    minuteScrollWheel.setDragAcceleration(10);
+    minuteScrollWheel.setNumberOfItems(60);
+    minuteScrollWheel.setSelectedItemOffset(35);
+    minuteScrollWheel.setSelectedItemExtraSize(0, 0);
+    minuteScrollWheel.setSelectedItemMargin(0, 0);
+    minuteScrollWheel.setDrawableSize(80, 0);
+    minuteScrollWheel.setDrawables(minuteScrollWheelListItems, updateItemCallback,
+    
+                          minuteScrollWheelSelectedListItems, updateItemCallback);
+    minuteScrollWheel.animateToItem(0, 0);
+    swipeAlarm.add(minuteScrollWheel);
+
+    toggleButtonON.setXY(341, 75);
+    toggleButtonON.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_80_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_80_70_FFFFFF_SVG_ID));
+    swipeAlarm.add(toggleButtonON);
+
+    toggleButtonAM.setXY(341, 159);
+    toggleButtonAM.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_80_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_80_70_FFFFFF_SVG_ID));
+    swipeAlarm.add(toggleButtonAM);
+
+    textAreaON.setXY(334, 55);
+    textAreaON.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textAreaON.setLinespacing(0);
+    textAreaON.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T9QU));
+    swipeAlarm.add(textAreaON);
+
+    textAreaAM.setXY(340, 141);
+    textAreaAM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textAreaAM.setLinespacing(0);
+    textAreaAM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KHJB));
+    swipeAlarm.add(textAreaAM);
+
     swipeContainerWidget.add(swipeAlarm);
 
     SchedulePage4.setWidth(480);
@@ -165,7 +228,7 @@ robotThemeViewBase::robotThemeViewBase() :
     background4.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     SchedulePage4.add(background4);
 
-    scrollList1.setPosition(203, 30, 210, 200);
+    scrollList1.setPosition(203, 30, 150, 200);
     scrollList1.setHorizontal(false);
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
@@ -174,8 +237,6 @@ robotThemeViewBase::robotThemeViewBase() :
     scrollList1.setNumberOfItems(10);
     scrollList1.setPadding(0, 0);
     scrollList1.setSnapping(false);
-    scrollList1.setDrawableSize(40, 0);
-    scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
     SchedulePage4.add(scrollList1);
 
     boxScheduleBack.setPosition(43, 86, 116, 77);
@@ -489,11 +550,25 @@ robotThemeViewBase::~robotThemeViewBase()
 
 void robotThemeViewBase::setupScreen()
 {
-    scrollList1.initialize();
-    for (int i = 0; i < scrollList1ListItems.getNumberOfDrawables(); i++)
+    hourScrollWheel.initialize();
+    for (int i = 0; i < hourScrollWheelListItems.getNumberOfDrawables(); i++)
     {
-        scrollList1ListItems[i].initialize();
+        hourScrollWheelListItems[i].initialize();
     }
+    for (int i = 0; i < hourScrollWheelSelectedListItems.getNumberOfDrawables(); i++)
+    {
+        hourScrollWheelSelectedListItems[i].initialize();
+    }
+    minuteScrollWheel.initialize();
+    for (int i = 0; i < minuteScrollWheelListItems.getNumberOfDrawables(); i++)
+    {
+        minuteScrollWheelListItems[i].initialize();
+    }
+    for (int i = 0; i < minuteScrollWheelSelectedListItems.getNumberOfDrawables(); i++)
+    {
+        minuteScrollWheelSelectedListItems[i].initialize();
+    }
+    scrollList1.initialize();
 }
 
 void robotThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -550,8 +625,31 @@ void robotThemeViewBase::handleTickEvent()
 
 void robotThemeViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
 {
-    if (items == &scrollList1ListItems)
+    if (items == &hourScrollWheelListItems)
     {
-        scrollList1UpdateItem(scrollList1ListItems[containerIndex], itemIndex);
+        touchgfx::Drawable* d = items->getDrawable(containerIndex);
+        alarmContainer* cc = (alarmContainer*)d;
+        hourScrollWheelUpdateItem(*cc, itemIndex);
     }
+    if (items == &hourScrollWheelSelectedListItems)
+    {
+        touchgfx::Drawable* d = items->getDrawable(containerIndex);
+        alarmCenterContainer* cc = (alarmCenterContainer*)d;
+        hourScrollWheelUpdateCenterItem(*cc, itemIndex);
+    }
+
+    if (items == &minuteScrollWheelListItems)
+    {
+        touchgfx::Drawable* d = items->getDrawable(containerIndex);
+        alarmContainer* cc = (alarmContainer*)d;
+        minuteScrollWheelUpdateItem(*cc, itemIndex);
+    }
+    if (items == &minuteScrollWheelSelectedListItems)
+    {
+        touchgfx::Drawable* d = items->getDrawable(containerIndex);
+        alarmCenterContainer* cc = (alarmCenterContainer*)d;
+        minuteScrollWheelUpdateCenterItem(*cc, itemIndex);
+    }
+
+
 }

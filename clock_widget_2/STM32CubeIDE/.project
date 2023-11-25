@@ -544,9 +544,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/CustomContainer1.cpp</name>
+			<name>Application/User/gui/alarmCenterContainer.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/CustomContainer1.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/alarmCenterContainer.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/alarmContainer.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/alarmContainer.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/customThemePresenter.cpp</name>
@@ -599,6 +604,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/FontCache.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Font_DUBAI_BOLD_TTF_70_8bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_BOLD_TTF_70_8bpp_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_DUBAI_LIGHT_TTF_60_8bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_LIGHT_TTF_60_8bpp_0.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Font_verdana_10_4bpp_0.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_10_4bpp_0.cpp</locationURI>
@@ -619,6 +634,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/GeneratedFont.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Kerning_DUBAI_BOLD_TTF_70_8bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_BOLD_TTF_70_8bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Kerning_DUBAI_LIGHT_TTF_60_8bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_LIGHT_TTF_60_8bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Kerning_verdana_10_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.cpp</locationURI>
@@ -632,6 +657,16 @@
 			<name>Application/User/generated/Kerning_verdana_40_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_DUBAI_BOLD_TTF_70_8bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_BOLD_TTF_70_8bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_DUBAI_LIGHT_TTF_60_8bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_LIGHT_TTF_60_8bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Table_verdana_10_4bpp.cpp</name>
@@ -659,9 +694,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/CustomContainer1Base.cpp</name>
+			<name>Application/User/generated/alarmCenterContainerBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/CustomContainer1Base.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/alarmCenterContainerBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/alarmContainerBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/alarmContainerBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/customThemeViewBase.cpp</name>
@@ -752,6 +792,16 @@
 			<name>Application/User/generated/image_icon_theme_images_content_remove_circle_outline_50_50_FFFFFF.svg.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_content_remove_circle_outline_50_50_FFFFFF.svg.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_icon_theme_images_toggle_toggle_off_80_70_FFFFFF.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_toggle_toggle_off_80_70_FFFFFF.svg.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_icon_theme_images_toggle_toggle_on_80_70_FFFFFF.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_toggle_toggle_on_80_70_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Down_arrow.cpp</name>

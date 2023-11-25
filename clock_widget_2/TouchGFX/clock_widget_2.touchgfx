@@ -281,7 +281,108 @@
                 "Name": "swipeAlarm",
                 "Width": 480,
                 "Height": 272,
-                "Components": []
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "boxAlarmBackground",
+                    "Width": 480,
+                    "Height": 272
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "background6_1",
+                    "Width": 480,
+                    "Height": 272,
+                    "RelativeFilename": "manggom.png",
+                    "Alpha": 112
+                  },
+                  {
+                    "Type": "ScrollWheel",
+                    "Name": "hourScrollWheel",
+                    "X": 55,
+                    "Y": 61,
+                    "Width": 110,
+                    "Height": 150,
+                    "SelectedItemOffset": 35,
+                    "UseSelectedStyle": true,
+                    "SelectedItemTemplateName": "alarmCenterContainer",
+                    "ItemTemplateName": "alarmContainer",
+                    "NumberofItems": 12,
+                    "Easing": "Back",
+                    "EasingOption": "Out",
+                    "SwipeAcceleration": 1.0,
+                    "DragAcceleration": 1.0
+                  },
+                  {
+                    "Type": "ScrollWheel",
+                    "Name": "minuteScrollWheel",
+                    "X": 190,
+                    "Y": 61,
+                    "Width": 110,
+                    "Height": 150,
+                    "SelectedItemOffset": 35,
+                    "UseSelectedStyle": true,
+                    "SelectedItemTemplateName": "alarmCenterContainer",
+                    "ItemTemplateName": "alarmContainer",
+                    "NumberofItems": 60,
+                    "Easing": "Back",
+                    "EasingOption": "Out",
+                    "SwipeAcceleration": 1.0,
+                    "DragAcceleration": 1.0
+                  },
+                  {
+                    "Type": "ToggleButton",
+                    "Name": "toggleButtonON",
+                    "X": 341,
+                    "Y": 75,
+                    "Width": 80,
+                    "Height": 70,
+                    "Pressed": "__generated\\icon_theme_images_toggle_toggle_on_80_70_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_toggle_toggle_off_80_70_FFFFFF.svg.png"
+                  },
+                  {
+                    "Type": "ToggleButton",
+                    "Name": "toggleButtonAM",
+                    "X": 341,
+                    "Y": 159,
+                    "Width": 80,
+                    "Height": 70,
+                    "Pressed": "__generated\\icon_theme_images_toggle_toggle_on_80_70_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_toggle_toggle_off_80_70_FFFFFF.svg.png"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textAreaON",
+                    "X": 334,
+                    "Y": 55,
+                    "Width": 94,
+                    "Height": 24,
+                    "TextId": "__SingleUse_T9QU",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textAreaAM",
+                    "X": 340,
+                    "Y": 141,
+                    "Width": 83,
+                    "Height": 24,
+                    "TextId": "__SingleUse_KHJB",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  }
+                ]
               },
               {
                 "Type": "Container",
@@ -300,9 +401,8 @@
                     "Name": "scrollList1",
                     "X": 203,
                     "Y": 30,
-                    "Width": 210,
+                    "Width": 150,
                     "Height": 200,
-                    "ItemTemplateName": "CustomContainer1",
                     "NumberofItems": 10,
                     "Easing": "Back",
                     "EasingOption": "Out",
@@ -830,7 +930,7 @@
             "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "homePage1",
+            "SelectedPage": "StockPage6",
             "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
             "Components": [
               {
@@ -1122,9 +1222,8 @@
                     "Name": "scrollList1",
                     "X": 203,
                     "Y": 30,
-                    "Width": 210,
+                    "Width": 150,
                     "Height": 200,
-                    "ItemTemplateName": "CustomContainer1",
                     "NumberofItems": 10,
                     "Easing": "Back",
                     "EasingOption": "Out",
@@ -1604,17 +1703,15 @@
           {
             "Type": "TextArea",
             "Name": "textArea1",
-            "X": 123,
-            "Y": 105,
             "Width": 39,
             "Height": 24,
-            "TextId": "__SingleUse_I7O6",
+            "TextId": "__SingleUse_ZMY2",
             "TextRotation": "0",
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_AFRB",
+              "TextId": "__SingleUse_MRC1",
               "UseBuffer": true,
-              "BufferSize": 5
+              "BufferSize": 10
             }
           }
         ],
@@ -1623,39 +1720,80 @@
     ],
     "CustomContainerDefinitions": [
       {
-        "Name": "CustomContainer1",
-        "Width": 210,
-        "Height": 40,
+        "Name": "alarmContainer",
+        "Width": 110,
+        "Height": 80,
         "Components": [
           {
             "Type": "Box",
             "Name": "box1",
-            "Width": 210,
-            "Height": 40,
+            "Width": 110,
+            "Height": 80,
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            }
+              "Red": 196,
+              "Green": 196,
+              "Blue": 196
+            },
+            "Alpha": 0
           },
           {
             "Type": "TextArea",
             "Name": "textArea1",
-            "X": 18,
-            "Y": 8,
-            "Width": 117,
-            "Height": 24,
-            "TextId": "__SingleUse_M735",
+            "X": 17,
+            "Width": 76,
+            "Height": 70,
+            "TextId": "__SingleUse_JJBH",
             "TextRotation": "0",
-            "AutoSize": true
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_SPLZ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "alarmCenterContainer",
+        "Width": 110,
+        "Height": 80,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 110,
+            "Height": 80,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 0
           },
           {
-            "Type": "Image",
-            "Name": "image1",
-            "Y": 40,
-            "Width": 352,
-            "Height": 2,
-            "RelativeFilename": "scroll_list_images\\__designer\\Blue_Dividers_divider_RE_short.png"
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 17,
+            "Y": -6,
+            "Width": 76,
+            "Height": 75,
+            "TextId": "__SingleUse_D77G",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_N8G9",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           }
         ],
         "Interactions": []

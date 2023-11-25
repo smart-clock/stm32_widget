@@ -6,17 +6,35 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_N8G9" Alignment="Left" TypographyId="DubaiLight_60">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_SPLZ" Alignment="Left" TypographyId="DubaiLight_60">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_KHJB" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">AM / PM</Translation>
+      </Text>
+      <Text Id="__SingleUse_T9QU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">ON / OFF</Translation>
+      </Text>
+      <Text Id="__SingleUse_JJBH" Alignment="Center" TypographyId="DubaiLight_60">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_D77G" Alignment="Center" TypographyId="DubaiBold_70">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_MRC1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZMY2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_HY8M" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_T1W6" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">00</Translation>
-      </Text>
-      <Text Id="__SingleUse_AFRB" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">000</Translation>
-      </Text>
-      <Text Id="__SingleUse_I7O6" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_S02A" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">&lt;min&gt;:&lt;sec&gt;</Translation>
@@ -78,9 +96,6 @@
       <Text Id="__SingleUse_5HYN" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">8:00</Translation>
       </Text>
-      <Text Id="__SingleUse_M735" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">8:00 school</Translation>
-      </Text>
       <Text Id="__SingleUse_CH1L" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Stop</Translation>
       </Text>
@@ -123,5 +138,7 @@
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="DubaiBold_70" Font="DUBAI-BOLD.TTF" Size="70" Bpp="8" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
+    <Typography Id="DubaiLight_60" Font="DUBAI-LIGHT.TTF" Size="60" Bpp="8" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>

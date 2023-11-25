@@ -20,8 +20,11 @@
 #include <touchgfx/widgets/Gauge.hpp>
 #include <touchgfx/mixins/ClickListener.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp>
+#include <gui/containers/alarmContainer.hpp>
+#include <gui/containers/alarmCenterContainer.hpp>
+#include <touchgfx/widgets/ToggleButton.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
-#include <gui/containers/CustomContainer1.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
@@ -33,7 +36,22 @@ public:
     virtual ~robotThemeViewBase();
     virtual void setupScreen();
 
-    virtual void scrollList1UpdateItem(CustomContainer1& item, int16_t itemIndex)
+    virtual void hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex)
+    {
+        // Override and implement this function in robotTheme
+    }
+
+    virtual void hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
+    {
+        // Override and implement this function in robotTheme
+    }
+
+    virtual void minuteScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex)
+    {
+        // Override and implement this function in robotTheme
+    }
+
+    virtual void minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
     {
         // Override and implement this function in robotTheme
     }
@@ -98,10 +116,21 @@ protected:
     touchgfx::PainterRGB565 gaugeTimerPainter;
     touchgfx::TextAreaWithTwoWildcards textTimer;
     touchgfx::Container swipeAlarm;
+    touchgfx::Box boxAlarmBackground;
+    touchgfx::Image background6_1;
+    touchgfx::ScrollWheelWithSelectionStyle hourScrollWheel;
+    touchgfx::DrawableListItems<alarmContainer, 4> hourScrollWheelListItems;
+    touchgfx::DrawableListItems<alarmCenterContainer, 2> hourScrollWheelSelectedListItems;
+    touchgfx::ScrollWheelWithSelectionStyle minuteScrollWheel;
+    touchgfx::DrawableListItems<alarmContainer, 4> minuteScrollWheelListItems;
+    touchgfx::DrawableListItems<alarmCenterContainer, 2> minuteScrollWheelSelectedListItems;
+    touchgfx::ToggleButton toggleButtonON;
+    touchgfx::ToggleButton toggleButtonAM;
+    touchgfx::TextArea textAreaON;
+    touchgfx::TextArea textAreaAM;
     touchgfx::Container SchedulePage4;
     touchgfx::Box background4;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<CustomContainer1, 6> scrollList1ListItems;
     touchgfx::Box boxScheduleBack;
     touchgfx::TextArea textScheduleTime;
     touchgfx::TextArea textSchedule;

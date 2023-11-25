@@ -18,6 +18,12 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::SMALL:
         // verdana_10_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
+    case Typography::DUBAIBOLD_70:
+        // DUBAI_BOLD_TTF_70_8bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
+    case Typography::DUBAILIGHT_60:
+        // DUBAI_LIGHT_TTF_60_8bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
     default:
         return 0;
     }

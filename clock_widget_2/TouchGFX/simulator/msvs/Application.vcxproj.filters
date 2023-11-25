@@ -252,12 +252,6 @@
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp">
-      <Filter>Source Files\gui\containers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer1Base.cpp">
-      <Filter>Source Files\generated\gui_generated\containers</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\customtheme_screen\customThemePresenter.cpp">
       <Filter>Source Files\gui\customtheme_screen</Filter>
     </ClCompile>
@@ -284,6 +278,18 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\alarmCenterContainer.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\alarmCenterContainerBase.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\alarmContainer.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\alarmContainerBase.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -727,12 +733,6 @@
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp">
-      <Filter>Header Files\gui\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer1Base.hpp">
-      <Filter>Header Files\generated\gui_generated\containers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemePresenter.hpp">
       <Filter>Header Files\gui\customtheme_screen</Filter>
     </ClInclude>
@@ -759,6 +759,18 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen1_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\alarmCenterContainer.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\alarmCenterContainerBase.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\alarmContainer.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\alarmContainerBase.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

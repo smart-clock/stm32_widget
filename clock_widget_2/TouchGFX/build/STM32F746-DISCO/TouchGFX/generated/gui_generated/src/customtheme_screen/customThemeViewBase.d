@@ -56,8 +56,6 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/customtheme_
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- TouchGFX/gui/include/gui/containers/CustomContainer1.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
@@ -193,10 +191,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/Drawable
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-TouchGFX/gui/include/gui/containers/CustomContainer1.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 
