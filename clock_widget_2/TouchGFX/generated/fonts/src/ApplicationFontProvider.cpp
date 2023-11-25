@@ -24,6 +24,15 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::DUBAILIGHT_60:
         // DUBAI_LIGHT_TTF_60_8bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
+    case Typography::DUBAIBOLD_30:
+        // DUBAI_BOLD_TTF_30_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+    case Typography::DUBAIMEDIUM_20:
+        // DUBAI_MEDIUM_TTF_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
+    case Typography::DUBAIBOLD_20:
+        // DUBAI_BOLD_TTF_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     default:
         return 0;
     }

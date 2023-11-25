@@ -3,26 +3,34 @@
 /*********************************************************************************/
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 
-Screen1ViewBase::Screen1ViewBase()
+Screen1ViewBase::Screen1ViewBase() :
+    updateItemCallback(this, &Screen1ViewBase::updateItemCallbackHandler)
 {
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
     box.setPosition(0, 0, 480, 272);
-    box.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    box.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(box);
 
-    textArea1.setXY(0, 0);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1.setLinespacing(0);
-    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_MRC1).getText());
-    textArea1.setWildcard(textArea1Buffer);
-    textArea1.resizeToCurrentText();
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZMY2));
-    add(textArea1);
+    hourScrollWheel_1.setPosition(55, 61, 110, 150);
+    hourScrollWheel_1.setHorizontal(false);
+    hourScrollWheel_1.setCircular(false);
+    hourScrollWheel_1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    hourScrollWheel_1.setSwipeAcceleration(10);
+    hourScrollWheel_1.setDragAcceleration(10);
+    hourScrollWheel_1.setNumberOfItems(12);
+    hourScrollWheel_1.setSelectedItemOffset(35);
+    hourScrollWheel_1.setSelectedItemExtraSize(0, 0);
+    hourScrollWheel_1.setSelectedItemMargin(0, 0);
+    hourScrollWheel_1.setDrawableSize(60, 0);
+    hourScrollWheel_1.setDrawables(hourScrollWheel_1ListItems, updateItemCallback,
+    
+                          hourScrollWheel_1SelectedListItems, updateItemCallback);
+    hourScrollWheel_1.animateToItem(0, 0);
+    add(hourScrollWheel_1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -32,5 +40,29 @@ Screen1ViewBase::~Screen1ViewBase()
 
 void Screen1ViewBase::setupScreen()
 {
+    hourScrollWheel_1.initialize();
+    for (int i = 0; i < hourScrollWheel_1ListItems.getNumberOfDrawables(); i++)
+    {
+        hourScrollWheel_1ListItems[i].initialize();
+    }
+    for (int i = 0; i < hourScrollWheel_1SelectedListItems.getNumberOfDrawables(); i++)
+    {
+        hourScrollWheel_1SelectedListItems[i].initialize();
+    }
+}
 
+void Screen1ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
+{
+    if (items == &hourScrollWheel_1ListItems)
+    {
+        touchgfx::Drawable* d = items->getDrawable(containerIndex);
+        alarmContainer* cc = (alarmContainer*)d;
+        hourScrollWheel_1UpdateItem(*cc, itemIndex);
+    }
+    if (items == &hourScrollWheel_1SelectedListItems)
+    {
+        touchgfx::Drawable* d = items->getDrawable(containerIndex);
+        alarmCenterContainer* cc = (alarmCenterContainer*)d;
+        hourScrollWheel_1UpdateCenterItem(*cc, itemIndex);
+    }
 }

@@ -604,6 +604,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/FontCache.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Font_DUBAI_BOLD_TTF_20_4bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_BOLD_TTF_20_4bpp_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_DUBAI_BOLD_TTF_30_4bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_BOLD_TTF_30_4bpp_0.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Font_DUBAI_BOLD_TTF_70_8bpp_0.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_BOLD_TTF_70_8bpp_0.cpp</locationURI>
@@ -612,6 +622,11 @@
 			<name>Application/User/generated/Font_DUBAI_LIGHT_TTF_60_8bpp_0.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_LIGHT_TTF_60_8bpp_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_DUBAI_MEDIUM_TTF_20_4bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_MEDIUM_TTF_20_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Font_verdana_10_4bpp_0.cpp</name>
@@ -634,6 +649,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/GeneratedFont.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Kerning_DUBAI_BOLD_TTF_20_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_BOLD_TTF_20_4bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Kerning_DUBAI_BOLD_TTF_30_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_BOLD_TTF_30_4bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Kerning_DUBAI_BOLD_TTF_70_8bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_BOLD_TTF_70_8bpp.cpp</locationURI>
@@ -642,6 +667,11 @@
 			<name>Application/User/generated/Kerning_DUBAI_LIGHT_TTF_60_8bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_LIGHT_TTF_60_8bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Kerning_DUBAI_MEDIUM_TTF_20_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_MEDIUM_TTF_20_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Kerning_verdana_10_4bpp.cpp</name>
@@ -659,6 +689,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Table_DUBAI_BOLD_TTF_20_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_BOLD_TTF_20_4bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_DUBAI_BOLD_TTF_30_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_BOLD_TTF_30_4bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Table_DUBAI_BOLD_TTF_70_8bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_BOLD_TTF_70_8bpp.cpp</locationURI>
@@ -667,6 +707,11 @@
 			<name>Application/User/generated/Table_DUBAI_LIGHT_TTF_60_8bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_LIGHT_TTF_60_8bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_DUBAI_MEDIUM_TTF_20_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_MEDIUM_TTF_20_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Table_verdana_10_4bpp.cpp</name>
@@ -744,6 +789,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_swipecontainer_medium_on_active.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_icon_theme_images_action_alarm_on_22_22_FFFFFF.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_action_alarm_on_22_22_FFFFFF.svg.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_icon_theme_images_av_loop_50_50_FFFFFF.svg.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_loop_50_50_FFFFFF.svg.cpp</locationURI>
@@ -794,14 +844,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_content_remove_circle_outline_50_50_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_icon_theme_images_toggle_toggle_off_80_70_FFFFFF.svg.cpp</name>
+			<name>Application/User/generated/image_icon_theme_images_toggle_toggle_off_70_70_FFFFFF.svg.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_toggle_toggle_off_80_70_FFFFFF.svg.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_toggle_toggle_off_70_70_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_icon_theme_images_toggle_toggle_on_80_70_FFFFFF.svg.cpp</name>
+			<name>Application/User/generated/image_icon_theme_images_toggle_toggle_on_70_70_FFFFFF.svg.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_toggle_toggle_on_80_70_FFFFFF.svg.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_toggle_toggle_on_70_70_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Down_arrow.cpp</name>

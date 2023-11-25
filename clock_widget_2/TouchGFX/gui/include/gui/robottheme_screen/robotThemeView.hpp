@@ -25,8 +25,8 @@ public:
 
     virtual void hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex);
     virtual void hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
-    // virtual void minuteScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex);
-    // virtual void minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
+    virtual void minuteScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex);
+    virtual void minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
 protected:
     int tickCounter;
     int stopWatchHours;
@@ -47,6 +47,9 @@ protected:
     bool timerMin; // min drag limit
     bool timerStart; // timer start flag
     int timerCounter;
+
+    int alarmHour;
+    int alarmMinute;
 
     Callback<robotThemeView, const Gauge&, const ClickEvent&> gaugeClickCallback;
     void gaugeClickHandler(const Gauge& g, const ClickEvent& e);

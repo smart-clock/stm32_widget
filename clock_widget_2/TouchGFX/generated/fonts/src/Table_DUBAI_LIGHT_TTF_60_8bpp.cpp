@@ -5,7 +5,16 @@
 FONT_TABLE_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::GlyphNode glyphs_DUBAI_LIGHT_TTF_60_8bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE = {
     {     0, 0x0030,  29,  42,  41,   2,  32,   0,   0, 0x00 }, // zero
-    {  1218, 0x003F,  23,  42,  41,   1,  26,   0,   0, 0x00 }  // question
+    {  1218, 0x0031,  23,  40,  40,   5,  32,   0,   0, 0x00 }, // one
+    {  2138, 0x0032,  25,  41,  41,   3,  32,   0,   0, 0x00 }, // two
+    {  3163, 0x0033,  25,  41,  40,   3,  32,   0,   0, 0x00 }, // three
+    {  4188, 0x0034,  28,  40,  40,   2,  32,   0,   0, 0x00 }, // four
+    {  5308, 0x0035,  25,  41,  40,   4,  32,   0,   0, 0x00 }, // five
+    {  6333, 0x0036,  27,  42,  41,   3,  32,   0,   0, 0x00 }, // six
+    {  7467, 0x0037,  25,  40,  40,   4,  32,   0,   0, 0x00 }, // seven
+    {  8467, 0x0038,  28,  42,  41,   2,  32,   0,   0, 0x00 }, // eight
+    {  9643, 0x0039,  26,  42,  41,   3,  32,   0,   0, 0x00 }, // nine
+    { 10735, 0x003F,  23,  42,  41,   1,  26,   0,   0, 0x00 }  // question
 };
 
 // DUBAI_LIGHT_TTF_60_8bpp
@@ -118,6 +127,6 @@ touchgfx::GeneratedFont& getFont_DUBAI_LIGHT_TTF_60_8bpp();
 
 touchgfx::GeneratedFont& getFont_DUBAI_LIGHT_TTF_60_8bpp()
 {
-    static touchgfx::GeneratedFont DUBAI_LIGHT_TTF_60_8bpp(glyphs_DUBAI_LIGHT_TTF_60_8bpp, 2, 61, 60, 0, 0, 8, 0, 0, 0, unicodes_DUBAI_LIGHT_TTF_60_8bpp, kerning_DUBAI_LIGHT_TTF_60_8bpp, 63, 0, 0, &DUBAI_LIGHT_TTF_contextualFormsTable);
+    static touchgfx::GeneratedFont DUBAI_LIGHT_TTF_60_8bpp(glyphs_DUBAI_LIGHT_TTF_60_8bpp, 11, 61, 60, 0, 0, 8, 0, 0, 0, unicodes_DUBAI_LIGHT_TTF_60_8bpp, kerning_DUBAI_LIGHT_TTF_60_8bpp, 63, 0, 0, &DUBAI_LIGHT_TTF_contextualFormsTable);
     return DUBAI_LIGHT_TTF_60_8bpp;
 }

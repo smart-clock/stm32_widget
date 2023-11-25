@@ -9,7 +9,9 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/mixins/ClickListener.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp>
+#include <gui/containers/alarmContainer.hpp>
+#include <gui/containers/alarmCenterContainer.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -17,6 +19,16 @@ public:
     Screen1ViewBase();
     virtual ~Screen1ViewBase();
     virtual void setupScreen();
+
+    virtual void hourScrollWheel_1UpdateItem(alarmContainer& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Screen1
+    }
+
+    virtual void hourScrollWheel_1UpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Screen1
+    }
 
 protected:
     FrontendApplication& application() {
@@ -28,15 +40,21 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ClickListener< touchgfx::Box > box;
-    touchgfx::TextAreaWithOneWildcard textArea1;
-
-    /*
-     * Wildcard Buffers
-     */
-    static const uint16_t TEXTAREA1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
+    touchgfx::ScrollWheelWithSelectionStyle hourScrollWheel_1;
+    touchgfx::DrawableListItems<alarmContainer, 4> hourScrollWheel_1ListItems;
+    touchgfx::DrawableListItems<alarmCenterContainer, 2> hourScrollWheel_1SelectedListItems;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Screen1ViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
 
 };
 

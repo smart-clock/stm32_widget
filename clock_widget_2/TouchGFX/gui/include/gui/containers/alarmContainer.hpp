@@ -10,6 +10,8 @@ public:
     virtual ~alarmContainer() {}
 
     virtual void initialize();
+
+    void setText(int time);
 protected:
 };
 

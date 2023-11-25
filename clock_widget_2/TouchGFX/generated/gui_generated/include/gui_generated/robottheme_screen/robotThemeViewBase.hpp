@@ -128,6 +128,7 @@ protected:
     touchgfx::ToggleButton toggleButtonAM;
     touchgfx::TextArea textAreaON;
     touchgfx::TextArea textAreaAM;
+    touchgfx::TextArea textAreaColon;
     touchgfx::Container SchedulePage4;
     touchgfx::Box background4;
     touchgfx::ScrollList scrollList1;
@@ -173,6 +174,8 @@ protected:
     touchgfx::TextArea textStockValue;
     touchgfx::TextArea textBattery;
     touchgfx::TextArea textClock;
+    touchgfx::TextAreaWithTwoWildcards textAlarm;
+    touchgfx::Image imageAlarm;
 
     /*
      * Wildcard Buffers
@@ -181,6 +184,10 @@ protected:
     touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
     static const uint16_t TEXTTIMERBUFFER2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textTimerBuffer2[TEXTTIMERBUFFER2_SIZE];
+    static const uint16_t TEXTALARMBUFFER1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textAlarmBuffer1[TEXTALARMBUFFER1_SIZE];
+    static const uint16_t TEXTALARMBUFFER2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textAlarmBuffer2[TEXTALARMBUFFER2_SIZE];
 
 private:
 

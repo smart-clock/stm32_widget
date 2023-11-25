@@ -161,22 +161,22 @@ robotThemeViewBase::robotThemeViewBase() :
     boxAlarmBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     swipeAlarm.add(boxAlarmBackground);
 
-    background6_1.setXY(0, 0);
+    background6_1.setXY(0, -1);
     background6_1.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM_ID));
-    background6_1.setAlpha(112);
+    background6_1.setAlpha(100);
     swipeAlarm.add(background6_1);
 
-    hourScrollWheel.setPosition(55, 61, 110, 150);
+    hourScrollWheel.setPosition(60, 61, 110, 150);
     hourScrollWheel.setHorizontal(false);
     hourScrollWheel.setCircular(false);
     hourScrollWheel.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
     hourScrollWheel.setSwipeAcceleration(10);
     hourScrollWheel.setDragAcceleration(10);
     hourScrollWheel.setNumberOfItems(12);
-    hourScrollWheel.setSelectedItemOffset(35);
+    hourScrollWheel.setSelectedItemOffset(45);
     hourScrollWheel.setSelectedItemExtraSize(0, 0);
     hourScrollWheel.setSelectedItemMargin(0, 0);
-    hourScrollWheel.setDrawableSize(80, 0);
+    hourScrollWheel.setDrawableSize(60, 0);
     hourScrollWheel.setDrawables(hourScrollWheelListItems, updateItemCallback,
     
                           hourScrollWheelSelectedListItems, updateItemCallback);
@@ -190,35 +190,41 @@ robotThemeViewBase::robotThemeViewBase() :
     minuteScrollWheel.setSwipeAcceleration(10);
     minuteScrollWheel.setDragAcceleration(10);
     minuteScrollWheel.setNumberOfItems(60);
-    minuteScrollWheel.setSelectedItemOffset(35);
+    minuteScrollWheel.setSelectedItemOffset(45);
     minuteScrollWheel.setSelectedItemExtraSize(0, 0);
     minuteScrollWheel.setSelectedItemMargin(0, 0);
-    minuteScrollWheel.setDrawableSize(80, 0);
+    minuteScrollWheel.setDrawableSize(60, 0);
     minuteScrollWheel.setDrawables(minuteScrollWheelListItems, updateItemCallback,
     
                           minuteScrollWheelSelectedListItems, updateItemCallback);
     minuteScrollWheel.animateToItem(0, 0);
     swipeAlarm.add(minuteScrollWheel);
 
-    toggleButtonON.setXY(341, 75);
-    toggleButtonON.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_80_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_80_70_FFFFFF_SVG_ID));
+    toggleButtonON.setXY(341, 80);
+    toggleButtonON.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_70_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_70_70_FFFFFF_SVG_ID));
     swipeAlarm.add(toggleButtonON);
 
-    toggleButtonAM.setXY(341, 159);
-    toggleButtonAM.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_80_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_80_70_FFFFFF_SVG_ID));
+    toggleButtonAM.setXY(341, 160);
+    toggleButtonAM.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_70_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_70_70_FFFFFF_SVG_ID));
     swipeAlarm.add(toggleButtonAM);
 
-    textAreaON.setXY(334, 55);
+    textAreaON.setXY(340, 61);
     textAreaON.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textAreaON.setLinespacing(0);
     textAreaON.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T9QU));
     swipeAlarm.add(textAreaON);
 
-    textAreaAM.setXY(340, 141);
+    textAreaAM.setXY(341, 143);
     textAreaAM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textAreaAM.setLinespacing(0);
     textAreaAM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KHJB));
     swipeAlarm.add(textAreaAM);
+
+    textAreaColon.setXY(174, 83);
+    textAreaColon.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textAreaColon.setLinespacing(0);
+    textAreaColon.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LRH2));
+    swipeAlarm.add(textAreaColon);
 
     swipeContainerWidget.add(swipeAlarm);
 
@@ -530,17 +536,32 @@ robotThemeViewBase::robotThemeViewBase() :
     swipeContainerWidget.setSelectedPage(4);
     add(swipeContainerWidget);
 
-    textBattery.setXY(432, 0);
+    textBattery.setXY(435, 0);
     textBattery.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textBattery.setLinespacing(0);
     textBattery.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6CI5));
     add(textBattery);
 
-    textClock.setXY(0, 0);
+    textClock.setXY(5, 0);
     textClock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textClock.setLinespacing(0);
     textClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_70FQ));
     add(textClock);
+
+    textAlarm.setXY(361, 0);
+    textAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textAlarm.setLinespacing(0);
+    touchgfx::Unicode::snprintf(textAlarmBuffer1, TEXTALARMBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_ILR7).getText());
+    textAlarm.setWildcard1(textAlarmBuffer1);
+    touchgfx::Unicode::snprintf(textAlarmBuffer2, TEXTALARMBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_YTIP).getText());
+    textAlarm.setWildcard2(textAlarmBuffer2);
+    textAlarm.resizeToCurrentText();
+    textAlarm.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TJPS));
+    add(textAlarm);
+
+    imageAlarm.setXY(336, 2);
+    imageAlarm.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_ALARM_ON_22_22_FFFFFF_SVG_ID));
+    add(imageAlarm);
 }
 
 robotThemeViewBase::~robotThemeViewBase()

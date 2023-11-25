@@ -12,9 +12,10 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 
-    void boxClickHandler(const Box& b, const ClickEvent& e);
+    virtual void hourScrollWheel_1UpdateItem(alarmContainer& item, int16_t itemIndex);
+    virtual void hourScrollWheel_1UpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
+
 protected:
-    Callback<Screen1View, const Box&, const ClickEvent&> boxClickedCallback;
 };
 
 #endif // SCREEN1VIEW_HPP

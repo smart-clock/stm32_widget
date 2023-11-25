@@ -39,7 +39,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/containers/alarmCenterContainer.
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp
@@ -122,7 +122,7 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 

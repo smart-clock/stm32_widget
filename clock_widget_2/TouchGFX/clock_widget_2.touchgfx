@@ -291,19 +291,20 @@
                   {
                     "Type": "Image",
                     "Name": "background6_1",
+                    "Y": -1,
                     "Width": 480,
                     "Height": 272,
                     "RelativeFilename": "manggom.png",
-                    "Alpha": 112
+                    "Alpha": 100
                   },
                   {
                     "Type": "ScrollWheel",
                     "Name": "hourScrollWheel",
-                    "X": 55,
+                    "X": 60,
                     "Y": 61,
                     "Width": 110,
                     "Height": 150,
-                    "SelectedItemOffset": 35,
+                    "SelectedItemOffset": 45,
                     "UseSelectedStyle": true,
                     "SelectedItemTemplateName": "alarmCenterContainer",
                     "ItemTemplateName": "alarmContainer",
@@ -320,7 +321,7 @@
                     "Y": 61,
                     "Width": 110,
                     "Height": 150,
-                    "SelectedItemOffset": 35,
+                    "SelectedItemOffset": 45,
                     "UseSelectedStyle": true,
                     "SelectedItemTemplateName": "alarmCenterContainer",
                     "ItemTemplateName": "alarmContainer",
@@ -334,29 +335,29 @@
                     "Type": "ToggleButton",
                     "Name": "toggleButtonON",
                     "X": 341,
-                    "Y": 75,
-                    "Width": 80,
+                    "Y": 80,
+                    "Width": 70,
                     "Height": 70,
-                    "Pressed": "__generated\\icon_theme_images_toggle_toggle_on_80_70_FFFFFF.svg.png",
-                    "Released": "__generated\\icon_theme_images_toggle_toggle_off_80_70_FFFFFF.svg.png"
+                    "Pressed": "__generated\\icon_theme_images_toggle_toggle_on_70_70_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_toggle_toggle_off_70_70_FFFFFF.svg.png"
                   },
                   {
                     "Type": "ToggleButton",
                     "Name": "toggleButtonAM",
                     "X": 341,
-                    "Y": 159,
-                    "Width": 80,
+                    "Y": 160,
+                    "Width": 70,
                     "Height": 70,
-                    "Pressed": "__generated\\icon_theme_images_toggle_toggle_on_80_70_FFFFFF.svg.png",
-                    "Released": "__generated\\icon_theme_images_toggle_toggle_off_80_70_FFFFFF.svg.png"
+                    "Pressed": "__generated\\icon_theme_images_toggle_toggle_on_70_70_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_toggle_toggle_off_70_70_FFFFFF.svg.png"
                   },
                   {
                     "Type": "TextArea",
                     "Name": "textAreaON",
-                    "X": 334,
-                    "Y": 55,
-                    "Width": 94,
-                    "Height": 24,
+                    "X": 340,
+                    "Y": 61,
+                    "Width": 76,
+                    "Height": 23,
                     "TextId": "__SingleUse_T9QU",
                     "TextRotation": "0",
                     "Color": {
@@ -369,11 +370,27 @@
                   {
                     "Type": "TextArea",
                     "Name": "textAreaAM",
-                    "X": 340,
-                    "Y": 141,
-                    "Width": 83,
-                    "Height": 24,
+                    "X": 341,
+                    "Y": 143,
+                    "Width": 70,
+                    "Height": 23,
                     "TextId": "__SingleUse_KHJB",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textAreaColon",
+                    "X": 174,
+                    "Y": 83,
+                    "Width": 14,
+                    "Height": 71,
+                    "TextId": "__SingleUse_LRH2",
                     "TextRotation": "0",
                     "Color": {
                       "Red": 255,
@@ -805,9 +822,9 @@
           {
             "Type": "TextArea",
             "Name": "textBattery",
-            "X": 432,
-            "Width": 48,
-            "Height": 24,
+            "X": 435,
+            "Width": 41,
+            "Height": 20,
             "TextId": "__SingleUse_6CI5",
             "TextRotation": "0",
             "Color": {
@@ -820,8 +837,9 @@
           {
             "Type": "TextArea",
             "Name": "textClock",
-            "Width": 61,
-            "Height": 24,
+            "X": 5,
+            "Width": 48,
+            "Height": 20,
             "TextId": "__SingleUse_70FQ",
             "TextRotation": "0",
             "Color": {
@@ -830,6 +848,40 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAlarm",
+            "X": 361,
+            "Width": 48,
+            "Height": 20,
+            "TextId": "__SingleUse_TJPS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_ILR7",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_YTIP",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "imageAlarm",
+            "X": 336,
+            "Y": 2,
+            "Width": 22,
+            "Height": 22,
+            "RelativeFilename": "__generated\\icon_theme_images_action_alarm_on_22_22_FFFFFF.svg.png"
           }
         ],
         "Interactions": [
@@ -1693,26 +1745,24 @@
             "Name": "box",
             "Width": 480,
             "Height": 272,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
             "Clickable": true
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "Width": 39,
-            "Height": 24,
-            "TextId": "__SingleUse_ZMY2",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_MRC1",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
+            "Type": "ScrollWheel",
+            "Name": "hourScrollWheel_1",
+            "X": 55,
+            "Y": 61,
+            "Width": 110,
+            "Height": 150,
+            "SelectedItemOffset": 35,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "alarmCenterContainer",
+            "ItemTemplateName": "alarmContainer",
+            "NumberofItems": 12,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0
           }
         ],
         "Interactions": []
@@ -1722,24 +1772,13 @@
       {
         "Name": "alarmContainer",
         "Width": 110,
-        "Height": 80,
+        "Height": 60,
         "Components": [
           {
-            "Type": "Box",
-            "Name": "box1",
-            "Width": 110,
-            "Height": 80,
-            "Color": {
-              "Red": 196,
-              "Green": 196,
-              "Blue": 196
-            },
-            "Alpha": 0
-          },
-          {
             "Type": "TextArea",
-            "Name": "textArea1",
+            "Name": "textArea",
             "X": 17,
+            "Y": 10,
             "Width": 76,
             "Height": 70,
             "TextId": "__SingleUse_JJBH",
@@ -1761,25 +1800,13 @@
       {
         "Name": "alarmCenterContainer",
         "Width": 110,
-        "Height": 80,
+        "Height": 60,
         "Components": [
           {
-            "Type": "Box",
-            "Name": "box1",
-            "Width": 110,
-            "Height": 80,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 0
-          },
-          {
             "Type": "TextArea",
-            "Name": "textArea1",
+            "Name": "textArea",
             "X": 17,
-            "Y": -6,
+            "Y": -17,
             "Width": 76,
             "Height": 75,
             "TextId": "__SingleUse_D77G",
