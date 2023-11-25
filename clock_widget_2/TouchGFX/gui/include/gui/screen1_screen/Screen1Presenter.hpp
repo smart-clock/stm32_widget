@@ -27,6 +27,7 @@ public:
 
     virtual ~Screen1Presenter() {}
 
+    virtual void uart_Data(char *data);
 private:
     Screen1Presenter();
 

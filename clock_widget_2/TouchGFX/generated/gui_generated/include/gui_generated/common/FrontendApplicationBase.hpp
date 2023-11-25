@@ -17,11 +17,14 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotorobotThemeScreenNoTransition();
+        gotoScreen1ScreenNoTransition();
     }
 
     // robotTheme
     void gotorobotThemeScreenNoTransition();
+
+    // Screen1
+    void gotoScreen1ScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -30,6 +33,9 @@ protected:
 
     // robotTheme
     void gotorobotThemeScreenNoTransitionImpl();
+
+    // Screen1
+    void gotoScreen1ScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

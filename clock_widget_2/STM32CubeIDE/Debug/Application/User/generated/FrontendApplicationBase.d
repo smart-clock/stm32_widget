@@ -41,52 +41,27 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../Middlewares/ST/touchgfx/framework/include/common/Meta.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
- ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- ../../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
+ ../../TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
  ../../TouchGFX/gui/include/gui/model/ModelListener.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- ../../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
- ../../TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp \
- ../../TouchGFX/gui/include/gui/screen3_screen/Screen3View.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/screen3_screen/Screen3ViewBase.hpp \
- ../../TouchGFX/gui/include/gui/screen3_screen/Screen3Presenter.hpp \
- ../../TouchGFX/gui/include/gui/screen4_screen/Screen4View.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/screen4_screen/Screen4ViewBase.hpp \
- ../../TouchGFX/gui/include/gui/screen4_screen/Screen4Presenter.hpp \
- ../../TouchGFX/gui/include/gui/screen5_screen/Screen5View.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/screen5_screen/Screen5ViewBase.hpp \
- ../../TouchGFX/gui/include/gui/screen5_screen/Screen5Presenter.hpp \
- ../../TouchGFX/gui/include/gui/screen6_screen/Screen6View.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/screen6_screen/Screen6ViewBase.hpp \
- ../../TouchGFX/gui/include/gui/screen6_screen/Screen6Presenter.hpp \
- ../../TouchGFX/gui/include/gui/screen7_screen/Screen7View.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/screen7_screen/Screen7ViewBase.hpp \
- ../../TouchGFX/gui/include/gui/screen7_screen/Screen7Presenter.hpp \
- ../../TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp \
- ../../TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
@@ -104,12 +79,19 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
- ../../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
+ ../../TouchGFX/gui/include/gui/containers/alarmContainer.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmContainerBase.hpp \
+ ../../TouchGFX/gui/include/gui/containers/alarmCenterContainer.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
@@ -117,6 +99,10 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
  ../../TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -159,52 +145,27 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../Middlewares/ST/touchgfx/framework/include/common/Meta.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
-../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
+../../TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
-../../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:
+../../TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-../../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
-../../TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp:
-../../TouchGFX/gui/include/gui/screen3_screen/Screen3View.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen3_screen/Screen3ViewBase.hpp:
-../../TouchGFX/gui/include/gui/screen3_screen/Screen3Presenter.hpp:
-../../TouchGFX/gui/include/gui/screen4_screen/Screen4View.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen4_screen/Screen4ViewBase.hpp:
-../../TouchGFX/gui/include/gui/screen4_screen/Screen4Presenter.hpp:
-../../TouchGFX/gui/include/gui/screen5_screen/Screen5View.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen5_screen/Screen5ViewBase.hpp:
-../../TouchGFX/gui/include/gui/screen5_screen/Screen5Presenter.hpp:
-../../TouchGFX/gui/include/gui/screen6_screen/Screen6View.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen6_screen/Screen6ViewBase.hpp:
-../../TouchGFX/gui/include/gui/screen6_screen/Screen6Presenter.hpp:
-../../TouchGFX/gui/include/gui/screen7_screen/Screen7View.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen7_screen/Screen7ViewBase.hpp:
-../../TouchGFX/gui/include/gui/screen7_screen/Screen7Presenter.hpp:
-../../TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:
-../../TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp:
@@ -222,12 +183,19 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
-../../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
+../../TouchGFX/gui/include/gui/containers/alarmContainer.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmContainerBase.hpp:
+../../TouchGFX/gui/include/gui/containers/alarmCenterContainer.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
@@ -235,4 +203,8 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
 ../../TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
+../../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:
 ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:

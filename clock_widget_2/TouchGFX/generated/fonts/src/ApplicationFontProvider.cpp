@@ -33,6 +33,9 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::DUBAIBOLD_20:
         // DUBAI_BOLD_TTF_20_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+    case Typography::DUBAIMEDIUM_20_EN:
+        // verdana_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
     default:
         return 0;
     }

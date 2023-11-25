@@ -76,31 +76,26 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1686:25:virtual touchgfx::CWRUtil::Q5 touchgfx::DynamicDataGraph::indexToScreenXQ5(int16_t) const	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1691:25:virtual touchgfx::CWRUtil::Q5 touchgfx::DynamicDataGraph::indexToScreenYQ5(int16_t) const	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:47:21:virtual int32_t touchgfx::GraphWrapAndClearData::indexToGlobalIndex(int16_t) const	0	static
-../../TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:32:18:virtual void customThemeViewBase::scrollList1UpdateItem(CustomContainer1&, int16_t)	0	static
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<customThemePresenter>::~View()	0	static
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = CustomContainer1; int SIZE = 6]	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:514:6:void customThemeViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<customThemeViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:touchgfx::Callback<customThemeViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:66:7:touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	0	static
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<CustomContainer1, 6>::~DrawableListItems()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = customThemeViewBase; T1 = const touchgfx::AbstractButton&]	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = customThemeViewBase; T1 = const touchgfx::AbstractButton&]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:250:18:void touchgfx::Callback<dest_type, T1, T2, T3>::execute(T1, T2, T3) [with dest_type = customThemeViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:260:18:bool touchgfx::Callback<dest_type, T1, T2, T3>::isValid() const [with dest_type = customThemeViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<customThemePresenter>::~View()	8	static
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<CustomContainer1, 6>::~DrawableListItems()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:66:7:virtual touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:virtual touchgfx::Callback<customThemeViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<customThemeViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:501:6:virtual void customThemeViewBase::setupScreen()	16	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:498:6:virtual void customThemeViewBase::setupScreen()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1176:18:virtual void touchgfx::AbstractDataGraph::invalidateContent() const	8	static
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = CustomContainer1; int SIZE = 6]	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1591:17:virtual int touchgfx::DynamicDataGraph::indexToDataPointYScaled(int16_t) const	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1585:17:virtual int touchgfx::DynamicDataGraph::indexToDataPointXScaled(int16_t) const	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:510:6:void customThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:528:6:void customThemeViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	16	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:503:6:void customThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:43:5:touchgfx::Container::Container()	0	static
@@ -116,6 +111,6 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/custo
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:42:5:touchgfx::PainterRGB565::PainterRGB565(touchgfx::colortype)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:248:10:void touchgfx::Line::setLineWidth(T) [with T = int]	4	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:10:1:customThemeViewBase::customThemeViewBase()	368	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:496:1:customThemeViewBase::~customThemeViewBase()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:496:1:virtual customThemeViewBase::~customThemeViewBase()	8	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:10:1:customThemeViewBase::customThemeViewBase()	360	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:493:1:customThemeViewBase::~customThemeViewBase()	16	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/customtheme_screen/customThemeViewBase.cpp:493:1:virtual customThemeViewBase::~customThemeViewBase()	8	static

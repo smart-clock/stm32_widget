@@ -16,6 +16,7 @@ public:
     void tick();
 protected:
     ModelListener* modelListener;
+    char RData[257];
 };
 
 #endif // MODEL_HPP

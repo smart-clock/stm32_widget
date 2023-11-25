@@ -55,19 +55,26 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
+typedef struct
+{
+	int size;
+	char Data[257];
+
+} uartData_t;
+
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
 #define VSYNC_FREQ_Pin GPIO_PIN_4
 #define VSYNC_FREQ_GPIO_Port GPIOB
+#define FRAME_RATE_Pin GPIO_PIN_11
+#define FRAME_RATE_GPIO_Port GPIOA
 #define LCD_BL_CTRL_Pin GPIO_PIN_3
 #define LCD_BL_CTRL_GPIO_Port GPIOK
+#define RENDER_TIME_Pin GPIO_PIN_10
+#define RENDER_TIME_GPIO_Port GPIOA
 #define LCD_DISP_Pin GPIO_PIN_12
 #define LCD_DISP_GPIO_Port GPIOI
-#define FRAME_RATE_Pin GPIO_PIN_7
-#define FRAME_RATE_GPIO_Port GPIOC
-#define RENDER_TIME_Pin GPIO_PIN_6
-#define RENDER_TIME_GPIO_Port GPIOC
 #define MCU_ACTIVE_Pin GPIO_PIN_6
 #define MCU_ACTIVE_GPIO_Port GPIOG
 

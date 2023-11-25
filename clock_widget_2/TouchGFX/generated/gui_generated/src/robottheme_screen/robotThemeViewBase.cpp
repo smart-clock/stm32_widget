@@ -393,11 +393,11 @@ robotThemeViewBase::robotThemeViewBase() :
 
     swipeContainerWidget.add(BusPage5);
 
-    StockPage6.setWidth(480);
-    StockPage6.setHeight(272);
+    stock.setWidth(480);
+    stock.setHeight(272);
     background6.setPosition(0, 0, 480, 272);
     background6.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    StockPage6.add(background6);
+    stock.add(background6);
 
     dynamicGraph1.setPosition(-129, 67, 609, 206);
     dynamicGraph1.setScale(1);
@@ -517,21 +517,21 @@ robotThemeViewBase::robotThemeViewBase() :
     dynamicGraph1.addDataPoint(56.17981f);
     dynamicGraph1.addDataPoint(49.95836f);
     dynamicGraph1.addDataPoint(48.74036f);
-    StockPage6.add(dynamicGraph1);
+    stock.add(dynamicGraph1);
 
     textStock.setXY(20, 48);
     textStock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textStock.setLinespacing(0);
     textStock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A88N));
-    StockPage6.add(textStock);
+    stock.add(textStock);
 
     textStockValue.setXY(20, 96);
     textStockValue.setColor(touchgfx::Color::getColorFromRGB(240, 60, 60));
     textStockValue.setLinespacing(0);
     textStockValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WA0J));
-    StockPage6.add(textStockValue);
+    stock.add(textStockValue);
 
-    swipeContainerWidget.add(StockPage6);
+    swipeContainerWidget.add(stock);
 
     swipeContainerWidget.setSelectedPage(4);
     add(swipeContainerWidget);

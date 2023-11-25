@@ -18,6 +18,13 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	3
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:48:18:virtual void touchgfx::TextArea::setWidth(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:54:18:virtual void touchgfx::TextArea::setHeight(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:60:18:virtual touchgfx::Rect touchgfx::TextArea::getSolidRect() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:89:18:virtual void touchgfx::TextArea::setAlpha(uint8_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:127:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:147:41:virtual const UnicodeChar* touchgfx::TextAreaWithTwoWildcards::getWildcard1() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:166:41:virtual const UnicodeChar* touchgfx::TextAreaWithTwoWildcards::getWildcard2() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:78:18:virtual bool touchgfx::AbstractPainter::setup(const touchgfx::Rect&) const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	1
@@ -25,6 +32,7 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:72:21:virtual uint8_t touchgfx::CanvasWidget::getAlpha() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:118:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getMinimalRect() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:134:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getSolidRect() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:74:18:virtual void touchgfx::Gauge::getCenter(int&, int&) const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:172:18:virtual void touchgfx::AbstractDataGraph::setAlpha(uint8_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:440:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(int, int)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:446:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(float, float)	3
@@ -76,35 +84,52 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1686:25:virtual touchgfx::CWRUtil::Q5 touchgfx::DynamicDataGraph::indexToScreenXQ5(int16_t) const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1691:25:virtual touchgfx::CWRUtil::Q5 touchgfx::DynamicDataGraph::indexToScreenYQ5(int16_t) const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:47:21:virtual int32_t touchgfx::GraphWrapAndClearData::indexToGlobalIndex(int16_t) const	1
-../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:34:18:virtual void robotThemeViewBase::scrollList1UpdateItem(CustomContainer1&, int16_t)	1
-../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:43:18:virtual void robotThemeViewBase::buttonPlayClicked()	1
-../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:47:18:virtual void robotThemeViewBase::buttonStopClicked()	1
-../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:51:18:virtual void robotThemeViewBase::buttonResetClicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:39:18:virtual void robotThemeViewBase::hourScrollWheelUpdateItem(alarmContainer&, int16_t)	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:44:18:virtual void robotThemeViewBase::hourScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:49:18:virtual void robotThemeViewBase::minuteScrollWheelUpdateItem(alarmContainer&, int16_t)	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:54:18:virtual void robotThemeViewBase::minuteScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:63:18:virtual void robotThemeViewBase::buttonPlayClicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:67:18:virtual void robotThemeViewBase::buttonStopClicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:71:18:virtual void robotThemeViewBase::buttonResetClicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:75:18:virtual void robotThemeViewBase::buttonTimerMaxClicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:79:18:virtual void robotThemeViewBase::bottonTimerMinClicked()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<robotThemePresenter>::~View()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = CustomContainer1; int SIZE = 6]	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:595:6:void robotThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	6
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:647:6:void robotThemeViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	5
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = alarmContainer; int SIZE = 4]	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = alarmCenterContainer; int SIZE = 2]	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<robotThemeViewBase, const touchgfx::AbstractButton&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:touchgfx::Callback<robotThemeViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:66:7:touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<CustomContainer1, 6>::~DrawableListItems()	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<alarmCenterContainer, 2>::~DrawableListItems()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<alarmContainer, 4>::~DrawableListItems()	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:touchgfx::ClickListener<touchgfx::Gauge>::~ClickListener()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:125:7:touchgfx::TextAreaWithTwoWildcards::~TextAreaWithTwoWildcards()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = robotThemeViewBase; T1 = const touchgfx::AbstractButton&]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = robotThemeViewBase; T1 = const touchgfx::AbstractButton&]	3
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:250:18:void touchgfx::Callback<dest_type, T1, T2, T3>::execute(T1, T2, T3) [with dest_type = robotThemeViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:260:18:bool touchgfx::Callback<dest_type, T1, T2, T3>::isValid() const [with dest_type = robotThemeViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	3
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:509:6:virtual void robotThemeViewBase::handleTickEvent()	2
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:634:6:virtual void robotThemeViewBase::handleTickEvent()	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<robotThemePresenter>::~View()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<CustomContainer1, 6>::~DrawableListItems()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:125:7:virtual touchgfx::TextAreaWithTwoWildcards::~TextAreaWithTwoWildcards()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<alarmContainer, 4>::~DrawableListItems()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<alarmCenterContainer, 2>::~DrawableListItems()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:66:7:virtual touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:virtual touchgfx::Callback<robotThemeViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<robotThemeViewBase, const touchgfx::AbstractButton&>::~Callback()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:475:6:virtual void robotThemeViewBase::setupScreen()	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:virtual touchgfx::ClickListener<touchgfx::Gauge>::~ClickListener()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:43:18:virtual void touchgfx::TextAreaWithWildcardBase::invalidateContent() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1176:18:virtual void touchgfx::AbstractDataGraph::invalidateContent() const	2
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:484:6:void robotThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	4
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = CustomContainer1; int SIZE = 6]	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:49:18:void touchgfx::ClickListener<T>::handleClickEvent(const touchgfx::ClickEvent&) [with T = touchgfx::Gauge]	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = alarmContainer; int SIZE = 4]	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = alarmCenterContainer; int SIZE = 2]	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1591:17:virtual int touchgfx::DynamicDataGraph::indexToDataPointYScaled(int16_t) const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1585:17:virtual int touchgfx::DynamicDataGraph::indexToDataPointXScaled(int16_t) const	2
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:522:6:void robotThemeViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:189:18:virtual void touchgfx::Gauge::invalidateContent() const	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:49:36:virtual touchgfx::TextArea::BoundingArea touchgfx::TextAreaWithWildcardBase::calculateBoundingArea() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:43:5:touchgfx::Container::Container()	1
@@ -118,7 +143,11 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robot
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1270:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenXQ5(int) const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	4
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:42:5:touchgfx::PainterRGB565::PainterRGB565(touchgfx::colortype)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:152:18:virtual void touchgfx::ScrollWheelWithSelectionStyle::initialize()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:572:6:virtual void robotThemeViewBase::setupScreen()	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<alarmContainer, 4>::DrawableListItems()	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<alarmCenterContainer, 2>::DrawableListItems()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:248:10:void touchgfx::Line::setLineWidth(T) [with T = int]	2
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:11:1:robotThemeViewBase::robotThemeViewBase()	102
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:470:1:robotThemeViewBase::~robotThemeViewBase()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:470:1:virtual robotThemeViewBase::~robotThemeViewBase()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:11:1:robotThemeViewBase::robotThemeViewBase()	107
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:567:1:robotThemeViewBase::~robotThemeViewBase()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:567:1:virtual robotThemeViewBase::~robotThemeViewBase()	1

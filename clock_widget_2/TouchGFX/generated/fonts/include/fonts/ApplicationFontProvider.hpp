@@ -21,18 +21,20 @@ struct Typography
     static const touchgfx::FontId DUBAIBOLD_30 = 5;
     static const touchgfx::FontId DUBAIMEDIUM_20 = 6;
     static const touchgfx::FontId DUBAIBOLD_20 = 7;
+    static const touchgfx::FontId DUBAIMEDIUM_20_EN = 8;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0;        // verdana_20_4bpp
-    static const touchgfx::FontId LARGE = 1;          // verdana_40_4bpp
-    static const touchgfx::FontId SMALL = 2;          // verdana_10_4bpp
-    static const touchgfx::FontId DUBAIBOLD_70 = 3;   // DUBAI_BOLD_TTF_70_8bpp
-    static const touchgfx::FontId DUBAILIGHT_60 = 4;  // DUBAI_LIGHT_TTF_60_8bpp
-    static const touchgfx::FontId DUBAIBOLD_30 = 5;   // DUBAI_BOLD_TTF_30_4bpp
-    static const touchgfx::FontId DUBAIMEDIUM_20 = 6; // DUBAI_MEDIUM_TTF_20_4bpp
-    static const touchgfx::FontId DUBAIBOLD_20 = 7;   // DUBAI_BOLD_TTF_20_4bpp
+    static const touchgfx::FontId DEFAULT = 0;           // verdana_20_4bpp
+    static const touchgfx::FontId LARGE = 1;             // verdana_40_4bpp
+    static const touchgfx::FontId SMALL = 2;             // verdana_10_4bpp
+    static const touchgfx::FontId DUBAIBOLD_70 = 3;      // DUBAI_BOLD_TTF_70_8bpp
+    static const touchgfx::FontId DUBAILIGHT_60 = 4;     // DUBAI_LIGHT_TTF_60_8bpp
+    static const touchgfx::FontId DUBAIBOLD_30 = 5;      // DUBAI_BOLD_TTF_30_4bpp
+    static const touchgfx::FontId DUBAIMEDIUM_20 = 6;    // DUBAI_MEDIUM_TTF_20_4bpp
+    static const touchgfx::FontId DUBAIBOLD_20 = 7;      // DUBAI_BOLD_TTF_20_4bpp
+    static const touchgfx::FontId DUBAIMEDIUM_20_EN = 0; // verdana_20_4bpp
     static const uint16_t NUMBER_OF_FONTS = 8;
 };
 

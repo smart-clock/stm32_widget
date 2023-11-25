@@ -263,3 +263,1155 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Github\stm32_widget
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-11-24 15:43:08.471
 !MESSAGE Indexed 'STM32F746G_DISCO' (202 sources, 402 headers) in 22.1 sec: 31,533 declarations; 128,932 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.34%)
+!SESSION 2023-11-25 19:43:31.036 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Github\stm32_widget\clock_widget_2\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Github\stm32_widget\clock_widget_2\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-11-25 19:43:56.023
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-25 19:43:56.030
+!MESSAGE Log4j2 initialized with config file C:\Github\stm32_widget\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-25 19:44:04.566
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.266
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.325
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.325
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.326
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.327
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.328
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.329
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.573
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.583
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.585
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.588
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.589
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.590
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.591
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.592
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.594
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.595
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.596
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.598
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 19:44:13.600
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-25 19:44:28.450
+!MESSAGE Indexed 'STM32F746G_DISCO' (215 sources, 388 headers) in 23.4 sec: 31,574 declarations; 128,750 references; 0 unresolved inclusions; 75 syntax errors; 548 unresolved names (0.34%)
+!SESSION 2023-11-25 20:17:04.929 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Github\stm32_widget\clock_widget_2\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Github\stm32_widget\clock_widget_2\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-11-25 20:17:10.550
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-25 20:17:10.551
+!MESSAGE Log4j2 initialized with config file C:\Github\stm32_widget\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-25 20:17:17.005
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.488
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.562
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.563
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.564
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.566
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.567
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.569
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.807
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.820
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.821
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.823
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.824
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.827
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.829
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.831
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.832
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.833
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.834
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.836
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:17:27.837
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-25 20:17:40.284
+!MESSAGE Indexed 'STM32F746G_DISCO' (221 sources, 392 headers) in 22.7 sec: 32,416 declarations; 135,066 references; 0 unresolved inclusions; 75 syntax errors; 548 unresolved names (0.33%)
+!SESSION 2023-11-25 20:23:32.965 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-11-25 20:23:39.004
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-25 20:23:39.014
+!MESSAGE Log4j2 initialized with config file C:\Github\stm32_widget\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-25 20:23:43.711
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.500
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.540
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.540
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.541
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.542
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.543
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.543
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.638
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.641
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.642
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.642
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.643
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.644
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.644
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.645
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.645
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.646
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.647
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.647
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:17.648
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.414
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.436
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.436
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.436
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.437
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.437
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.437
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.493
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.498
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.498
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.498
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.499
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.499
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.500
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.500
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.501
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.502
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.502
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.502
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:30:52.503
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.514
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.527
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.528
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.528
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.528
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.528
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.529
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.565
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.569
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.570
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.570
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.570
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.570
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.571
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.571
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.571
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.571
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.572
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.572
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:32:02.572
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.374
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.430
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.434
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.434
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.435
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.435
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.435
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.435
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.436
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.436
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.436
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.436
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.436
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:33:11.437
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.883
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.893
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.893
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.893
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.894
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.894
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.894
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.931
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.934
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.935
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.935
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.936
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.936
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.936
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.937
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.938
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.939
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.939
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.939
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:53:23.939
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.084
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.092
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.092
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.093
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.093
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.093
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.093
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.123
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.125
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.126
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.126
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.126
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.126
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.128
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.128
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.128
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.128
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.128
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.129
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:18.129
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.335
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.345
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.345
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.345
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.346
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.346
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.346
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.376
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.378
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.379
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.379
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.379
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.379
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.380
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.380
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.381
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.381
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.381
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.381
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:54:31.382
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.498
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.511
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.512
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.512
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.512
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.512
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.512
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.540
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.542
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.542
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.542
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.542
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.542
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.542
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.543
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.543
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.543
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.543
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.543
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:57:03.544
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.298
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.307
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.307
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.307
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.308
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.308
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.308
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.356
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.359
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.359
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.361
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.361
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.361
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.361
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.362
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.362
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.362
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.362
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.362
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:04.362
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:44.968
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:44.975
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:44.975
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:44.976
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:44.976
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:44.976
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:44.976
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.002
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.004
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.004
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.004
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.005
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.005
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.005
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.005
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.006
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.006
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.006
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.006
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:58:45.006
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.256
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.263
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.263
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.264
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.264
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.264
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.265
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.296
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.298
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.299
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.299
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.299
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.299
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.299
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.300
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.300
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.300
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.302
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.302
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 20:59:01.302
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.448
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.457
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.457
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.457
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.457
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.458
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.458
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.489
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.491
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.491
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.492
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.492
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.492
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.492
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.492
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.492
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.493
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.493
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.493
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:12:51.494
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.345
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.356
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.356
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.356
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.356
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.356
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.357
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.382
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.384
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.384
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.385
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.385
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.385
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.385
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.386
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.387
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.387
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:14:39.387
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.493
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.502
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.502
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.503
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.503
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.503
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.503
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.532
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.535
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.535
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.535
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.535
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.536
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.536
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.536
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.536
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.537
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.537
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.537
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:20:38.537
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+!SESSION 2023-11-25 21:22:37.679 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Github\stm32_widget\clock_widget_2\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Github\stm32_widget\clock_widget_2\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-11-25 21:22:42.842
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-25 21:22:42.843
+!MESSAGE Log4j2 initialized with config file C:\Github\stm32_widget\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-25 21:22:47.625
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-25 21:23:06.764
+!MESSAGE Indexed 'STM32F746G_DISCO' (218 sources, 391 headers) in 18.4 sec: 32,330 declarations; 136,156 references; 0 unresolved inclusions; 75 syntax errors; 548 unresolved names (0.32%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.803
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.834
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.835
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.835
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.837
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.837
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.837
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.917
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.922
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.923
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.923
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.923
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.924
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.924
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.924
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.926
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.926
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.926
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.927
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:23:09.927
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.763
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/CustomContainer1Base.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.777
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen2ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.777
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen3ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.777
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen4ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.779
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen5ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.779
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen6ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.780
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/generated/Screen7ViewBase.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.845
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/CustomContainer1.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.849
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.849
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen2View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.851
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.851
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen3View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.852
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.853
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen4View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.853
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.855
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen5View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.855
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.856
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen6View.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.856
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7Presenter.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2023-11-25 21:27:59.856
+!MESSAGE Ignored L/STM32F746G_DISCO/Application/User/gui/Screen7View.cpp from Makefile generation (invalid resource)

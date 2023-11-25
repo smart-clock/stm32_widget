@@ -1,10 +1,23 @@
-15:43:03 **** Incremental Build of configuration Debug for project STM32F746G_DISCO ****
+21:27:59 **** Incremental Build of configuration Debug for project STM32F746G_DISCO ****
 make -j16 all 
+arm-none-eabi-gcc "C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DSTM32F746xx -DDEBUG -c -I../../Core/Inc -I../../TouchGFX/App -I../../TouchGFX/target/generated -I../../TouchGFX/target -I../../Drivers/STM32F7xx_HAL_Driver/Inc -I../../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Drivers/BSP/STM32746G-Discovery -I../../Drivers/BSP/Components/ft5336 -I../../LIBJPEG/App -I../../LIBJPEG/Target -I../../Middlewares/Third_Party/LibJPEG/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/Core/main.d" -MT"Application/User/Core/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/main.o"
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:110:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+  110 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "STM32F746G_DISCO.elf" @"objects.list" ../../TouchGFX/generated/videos/obj/daily.bin.o ../../TouchGFX/generated/videos/obj/angry.bin.o ../../TouchGFX/generated/videos/obj/heart.bin.o ../../TouchGFX/generated/videos/obj/confused.bin.o ../../TouchGFX/generated/videos/obj/sad.bin.o ../../TouchGFX/generated/videos/obj/bored.bin.o ../../TouchGFX/generated/videos/obj/blink.bin.o ../../TouchGFX/generated/videos/obj/happy.bin.o -l:libtouchgfx-float-abi-hard.a -mcpu=cortex-m7 -T"C:\Github\stm32_widget\clock_widget_2\STM32CubeIDE\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F746G_DISCO.map" -Wl,--gc-sections -static -LC:/Dev/STM32F746-DISCO/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/git/STM32F746-dk/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/dev/pacman/at/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/pacman/at/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/Github/stm32_widget/clock_widget_2/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LZ:/Github/stm32_widget/clock_widget_2/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32F746G_DISCO.elf
+ 
 arm-none-eabi-size   STM32F746G_DISCO.elf 
+arm-none-eabi-objdump -h -S  STM32F746G_DISCO.elf  > "STM32F746G_DISCO.list"
+arm-none-eabi-objcopy  -O ihex  STM32F746G_DISCO.elf  "STM32F746G_DISCO.hex"
    text	   data	    bss	    dec	    hex	filename
-1679488	    328	1413164	3092980	 2f31f4	STM32F746G_DISCO.elf
+1846420	    328	1416012	3262760	 31c928	STM32F746G_DISCO.elf
 Finished building: default.size.stdout
  
+Finished building: STM32F746G_DISCO.hex
+ 
+Finished building: STM32F746G_DISCO.list
+ 
 
-15:43:05 Build Finished. 0 errors, 0 warnings. (took 2s.524ms)
+21:28:02 Build Finished. 0 errors, 1 warnings. (took 2s.441ms)
 

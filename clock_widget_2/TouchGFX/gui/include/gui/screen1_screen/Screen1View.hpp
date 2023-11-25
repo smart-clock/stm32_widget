@@ -12,8 +12,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 
-    virtual void hourScrollWheel_1UpdateItem(alarmContainer& item, int16_t itemIndex);
-    virtual void hourScrollWheel_1UpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
+    virtual void uart_Data(char *data);
 
 protected:
 };

@@ -76,11 +76,17 @@ Application/User/gui/robotThemePresenter.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
- ../../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
+ ../../TouchGFX/gui/include/gui/containers/alarmContainer.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmContainerBase.hpp \
+ ../../TouchGFX/gui/include/gui/containers/alarmCenterContainer.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
@@ -161,11 +167,17 @@ Application/User/gui/robotThemePresenter.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
-../../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
+../../TouchGFX/gui/include/gui/containers/alarmContainer.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmContainerBase.hpp:
+../../TouchGFX/gui/include/gui/containers/alarmCenterContainer.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:

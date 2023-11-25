@@ -163,7 +163,7 @@ protected:
     touchgfx::PainterRGB565 circleOutLine3Painter;
     touchgfx::TextArea busTime1;
     touchgfx::TextArea busTime2;
-    touchgfx::Container StockPage6;
+    touchgfx::Container stock;
     touchgfx::Box background6;
     touchgfx::GraphWrapAndClear<100> dynamicGraph1;
     touchgfx::GraphElementLine dynamicGraph1Line1;

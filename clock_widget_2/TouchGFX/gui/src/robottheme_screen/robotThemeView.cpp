@@ -200,17 +200,12 @@ void robotThemeView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
 void robotThemeView::hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex)
 {
     item.setText(itemIndex);
-    alarmHour = itemIndex - 1;
-
-    // 상단 알람 표시 업데이트
-    Unicode::snprintf(textAlarmBuffer1, TEXTALARMBUFFER1_SIZE, "%02d", alarmHour);
-    textAlarm.invalidate();
 }
 
 void robotThemeView::hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
 {
     item.setText(itemIndex);
-    alarmHour = itemIndex - 1;
+    alarmHour = itemIndex;
 
     // 상단 알람 표시 업데이트
     Unicode::snprintf(textAlarmBuffer1, TEXTALARMBUFFER1_SIZE, "%02d", alarmHour);

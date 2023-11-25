@@ -1,7 +1,6 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-../../TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:32:18:virtual void customThemeViewBase::scrollList1UpdateItem(CustomContainer1&, int16_t)	0	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/customtheme_screen/customThemeView.cpp:13:6:virtual void customThemeView::tearDownScreen()	0	static
 ../../TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:11:13:customThemeView::~customThemeView()	8	static
 ../../TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:11:13:virtual customThemeView::~customThemeView()	8	static
