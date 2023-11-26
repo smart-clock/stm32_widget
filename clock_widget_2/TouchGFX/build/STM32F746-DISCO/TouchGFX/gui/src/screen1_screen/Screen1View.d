@@ -44,19 +44,11 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/screen1_screen/Screen1View.o: \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- TouchGFX/gui/include/gui/containers/alarmContainer.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmContainerBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- TouchGFX/gui/include/gui/containers/alarmCenterContainer.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp
 
 TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
 
@@ -146,20 +138,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-TouchGFX/gui/include/gui/containers/alarmContainer.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmContainerBase.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
@@ -168,6 +146,4 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
-TouchGFX/gui/include/gui/containers/alarmCenterContainer.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:

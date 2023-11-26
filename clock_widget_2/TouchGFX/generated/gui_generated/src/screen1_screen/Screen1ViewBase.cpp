@@ -4,6 +4,7 @@
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <images/BitmapDatabase.hpp>
 
 Screen1ViewBase::Screen1ViewBase()
 {
@@ -22,6 +23,10 @@ Screen1ViewBase::Screen1ViewBase()
     textArea1.setWildcard(textArea1Buffer);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1I8U));
     add(textArea1);
+
+    background6_1_1.setXY(0, -1);
+    background6_1_1.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM_ID));
+    add(background6_1_1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
