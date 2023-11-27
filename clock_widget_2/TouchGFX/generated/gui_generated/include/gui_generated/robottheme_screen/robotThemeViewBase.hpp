@@ -8,10 +8,10 @@
 #include <mvp/View.hpp>
 #include <gui/robottheme_screen/robotThemePresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/SwipeContainer.hpp>
 #include <touchgfx/containers/Container.hpp>
-#include <touchgfx/widgets/VideoWidget.hpp>
-#include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/Button.hpp>
@@ -19,13 +19,11 @@
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/Gauge.hpp>
 #include <touchgfx/mixins/ClickListener.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp>
 #include <gui/containers/alarmContainer.hpp>
 #include <gui/containers/alarmCenterContainer.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
-#include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 
@@ -55,7 +53,6 @@ public:
     {
         // Override and implement this function in robotTheme
     }
-    virtual void handleTickEvent();
 
     /*
      * Virtual Action Handlers
@@ -90,24 +87,25 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box whiteBackground;
+    touchgfx::Image background;
     touchgfx::SwipeContainer swipeContainerWidget;
-    touchgfx::Container homePage1;
-    touchgfx::VideoWidget videoBlink;
-    touchgfx::Container whetherPage2;
-    touchgfx::Box background2;
+    touchgfx::Container home;
+    touchgfx::TextAreaWithTwoWildcards textHomeClock;
+    touchgfx::TextArea textDate_1;
+    touchgfx::Container whether;
+    touchgfx::Box boxBlurWhether;
     touchgfx::Image imageRaining;
     touchgfx::Box box1;
     touchgfx::TextArea textDegree;
     touchgfx::TextArea textWhether;
-    touchgfx::Container swipeStopWatch;
-    touchgfx::Box background3;
+    touchgfx::Container StopWatch;
+    touchgfx::Box boxBlurStop;
     touchgfx::DigitalClock digitalClock;
     touchgfx::Button buttonReset;
     touchgfx::Button buttonStop;
     touchgfx::Button buttonPlay;
-    touchgfx::Container swipeTimer;
-    touchgfx::Box boxTimerBackground;
+    touchgfx::Container Timer;
+    touchgfx::Box boxBlurTimer;
     touchgfx::Button buttonTimerMax;
     touchgfx::Button buttonTimerMin;
     touchgfx::Circle circleGaugeBackground;
@@ -115,9 +113,8 @@ protected:
     touchgfx::ClickListener< touchgfx::Gauge > gaugeTimer;
     touchgfx::PainterRGB565 gaugeTimerPainter;
     touchgfx::TextAreaWithTwoWildcards textTimer;
-    touchgfx::Container swipeAlarm;
-    touchgfx::Box boxAlarmBackground;
-    touchgfx::Image background6_1;
+    touchgfx::Container Alarm;
+    touchgfx::Box boxBlurAlarm;
     touchgfx::ScrollWheelWithSelectionStyle hourScrollWheel;
     touchgfx::DrawableListItems<alarmContainer, 4> hourScrollWheelListItems;
     touchgfx::DrawableListItems<alarmCenterContainer, 2> hourScrollWheelSelectedListItems;
@@ -129,42 +126,22 @@ protected:
     touchgfx::TextArea textAreaON;
     touchgfx::TextArea textAreaAM;
     touchgfx::TextArea textAreaColon;
-    touchgfx::Container SchedulePage4;
-    touchgfx::Box background4;
+    touchgfx::Container calendar;
+    touchgfx::Box boxBlurCal;
     touchgfx::ScrollList scrollList1;
     touchgfx::Box boxScheduleBack;
     touchgfx::TextArea textScheduleTime;
     touchgfx::TextArea textSchedule;
-    touchgfx::Container BusPage5;
-    touchgfx::Box background5;
-    touchgfx::Circle circleFill1;
-    touchgfx::PainterRGB565 circleFill1Painter;
-    touchgfx::Circle circleOutLine1;
-    touchgfx::PainterRGB565 circleOutLine1Painter;
-    touchgfx::Line lineUp1;
-    touchgfx::PainterRGB565 lineUp1Painter;
-    touchgfx::Line lineDown1;
-    touchgfx::PainterRGB565 lineDown1Painter;
-    touchgfx::Image bus1;
-    touchgfx::Image bus2;
-    touchgfx::Circle circleFill2;
-    touchgfx::PainterRGB565 circleFill2Painter;
-    touchgfx::Circle circleOutLine2;
-    touchgfx::PainterRGB565 circleOutLine2Painter;
-    touchgfx::Line lineDown2;
-    touchgfx::PainterRGB565 lineDown2Painter;
-    touchgfx::Line lineUp2;
-    touchgfx::PainterRGB565 lineUp2Painter;
-    touchgfx::Circle circleFill3;
-    touchgfx::PainterRGB565 circleFill3Painter;
-    touchgfx::Circle circleFill3_1;
-    touchgfx::PainterRGB565 circleFill3_1Painter;
-    touchgfx::Circle circleOutLine3;
-    touchgfx::PainterRGB565 circleOutLine3Painter;
-    touchgfx::TextArea busTime1;
-    touchgfx::TextArea busTime2;
+    touchgfx::Container Bus;
+    touchgfx::Box boxBlurBus;
+    touchgfx::TextArea busRoute;
+    touchgfx::TextArea busStation;
+    touchgfx::TextAreaWithTwoWildcards busTime1;
+    touchgfx::TextAreaWithTwoWildcards busTime2;
+    touchgfx::Image imageBus1;
+    touchgfx::Image imageBus2;
     touchgfx::Container stock;
-    touchgfx::Box background6;
+    touchgfx::Box boxBlurStock;
     touchgfx::GraphWrapAndClear<100> dynamicGraph1;
     touchgfx::GraphElementLine dynamicGraph1Line1;
     touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
@@ -172,18 +149,34 @@ protected:
     touchgfx::PainterRGB565 dynamicGraph1Area1Painter;
     touchgfx::TextArea textStock;
     touchgfx::TextArea textStockValue;
-    touchgfx::TextArea textBattery;
-    touchgfx::TextArea textClock;
+    touchgfx::Box boxInfoBG;
+    touchgfx::TextAreaWithOneWildcard textBattery;
+    touchgfx::TextAreaWithTwoWildcards textClock;
+    touchgfx::TextAreaWithOneWildcard textDate;
     touchgfx::TextAreaWithTwoWildcards textAlarm;
     touchgfx::Image imageAlarm;
 
     /*
      * Wildcard Buffers
      */
+    static const uint16_t TEXTHOMECLOCKBUFFER1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textHomeClockBuffer1[TEXTHOMECLOCKBUFFER1_SIZE];
+    static const uint16_t TEXTHOMECLOCKBUFFER2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textHomeClockBuffer2[TEXTHOMECLOCKBUFFER2_SIZE];
     static const uint16_t TEXTTIMERBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
     static const uint16_t TEXTTIMERBUFFER2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textTimerBuffer2[TEXTTIMERBUFFER2_SIZE];
+    static const uint16_t BUSTIME1BUFFER1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar busTime1Buffer1[BUSTIME1BUFFER1_SIZE];
+    static const uint16_t BUSTIME2BUFFER1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar busTime2Buffer1[BUSTIME2BUFFER1_SIZE];
+    static const uint16_t TEXTCLOCKBUFFER1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textClockBuffer1[TEXTCLOCKBUFFER1_SIZE];
+    static const uint16_t TEXTCLOCKBUFFER2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textClockBuffer2[TEXTCLOCKBUFFER2_SIZE];
+    static const uint16_t TEXTDATE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textDateBuffer[TEXTDATE_SIZE];
     static const uint16_t TEXTALARMBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textAlarmBuffer1[TEXTALARMBUFFER1_SIZE];
     static const uint16_t TEXTALARMBUFFER2_SIZE = 10;
@@ -208,12 +201,6 @@ private:
      */
     void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
-
-    /*
-     * Tick Counter Declarations
-     */
-    static const uint32_t TICK_BLINK_INTERVAL = 180;
-    uint32_t frameCountBlinkInterval;
 
 };
 

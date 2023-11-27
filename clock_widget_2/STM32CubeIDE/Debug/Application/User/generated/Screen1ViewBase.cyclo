@@ -25,21 +25,23 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:403:41:virtual const UnicodeChar* touchgfx::TextArea::getWildcard2() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:84:41:virtual const UnicodeChar* touchgfx::TextAreaWithOneWildcard::getWildcard1() const	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Screen1Presenter>::~View()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:27:1:Screen1ViewBase::~Screen1ViewBase()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:32:6:virtual void Screen1ViewBase::setupScreen()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:32:1:Screen1ViewBase::~Screen1ViewBase()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:37:6:virtual void Screen1ViewBase::setupScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:touchgfx::ClickListener<touchgfx::Box>::~ClickListener()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:62:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:62:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:virtual touchgfx::ClickListener<touchgfx::Box>::~ClickListener()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Screen1Presenter>::~View()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:27:1:virtual Screen1ViewBase::~Screen1ViewBase()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:32:1:virtual Screen1ViewBase::~Screen1ViewBase()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:97:18:virtual void touchgfx::Box::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:43:18:virtual void touchgfx::TextAreaWithWildcardBase::invalidateContent() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:49:18:void touchgfx::ClickListener<T>::handleClickEvent(const touchgfx::ClickEvent&) [with T = touchgfx::Box]	3
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:49:36:virtual touchgfx::TextArea::BoundingArea touchgfx::TextAreaWithWildcardBase::calculateBoundingArea() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:36:7:touchgfx::Widget::Widget()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:8:1:Screen1ViewBase::Screen1ViewBase()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:9:1:Screen1ViewBase::Screen1ViewBase()	1

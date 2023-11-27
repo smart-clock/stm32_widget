@@ -72,12 +72,10 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
@@ -114,7 +112,6 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
@@ -122,6 +119,7 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
  gui/include/gui/customtheme_screen/customThemePresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  gui/include/gui/screen1_screen/Screen1View.hpp \
  generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  gui/include/gui/screen1_screen/Screen1Presenter.hpp \
@@ -275,17 +273,13 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
@@ -359,8 +353,6 @@ generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBas
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
-
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
@@ -374,6 +366,8 @@ generated/gui_generated/include/gui_generated/customtheme_screen/customThemeView
 gui/include/gui/customtheme_screen/customThemePresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
 
 gui/include/gui/screen1_screen/Screen1View.hpp:
 

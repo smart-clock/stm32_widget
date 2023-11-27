@@ -82,8 +82,6 @@ void setupSimulator(int argc, char** argv, touchgfx::HAL& hal)
     // Initialize SDL
     bool sdl_init_result = static_cast<touchgfx::HALSDL2&>(hal).sdl_init(argc, argv);
     assert(sdl_init_result && "Error during SDL initialization");
-
-    setupVideoDecoder(hal);
 }
 
 touchgfx::LCD& setupLCD()

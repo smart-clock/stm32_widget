@@ -50,18 +50,16 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
@@ -94,7 +92,6 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
@@ -102,6 +99,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
  TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
@@ -117,6 +115,8 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp \
  TouchGFX/target/generated/DoubleBufferedVideoController.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
  TouchGFX/target/generated/MJPEGDecoder.hpp \
  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
@@ -267,17 +267,15 @@ TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
@@ -288,8 +286,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
@@ -355,8 +351,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
@@ -370,6 +364,8 @@ TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/custom
 TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
 
 TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
 
@@ -400,6 +396,10 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainte
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp:
 
 TouchGFX/target/generated/DoubleBufferedVideoController.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
 
 TouchGFX/target/generated/MJPEGDecoder.hpp:
 

@@ -26,7 +26,7 @@ void Model::tick()
 		if(osMessageQueueGet(uartQueueHandle, &uartData_r, 0, 0) == osOK)
 		{
 			strncpy(RData, uartData_r->Data, uartData_r->size);
-			modelListener->uart_Data(RData);
+			// modelListener->uart_Data(RData);
 		}
 	}
 #endif

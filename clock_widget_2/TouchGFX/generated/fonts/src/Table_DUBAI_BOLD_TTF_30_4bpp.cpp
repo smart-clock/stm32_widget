@@ -14,7 +14,10 @@ KEEP extern const touchgfx::GlyphNode glyphs_DUBAI_BOLD_TTF_30_4bpp[] FONT_TABLE
     {  1040, 0x0037,  14,  20,  20,   1,  16,   0,   0, 0x00 }, // seven
     {  1180, 0x0038,  16,  20,  20,   0,  16,   0,   0, 0x00 }, // eight
     {  1340, 0x0039,  15,  20,  20,   0,  16,   0,   0, 0x00 }, // nine
-    {  1500, 0x003F,  14,  20,  20,   0,  14,   0,   0, 0x00 }  // question
+    {  1500, 0x003F,  14,  20,  20,   0,  14,   0,   0, 0x00 }, // question
+    {  1640, 0x0053,  16,  20,  20,   0,  17,   0,   0, 0x00 }, // S
+    {  1800, 0x006E,  14,  14,  14,   1,  16,   0,   0, 0x00 }, // n
+    {  1898, 0x0075,  14,  15,  15,   1,  16,   0,   0, 0x00 }  // u
 };
 
 // DUBAI_BOLD_TTF_30_4bpp
@@ -33,6 +36,6 @@ touchgfx::GeneratedFont& getFont_DUBAI_BOLD_TTF_30_4bpp();
 
 touchgfx::GeneratedFont& getFont_DUBAI_BOLD_TTF_30_4bpp()
 {
-    static touchgfx::GeneratedFont DUBAI_BOLD_TTF_30_4bpp(glyphs_DUBAI_BOLD_TTF_30_4bpp, 11, 30, 30, 0, 0, 4, 1, 0, 0, unicodes_DUBAI_BOLD_TTF_30_4bpp, kerning_DUBAI_BOLD_TTF_30_4bpp, 63, 0, 0, &DUBAI_BOLD_TTF_contextualFormsTable);
+    static touchgfx::GeneratedFont DUBAI_BOLD_TTF_30_4bpp(glyphs_DUBAI_BOLD_TTF_30_4bpp, 14, 30, 30, 0, 0, 4, 1, 0, 0, unicodes_DUBAI_BOLD_TTF_30_4bpp, kerning_DUBAI_BOLD_TTF_30_4bpp, 63, 0, 0, &DUBAI_BOLD_TTF_contextualFormsTable);
     return DUBAI_BOLD_TTF_30_4bpp;
 }

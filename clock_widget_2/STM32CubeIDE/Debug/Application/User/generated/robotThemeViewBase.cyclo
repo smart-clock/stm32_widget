@@ -94,8 +94,8 @@
 ../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:75:18:virtual void robotThemeViewBase::buttonTimerMaxClicked()	1
 ../../TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:79:18:virtual void robotThemeViewBase::bottonTimerMinClicked()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<robotThemePresenter>::~View()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:595:6:void robotThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	6
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:647:6:void robotThemeViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	5
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:589:6:void robotThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	6
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:641:6:void robotThemeViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	5
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = alarmContainer; int SIZE = 4]	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = alarmCenterContainer; int SIZE = 2]	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<robotThemeViewBase, const touchgfx::AbstractButton&>::~Callback()	1
@@ -109,7 +109,7 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robot
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = robotThemeViewBase; T1 = const touchgfx::AbstractButton&]	3
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:250:18:void touchgfx::Callback<dest_type, T1, T2, T3>::execute(T1, T2, T3) [with dest_type = robotThemeViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:260:18:bool touchgfx::Callback<dest_type, T1, T2, T3>::isValid() const [with dest_type = robotThemeViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	3
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:634:6:virtual void robotThemeViewBase::handleTickEvent()	2
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:628:6:virtual void robotThemeViewBase::handleTickEvent()	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<robotThemePresenter>::~View()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:125:7:virtual touchgfx::TextAreaWithTwoWildcards::~TextAreaWithTwoWildcards()	1
@@ -137,6 +137,7 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robot
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:128:5:touchgfx::TextAreaWithTwoWildcards::TextAreaWithTwoWildcards()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:34:5:touchgfx::Button::Button()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:828:15:static touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::muldiv_toQ5(int32_t, int32_t, int32_t)	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1282:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenYQ5(int) const	1
@@ -144,10 +145,9 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robot
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	4
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:42:5:touchgfx::PainterRGB565::PainterRGB565(touchgfx::colortype)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:152:18:virtual void touchgfx::ScrollWheelWithSelectionStyle::initialize()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:572:6:virtual void robotThemeViewBase::setupScreen()	3
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:566:6:virtual void robotThemeViewBase::setupScreen()	3
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<alarmContainer, 4>::DrawableListItems()	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<alarmCenterContainer, 2>::DrawableListItems()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:248:10:void touchgfx::Line::setLineWidth(T) [with T = int]	2
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:11:1:robotThemeViewBase::robotThemeViewBase()	107
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:567:1:robotThemeViewBase::~robotThemeViewBase()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:567:1:virtual robotThemeViewBase::~robotThemeViewBase()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:11:1:robotThemeViewBase::robotThemeViewBase()	117
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:561:1:robotThemeViewBase::~robotThemeViewBase()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/robottheme_screen/robotThemeViewBase.cpp:561:1:virtual robotThemeViewBase::~robotThemeViewBase()	1

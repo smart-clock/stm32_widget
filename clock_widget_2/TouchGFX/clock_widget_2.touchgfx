@@ -6,16 +6,11 @@
         "CanvasBufferSize": 7200,
         "Components": [
           {
-            "Type": "Box",
-            "Name": "whiteBackground",
+            "Type": "Image",
+            "Name": "background",
             "Width": 480,
             "Height": 272,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 128
+            "RelativeFilename": "manggom.png"
           },
           {
             "Type": "SwipeContainer",
@@ -27,39 +22,90 @@
             "PageIndicatorX": 160,
             "PageIndicatorY": 250,
             "CenteredX": true,
-            "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
-            "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
+            "IndicatorImageNormal": "__generated\\light_theme_images_widgets_swipecontainer_medium_off_normal.png",
+            "IndicatorImageHighlight": "__generated\\clay_theme_images_widgets_swipecontainer_medium_on_normal.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "BusPage5",
-            "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
+            "SelectedPage": "home",
             "Components": [
               {
                 "Type": "Container",
-                "Name": "homePage1",
+                "Name": "home",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
-                    "Type": "Video",
-                    "Name": "videoBlink",
-                    "Width": 480,
-                    "Height": 272,
-                    "VideoFileName": "blink.avi",
-                    "AutoPlay": true
+                    "Type": "TextArea",
+                    "Name": "textHomeClock",
+                    "X": 170,
+                    "Y": 83,
+                    "Width": 138,
+                    "Height": 61,
+                    "TextId": "__SingleUse_TBRP",
+                    "TextRotation": "0",
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_3NT3",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    },
+                    "Wildcard2": {
+                      "TextId": "__SingleUse_IB3Y",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textHomeDate",
+                    "X": 174,
+                    "Y": 160,
+                    "Width": 69,
+                    "Height": 30,
+                    "TextId": "__SingleUse_XXQ4",
+                    "TextRotation": "0",
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_1INA",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    },
+                    "Wildcard2": {
+                      "TextId": "__SingleUse_L5KR",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textHomeDay",
+                    "X": 260,
+                    "Y": 160,
+                    "Width": 40,
+                    "Height": 30,
+                    "TextId": "__SingleUse_DGOO",
+                    "TextRotation": "0",
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_BWHJ",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
                   }
                 ]
               },
               {
                 "Type": "Container",
-                "Name": "whetherPage2",
+                "Name": "whether",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
                     "Type": "Box",
-                    "Name": "background2",
+                    "Name": "boxBlurWhether",
+                    "Y": -1,
                     "Width": 480,
-                    "Height": 272
+                    "Height": 274,
+                    "Alpha": 150
                   },
                   {
                     "Type": "Image",
@@ -110,15 +156,17 @@
               },
               {
                 "Type": "Container",
-                "Name": "swipeStopWatch",
+                "Name": "StopWatch",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
                     "Type": "Box",
-                    "Name": "background3",
+                    "Name": "boxBlurStop",
+                    "Y": -1,
                     "Width": 480,
-                    "Height": 272
+                    "Height": 274,
+                    "Alpha": 150
                   },
                   {
                     "Type": "DigitalClock",
@@ -170,15 +218,17 @@
               },
               {
                 "Type": "Container",
-                "Name": "swipeTimer",
+                "Name": "Timer",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
                     "Type": "Box",
-                    "Name": "boxTimerBackground",
+                    "Name": "boxBlurTimer",
+                    "Y": -1,
                     "Width": 480,
-                    "Height": 272
+                    "Height": 274,
+                    "Alpha": 150
                   },
                   {
                     "Type": "Button",
@@ -278,24 +328,17 @@
               },
               {
                 "Type": "Container",
-                "Name": "swipeAlarm",
+                "Name": "Alarm",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
                     "Type": "Box",
-                    "Name": "boxAlarmBackground",
-                    "Width": 480,
-                    "Height": 272
-                  },
-                  {
-                    "Type": "Image",
-                    "Name": "background6_1",
+                    "Name": "boxBlurAlarm",
                     "Y": -1,
                     "Width": 480,
-                    "Height": 272,
-                    "RelativeFilename": "manggom.png",
-                    "Alpha": 100
+                    "Height": 274,
+                    "Alpha": 150
                   },
                   {
                     "Type": "ScrollWheel",
@@ -403,15 +446,17 @@
               },
               {
                 "Type": "Container",
-                "Name": "SchedulePage4",
+                "Name": "calendar",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
                     "Type": "Box",
-                    "Name": "background4",
+                    "Name": "boxBlurCal",
+                    "Y": -1,
                     "Width": 480,
-                    "Height": 272
+                    "Height": 274,
+                    "Alpha": 150
                   },
                   {
                     "Type": "ScrollList",
@@ -465,30 +510,23 @@
               },
               {
                 "Type": "Container",
-                "Name": "BusPage5",
+                "Name": "Bus",
                 "Width": 480,
                 "Height": 272,
                 "Components": [
                   {
                     "Type": "Box",
-                    "Name": "background5",
-                    "Width": 480,
-                    "Height": 272
-                  },
-                  {
-                    "Type": "Image",
-                    "Name": "background6_1_1",
+                    "Name": "boxBlurBus",
                     "Y": -1,
                     "Width": 480,
-                    "Height": 272,
-                    "RelativeFilename": "manggom.png",
-                    "Alpha": 100
+                    "Height": 274,
+                    "Alpha": 150
                   },
                   {
                     "Type": "TextArea",
-                    "Name": "busTime2_1",
-                    "X": 56,
-                    "Y": 61,
+                    "Name": "busRoute",
+                    "X": 58,
+                    "Y": 74,
                     "Width": 141,
                     "Height": 71,
                     "TextId": "__SingleUse_458W",
@@ -502,249 +540,27 @@
                   },
                   {
                     "Type": "TextArea",
-                    "Name": "busTime2_1_1",
-                    "X": 43,
-                    "Y": 159,
-                    "Width": 200,
-                    "Height": 41,
-                    "TextId": "__SingleUse_DIPZ",
+                    "Name": "busStation",
+                    "X": 88,
+                    "Y": 165,
+                    "Width": 80,
+                    "Height": 30,
+                    "TextId": "__SingleUse_LCF4",
                     "TextRotation": "0",
                     "Color": {
                       "Red": 255,
                       "Green": 255,
                       "Blue": 255
-                    }
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "circleFill1",
-                    "X": 259,
-                    "Y": 148,
-                    "Width": 80,
-                    "Height": 80,
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
                     },
-                    "CenterX": 40.0,
-                    "CenterY": 40.0,
-                    "Radius": 25.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt"
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "circleOutLine1",
-                    "X": 259,
-                    "Y": 148,
-                    "Width": 80,
-                    "Height": 80,
-                    "Color": {
-                      "Red": 106,
-                      "Green": 204,
-                      "Blue": 140
-                    },
-                    "CenterX": 40.0,
-                    "CenterY": 40.0,
-                    "Radius": 25.0,
-                    "LineWidth": 5.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt"
-                  },
-                  {
-                    "Type": "Line",
-                    "Name": "lineUp1",
-                    "X": 279,
-                    "Y": 185,
-                    "Width": 43,
-                    "Height": 47,
-                    "Color": {
-                      "Red": 106,
-                      "Green": 204,
-                      "Blue": 140
-                    },
-                    "StartX": 30.0,
-                    "StartY": 5.0,
-                    "EndX": 15.0,
-                    "EndY": 20.0,
-                    "LineWidth": 5.0,
-                    "LineEndingStyle": "Round"
-                  },
-                  {
-                    "Type": "Line",
-                    "Name": "lineDown1",
-                    "X": 289,
-                    "Y": 168,
-                    "Width": 50,
-                    "Height": 46,
-                    "Color": {
-                      "Red": 106,
-                      "Green": 204,
-                      "Blue": 140
-                    },
-                    "StartX": 5.0,
-                    "StartY": 5.0,
-                    "EndX": 20.0,
-                    "EndY": 20.0,
-                    "LineWidth": 5.0,
-                    "LineEndingStyle": "Round"
-                  },
-                  {
-                    "Type": "Image",
-                    "Name": "bus1",
-                    "X": 263,
-                    "Y": 97,
-                    "Width": 64,
-                    "Height": 64,
-                    "RelativeFilename": "bus_64x64.png"
-                  },
-                  {
-                    "Type": "Image",
-                    "Name": "bus2",
-                    "X": 375,
-                    "Y": 96,
-                    "Width": 64,
-                    "Height": 64,
-                    "RelativeFilename": "bus_64x64.png"
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "circleFill2",
-                    "X": 367,
-                    "Y": 152,
-                    "Width": 80,
-                    "Height": 80,
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "CenterX": 40.0,
-                    "CenterY": 40.0,
-                    "Radius": 25.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt"
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "circleOutLine2",
-                    "X": 367,
-                    "Y": 152,
-                    "Width": 80,
-                    "Height": 80,
-                    "Color": {
-                      "Red": 106,
-                      "Green": 204,
-                      "Blue": 140
-                    },
-                    "CenterX": 40.0,
-                    "CenterY": 40.0,
-                    "Radius": 25.0,
-                    "LineWidth": 5.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt"
-                  },
-                  {
-                    "Type": "Line",
-                    "Name": "lineDown2",
-                    "X": 397,
-                    "Y": 172,
-                    "Width": 50,
-                    "Height": 46,
-                    "Color": {
-                      "Red": 106,
-                      "Green": 204,
-                      "Blue": 140
-                    },
-                    "StartX": 5.0,
-                    "StartY": 5.0,
-                    "EndX": 20.0,
-                    "EndY": 20.0,
-                    "LineWidth": 5.0,
-                    "LineEndingStyle": "Round"
-                  },
-                  {
-                    "Type": "Line",
-                    "Name": "lineUp2",
-                    "X": 387,
-                    "Y": 189,
-                    "Width": 43,
-                    "Height": 47,
-                    "Color": {
-                      "Red": 106,
-                      "Green": 204,
-                      "Blue": 140
-                    },
-                    "StartX": 30.0,
-                    "StartY": 5.0,
-                    "EndX": 15.0,
-                    "EndY": 20.0,
-                    "LineWidth": 5.0,
-                    "LineEndingStyle": "Round"
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "circleFill3",
-                    "X": 385,
-                    "Y": 285,
-                    "Width": 80,
-                    "Height": 80,
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "CenterX": 40.0,
-                    "CenterY": 40.0,
-                    "Radius": 25.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt"
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "circleFill3_1",
-                    "X": 385,
-                    "Y": 284,
-                    "Width": 80,
-                    "Height": 80,
-                    "Color": {
-                      "Red": 106,
-                      "Green": 204,
-                      "Blue": 140
-                    },
-                    "CenterX": 40.0,
-                    "CenterY": 40.0,
-                    "Radius": 7.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt"
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "circleOutLine3",
-                    "X": 385,
-                    "Y": 285,
-                    "Width": 80,
-                    "Height": 80,
-                    "Color": {
-                      "Red": 106,
-                      "Green": 204,
-                      "Blue": 140
-                    },
-                    "CenterX": 40.0,
-                    "CenterY": 40.0,
-                    "Radius": 25.0,
-                    "LineWidth": 5.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt"
+                    "AutoSize": true
                   },
                   {
                     "Type": "TextArea",
                     "Name": "busTime1",
-                    "X": 259,
-                    "Y": 71,
-                    "Width": 63,
-                    "Height": 24,
+                    "X": 240,
+                    "Y": 88,
+                    "Width": 93,
+                    "Height": 30,
                     "TextId": "__SingleUse_05J5",
                     "TextRotation": "0",
                     "Color": {
@@ -752,23 +568,57 @@
                       "Green": 255,
                       "Blue": 255
                     },
-                    "AutoSize": true
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_JREN",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    },
+                    "Wildcard2": {
+                      "TextId": "__SingleUse_1MSQ"
+                    }
                   },
                   {
                     "Type": "TextArea",
                     "Name": "busTime2",
-                    "X": 383,
-                    "Y": 68,
-                    "Width": 50,
-                    "Height": 24,
-                    "TextId": "__SingleUse_T14E",
+                    "X": 353,
+                    "Y": 88,
+                    "Width": 93,
+                    "Height": 30,
+                    "TextId": "__SingleUse_BW3Y",
                     "TextRotation": "0",
                     "Color": {
                       "Red": 255,
                       "Green": 255,
                       "Blue": 255
                     },
-                    "AutoSize": true
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_S0SF",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    },
+                    "Wildcard2": {
+                      "TextId": "__SingleUse_G9NH"
+                    }
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageBus1",
+                    "X": 254,
+                    "Y": 136,
+                    "Width": 65,
+                    "Height": 65,
+                    "RelativeFilename": "__generated\\icon_theme_images_maps_departure_board_65_65_FFFFFF.svg.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageBus2",
+                    "X": 367,
+                    "Y": 133,
+                    "Width": 65,
+                    "Height": 65,
+                    "RelativeFilename": "__generated\\icon_theme_images_maps_departure_board_65_65_FFFFFF.svg.png"
                   }
                 ]
               },
@@ -780,9 +630,11 @@
                 "Components": [
                   {
                     "Type": "Box",
-                    "Name": "background6",
+                    "Name": "boxBlurStock",
+                    "Y": -1,
                     "Width": 480,
-                    "Height": 272
+                    "Height": 274,
+                    "Alpha": 150
                   },
                   {
                     "Type": "DynamicGraph",
@@ -861,7 +713,7 @@
           },
           {
             "Type": "Box",
-            "Name": "box2",
+            "Name": "boxInfoBG",
             "Width": 480,
             "Height": 24,
             "Alpha": 71
@@ -879,7 +731,10 @@
               "Green": 255,
               "Blue": 255
             },
-            "AutoSize": true
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OW5R"
+            }
           },
           {
             "Type": "TextArea",
@@ -894,13 +749,23 @@
               "Green": 255,
               "Blue": 255
             },
-            "AutoSize": true
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_O7C8",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_6C3U",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           },
           {
             "Type": "TextArea",
-            "Name": "textClock_1",
+            "Name": "textDate",
             "X": 55,
-            "Width": 38,
+            "Width": 32,
             "Height": 20,
             "TextId": "__SingleUse_XSP1",
             "TextRotation": "0",
@@ -909,7 +774,32 @@
               "Green": 255,
               "Blue": 255
             },
-            "AutoSize": true
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_MJKC",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textDay",
+            "X": 55,
+            "Width": 32,
+            "Height": 20,
+            "TextId": "__SingleUse_3ZNK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_FUME",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           },
           {
             "Type": "TextArea",
@@ -947,17 +837,6 @@
           }
         ],
         "Interactions": [
-          {
-            "InteractionName": "blink",
-            "Trigger": {
-              "Type": "TriggerOnEveryTick",
-              "TickCount": 180
-            },
-            "Action": {
-              "Type": "ActionPlay",
-              "ActionComponent": "videoBlink"
-            }
-          },
           {
             "InteractionName": "stopWatchPlay",
             "Trigger": {
@@ -1905,7 +1784,7 @@
       "Height": 272
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Screen1",
+    "StartupScreenName": "robotTheme",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

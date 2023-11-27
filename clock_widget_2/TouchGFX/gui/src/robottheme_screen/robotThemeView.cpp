@@ -34,16 +34,6 @@ void robotThemeView::tearDownScreen()
 
 void robotThemeView::handleTickEvent()
 {
-    frameCountBlinkInterval++;
-    if(frameCountBlinkInterval == TICK_BLINK_INTERVAL)
-    {
-        //blink
-        //When every N tick play video videoBlink
-        //Play video on videoBlink
-        videoBlink.play();
-        frameCountBlinkInterval = 0;
-    }
-
     if(isStopWatchPlay)
     {
         tickCounter++;

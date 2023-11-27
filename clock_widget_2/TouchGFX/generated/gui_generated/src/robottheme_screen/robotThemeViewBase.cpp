@@ -5,13 +5,11 @@
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
-#include <videos/VideoDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
 robotThemeViewBase::robotThemeViewBase() :
     updateItemCallback(this, &robotThemeViewBase::updateItemCallbackHandler),
-    buttonCallback(this, &robotThemeViewBase::buttonCallbackHandler),
-    frameCountBlinkInterval(0)
+    buttonCallback(this, &robotThemeViewBase::buttonCallbackHandler)
 {
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
     
@@ -19,61 +17,73 @@ robotThemeViewBase::robotThemeViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    whiteBackground.setPosition(0, 0, 480, 272);
-    whiteBackground.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    whiteBackground.setAlpha(128);
-    add(whiteBackground);
+    background.setXY(0, 0);
+    background.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM_ID));
+    add(background);
 
     swipeContainerWidget.setXY(0, 0);
-    swipeContainerWidget.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_OFF_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_ON_ACTIVE_ID));
+    swipeContainerWidget.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_LIGHT_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_OFF_NORMAL_ID), touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_ON_NORMAL_ID));
     swipeContainerWidget.setPageIndicatorXY(160, 250);
     swipeContainerWidget.setSwipeCutoff(50);
     swipeContainerWidget.setEndSwipeElasticWidth(50);
 
-    homePage1.setWidth(480);
-    homePage1.setHeight(272);
-    videoBlink.setPosition(0, 0, 480, 272);
-    videoBlink.setVideoData(video_blink_bin_start, video_blink_bin_length);
-    videoBlink.setRepeat(false);
-    videoBlink.play();
-    homePage1.add(videoBlink);
+    home.setWidth(480);
+    home.setHeight(272);
+    textHomeClock.setXY(170, 83);
+    textHomeClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textHomeClock.setLinespacing(0);
+    touchgfx::Unicode::snprintf(textHomeClockBuffer1, TEXTHOMECLOCKBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_3NT3).getText());
+    textHomeClock.setWildcard1(textHomeClockBuffer1);
+    touchgfx::Unicode::snprintf(textHomeClockBuffer2, TEXTHOMECLOCKBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_IB3Y).getText());
+    textHomeClock.setWildcard2(textHomeClockBuffer2);
+    textHomeClock.resizeToCurrentText();
+    textHomeClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TBRP));
+    home.add(textHomeClock);
 
-    swipeContainerWidget.add(homePage1);
+    textDate_1.setXY(183, 154);
+    textDate_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textDate_1.setLinespacing(0);
+    textDate_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XXQ4));
+    home.add(textDate_1);
 
-    whetherPage2.setWidth(480);
-    whetherPage2.setHeight(272);
-    background2.setPosition(0, 0, 480, 272);
-    background2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    whetherPage2.add(background2);
+    swipeContainerWidget.add(home);
+
+    whether.setWidth(480);
+    whether.setHeight(272);
+    boxBlurWhether.setPosition(0, -1, 480, 274);
+    boxBlurWhether.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurWhether.setAlpha(150);
+    whether.add(boxBlurWhether);
 
     imageRaining.setXY(70, 72);
     imageRaining.setBitmap(touchgfx::Bitmap(BITMAP_RAIN_128X128_ID));
-    whetherPage2.add(imageRaining);
+    whether.add(imageRaining);
 
     box1.setPosition(239, 72, 139, 128);
     box1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     box1.setAlpha(174);
-    whetherPage2.add(box1);
+    whether.add(box1);
 
     textDegree.setXY(253, 88);
     textDegree.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textDegree.setLinespacing(0);
     textDegree.setTypedText(touchgfx::TypedText(T___SINGLEUSE_EI1R));
-    whetherPage2.add(textDegree);
+    whether.add(textDegree);
 
     textWhether.setXY(253, 137);
     textWhether.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textWhether.setLinespacing(0);
     textWhether.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CW4O));
-    whetherPage2.add(textWhether);
+    whether.add(textWhether);
 
-    swipeContainerWidget.add(whetherPage2);
+    swipeContainerWidget.add(whether);
 
-    swipeStopWatch.setWidth(480);
-    swipeStopWatch.setHeight(272);
-    background3.setPosition(0, 0, 480, 272);
-    background3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    swipeStopWatch.add(background3);
+    StopWatch.setWidth(480);
+    StopWatch.setHeight(272);
+    boxBlurStop.setPosition(0, -1, 480, 274);
+    boxBlurStop.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurStop.setAlpha(150);
+    StopWatch.add(boxBlurStop);
 
     digitalClock.setPosition(140, 85, 200, 50);
     digitalClock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -81,40 +91,41 @@ robotThemeViewBase::robotThemeViewBase() :
     digitalClock.displayLeadingZeroForHourIndicator(true);
     digitalClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
     digitalClock.setTime24Hour(0, 0, 0);
-    swipeStopWatch.add(digitalClock);
+    StopWatch.add(digitalClock);
 
     buttonReset.setXY(290, 161);
     buttonReset.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_REPLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_LOOP_50_50_FFFFFF_SVG_ID));
     buttonReset.setAction(buttonCallback);
-    swipeStopWatch.add(buttonReset);
+    StopWatch.add(buttonReset);
 
     buttonStop.setXY(215, 159);
     buttonStop.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PAUSE_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PAUSE_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
     buttonStop.setAction(buttonCallback);
-    swipeStopWatch.add(buttonStop);
+    StopWatch.add(buttonStop);
 
     buttonPlay.setXY(140, 161);
     buttonPlay.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_FILLED_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_PLAY_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
     buttonPlay.setAction(buttonCallback);
-    swipeStopWatch.add(buttonPlay);
+    StopWatch.add(buttonPlay);
 
-    swipeContainerWidget.add(swipeStopWatch);
+    swipeContainerWidget.add(StopWatch);
 
-    swipeTimer.setWidth(480);
-    swipeTimer.setHeight(272);
-    boxTimerBackground.setPosition(0, 0, 480, 272);
-    boxTimerBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    swipeTimer.add(boxTimerBackground);
+    Timer.setWidth(480);
+    Timer.setHeight(272);
+    boxBlurTimer.setPosition(0, -1, 480, 274);
+    boxBlurTimer.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurTimer.setAlpha(150);
+    Timer.add(boxBlurTimer);
 
     buttonTimerMax.setXY(60, 170);
     buttonTimerMax.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_ADD_CIRCLE_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_ADD_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
     buttonTimerMax.setAction(buttonCallback);
-    swipeTimer.add(buttonTimerMax);
+    Timer.add(buttonTimerMax);
 
     buttonTimerMin.setXY(370, 170);
     buttonTimerMin.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_REMOVE_CIRCLE_50_50_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_REMOVE_CIRCLE_OUTLINE_50_50_FFFFFF_SVG_ID));
     buttonTimerMin.setAction(buttonCallback);
-    swipeTimer.add(buttonTimerMin);
+    Timer.add(buttonTimerMin);
 
     circleGaugeBackground.setPosition(140, 24, 200, 200);
     circleGaugeBackground.setCenter(100, 100);
@@ -123,7 +134,7 @@ robotThemeViewBase::robotThemeViewBase() :
     circleGaugeBackground.setArc(0, 360);
     circleGaugeBackgroundPainter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     circleGaugeBackground.setPainter(circleGaugeBackgroundPainter);
-    swipeTimer.add(circleGaugeBackground);
+    Timer.add(circleGaugeBackground);
 
     gaugeTimer.setBackground(touchgfx::Bitmap(BITMAP_CLOCK_ID));
     gaugeTimer.setPosition(140, 24, 200, 200);
@@ -140,7 +151,7 @@ robotThemeViewBase::robotThemeViewBase() :
     gaugeTimer.getArc().setRadius(0);
     gaugeTimer.getArc().setLineWidth(140);
     gaugeTimer.getArc().setCapPrecision(180);
-    swipeTimer.add(gaugeTimer);
+    Timer.add(gaugeTimer);
 
     textTimer.setXY(320, 30);
     textTimer.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -151,20 +162,16 @@ robotThemeViewBase::robotThemeViewBase() :
     textTimer.setWildcard2(textTimerBuffer2);
     textTimer.resizeToCurrentText();
     textTimer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S02A));
-    swipeTimer.add(textTimer);
+    Timer.add(textTimer);
 
-    swipeContainerWidget.add(swipeTimer);
+    swipeContainerWidget.add(Timer);
 
-    swipeAlarm.setWidth(480);
-    swipeAlarm.setHeight(272);
-    boxAlarmBackground.setPosition(0, 0, 480, 272);
-    boxAlarmBackground.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    swipeAlarm.add(boxAlarmBackground);
-
-    background6_1.setXY(0, -1);
-    background6_1.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM_ID));
-    background6_1.setAlpha(100);
-    swipeAlarm.add(background6_1);
+    Alarm.setWidth(480);
+    Alarm.setHeight(272);
+    boxBlurAlarm.setPosition(0, -1, 480, 274);
+    boxBlurAlarm.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurAlarm.setAlpha(150);
+    Alarm.add(boxBlurAlarm);
 
     hourScrollWheel.setPosition(60, 61, 110, 150);
     hourScrollWheel.setHorizontal(false);
@@ -181,7 +188,7 @@ robotThemeViewBase::robotThemeViewBase() :
     
                           hourScrollWheelSelectedListItems, updateItemCallback);
     hourScrollWheel.animateToItem(0, 0);
-    swipeAlarm.add(hourScrollWheel);
+    Alarm.add(hourScrollWheel);
 
     minuteScrollWheel.setPosition(190, 61, 110, 150);
     minuteScrollWheel.setHorizontal(false);
@@ -198,41 +205,42 @@ robotThemeViewBase::robotThemeViewBase() :
     
                           minuteScrollWheelSelectedListItems, updateItemCallback);
     minuteScrollWheel.animateToItem(0, 0);
-    swipeAlarm.add(minuteScrollWheel);
+    Alarm.add(minuteScrollWheel);
 
     toggleButtonON.setXY(341, 80);
     toggleButtonON.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_70_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_70_70_FFFFFF_SVG_ID));
-    swipeAlarm.add(toggleButtonON);
+    Alarm.add(toggleButtonON);
 
     toggleButtonAM.setXY(341, 160);
     toggleButtonAM.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_70_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_70_70_FFFFFF_SVG_ID));
-    swipeAlarm.add(toggleButtonAM);
+    Alarm.add(toggleButtonAM);
 
     textAreaON.setXY(340, 61);
     textAreaON.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textAreaON.setLinespacing(0);
     textAreaON.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T9QU));
-    swipeAlarm.add(textAreaON);
+    Alarm.add(textAreaON);
 
     textAreaAM.setXY(341, 143);
     textAreaAM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textAreaAM.setLinespacing(0);
     textAreaAM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KHJB));
-    swipeAlarm.add(textAreaAM);
+    Alarm.add(textAreaAM);
 
     textAreaColon.setXY(174, 83);
     textAreaColon.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textAreaColon.setLinespacing(0);
     textAreaColon.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LRH2));
-    swipeAlarm.add(textAreaColon);
+    Alarm.add(textAreaColon);
 
-    swipeContainerWidget.add(swipeAlarm);
+    swipeContainerWidget.add(Alarm);
 
-    SchedulePage4.setWidth(480);
-    SchedulePage4.setHeight(272);
-    background4.setPosition(0, 0, 480, 272);
-    background4.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    SchedulePage4.add(background4);
+    calendar.setWidth(480);
+    calendar.setHeight(272);
+    boxBlurCal.setPosition(0, -1, 480, 274);
+    boxBlurCal.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurCal.setAlpha(150);
+    calendar.add(boxBlurCal);
 
     scrollList1.setPosition(203, 30, 150, 200);
     scrollList1.setHorizontal(false);
@@ -243,161 +251,81 @@ robotThemeViewBase::robotThemeViewBase() :
     scrollList1.setNumberOfItems(10);
     scrollList1.setPadding(0, 0);
     scrollList1.setSnapping(false);
-    SchedulePage4.add(scrollList1);
+    calendar.add(scrollList1);
 
     boxScheduleBack.setPosition(43, 86, 116, 77);
     boxScheduleBack.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    SchedulePage4.add(boxScheduleBack);
+    calendar.add(boxScheduleBack);
 
     textScheduleTime.setXY(53, 100);
     textScheduleTime.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textScheduleTime.setLinespacing(0);
     textScheduleTime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UXV2));
-    SchedulePage4.add(textScheduleTime);
+    calendar.add(textScheduleTime);
 
     textSchedule.setXY(53, 130);
     textSchedule.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textSchedule.setLinespacing(0);
     textSchedule.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1ZAU));
-    SchedulePage4.add(textSchedule);
+    calendar.add(textSchedule);
 
-    swipeContainerWidget.add(SchedulePage4);
+    swipeContainerWidget.add(calendar);
 
-    BusPage5.setWidth(480);
-    BusPage5.setHeight(272);
-    background5.setPosition(0, 0, 480, 272);
-    background5.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    BusPage5.add(background5);
+    Bus.setWidth(480);
+    Bus.setHeight(272);
+    boxBlurBus.setPosition(0, -1, 480, 274);
+    boxBlurBus.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurBus.setAlpha(150);
+    Bus.add(boxBlurBus);
 
-    circleFill1.setPosition(81, 149, 80, 80);
-    circleFill1.setCenter(40, 40);
-    circleFill1.setRadius(25);
-    circleFill1.setLineWidth(0);
-    circleFill1.setArc(0, 360);
-    circleFill1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    circleFill1.setPainter(circleFill1Painter);
-    BusPage5.add(circleFill1);
+    busRoute.setXY(58, 74);
+    busRoute.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    busRoute.setLinespacing(0);
+    busRoute.setTypedText(touchgfx::TypedText(T___SINGLEUSE_458W));
+    Bus.add(busRoute);
 
-    circleOutLine1.setPosition(81, 149, 80, 80);
-    circleOutLine1.setCenter(40, 40);
-    circleOutLine1.setRadius(25);
-    circleOutLine1.setLineWidth(5);
-    circleOutLine1.setArc(0, 360);
-    circleOutLine1.setCapPrecision(180);
-    circleOutLine1Painter.setColor(touchgfx::Color::getColorFromRGB(106, 204, 140));
-    circleOutLine1.setPainter(circleOutLine1Painter);
-    BusPage5.add(circleOutLine1);
+    busStation.setXY(88, 165);
+    busStation.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    busStation.setLinespacing(0);
+    busStation.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LCF4));
+    Bus.add(busStation);
 
-    lineUp1.setPosition(101, 186, 43, 47);
-    lineUp1Painter.setColor(touchgfx::Color::getColorFromRGB(106, 204, 140));
-    lineUp1.setPainter(lineUp1Painter);
-    lineUp1.setStart(30, 5);
-    lineUp1.setEnd(15, 20);
-    lineUp1.setLineWidth(5);
-    lineUp1.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
-    BusPage5.add(lineUp1);
-
-    lineDown1.setPosition(111, 169, 50, 46);
-    lineDown1Painter.setColor(touchgfx::Color::getColorFromRGB(106, 204, 140));
-    lineDown1.setPainter(lineDown1Painter);
-    lineDown1.setStart(5, 5);
-    lineDown1.setEnd(20, 20);
-    lineDown1.setLineWidth(5);
-    lineDown1.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
-    BusPage5.add(lineDown1);
-
-    bus1.setXY(89, 100);
-    bus1.setBitmap(touchgfx::Bitmap(BITMAP_BUS_64X64_ID));
-    BusPage5.add(bus1);
-
-    bus2.setXY(206, 100);
-    bus2.setBitmap(touchgfx::Bitmap(BITMAP_BUS_64X64_ID));
-    BusPage5.add(bus2);
-
-    circleFill2.setPosition(198, 149, 80, 80);
-    circleFill2.setCenter(40, 40);
-    circleFill2.setRadius(25);
-    circleFill2.setLineWidth(0);
-    circleFill2.setArc(0, 360);
-    circleFill2Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    circleFill2.setPainter(circleFill2Painter);
-    BusPage5.add(circleFill2);
-
-    circleOutLine2.setPosition(198, 149, 80, 80);
-    circleOutLine2.setCenter(40, 40);
-    circleOutLine2.setRadius(25);
-    circleOutLine2.setLineWidth(5);
-    circleOutLine2.setArc(0, 360);
-    circleOutLine2.setCapPrecision(180);
-    circleOutLine2Painter.setColor(touchgfx::Color::getColorFromRGB(106, 204, 140));
-    circleOutLine2.setPainter(circleOutLine2Painter);
-    BusPage5.add(circleOutLine2);
-
-    lineDown2.setPosition(228, 169, 50, 46);
-    lineDown2Painter.setColor(touchgfx::Color::getColorFromRGB(106, 204, 140));
-    lineDown2.setPainter(lineDown2Painter);
-    lineDown2.setStart(5, 5);
-    lineDown2.setEnd(20, 20);
-    lineDown2.setLineWidth(5);
-    lineDown2.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
-    BusPage5.add(lineDown2);
-
-    lineUp2.setPosition(218, 186, 43, 47);
-    lineUp2Painter.setColor(touchgfx::Color::getColorFromRGB(106, 204, 140));
-    lineUp2.setPainter(lineUp2Painter);
-    lineUp2.setStart(30, 5);
-    lineUp2.setEnd(15, 20);
-    lineUp2.setLineWidth(5);
-    lineUp2.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
-    BusPage5.add(lineUp2);
-
-    circleFill3.setPosition(318, 149, 80, 80);
-    circleFill3.setCenter(40, 40);
-    circleFill3.setRadius(25);
-    circleFill3.setLineWidth(0);
-    circleFill3.setArc(0, 360);
-    circleFill3Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    circleFill3.setPainter(circleFill3Painter);
-    BusPage5.add(circleFill3);
-
-    circleFill3_1.setPosition(318, 148, 80, 80);
-    circleFill3_1.setCenter(40, 40);
-    circleFill3_1.setRadius(7);
-    circleFill3_1.setLineWidth(0);
-    circleFill3_1.setArc(0, 360);
-    circleFill3_1Painter.setColor(touchgfx::Color::getColorFromRGB(106, 204, 140));
-    circleFill3_1.setPainter(circleFill3_1Painter);
-    BusPage5.add(circleFill3_1);
-
-    circleOutLine3.setPosition(318, 149, 80, 80);
-    circleOutLine3.setCenter(40, 40);
-    circleOutLine3.setRadius(25);
-    circleOutLine3.setLineWidth(5);
-    circleOutLine3.setArc(0, 360);
-    circleOutLine3.setCapPrecision(180);
-    circleOutLine3Painter.setColor(touchgfx::Color::getColorFromRGB(106, 204, 140));
-    circleOutLine3.setPainter(circleOutLine3Painter);
-    BusPage5.add(circleOutLine3);
-
-    busTime1.setXY(90, 64);
+    busTime1.setXY(240, 88);
     busTime1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     busTime1.setLinespacing(0);
+    touchgfx::Unicode::snprintf(busTime1Buffer1, BUSTIME1BUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_JREN).getText());
+    busTime1.setWildcard1(busTime1Buffer1);
+    busTime1.setWildcard2(touchgfx::TypedText(T___SINGLEUSE_1MSQ).getText());
+    busTime1.resizeToCurrentText();
     busTime1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_05J5));
-    BusPage5.add(busTime1);
+    Bus.add(busTime1);
 
-    busTime2.setXY(214, 64);
+    busTime2.setXY(353, 88);
     busTime2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     busTime2.setLinespacing(0);
-    busTime2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T14E));
-    BusPage5.add(busTime2);
+    touchgfx::Unicode::snprintf(busTime2Buffer1, BUSTIME2BUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_S0SF).getText());
+    busTime2.setWildcard1(busTime2Buffer1);
+    busTime2.setWildcard2(touchgfx::TypedText(T___SINGLEUSE_G9NH).getText());
+    busTime2.resizeToCurrentText();
+    busTime2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BW3Y));
+    Bus.add(busTime2);
 
-    swipeContainerWidget.add(BusPage5);
+    imageBus1.setXY(254, 136);
+    imageBus1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_MAPS_DEPARTURE_BOARD_65_65_FFFFFF_SVG_ID));
+    Bus.add(imageBus1);
+
+    imageBus2.setXY(367, 133);
+    imageBus2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_MAPS_DEPARTURE_BOARD_65_65_FFFFFF_SVG_ID));
+    Bus.add(imageBus2);
+
+    swipeContainerWidget.add(Bus);
 
     stock.setWidth(480);
     stock.setHeight(272);
-    background6.setPosition(0, 0, 480, 272);
-    background6.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    stock.add(background6);
+    boxBlurStock.setPosition(0, -1, 480, 274);
+    boxBlurStock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurStock.setAlpha(150);
+    stock.add(boxBlurStock);
 
     dynamicGraph1.setPosition(-129, 67, 609, 206);
     dynamicGraph1.setScale(1);
@@ -533,20 +461,41 @@ robotThemeViewBase::robotThemeViewBase() :
 
     swipeContainerWidget.add(stock);
 
-    swipeContainerWidget.setSelectedPage(4);
+    swipeContainerWidget.setSelectedPage(0);
     add(swipeContainerWidget);
+
+    boxInfoBG.setPosition(0, 0, 480, 24);
+    boxInfoBG.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxInfoBG.setAlpha(71);
+    add(boxInfoBG);
 
     textBattery.setXY(435, 0);
     textBattery.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textBattery.setLinespacing(0);
+    textBattery.setWildcard(touchgfx::TypedText(T___SINGLEUSE_OW5R).getText());
+    textBattery.resizeToCurrentText();
     textBattery.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6CI5));
     add(textBattery);
 
-    textClock.setXY(5, 0);
+    textClock.setXY(2, 0);
     textClock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textClock.setLinespacing(0);
+    touchgfx::Unicode::snprintf(textClockBuffer1, TEXTCLOCKBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_O7C8).getText());
+    textClock.setWildcard1(textClockBuffer1);
+    touchgfx::Unicode::snprintf(textClockBuffer2, TEXTCLOCKBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_6C3U).getText());
+    textClock.setWildcard2(textClockBuffer2);
+    textClock.resizeToCurrentText();
     textClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_70FQ));
     add(textClock);
+
+    textDate.setXY(55, 0);
+    textDate.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textDate.setLinespacing(0);
+    Unicode::snprintf(textDateBuffer, TEXTDATE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_MJKC).getText());
+    textDate.setWildcard(textDateBuffer);
+    textDate.resizeToCurrentText();
+    textDate.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XSP1));
+    add(textDate);
 
     textAlarm.setXY(361, 0);
     textAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -628,19 +577,6 @@ void robotThemeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& s
         //When buttonTimerMin clicked call virtual function
         //Call bottonTimerMinClicked
         bottonTimerMinClicked();
-    }
-}
-
-void robotThemeViewBase::handleTickEvent()
-{
-    frameCountBlinkInterval++;
-    if(frameCountBlinkInterval == TICK_BLINK_INTERVAL)
-    {
-        //blink
-        //When every N tick play video videoBlink
-        //Play video on videoBlink
-        videoBlink.play();
-        frameCountBlinkInterval = 0;
     }
 }
 

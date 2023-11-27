@@ -13,6 +13,9 @@ extern touchgfx::GeneratedFont& getFont_DUBAI_LIGHT_TTF_60_8bpp();
 extern touchgfx::GeneratedFont& getFont_DUBAI_BOLD_TTF_30_4bpp();
 extern touchgfx::GeneratedFont& getFont_DUBAI_MEDIUM_TTF_20_4bpp();
 extern touchgfx::GeneratedFont& getFont_DUBAI_BOLD_TTF_20_4bpp();
+extern touchgfx::GeneratedFont& getFont_DUBAI_MEDIUM_TTF_250_4bpp();
+extern touchgfx::GeneratedFont& getFont_DUBAI_MEDIUM_TTF_25_4bpp();
+extern touchgfx::GeneratedFont& getFont_DUBAI_LIGHT_TTF_25_4bpp();
 
 const touchgfx::Font* touchgfx_fonts[] = {
     &(getFont_verdana_20_4bpp()),
@@ -22,7 +25,10 @@ const touchgfx::Font* touchgfx_fonts[] = {
     &(getFont_DUBAI_LIGHT_TTF_60_8bpp()),
     &(getFont_DUBAI_BOLD_TTF_30_4bpp()),
     &(getFont_DUBAI_MEDIUM_TTF_20_4bpp()),
-    &(getFont_DUBAI_BOLD_TTF_20_4bpp())
+    &(getFont_DUBAI_BOLD_TTF_20_4bpp()),
+    &(getFont_DUBAI_MEDIUM_TTF_250_4bpp()),
+    &(getFont_DUBAI_MEDIUM_TTF_25_4bpp()),
+    &(getFont_DUBAI_LIGHT_TTF_25_4bpp())
 };
 
 extern const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[];
@@ -30,6 +36,22 @@ extern const touchgfx::TypedText::TypedTextData* const typedTextDatabaseArray[];
 
 TEXT_LOCATION_FLASH_PRAGMA
 const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
+    { 9, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 9, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 9, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 9, touchgfx::RIGHT, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 6, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 3, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 6, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
@@ -52,8 +74,7 @@ const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[] TEXT_LOCAT
     { 6, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
-    { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 9, touchgfx::RIGHT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
@@ -134,6 +155,15 @@ void resetFont(touchgfx::FontId fontId)
         break;
     case 7:
         touchgfx_fonts[7] = &(getFont_DUBAI_BOLD_TTF_20_4bpp());
+        break;
+    case 8:
+        touchgfx_fonts[8] = &(getFont_DUBAI_MEDIUM_TTF_250_4bpp());
+        break;
+    case 9:
+        touchgfx_fonts[9] = &(getFont_DUBAI_MEDIUM_TTF_25_4bpp());
+        break;
+    case 10:
+        touchgfx_fonts[10] = &(getFont_DUBAI_LIGHT_TTF_25_4bpp());
         break;
     }
 }
