@@ -654,6 +654,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_MEDIUM_TTF_25_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Font_DUBAI_MEDIUM_TTF_60_4bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_DUBAI_MEDIUM_TTF_60_4bpp_0.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Font_verdana_10_4bpp_0.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_10_4bpp_0.cpp</locationURI>
@@ -714,6 +719,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_MEDIUM_TTF_25_4bpp.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Kerning_DUBAI_MEDIUM_TTF_60_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_DUBAI_MEDIUM_TTF_60_4bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Kerning_verdana_10_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.cpp</locationURI>
@@ -767,6 +777,11 @@
 			<name>Application/User/generated/Table_DUBAI_MEDIUM_TTF_25_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_MEDIUM_TTF_25_4bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_DUBAI_MEDIUM_TTF_60_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_DUBAI_MEDIUM_TTF_60_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Table_verdana_10_4bpp.cpp</name>
@@ -854,34 +869,34 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_action_alarm_on_22_22_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_icon_theme_images_av_loop_50_50_FFFFFF.svg.cpp</name>
+			<name>Application/User/generated/image_icon_theme_images_av_loop_60_60_FFFFFF.svg.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_loop_50_50_FFFFFF.svg.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_loop_60_60_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_icon_theme_images_av_pause_circle_filled_50_50_FFFFFF.svg.cpp</name>
+			<name>Application/User/generated/image_icon_theme_images_av_pause_circle_filled_60_60_FFFFFF.svg.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_pause_circle_filled_50_50_FFFFFF.svg.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_pause_circle_filled_60_60_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_icon_theme_images_av_pause_circle_outline_50_50_FFFFFF.svg.cpp</name>
+			<name>Application/User/generated/image_icon_theme_images_av_pause_circle_outline_60_60_FFFFFF.svg.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_pause_circle_outline_50_50_FFFFFF.svg.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_pause_circle_outline_60_60_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_icon_theme_images_av_play_circle_filled_50_50_FFFFFF.svg.cpp</name>
+			<name>Application/User/generated/image_icon_theme_images_av_play_circle_filled_60_60_FFFFFF.svg.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_play_circle_filled_50_50_FFFFFF.svg.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_play_circle_filled_60_60_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_icon_theme_images_av_play_circle_outline_50_50_FFFFFF.svg.cpp</name>
+			<name>Application/User/generated/image_icon_theme_images_av_play_circle_outline_60_60_FFFFFF.svg.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_play_circle_outline_50_50_FFFFFF.svg.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_play_circle_outline_60_60_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_icon_theme_images_av_replay_circle_filled_50_50_FFFFFF.svg.cpp</name>
+			<name>Application/User/generated/image_icon_theme_images_av_replay_circle_filled_60_60_FFFFFF.svg.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_replay_circle_filled_50_50_FFFFFF.svg.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_replay_circle_filled_60_60_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_icon_theme_images_content_add_circle_50_50_FFFFFF.svg.cpp</name>
@@ -907,6 +922,11 @@
 			<name>Application/User/generated/image_icon_theme_images_maps_departure_board_65_65_FFFFFF.svg.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_maps_departure_board_65_65_FFFFFF.svg.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_icon_theme_images_maps_location_pin_30_30_FFFFFF.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_maps_location_pin_30_30_FFFFFF.svg.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_icon_theme_images_toggle_toggle_off_70_70_FFFFFF.svg.cpp</name>
@@ -964,6 +984,21 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_clock.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_cloud_128x128.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_cloud_128x128.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_drizzel_128x128.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_drizzel_128x128.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_fog_128x128.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_fog_128x128.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_gradientBackground.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_gradientBackground.cpp</locationURI>
@@ -984,9 +1019,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_play_released_64x64.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_rain_128X128.cpp</name>
+			<name>Application/User/generated/image_rain_128x128.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_rain_128X128.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_rain_128x128.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_reset_pressed_64x64.cpp</name>
@@ -999,6 +1034,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_reset_released_64x64.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_snow_128x128.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_snow_128x128.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_stop_pressed_64x64.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_stop_pressed_64x64.cpp</locationURI>
@@ -1007,6 +1047,16 @@
 			<name>Application/User/generated/image_stop_released_64x64.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_stop_released_64x64.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_sun_128x128.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_sun_128x128.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_thunder_128x128.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_thunder_128x128.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Blue_Backgrounds_Main_bg_texture_480x272px.cpp</name>

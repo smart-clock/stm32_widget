@@ -25,7 +25,7 @@
             "IndicatorImageNormal": "__generated\\light_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\clay_theme_images_widgets_swipecontainer_medium_on_normal.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "home",
+            "SelectedPage": "StopWatch",
             "Components": [
               {
                 "Type": "Container",
@@ -108,49 +108,112 @@
                     "Alpha": 150
                   },
                   {
-                    "Type": "Image",
-                    "Name": "imageRaining",
-                    "X": 70,
-                    "Y": 72,
-                    "Width": 128,
-                    "Height": 128,
-                    "RelativeFilename": "rain_128X128.png"
-                  },
-                  {
-                    "Type": "Box",
-                    "Name": "box1",
-                    "X": 239,
-                    "Y": 72,
-                    "Width": 139,
-                    "Height": 128,
+                    "Type": "TextArea",
+                    "Name": "textTemp",
+                    "X": 77,
+                    "Y": 120,
+                    "Width": 76,
+                    "Height": 84,
+                    "TextId": "__SingleUse_EI1R",
+                    "TextRotation": "0",
                     "Color": {
                       "Red": 255,
                       "Green": 255,
                       "Blue": 255
                     },
-                    "Alpha": 174
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_5ECF",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
                   },
                   {
                     "Type": "TextArea",
                     "Name": "textDegree",
-                    "X": 253,
-                    "Y": 88,
-                    "Width": 78,
-                    "Height": 41,
-                    "TextId": "__SingleUse_EI1R",
+                    "X": 155,
+                    "Y": 133,
+                    "Width": 15,
+                    "Height": 23,
+                    "TextId": "__SingleUse_VQ07",
                     "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textC",
+                    "X": 171,
+                    "Y": 118,
+                    "Width": 40,
+                    "Height": 84,
+                    "TextId": "__SingleUse_AQKR",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
                     "AutoSize": true
                   },
                   {
                     "Type": "TextArea",
                     "Name": "textWhether",
-                    "X": 253,
-                    "Y": 137,
-                    "Width": 114,
-                    "Height": 24,
+                    "X": 239,
+                    "Y": -56,
+                    "Width": 57,
+                    "Height": 30,
                     "TextId": "__SingleUse_CW4O",
                     "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
                     "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textRegion",
+                    "X": 107,
+                    "Y": 77,
+                    "Width": 71,
+                    "Height": 30,
+                    "TextId": "__SingleUse_AL19",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_PX5Y",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageWhether",
+                    "X": 267,
+                    "Y": 78,
+                    "Width": 128,
+                    "Height": 128,
+                    "RelativeFilename": "snow_128x128.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageLocation",
+                    "X": 73,
+                    "Y": 77,
+                    "Width": 30,
+                    "Height": 30,
+                    "RelativeFilename": "__generated\\icon_theme_images_maps_location_pin_30_30_FFFFFF.svg.png"
                   }
                 ]
               },
@@ -171,10 +234,10 @@
                   {
                     "Type": "DigitalClock",
                     "Name": "digitalClock",
-                    "X": 140,
-                    "Y": 85,
-                    "Width": 200,
-                    "Height": 50,
+                    "X": 79,
+                    "Y": 63,
+                    "Width": 320,
+                    "Height": 78,
                     "TextColor": {
                       "Red": 255,
                       "Green": 255,
@@ -188,31 +251,31 @@
                     "Type": "Button",
                     "Name": "buttonReset",
                     "X": 290,
-                    "Y": 161,
-                    "Width": 50,
-                    "Height": 50,
-                    "Pressed": "__generated\\icon_theme_images_av_loop_50_50_FFFFFF.svg.png",
-                    "Released": "__generated\\icon_theme_images_av_replay_circle_filled_50_50_FFFFFF.svg.png"
+                    "Y": 166,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\icon_theme_images_av_loop_60_60_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_av_replay_circle_filled_60_60_FFFFFF.svg.png"
                   },
                   {
                     "Type": "Button",
                     "Name": "buttonStop",
-                    "X": 215,
-                    "Y": 159,
-                    "Width": 50,
-                    "Height": 50,
-                    "Pressed": "__generated\\icon_theme_images_av_pause_circle_outline_50_50_FFFFFF.svg.png",
-                    "Released": "__generated\\icon_theme_images_av_pause_circle_filled_50_50_FFFFFF.svg.png"
+                    "X": 210,
+                    "Y": 166,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\icon_theme_images_av_pause_circle_outline_60_60_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_av_pause_circle_filled_60_60_FFFFFF.svg.png"
                   },
                   {
                     "Type": "Button",
                     "Name": "buttonPlay",
-                    "X": 140,
-                    "Y": 161,
-                    "Width": 50,
-                    "Height": 50,
-                    "Pressed": "__generated\\icon_theme_images_av_play_circle_outline_50_50_FFFFFF.svg.png",
-                    "Released": "__generated\\icon_theme_images_av_play_circle_filled_50_50_FFFFFF.svg.png"
+                    "X": 128,
+                    "Y": 165,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\icon_theme_images_av_play_circle_outline_60_60_FFFFFF.svg.png",
+                    "Released": "__generated\\icon_theme_images_av_play_circle_filled_60_60_FFFFFF.svg.png"
                   }
                 ]
               },
@@ -432,7 +495,7 @@
                     "X": 174,
                     "Y": 83,
                     "Width": 14,
-                    "Height": 71,
+                    "Height": 84,
                     "TextId": "__SingleUse_LRH2",
                     "TextRotation": "0",
                     "Color": {
@@ -528,7 +591,7 @@
                     "X": 58,
                     "Y": 74,
                     "Width": 141,
-                    "Height": 71,
+                    "Height": 84,
                     "TextId": "__SingleUse_458W",
                     "TextRotation": "0",
                     "Color": {
@@ -640,7 +703,7 @@
                     "Type": "DynamicGraph",
                     "Name": "dynamicGraph1",
                     "X": -129,
-                    "Y": 67,
+                    "Y": 65,
                     "Width": 609,
                     "Height": 206,
                     "DataSeed": -891326662,
@@ -657,20 +720,20 @@
                         "Type": "AreaDrawer",
                         "FileNameImage": "",
                         "Color": {
-                          "Red": 87,
-                          "Green": 181,
-                          "Blue": 107
+                          "Red": 255,
+                          "Green": 255,
+                          "Blue": 255
                         },
-                        "Alpha": 115
+                        "Alpha": 130
                       },
                       {
                         "Type": "LineDrawer",
                         "LineWidth": 3,
                         "FileNameImage": "",
                         "Color": {
-                          "Red": 87,
-                          "Green": 181,
-                          "Blue": 107
+                          "Red": 255,
+                          "Green": 255,
+                          "Blue": 255
                         }
                       }
                     ]
@@ -679,9 +742,9 @@
                     "Type": "TextArea",
                     "Name": "textStock",
                     "X": 20,
-                    "Y": 48,
-                    "Width": 100,
-                    "Height": 41,
+                    "Y": 47,
+                    "Width": 73,
+                    "Height": 30,
                     "TextId": "__SingleUse_A88N",
                     "TextRotation": "0",
                     "Color": {
@@ -695,15 +758,15 @@
                     "Type": "TextArea",
                     "Name": "textStockValue",
                     "X": 20,
-                    "Y": 96,
-                    "Width": 72,
-                    "Height": 24,
+                    "Y": 85,
+                    "Width": 86,
+                    "Height": 30,
                     "TextId": "__SingleUse_WA0J",
                     "TextRotation": "0",
                     "Color": {
-                      "Red": 240,
-                      "Green": 60,
-                      "Blue": 60
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
                     },
                     "AutoSize": true
                   }

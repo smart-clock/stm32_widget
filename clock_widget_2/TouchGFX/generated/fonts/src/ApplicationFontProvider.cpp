@@ -45,6 +45,12 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::LIGHT_25:
         // DUBAI_LIGHT_TTF_25_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[10]);
+    case Typography::TYPOGRAPHY_00:
+        // verdana_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
+    case Typography::MEDIUM_60:
+        // DUBAI_MEDIUM_TTF_60_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[11]);
     default:
         return 0;
     }

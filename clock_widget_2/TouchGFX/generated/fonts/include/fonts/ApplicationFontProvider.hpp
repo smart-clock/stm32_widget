@@ -25,6 +25,8 @@ struct Typography
     static const touchgfx::FontId DUBAIMEDIUM_100 = 9;
     static const touchgfx::FontId MEDIUM_25 = 10;
     static const touchgfx::FontId LIGHT_25 = 11;
+    static const touchgfx::FontId TYPOGRAPHY_00 = 12;
+    static const touchgfx::FontId MEDIUM_60 = 13;
 };
 
 struct TypographyFontIndex
@@ -41,7 +43,9 @@ struct TypographyFontIndex
     static const touchgfx::FontId DUBAIMEDIUM_100 = 8;   // DUBAI_MEDIUM_TTF_250_4bpp
     static const touchgfx::FontId MEDIUM_25 = 9;         // DUBAI_MEDIUM_TTF_25_4bpp
     static const touchgfx::FontId LIGHT_25 = 10;          // DUBAI_LIGHT_TTF_25_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 11;
+    static const touchgfx::FontId TYPOGRAPHY_00 = 0;     // verdana_20_4bpp
+    static const touchgfx::FontId MEDIUM_60 = 11;         // DUBAI_MEDIUM_TTF_60_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 12;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

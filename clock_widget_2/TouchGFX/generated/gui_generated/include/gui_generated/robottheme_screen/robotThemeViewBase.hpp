@@ -91,13 +91,17 @@ protected:
     touchgfx::SwipeContainer swipeContainerWidget;
     touchgfx::Container home;
     touchgfx::TextAreaWithTwoWildcards textHomeClock;
-    touchgfx::TextArea textDate_1;
+    touchgfx::TextAreaWithTwoWildcards textHomeDate;
+    touchgfx::TextAreaWithOneWildcard textHomeDay;
     touchgfx::Container whether;
     touchgfx::Box boxBlurWhether;
-    touchgfx::Image imageRaining;
-    touchgfx::Box box1;
+    touchgfx::TextAreaWithOneWildcard textTemp;
     touchgfx::TextArea textDegree;
+    touchgfx::TextArea textC;
     touchgfx::TextArea textWhether;
+    touchgfx::TextAreaWithOneWildcard textRegion;
+    touchgfx::Image imageWhether;
+    touchgfx::Image imageLocation;
     touchgfx::Container StopWatch;
     touchgfx::Box boxBlurStop;
     touchgfx::DigitalClock digitalClock;
@@ -153,6 +157,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard textBattery;
     touchgfx::TextAreaWithTwoWildcards textClock;
     touchgfx::TextAreaWithOneWildcard textDate;
+    touchgfx::TextAreaWithOneWildcard textDay;
     touchgfx::TextAreaWithTwoWildcards textAlarm;
     touchgfx::Image imageAlarm;
 
@@ -163,6 +168,16 @@ protected:
     touchgfx::Unicode::UnicodeChar textHomeClockBuffer1[TEXTHOMECLOCKBUFFER1_SIZE];
     static const uint16_t TEXTHOMECLOCKBUFFER2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textHomeClockBuffer2[TEXTHOMECLOCKBUFFER2_SIZE];
+    static const uint16_t TEXTHOMEDATEBUFFER1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textHomeDateBuffer1[TEXTHOMEDATEBUFFER1_SIZE];
+    static const uint16_t TEXTHOMEDATEBUFFER2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textHomeDateBuffer2[TEXTHOMEDATEBUFFER2_SIZE];
+    static const uint16_t TEXTHOMEDAY_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textHomeDayBuffer[TEXTHOMEDAY_SIZE];
+    static const uint16_t TEXTTEMP_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textTempBuffer[TEXTTEMP_SIZE];
+    static const uint16_t TEXTREGION_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textRegionBuffer[TEXTREGION_SIZE];
     static const uint16_t TEXTTIMERBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
     static const uint16_t TEXTTIMERBUFFER2_SIZE = 10;
@@ -177,6 +192,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textClockBuffer2[TEXTCLOCKBUFFER2_SIZE];
     static const uint16_t TEXTDATE_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textDateBuffer[TEXTDATE_SIZE];
+    static const uint16_t TEXTDAY_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textDayBuffer[TEXTDAY_SIZE];
     static const uint16_t TEXTALARMBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textAlarmBuffer1[TEXTALARMBUFFER1_SIZE];
     static const uint16_t TEXTALARMBUFFER2_SIZE = 10;

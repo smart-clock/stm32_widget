@@ -6,6 +6,24 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_PX5Y" Alignment="Left" TypographyId="DubaiBold_70">
+        <Translation Language="GB">Yongin</Translation>
+      </Text>
+      <Text Id="__SingleUse_AQKR" Alignment="Center" TypographyId="DubaiBold_70">
+        <Translation Language="GB">C</Translation>
+      </Text>
+      <Text Id="__SingleUse_5ECF" Alignment="Left" TypographyId="DubaiBold_20">
+        <Translation Language="GB">21</Translation>
+      </Text>
+      <Text Id="__SingleUse_VQ07" Alignment="Center" TypographyId="DubaiBold_20">
+        <Translation Language="GB">O</Translation>
+      </Text>
+      <Text Id="__SingleUse_AL19" Alignment="Center" TypographyId="Medium_25">
+        <Translation Language="GB">&lt;region&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_CW4O" Alignment="Center" TypographyId="DubaiBold_30">
+        <Translation Language="GB">Rain</Translation>
+      </Text>
       <Text Id="__SingleUse_BWHJ" Alignment="Left" TypographyId="Medium_25">
         <Translation Language="GB">Sun</Translation>
       </Text>
@@ -117,7 +135,7 @@
       <Text Id="__SingleUse_S02A" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">&lt;min&gt;:&lt;sec&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_PQN4" Alignment="Center" TypographyId="Large">
+      <Text Id="__SingleUse_PQN4" Alignment="Center" TypographyId="Medium_60">
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_ASYU" Alignment="Center" TypographyId="Default">
@@ -132,10 +150,10 @@
       <Text Id="__SingleUse_6CI5" Alignment="Center" TypographyId="DubaiMedium_20">
         <Translation Language="GB">&lt;bat&gt;%</Translation>
       </Text>
-      <Text Id="__SingleUse_WA0J" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_WA0J" Alignment="Left" TypographyId="DubaiBold_30">
         <Translation Language="GB">188.01</Translation>
       </Text>
-      <Text Id="__SingleUse_A88N" Alignment="Left" TypographyId="Large">
+      <Text Id="__SingleUse_A88N" Alignment="Left" TypographyId="DubaiBold_30">
         <Translation Language="GB">AAPL</Translation>
       </Text>
       <Text Id="__SingleUse_05J5" Alignment="Right" TypographyId="Medium_25">
@@ -147,11 +165,8 @@
       <Text Id="__SingleUse_UXV2" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">8:00</Translation>
       </Text>
-      <Text Id="__SingleUse_CW4O" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Heavy Rain</Translation>
-      </Text>
-      <Text Id="__SingleUse_EI1R" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">26C</Translation>
+      <Text Id="__SingleUse_EI1R" Alignment="Center" TypographyId="DubaiBold_70">
+        <Translation Language="GB">&lt;temp&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_O6L1" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">188.01</Translation>
@@ -211,7 +226,7 @@
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="DubaiBold_70" Font="DUBAI-BOLD.TTF" Size="70" Bpp="8" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
     <Typography Id="Light_60" Font="DUBAI-LIGHT.TTF" Size="60" Bpp="8" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
@@ -222,5 +237,7 @@
     <Typography Id="DubaiMedium_100" Font="DUBAI-MEDIUM.TTF" Size="250" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Medium_25" Font="DUBAI-MEDIUM.TTF" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0x20-0x7E" />
     <Typography Id="Light_25" Font="DUBAI-LIGHT.TTF" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" />
+    <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Medium_60" Font="DUBAI-MEDIUM.TTF" Size="60" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
   </Typographies>
 </TextDatabase>
