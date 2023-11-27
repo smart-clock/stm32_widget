@@ -4,7 +4,6 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cp
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:98:6:virtual void ClockView::buttonPlayClicked()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:103:6:virtual void ClockView::buttonStopClicked()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:108:6:virtual void ClockView::buttonResetClicked()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:229:6:virtual void ClockView::uart_Data(char*)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:290:8:touchgfx::Callback<ClockView, const touchgfx::Gauge&, const touchgfx::ClickEvent&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:318:18:void touchgfx::Callback<dest_type, T1, T2, void>::execute(T1, T2) [with dest_type = ClockView; T1 = const touchgfx::Gauge&; T2 = const touchgfx::ClickEvent&]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:328:18:bool touchgfx::Callback<dest_type, T1, T2, void>::isValid() const [with dest_type = ClockView; T1 = const touchgfx::Gauge&; T2 = const touchgfx::ClickEvent&]	3
@@ -17,6 +16,7 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cp
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:19:6:virtual void ClockView::setupScreen()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:204:6:virtual void ClockView::hourScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:219:6:virtual void ClockView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:229:6:virtual void ClockView::uart_Data(char*)	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:35:6:virtual void ClockView::handleTickEvent()	10
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:116:6:virtual void ClockView::buttonTimerMaxClicked()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:125:6:virtual void ClockView::bottonTimerMinClicked()	1

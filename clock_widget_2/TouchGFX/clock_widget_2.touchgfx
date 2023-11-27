@@ -906,6 +906,21 @@
             "Height": 55,
             "Pressed": "__generated\\icon_theme_images_action_settings_applications_55_55_000000.svg.png",
             "Released": "__generated\\icon_theme_images_action_settings_applications_55_55_6B6B6B.svg.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 60,
+            "Y": 39,
+            "Width": 386,
+            "Height": 211,
+            "TextId": "__SingleUse_GWB9",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_0UUT",
+              "UseBuffer": true,
+              "BufferSize": 257
+            }
           }
         ],
         "Interactions": [
@@ -1199,7 +1214,7 @@
       "Height": 272
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Packet",
+    "StartupScreenName": "Clock",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

@@ -59,16 +59,3 @@ void FrontendApplicationBase::gotoSettingScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<SettingView, SettingPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
-
-// Packet
-
-void FrontendApplicationBase::gotoPacketScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoPacketScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoPacketScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<PacketView, PacketPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}

@@ -17,7 +17,7 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoPacketScreenNoTransition();
+        gotoClockScreenNoTransition();
     }
 
     // Clock
@@ -25,9 +25,6 @@ public:
 
     // Setting
     void gotoSettingScreenNoTransition();
-
-    // Packet
-    void gotoPacketScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -39,9 +36,6 @@ protected:
 
     // Setting
     void gotoSettingScreenNoTransitionImpl();
-
-    // Packet
-    void gotoPacketScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

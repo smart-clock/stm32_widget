@@ -161,6 +161,7 @@ protected:
     touchgfx::TextAreaWithTwoWildcards textAlarm;
     touchgfx::Image imageAlarm;
     touchgfx::Button buttonSetting;
+    touchgfx::TextAreaWithOneWildcard textArea1;
 
     /*
      * Wildcard Buffers
@@ -199,6 +200,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textAlarmBuffer1[TEXTALARMBUFFER1_SIZE];
     static const uint16_t TEXTALARMBUFFER2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textAlarmBuffer2[TEXTALARMBUFFER2_SIZE];
+    static const uint16_t TEXTAREA1_SIZE = 257;
+    touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
 
 private:
 

@@ -562,6 +562,14 @@ ClockViewBase::ClockViewBase() :
     buttonSetting.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_6B6B6B_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_000000_SVG_ID));
     buttonSetting.setAction(buttonCallback);
     add(buttonSetting);
+
+    textArea1.setPosition(60, 39, 386, 211);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_0UUT).getText());
+    textArea1.setWildcard(textArea1Buffer);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GWB9));
+    add(textArea1);
 }
 
 ClockViewBase::~ClockViewBase()

@@ -228,9 +228,9 @@ void ClockView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, in
 
 void ClockView::uart_Data(char *data)
 {
-	// textArea1.setWideTextAction(touchgfx::WIDE_TEXT_WORDWRAP);
-	// Unicode::strncpy(textArea1Buffer, data, TEXTAREA1_SIZE);
-	// textArea1.invalidate();
+	textArea1.setWideTextAction(touchgfx::WIDE_TEXT_WORDWRAP);
+	Unicode::strncpy(textArea1Buffer, data, TEXTAREA1_SIZE);
+	textArea1.invalidate();
 
 	// hourCurrent = 5;
 	// minuteCurrent = 4;
