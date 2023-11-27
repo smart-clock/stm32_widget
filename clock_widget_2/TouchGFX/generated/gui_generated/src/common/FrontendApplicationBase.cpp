@@ -9,12 +9,10 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/robottheme_screen/robotThemeView.hpp>
-#include <gui/robottheme_screen/robotThemePresenter.hpp>
-#include <gui/customtheme_screen/customThemeView.hpp>
-#include <gui/customtheme_screen/customThemePresenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/clock_screen/ClockView.hpp>
+#include <gui/clock_screen/ClockPresenter.hpp>
+#include <gui/setting_screen/SettingView.hpp>
+#include <gui/setting_screen/SettingPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -34,15 +32,28 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// robotTheme
+// Clock
 
-void FrontendApplicationBase::gotorobotThemeScreenNoTransition()
+void FrontendApplicationBase::gotoClockScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotorobotThemeScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoClockScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotorobotThemeScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoClockScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<robotThemeView, robotThemePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<ClockView, ClockPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Setting
+
+void FrontendApplicationBase::gotoSettingScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSettingScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSettingScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SettingView, SettingPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

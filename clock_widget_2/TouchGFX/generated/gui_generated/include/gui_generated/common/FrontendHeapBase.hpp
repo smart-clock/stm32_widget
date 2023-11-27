@@ -12,12 +12,10 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/robottheme_screen/robotThemeView.hpp>
-#include <gui/robottheme_screen/robotThemePresenter.hpp>
-#include <gui/customtheme_screen/customThemeView.hpp>
-#include <gui/customtheme_screen/customThemePresenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/clock_screen/ClockView.hpp>
+#include <gui/clock_screen/ClockPresenter.hpp>
+#include <gui/setting_screen/SettingView.hpp>
+#include <gui/setting_screen/SettingPresenter.hpp>
 
 
 /**
@@ -40,10 +38,9 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< robotThemeView,
-            touchgfx::meta::TypeList< customThemeView,
-            touchgfx::meta::TypeList< Screen1View,
-            touchgfx::meta::Nil > >
+    typedef touchgfx::meta::TypeList< ClockView,
+            touchgfx::meta::TypeList< SettingView,
+            touchgfx::meta::Nil >
             > GeneratedViewTypes;
 
     /**
@@ -55,10 +52,9 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< robotThemePresenter,
-            touchgfx::meta::TypeList< customThemePresenter,
-            touchgfx::meta::TypeList< Screen1Presenter,
-            touchgfx::meta::Nil > >
+    typedef touchgfx::meta::TypeList< ClockPresenter,
+            touchgfx::meta::TypeList< SettingPresenter,
+            touchgfx::meta::Nil >
             > GeneratedPresenterTypes;
 
     /**
@@ -81,7 +77,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotorobotThemeScreenNoTransition();
+        app.gotoClockScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

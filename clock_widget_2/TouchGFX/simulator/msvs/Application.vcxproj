@@ -21,19 +21,16 @@
     <ClCompile Include="..\..\generated\gui_generated\src\common\FrontendApplicationBase.cpp"/>
     <ClCompile Include="..\..\gui\src\model\Model.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
-    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemePresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemeView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\customtheme_screen\customThemeViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemePresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemeView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\robottheme_screen\robotThemeViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\alarmCenterContainer.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\alarmCenterContainerBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\alarmContainer.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\alarmContainerBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\setting_screen\SettingPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\setting_screen\SettingView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\setting_screen\SettingViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\clock_screen\ClockPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\clock_screen\ClockView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\clock_screen\ClockViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -184,19 +181,16 @@
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemePresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemeView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\customtheme_screen\customThemeViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemePresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemeView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\robottheme_screen\robotThemeViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\alarmCenterContainer.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\alarmCenterContainerBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\alarmContainer.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\alarmContainerBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\setting_screen\SettingPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\setting_screen\SettingView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\setting_screen\SettingViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\clock_screen\ClockPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\clock_screen\ClockView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\clock_screen\ClockViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

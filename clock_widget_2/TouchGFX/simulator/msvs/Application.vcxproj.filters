@@ -175,50 +175,38 @@
     <Filter Include="Header Files\gui\containers">
       <UniqueIdentifier>A7D752C0-EA28-3D61-445D-F92EDA0675FB</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\customtheme_screen">
-      <UniqueIdentifier>733D7B41-F0A2-4247-22A4-EBAE4809809B</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\gui\containers">
       <UniqueIdentifier>0421947C-E717-0002-993F-B5EBF36B0CC9</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\customtheme_screen">
-      <UniqueIdentifier>D85513F1-EEDF-8A57-42A5-76C1E2D61299</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\robottheme_screen">
-      <UniqueIdentifier>3FA74B64-11B6-4E81-31C7-FB31C89B2C4F</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\robottheme_screen">
-      <UniqueIdentifier>D20A5F0C-9A1B-15C1-6CE9-6213E1D1CC11</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\gui_generated\containers">
       <UniqueIdentifier>1D38AF1C-4985-276E-F2B5-CFC734E8E008</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\customtheme_screen">
-      <UniqueIdentifier>44A77CD3-8E2F-2758-A112-014711801AFB</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\generated\gui_generated\containers">
       <UniqueIdentifier>EA0DD421-FAC7-DEAD-9665-38856B20C051</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\customtheme_screen">
-      <UniqueIdentifier>18AF3855-9C40-FFF8-5B70-5DFE3E23D80C</UniqueIdentifier>
+    <Filter Include="Source Files\gui\setting_screen">
+      <UniqueIdentifier>BA47C3AE-180C-DB9F-0ED4-50B4AE61F681</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\robottheme_screen">
-      <UniqueIdentifier>0E70538B-102F-F9FE-41F9-FB0BE2A6011E</UniqueIdentifier>
+    <Filter Include="Header Files\gui\setting_screen">
+      <UniqueIdentifier>04C9A574-5E4D-85E9-E25B-AE62E3489C27</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\robottheme_screen">
-      <UniqueIdentifier>C5EC918C-AC98-75A9-24A7-060C1D545DCD</UniqueIdentifier>
+    <Filter Include="Source Files\generated\gui_generated\setting_screen">
+      <UniqueIdentifier>2FED3F41-16D1-BF78-9B23-15FC72B2543C</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\screen1_screen">
-      <UniqueIdentifier>20773BEB-4B41-035E-9AEF-570DF1352743</UniqueIdentifier>
+    <Filter Include="Header Files\generated\gui_generated\setting_screen">
+      <UniqueIdentifier>F6BD4A4E-5374-7944-44E7-AF341C6053BA</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\screen1_screen">
-      <UniqueIdentifier>063FFB04-6118-A4B3-6987-362C2C92CFA2</UniqueIdentifier>
+    <Filter Include="Header Files\gui\clock_screen">
+      <UniqueIdentifier>049696EE-E6C8-CC1B-173D-229307BD2B3D</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>0B6ACADA-0A0C-0A55-788D-CFB7696FB095</UniqueIdentifier>
+    <Filter Include="Source Files\gui\clock_screen">
+      <UniqueIdentifier>BBC4DCDC-48AD-CCAF-F69D-050CBE182F40</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>3C4630D4-CEED-AAA6-B1DC-F6FEAD29FD7B</UniqueIdentifier>
+    <Filter Include="Source Files\generated\gui_generated\clock_screen">
+      <UniqueIdentifier>9CE9343E-A476-FB3B-6299-9114F155790A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\clock_screen">
+      <UniqueIdentifier>66F42505-287B-3857-1DC5-80DAFE1EF942</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -252,33 +240,6 @@
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemePresenter.cpp">
-      <Filter>Source Files\gui\customtheme_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\customtheme_screen\customThemeView.cpp">
-      <Filter>Source Files\gui\customtheme_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\customtheme_screen\customThemeViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\customtheme_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemePresenter.cpp">
-      <Filter>Source Files\gui\robottheme_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\robottheme_screen\robotThemeView.cpp">
-      <Filter>Source Files\gui\robottheme_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\robottheme_screen\robotThemeViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\robottheme_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\alarmCenterContainer.cpp">
       <Filter>Source Files\gui\containers</Filter>
     </ClCompile>
@@ -290,6 +251,24 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\alarmContainerBase.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\setting_screen\SettingPresenter.cpp">
+      <Filter>Source Files\gui\setting_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\setting_screen\SettingView.cpp">
+      <Filter>Source Files\gui\setting_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\setting_screen\SettingViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\setting_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\clock_screen\ClockPresenter.cpp">
+      <Filter>Source Files\gui\clock_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\clock_screen\ClockView.cpp">
+      <Filter>Source Files\gui\clock_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\clock_screen\ClockViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\clock_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -733,33 +712,6 @@
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemePresenter.hpp">
-      <Filter>Header Files\gui\customtheme_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\customtheme_screen\customThemeView.hpp">
-      <Filter>Header Files\gui\customtheme_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\customtheme_screen\customThemeViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\customtheme_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemePresenter.hpp">
-      <Filter>Header Files\gui\robottheme_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\robottheme_screen\robotThemeView.hpp">
-      <Filter>Header Files\gui\robottheme_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\robottheme_screen\robotThemeViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\robottheme_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen1_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\alarmCenterContainer.hpp">
       <Filter>Header Files\gui\containers</Filter>
     </ClInclude>
@@ -771,6 +723,24 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\alarmContainerBase.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\setting_screen\SettingPresenter.hpp">
+      <Filter>Header Files\gui\setting_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\setting_screen\SettingView.hpp">
+      <Filter>Header Files\gui\setting_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\setting_screen\SettingViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\setting_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\clock_screen\ClockPresenter.hpp">
+      <Filter>Header Files\gui\clock_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\clock_screen\ClockView.hpp">
+      <Filter>Header Files\gui\clock_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\clock_screen\ClockViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\clock_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

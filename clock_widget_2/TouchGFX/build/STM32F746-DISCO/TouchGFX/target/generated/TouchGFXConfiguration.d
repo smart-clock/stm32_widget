@@ -47,10 +47,10 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
- TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp \
+ TouchGFX/gui/include/gui/clock_screen/ClockView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
+ TouchGFX/gui/include/gui/clock_screen/ClockPresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -96,14 +96,9 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
- TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
- TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
- TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
- TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
+ TouchGFX/gui/include/gui/setting_screen/SettingView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp \
+ TouchGFX/gui/include/gui/setting_screen/SettingPresenter.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp \
  TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
  TouchGFX/target/generated/STM32DMA.hpp TouchGFX/target/TouchGFXHAL.hpp \
@@ -240,13 +235,13 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
-TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp:
+TouchGFX/gui/include/gui/clock_screen/ClockView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp:
 
 Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-TouchGFX/gui/include/gui/robottheme_screen/robotThemePresenter.hpp:
+TouchGFX/gui/include/gui/clock_screen/ClockPresenter.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
@@ -338,21 +333,11 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGra
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
 
-TouchGFX/gui/include/gui/customtheme_screen/customThemeView.hpp:
+TouchGFX/gui/include/gui/setting_screen/SettingView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp:
 
-TouchGFX/gui/include/gui/customtheme_screen/customThemePresenter.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
-
-TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
-
-TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:
+TouchGFX/gui/include/gui/setting_screen/SettingPresenter.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

@@ -41,22 +41,22 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
- gui/include/gui/robottheme_screen/robotThemeView.hpp \
- generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp \
+ gui/include/gui/clock_screen/ClockView.hpp \
+ generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/robottheme_screen/robotThemePresenter.hpp \
+ gui/include/gui/clock_screen/ClockPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
@@ -92,14 +92,9 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
- gui/include/gui/customtheme_screen/customThemeView.hpp \
- generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp \
- gui/include/gui/customtheme_screen/customThemePresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
- gui/include/gui/screen1_screen/Screen1View.hpp \
- generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
- gui/include/gui/screen1_screen/Screen1Presenter.hpp \
+ gui/include/gui/setting_screen/SettingView.hpp \
+ generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp \
+ gui/include/gui/setting_screen/SettingPresenter.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -186,13 +181,13 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
-gui/include/gui/robottheme_screen/robotThemeView.hpp:
+gui/include/gui/clock_screen/ClockView.hpp:
 
-generated/gui_generated/include/gui_generated/robottheme_screen/robotThemeViewBase.hpp:
+generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/robottheme_screen/robotThemePresenter.hpp:
+gui/include/gui/clock_screen/ClockPresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
@@ -206,6 +201,8 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
@@ -215,8 +212,6 @@ gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
@@ -288,20 +283,10 @@ generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBas
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
 
-gui/include/gui/customtheme_screen/customThemeView.hpp:
+gui/include/gui/setting_screen/SettingView.hpp:
 
-generated/gui_generated/include/gui_generated/customtheme_screen/customThemeViewBase.hpp:
+generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp:
 
-gui/include/gui/customtheme_screen/customThemePresenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
-
-gui/include/gui/screen1_screen/Screen1View.hpp:
-
-generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
-
-gui/include/gui/screen1_screen/Screen1Presenter.hpp:
+gui/include/gui/setting_screen/SettingPresenter.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:

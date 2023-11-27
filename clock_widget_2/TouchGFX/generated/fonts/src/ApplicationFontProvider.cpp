@@ -51,6 +51,9 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::MEDIUM_60:
         // DUBAI_MEDIUM_TTF_60_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[11]);
+    case Typography::REGULAR_70:
+        // DUBAI_REGULAR_TTF_70_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[12]);
     default:
         return 0;
     }

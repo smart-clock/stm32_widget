@@ -17,19 +17,25 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotorobotThemeScreenNoTransition();
+        gotoClockScreenNoTransition();
     }
 
-    // robotTheme
-    void gotorobotThemeScreenNoTransition();
+    // Clock
+    void gotoClockScreenNoTransition();
+
+    // Setting
+    void gotoSettingScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // robotTheme
-    void gotorobotThemeScreenNoTransitionImpl();
+    // Clock
+    void gotoClockScreenNoTransitionImpl();
+
+    // Setting
+    void gotoSettingScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

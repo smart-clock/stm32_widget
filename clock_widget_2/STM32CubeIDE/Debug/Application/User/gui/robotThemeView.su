@@ -1,21 +1,21 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:30:6:virtual void robotThemeView::tearDownScreen()	0	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:99:6:virtual void robotThemeView::buttonPlayClicked()	0	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:104:6:virtual void robotThemeView::buttonStopClicked()	0	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:109:6:virtual void robotThemeView::buttonResetClicked()	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:89:6:virtual void robotThemeView::buttonPlayClicked()	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:94:6:virtual void robotThemeView::buttonStopClicked()	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:99:6:virtual void robotThemeView::buttonResetClicked()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:290:8:touchgfx::Callback<robotThemeView, const touchgfx::Gauge&, const touchgfx::ClickEvent&>::~Callback()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:318:18:void touchgfx::Callback<dest_type, T1, T2, void>::execute(T1, T2) [with dest_type = robotThemeView; T1 = const touchgfx::Gauge&; T2 = const touchgfx::ClickEvent&]	12	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:328:18:bool touchgfx::Callback<dest_type, T1, T2, void>::isValid() const [with dest_type = robotThemeView; T1 = const touchgfx::Gauge&; T2 = const touchgfx::ClickEvent&]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:290:8:virtual touchgfx::Callback<robotThemeView, const touchgfx::Gauge&, const touchgfx::ClickEvent&>::~Callback()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:200:6:virtual void robotThemeView::hourScrollWheelUpdateItem(alarmContainer&, int16_t)	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:190:6:virtual void robotThemeView::hourScrollWheelUpdateItem(alarmContainer&, int16_t)	0	static
 ../../TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp:11:13:robotThemeView::~robotThemeView()	8	static
 ../../TouchGFX/gui/include/gui/robottheme_screen/robotThemeView.hpp:11:13:virtual robotThemeView::~robotThemeView()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:135:6:void robotThemeView::gaugeClickHandler(const touchgfx::Gauge&, const touchgfx::ClickEvent&)	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:125:6:void robotThemeView::gaugeClickHandler(const touchgfx::Gauge&, const touchgfx::ClickEvent&)	0	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:3:1:robotThemeView::robotThemeView()	8	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:19:6:virtual void robotThemeView::setupScreen()	16	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:205:6:virtual void robotThemeView::hourScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	16	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:220:6:virtual void robotThemeView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	16	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:195:6:virtual void robotThemeView::hourScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	16	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:210:6:virtual void robotThemeView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	16	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:35:6:virtual void robotThemeView::handleTickEvent()	24	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:117:6:virtual void robotThemeView::buttonTimerMaxClicked()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:126:6:virtual void robotThemeView::bottonTimerMinClicked()	8	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:107:6:virtual void robotThemeView::buttonTimerMaxClicked()	8	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/robottheme_screen/robotThemeView.cpp:116:6:virtual void robotThemeView::bottonTimerMinClicked()	8	static
