@@ -35,7 +35,9 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
- gui/include/gui/model/Model.hpp gui/include/gui/common/FrontendHeap.hpp \
+ gui/include/gui/model/Model.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
+ gui/include/gui/common/FrontendHeap.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/common/Meta.hpp \
  ../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp \
@@ -95,6 +97,9 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  gui/include/gui/setting_screen/SettingView.hpp \
  generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp \
  gui/include/gui/setting_screen/SettingPresenter.hpp \
+ gui/include/gui/packet_screen/PacketView.hpp \
+ generated/gui_generated/include/gui_generated/packet_screen/PacketViewBase.hpp \
+ gui/include/gui/packet_screen/PacketPresenter.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -168,6 +173,8 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
 gui/include/gui/model/Model.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
 
 gui/include/gui/common/FrontendHeap.hpp:
 
@@ -288,5 +295,11 @@ gui/include/gui/setting_screen/SettingView.hpp:
 generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp:
 
 gui/include/gui/setting_screen/SettingPresenter.hpp:
+
+gui/include/gui/packet_screen/PacketView.hpp:
+
+generated/gui_generated/include/gui_generated/packet_screen/PacketViewBase.hpp:
+
+gui/include/gui/packet_screen/PacketPresenter.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:

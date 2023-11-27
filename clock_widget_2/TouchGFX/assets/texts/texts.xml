@@ -6,6 +6,9 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_4YYQ" Alignment="Left" TypographyId="Medium_25_EN">
+        <Translation Language="GB">Mon</Translation>
+      </Text>
       <Text Id="__SingleUse_0UUT" Alignment="Left" TypographyId="DubaiMedium_20_EN">
         <Translation Language="GB">New Text</Translation>
       </Text>
@@ -54,17 +57,14 @@
       <Text Id="__SingleUse_CW4O" Alignment="Center" TypographyId="DubaiBold_30">
         <Translation Language="GB">Rain</Translation>
       </Text>
-      <Text Id="__SingleUse_BWHJ" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">Sun</Translation>
-      </Text>
-      <Text Id="__SingleUse_DGOO" Alignment="Right" TypographyId="Medium_25">
-        <Translation Language="GB">&lt;day&gt;</Translation>
+      <Text Id="__SingleUse_DGOO" Alignment="Right" TypographyId="Medium_25_EN">
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_FUME" Alignment="Left" TypographyId="DubaiBold_30">
-        <Translation Language="GB">Sun</Translation>
+        <Translation Language="GB">Mon</Translation>
       </Text>
       <Text Id="__SingleUse_3ZNK" Alignment="Center" TypographyId="DubaiMedium_20">
-        <Translation Language="GB">&lt;date&gt;</Translation>
+        <Translation Language="GB">&lt;day&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_L5KR" Alignment="Left" TypographyId="Medium_25">
         <Translation Language="GB">99</Translation>
@@ -102,9 +102,6 @@
       <Text Id="__SingleUse_O7C8" Alignment="Left" TypographyId="DubaiBold_30">
         <Translation Language="GB">99</Translation>
       </Text>
-      <Text Id="__SingleUse_MJKC" Alignment="Left" TypographyId="DubaiBold_30">
-        <Translation Language="GB">Sun</Translation>
-      </Text>
       <Text Id="__SingleUse_LCF4" Alignment="Center" TypographyId="DubaiBold_30">
         <Translation Language="GB">29031</Translation>
       </Text>
@@ -114,17 +111,14 @@
       <Text Id="__SingleUse_JREN" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">00</Translation>
       </Text>
-      <Text Id="__SingleUse_XSP1" Alignment="Center" TypographyId="DubaiMedium_20">
-        <Translation Language="GB">&lt;date&gt;</Translation>
-      </Text>
       <Text Id="__SingleUse_458W" Alignment="Center" TypographyId="DubaiBold_70">
         <Translation Language="GB">66-4</Translation>
       </Text>
       <Text Id="__SingleUse_YTIP" Alignment="Left" TypographyId="DubaiMedium_20">
-        <Translation Language="GB">99</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_ILR7" Alignment="Left" TypographyId="DubaiMedium_20">
-        <Translation Language="GB">99</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_TJPS" Alignment="Center" TypographyId="DubaiMedium_20">
         <Translation Language="GB">&lt;hh&gt;:&lt;mm&gt;</Translation>
@@ -204,5 +198,6 @@
     <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Medium_60" Font="DUBAI-MEDIUM.TTF" Size="60" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Regular_70" Font="DUBAI-REGULAR.TTF" Size="70" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
+    <Typography Id="Medium_25_EN" Font="DUBAI-MEDIUM.TTF" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x0A-0x7E" />
   </Typographies>
 </TextDatabase>

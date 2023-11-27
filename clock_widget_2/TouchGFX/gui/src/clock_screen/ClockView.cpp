@@ -75,14 +75,8 @@ void ClockView::handleTickEvent()
         }
     }
 
-    hourCurrent = presenter->getHour();
-    minuteCurrent = presenter->getMinute();
-
-    Unicode::snprintf(textHomeClockBuffer1, TEXTHOMECLOCKBUFFER1_SIZE, "%02d", hourCurrent);
-    textHomeClock.invalidate();
-
-    Unicode::snprintf(textHomeClockBuffer2, TEXTHOMECLOCKBUFFER2_SIZE, "%02d", minuteCurrent);
-    textHomeClock.invalidate();
+    // hourCurrent = presenter->getHour();
+    // minuteCurrent = presenter->getMinute();
 
     // Update the clock
     digitalClock.setTime24Hour(stopWatchHours, stopWatchMinutes, stopWatchSeconds);
@@ -232,9 +226,60 @@ void ClockView::uart_Data(char *data)
 	Unicode::strncpy(textArea1Buffer, data, TEXTAREA1_SIZE);
 	textArea1.invalidate();
 
-	// hourCurrent = 5;
-	// minuteCurrent = 4;
+    esp2stmPacket.assign(data, data + 256);
 
-	// presenter->saveHour(hourCurrent);
-	// presenter->saveMinute(minuteCurrent);
+    if(esp2stmPacket[1] == 'D' && esp2stmPacket[2] == 'A')
+    {
+        string temp;
+
+        temp = esp2stmPacket.substr(9, 10);
+        monthHome = stoi(temp);
+        
+        temp = esp2stmPacket.substr(12, 13);
+        dateHome = stoi(temp);
+
+        // temp = esp2stmPacket.substr(15, 17) + "\0";
+        dayHome[0] = data[15];
+        dayHome[1] = data[16];
+        dayHome[2] = data[17];
+        dayHome[3] = '\0';
+
+        temp = esp2stmPacket.substr(19, 20);
+        hourHome = stoi(temp);
+
+        temp = esp2stmPacket.substr(22, 23);
+        minuteHome = stoi(temp);
+
+        // Home Hour 
+        Unicode::snprintf(textHomeClockBuffer1, TEXTHOMECLOCKBUFFER1_SIZE, "%02d", hourHome);
+        textHomeClock.invalidate();
+
+        // Home Minute
+        Unicode::snprintf(textHomeClockBuffer2, TEXTHOMECLOCKBUFFER2_SIZE, "%02d", minuteHome);
+        textHomeClock.invalidate();
+
+        // Home Month
+        Unicode::snprintf(textHomeDateBuffer1, TEXTHOMEDATEBUFFER1_SIZE, "%02d", monthHome);
+        textHomeDate.invalidate();
+
+        // Home Date
+        Unicode::snprintf(textHomeDateBuffer2, TEXTHOMEDATEBUFFER2_SIZE, "%02d", dateHome);
+        textHomeDate.invalidate();
+
+        // Home Day
+        Unicode::strncpy(textHomeDayBuffer, dayHome, TEXTHOMEDAY_SIZE);
+        textHomeDay.invalidate();
+
+        // textClockUpper Hour 
+        Unicode::snprintf(textClockUpperBuffer1, TEXTCLOCKUPPERBUFFER1_SIZE, "%02d", hourHome);
+        textClockUpper.invalidate();
+
+        // textClockUpper Minute
+        Unicode::snprintf(textClockUpperBuffer2, TEXTCLOCKUPPERBUFFER2_SIZE, "%02d", minuteHome);
+        textClockUpper.invalidate();
+
+        // textDayUpper
+        Unicode::strncpy(textDayUpperBuffer, dayHome, TEXTDAYUPPER_SIZE);
+        textDayUpper.invalidate();
+    }
 }

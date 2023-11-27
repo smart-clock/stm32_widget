@@ -24,4 +24,4 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/target/generated/TouchGFXConfigur
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/target/generated/TouchGFXConfiguration.cpp:60:6:void touchgfx_components_init()	0	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/target/generated/TouchGFXConfiguration.cpp:64:6:void touchgfx_taskEntry()	0	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/target/generated/TouchGFXConfiguration.cpp:73:1:cpp)	16	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/target/generated/TouchGFXConfiguration.cpp:73:1:cpp)	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/target/generated/TouchGFXConfiguration.cpp:73:1:cpp)	8	static

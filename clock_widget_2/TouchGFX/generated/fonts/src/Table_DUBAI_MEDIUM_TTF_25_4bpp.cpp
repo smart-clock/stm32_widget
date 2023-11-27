@@ -4,6 +4,7 @@
 
 FONT_TABLE_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::GlyphNode glyphs_DUBAI_MEDIUM_TTF_25_4bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE = {
+    {     0, 0x000D,   0,   0,   0,   0,   6,   0,   0, 0x00 }, // CR
     {     0, 0x0020,   0,   0,   0,   0,   6,   0,   0, 0x00 }, // space
     {     0, 0x0021,   4,  17,  17,   1,   6,   0,   4, 0x00 }, // exclam
     {    34, 0x0022,   8,   6,  17,   1,  10,   4,  23, 0x00 }, // quotedbl
@@ -117,6 +118,6 @@ touchgfx::GeneratedFont& getFont_DUBAI_MEDIUM_TTF_25_4bpp();
 
 touchgfx::GeneratedFont& getFont_DUBAI_MEDIUM_TTF_25_4bpp()
 {
-    static touchgfx::GeneratedFont DUBAI_MEDIUM_TTF_25_4bpp(glyphs_DUBAI_MEDIUM_TTF_25_4bpp, 95, 30, 25, 0, 0, 4, 1, 2, 1, unicodes_DUBAI_MEDIUM_TTF_25_4bpp, kerning_DUBAI_MEDIUM_TTF_25_4bpp, 63, 0, 0, &DUBAI_MEDIUM_TTF_contextualFormsTable);
+    static touchgfx::GeneratedFont DUBAI_MEDIUM_TTF_25_4bpp(glyphs_DUBAI_MEDIUM_TTF_25_4bpp, 96, 30, 25, 0, 0, 4, 1, 2, 1, unicodes_DUBAI_MEDIUM_TTF_25_4bpp, kerning_DUBAI_MEDIUM_TTF_25_4bpp, 63, 0, 0, &DUBAI_MEDIUM_TTF_contextualFormsTable);
     return DUBAI_MEDIUM_TTF_25_4bpp;
 }

@@ -24,3 +24,5 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/commo
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:21:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:39:6:void FrontendApplicationBase::gotoClockScreenNoTransition()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:52:6:void FrontendApplicationBase::gotoSettingScreenNoTransition()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:61:1:cpp)	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:61:1:cpp)	1

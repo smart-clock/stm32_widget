@@ -10,6 +10,7 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
+    110, // T___SINGLEUSE_4YYQ: "Mon"
     25,  // T___SINGLEUSE_0UUT: "New Text"
     8,   // T___SINGLEUSE_GWB9: "<>"
     25,  // T___SINGLEUSE_CGY4: "New Text"
@@ -26,9 +27,8 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     127, // T___SINGLEUSE_VQ07: "O"
     8,   // T___SINGLEUSE_AL19: "<>"
     100, // T___SINGLEUSE_CW4O: "Rain"
-    110, // T___SINGLEUSE_BWHJ: "Sun"
     8,   // T___SINGLEUSE_DGOO: "<>"
-    110, // T___SINGLEUSE_FUME: "Sun"
+    110, // T___SINGLEUSE_FUME: "Mon"
     8,   // T___SINGLEUSE_3ZNK: "<>"
     117, // T___SINGLEUSE_L5KR: "99"
     117, // T___SINGLEUSE_1INA: "99"
@@ -42,11 +42,9 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     117, // T___SINGLEUSE_OW5R: "99"
     117, // T___SINGLEUSE_6C3U: "99"
     117, // T___SINGLEUSE_O7C8: "99"
-    110, // T___SINGLEUSE_MJKC: "Sun"
     73,  // T___SINGLEUSE_LCF4: "29031"
     92,  // T___SINGLEUSE_1MSQ: "00"
     92,  // T___SINGLEUSE_JREN: "00"
-    8,   // T___SINGLEUSE_XSP1: "<>"
     85,  // T___SINGLEUSE_458W: "66-4"
     117, // T___SINGLEUSE_YTIP: "99"
     117, // T___SINGLEUSE_ILR7: "99"

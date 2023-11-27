@@ -2,6 +2,8 @@
 
 FONT_GLYPH_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t unicodes_DUBAI_MEDIUM_TTF_25_4bpp_0[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE = {
+    // Unicode: [0x000D, CR]
+    // (Has no glyph data)
     // Unicode: [0x0020, space]
     // (Has no glyph data)
     // Unicode: [0x0021, exclam]

@@ -78,17 +78,17 @@
                   {
                     "Type": "TextArea",
                     "Name": "textHomeDay",
-                    "X": 260,
+                    "X": 255,
                     "Y": 160,
-                    "Width": 40,
+                    "Width": 47,
                     "Height": 30,
                     "TextId": "__SingleUse_DGOO",
                     "TextRotation": "0",
                     "AutoSize": true,
                     "Wildcard1": {
-                      "TextId": "__SingleUse_BWHJ",
+                      "TextId": "__SingleUse_4YYQ",
                       "UseBuffer": true,
-                      "BufferSize": 10
+                      "BufferSize": 4
                     }
                   }
                 ]
@@ -786,7 +786,7 @@
             "Name": "textBattery",
             "X": 435,
             "Width": 41,
-            "Height": 20,
+            "Height": 24,
             "TextId": "__SingleUse_6CI5",
             "TextRotation": "0",
             "Color": {
@@ -801,10 +801,10 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textClock",
+            "Name": "textClockUpper",
             "X": 2,
             "Width": 48,
-            "Height": 20,
+            "Height": 24,
             "TextId": "__SingleUse_70FQ",
             "TextRotation": "0",
             "Color": {
@@ -826,30 +826,10 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textDate",
+            "Name": "textDayUpper",
             "X": 55,
-            "Width": 32,
-            "Height": 20,
-            "TextId": "__SingleUse_XSP1",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_MJKC",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textDay",
-            "X": 55,
-            "Width": 32,
-            "Height": 20,
+            "Width": 38,
+            "Height": 24,
             "TextId": "__SingleUse_3ZNK",
             "TextRotation": "0",
             "Color": {
@@ -861,7 +841,7 @@
             "Wildcard1": {
               "TextId": "__SingleUse_FUME",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 4
             }
           },
           {
@@ -869,7 +849,7 @@
             "Name": "textAlarm",
             "X": 361,
             "Width": 48,
-            "Height": 20,
+            "Height": 24,
             "TextId": "__SingleUse_TJPS",
             "TextRotation": "0",
             "Color": {
@@ -913,7 +893,7 @@
             "X": 60,
             "Y": 39,
             "Width": 386,
-            "Height": 211,
+            "Height": 44,
             "TextId": "__SingleUse_GWB9",
             "TextRotation": "0",
             "Wildcard1": {

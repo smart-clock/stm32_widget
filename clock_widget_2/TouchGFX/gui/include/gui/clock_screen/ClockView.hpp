@@ -3,6 +3,9 @@
 
 #include <gui_generated/clock_screen/ClockViewBase.hpp>
 #include <gui/clock_screen/ClockPresenter.hpp>
+#include <iostream>
+#include <string>
+using namespace std;
 
 class ClockView : public ClockViewBase
 {
@@ -30,8 +33,13 @@ public:
 
     virtual void uart_Data(char *data);
 protected:
-    int hourCurrent;
-    int minuteCurrent;
+    string esp2stmPacket;
+
+    int monthHome;
+    int dateHome;
+    char dayHome[4];
+    int hourHome;
+    int minuteHome;
 
     int tickCounter;
     int stopWatchHours;

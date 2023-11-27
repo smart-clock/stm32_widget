@@ -66,6 +66,7 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  gui/include/gui/model/Model.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
  gui/include/gui/clock_screen/ClockView.hpp \
  generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
@@ -118,6 +119,9 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  gui/include/gui/setting_screen/SettingView.hpp \
  generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp \
  gui/include/gui/setting_screen/SettingPresenter.hpp \
+ gui/include/gui/packet_screen/PacketView.hpp \
+ generated/gui_generated/include/gui_generated/packet_screen/PacketViewBase.hpp \
+ gui/include/gui/packet_screen/PacketPresenter.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  generated/simulator/include/simulator/mainBase.hpp
@@ -256,6 +260,8 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 
 gui/include/gui/model/Model.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
+
 gui/include/gui/clock_screen/ClockView.hpp:
 
 generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp:
@@ -359,6 +365,12 @@ gui/include/gui/setting_screen/SettingView.hpp:
 generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp:
 
 gui/include/gui/setting_screen/SettingPresenter.hpp:
+
+gui/include/gui/packet_screen/PacketView.hpp:
+
+generated/gui_generated/include/gui_generated/packet_screen/PacketViewBase.hpp:
+
+gui/include/gui/packet_screen/PacketPresenter.hpp:
 
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 

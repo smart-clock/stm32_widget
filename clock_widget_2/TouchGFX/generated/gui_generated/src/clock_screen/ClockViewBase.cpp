@@ -51,10 +51,10 @@ ClockViewBase::ClockViewBase() :
     textHomeDate.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XXQ4));
     home.add(textHomeDate);
 
-    textHomeDay.setXY(260, 160);
+    textHomeDay.setXY(255, 160);
     textHomeDay.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textHomeDay.setLinespacing(0);
-    Unicode::snprintf(textHomeDayBuffer, TEXTHOMEDAY_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_BWHJ).getText());
+    Unicode::snprintf(textHomeDayBuffer, TEXTHOMEDAY_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_4YYQ).getText());
     textHomeDay.setWildcard(textHomeDayBuffer);
     textHomeDay.resizeToCurrentText();
     textHomeDay.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DGOO));
@@ -514,34 +514,25 @@ ClockViewBase::ClockViewBase() :
     textBattery.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6CI5));
     add(textBattery);
 
-    textClock.setXY(2, 0);
-    textClock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textClock.setLinespacing(0);
-    touchgfx::Unicode::snprintf(textClockBuffer1, TEXTCLOCKBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_O7C8).getText());
-    textClock.setWildcard1(textClockBuffer1);
-    touchgfx::Unicode::snprintf(textClockBuffer2, TEXTCLOCKBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_6C3U).getText());
-    textClock.setWildcard2(textClockBuffer2);
-    textClock.resizeToCurrentText();
-    textClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_70FQ));
-    add(textClock);
+    textClockUpper.setXY(2, 0);
+    textClockUpper.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textClockUpper.setLinespacing(0);
+    touchgfx::Unicode::snprintf(textClockUpperBuffer1, TEXTCLOCKUPPERBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_O7C8).getText());
+    textClockUpper.setWildcard1(textClockUpperBuffer1);
+    touchgfx::Unicode::snprintf(textClockUpperBuffer2, TEXTCLOCKUPPERBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_6C3U).getText());
+    textClockUpper.setWildcard2(textClockUpperBuffer2);
+    textClockUpper.resizeToCurrentText();
+    textClockUpper.setTypedText(touchgfx::TypedText(T___SINGLEUSE_70FQ));
+    add(textClockUpper);
 
-    textDate.setXY(55, 0);
-    textDate.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textDate.setLinespacing(0);
-    Unicode::snprintf(textDateBuffer, TEXTDATE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_MJKC).getText());
-    textDate.setWildcard(textDateBuffer);
-    textDate.resizeToCurrentText();
-    textDate.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XSP1));
-    add(textDate);
-
-    textDay.setXY(55, 0);
-    textDay.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textDay.setLinespacing(0);
-    Unicode::snprintf(textDayBuffer, TEXTDAY_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FUME).getText());
-    textDay.setWildcard(textDayBuffer);
-    textDay.resizeToCurrentText();
-    textDay.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3ZNK));
-    add(textDay);
+    textDayUpper.setXY(55, 0);
+    textDayUpper.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textDayUpper.setLinespacing(0);
+    Unicode::snprintf(textDayUpperBuffer, TEXTDAYUPPER_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FUME).getText());
+    textDayUpper.setWildcard(textDayUpperBuffer);
+    textDayUpper.resizeToCurrentText();
+    textDayUpper.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3ZNK));
+    add(textDayUpper);
 
     textAlarm.setXY(361, 0);
     textAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -563,7 +554,7 @@ ClockViewBase::ClockViewBase() :
     buttonSetting.setAction(buttonCallback);
     add(buttonSetting);
 
-    textArea1.setPosition(60, 39, 386, 211);
+    textArea1.setPosition(60, 39, 386, 44);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea1.setLinespacing(0);
     Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_0UUT).getText());
