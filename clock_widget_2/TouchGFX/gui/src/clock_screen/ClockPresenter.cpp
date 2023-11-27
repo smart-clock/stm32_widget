@@ -16,3 +16,8 @@ void ClockPresenter::deactivate()
 {
 
 }
+
+void ClockPresenter::uart_Data(char *data)
+{
+	view.uart_Data (data);
+}

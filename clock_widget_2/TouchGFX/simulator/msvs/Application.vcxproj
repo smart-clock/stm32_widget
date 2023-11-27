@@ -31,6 +31,9 @@
     <ClCompile Include="..\..\gui\src\clock_screen\ClockPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\clock_screen\ClockView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\clock_screen\ClockViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\packet_screen\PacketPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\packet_screen\PacketView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\packet_screen\PacketViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -191,6 +194,9 @@
     <ClInclude Include="..\..\gui\include\gui\clock_screen\ClockPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\clock_screen\ClockView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\clock_screen\ClockViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\packet_screen\PacketPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\packet_screen\PacketView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\packet_screen\PacketViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

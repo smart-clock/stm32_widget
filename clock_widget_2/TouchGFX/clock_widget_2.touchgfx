@@ -1101,6 +1101,38 @@
             }
           }
         ]
+      },
+      {
+        "Name": "Packet",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 40,
+            "Y": 39,
+            "Width": 400,
+            "Height": 195,
+            "TextId": "__SingleUse_2GMG",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_CGY4",
+              "UseBuffer": true,
+              "BufferSize": 257
+            }
+          }
+        ],
+        "Interactions": []
       }
     ],
     "CustomContainerDefinitions": [
@@ -1167,7 +1199,7 @@
       "Height": 272
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Clock",
+    "StartupScreenName": "Packet",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

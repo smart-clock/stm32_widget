@@ -579,6 +579,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/model/Model.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/PacketPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/packet_screen/PacketPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/PacketView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/packet_screen/PacketView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/SettingPresenter.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/setting_screen/SettingPresenter.cpp</locationURI>
@@ -827,6 +837,11 @@
 			<name>Application/User/generated/alarmContainerBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/alarmContainerBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/PacketViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/packet_screen/PacketViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/SettingViewBase.cpp</name>

@@ -208,6 +208,18 @@
     <Filter Include="Header Files\generated\gui_generated\clock_screen">
       <UniqueIdentifier>66F42505-287B-3857-1DC5-80DAFE1EF942</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\packet_screen">
+      <UniqueIdentifier>7FE18D0B-F82D-6FA7-B005-4782EEE6E59A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\packet_screen">
+      <UniqueIdentifier>4697DA1B-A4EE-2383-4E3D-4122E8DBFCEF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\packet_screen">
+      <UniqueIdentifier>6DD61514-2A98-B7B9-AD30-2980B709E9CE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\packet_screen">
+      <UniqueIdentifier>7F79E94E-40E1-41D7-DF90-700DF4977563</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -269,6 +281,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\clock_screen\ClockViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\clock_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\packet_screen\PacketPresenter.cpp">
+      <Filter>Source Files\gui\packet_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\packet_screen\PacketView.cpp">
+      <Filter>Source Files\gui\packet_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\packet_screen\PacketViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\packet_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -741,6 +762,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\clock_screen\ClockViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\clock_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\packet_screen\PacketPresenter.hpp">
+      <Filter>Header Files\gui\packet_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\packet_screen\PacketView.hpp">
+      <Filter>Header Files\gui\packet_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\packet_screen\PacketViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\packet_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

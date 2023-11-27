@@ -1,6 +1,8 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
+#include <touchgfx/hal/types.hpp>
+
 class ModelListener;
 
 class Model
@@ -14,9 +16,33 @@ public:
     }
 
     void tick();
+
+    void saveHour(int16_t saveHour)
+    {
+        hour = saveHour;
+    }
+
+    void saveMinute(int16_t saveMinute)
+    {
+        minute = saveMinute;
+    }
+
+    int16_t getHour()
+    {
+    	return hour;
+    }
+
+    int16_t getMinute()
+    {
+    	return minute;
+    }
+
 protected:
     ModelListener* modelListener;
     char RData[257];
+
+    int16_t hour;
+    int16_t minute;
 };
 
 #endif // MODEL_HPP

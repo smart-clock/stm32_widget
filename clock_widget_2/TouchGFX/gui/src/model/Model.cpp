@@ -15,7 +15,8 @@ extern "C"
 
 Model::Model() : modelListener(0)
 {
-
+	this->hour = 0;
+	this->minute = 0;
 }
 
 void Model::tick()
@@ -26,8 +27,9 @@ void Model::tick()
 		if(osMessageQueueGet(uartQueueHandle, &uartData_r, 0, 0) == osOK)
 		{
 			strncpy(RData, uartData_r->Data, uartData_r->size);
-			// modelListener->uart_Data(RData);
+			modelListener->uart_Data(RData);
 		}
 	}
 #endif
 }
+

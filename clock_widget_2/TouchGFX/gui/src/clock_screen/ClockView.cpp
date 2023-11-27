@@ -75,6 +75,15 @@ void ClockView::handleTickEvent()
         }
     }
 
+    hourCurrent = presenter->getHour();
+    minuteCurrent = presenter->getMinute();
+
+    Unicode::snprintf(textHomeClockBuffer1, TEXTHOMECLOCKBUFFER1_SIZE, "%02d", hourCurrent);
+    textHomeClock.invalidate();
+
+    Unicode::snprintf(textHomeClockBuffer2, TEXTHOMECLOCKBUFFER2_SIZE, "%02d", minuteCurrent);
+    textHomeClock.invalidate();
+
     // Update the clock
     digitalClock.setTime24Hour(stopWatchHours, stopWatchMinutes, stopWatchSeconds);
 
@@ -215,4 +224,17 @@ void ClockView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, in
     // 상단 알람 표시 업데이트
     Unicode::snprintf(textAlarmBuffer2, TEXTALARMBUFFER2_SIZE, "%02d", alarmMinute);
     textAlarm.invalidate();
+}
+
+void ClockView::uart_Data(char *data)
+{
+	// textArea1.setWideTextAction(touchgfx::WIDE_TEXT_WORDWRAP);
+	// Unicode::strncpy(textArea1Buffer, data, TEXTAREA1_SIZE);
+	// textArea1.invalidate();
+
+	// hourCurrent = 5;
+	// minuteCurrent = 4;
+
+	// presenter->saveHour(hourCurrent);
+	// presenter->saveMinute(minuteCurrent);
 }

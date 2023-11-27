@@ -15,7 +15,7 @@ public:
         model = m;
     }
 
-    // virtual void uart_Data(char *data);
+     virtual void uart_Data(char *data);
 protected:
     Model* model;
 };

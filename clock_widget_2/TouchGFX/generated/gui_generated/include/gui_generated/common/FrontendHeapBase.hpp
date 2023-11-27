@@ -16,6 +16,8 @@
 #include <gui/clock_screen/ClockPresenter.hpp>
 #include <gui/setting_screen/SettingView.hpp>
 #include <gui/setting_screen/SettingPresenter.hpp>
+#include <gui/packet_screen/PacketView.hpp>
+#include <gui/packet_screen/PacketPresenter.hpp>
 
 
 /**
@@ -40,7 +42,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< ClockView,
             touchgfx::meta::TypeList< SettingView,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< PacketView,
+            touchgfx::meta::Nil > >
             > GeneratedViewTypes;
 
     /**
@@ -54,7 +57,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< ClockPresenter,
             touchgfx::meta::TypeList< SettingPresenter,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< PacketPresenter,
+            touchgfx::meta::Nil > >
             > GeneratedPresenterTypes;
 
     /**
@@ -77,7 +81,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoClockScreenNoTransition();
+        app.gotoPacketScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

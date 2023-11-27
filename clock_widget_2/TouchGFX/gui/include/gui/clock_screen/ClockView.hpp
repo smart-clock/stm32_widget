@@ -27,7 +27,12 @@ public:
     virtual void hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
     virtual void minuteScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex);
     virtual void minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
+
+    virtual void uart_Data(char *data);
 protected:
+    int hourCurrent;
+    int minuteCurrent;
+
     int tickCounter;
     int stopWatchHours;
     int stopWatchMinutes;
@@ -38,6 +43,7 @@ protected:
     static const uint32_t TICK_BLINK_INTERVAL = 180;
     uint32_t frameCountBlinkInterval;
 
+    int timerCounter;
     bool timerWidgetDrag; // Issue #18
     int8_t timerMinute; // display value
     int8_t timerSecond; // display value
@@ -46,7 +52,6 @@ protected:
     bool timerMax; // max drag limit
     bool timerMin; // min drag limit
     bool timerStart; // timer start flag
-    int timerCounter;
 
     int alarmHour;
     int alarmMinute;

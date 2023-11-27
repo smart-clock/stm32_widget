@@ -27,6 +27,28 @@ public:
 
     virtual ~ClockPresenter() {}
 
+    virtual void uart_Data(char *data);
+
+    void saveHour(int16_t hour)
+    {
+        model->saveHour(hour);
+    }
+
+    void saveMinute(int16_t minute)
+    {
+        model->saveMinute(minute);
+    }
+
+    int16_t getHour()
+    {
+    	return model->getHour();
+    }
+
+    int16_t getMinute()
+    {
+    	return model->getMinute();
+    }
+
 private:
     ClockPresenter();
 
