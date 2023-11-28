@@ -37,6 +37,8 @@ public:
     	return minute;
     }
 
+    void hwToggleBuzzer();    
+    void hwToggleBuzzerOff();    
 protected:
     ModelListener* modelListener;
     char RData[257];

@@ -29,6 +29,9 @@ public:
 
     virtual void uart_Data(char *data);
 
+    virtual void clockToggleBuzzer();
+    virtual void clockToggleBuzzerOff();
+
     void saveHour(int16_t hour)
     {
         model->saveHour(hour);

@@ -1,6 +1,8 @@
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:750:6:StartDefaultTask	8	static
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:134:6:HAL_UARTEx_RxEventCallback	32	static
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:262:6:SystemClock_Config	88	static
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:154:5:main	120	static,ignoring_inline_asm
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:808:6:HAL_TIM_PeriodElapsedCallback	0	static
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:825:6:Error_Handler	0	static
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:763:6:StartDefaultTask	8	static
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:126:13:toggleBuzzer	0	static
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:131:13:toggleBuzzerOff	0	static
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:144:6:HAL_UARTEx_RxEventCallback	32	static
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:272:6:SystemClock_Config	88	static
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:164:5:main	120	static,ignoring_inline_asm
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:821:6:HAL_TIM_PeriodElapsedCallback	0	static
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:838:6:Error_Handler	0	static

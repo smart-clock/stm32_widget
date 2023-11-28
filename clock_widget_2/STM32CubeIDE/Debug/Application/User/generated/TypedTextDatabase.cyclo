@@ -1,6 +1,6 @@
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:120:43:const touchgfx::TypedText::TypedTextData* TypedTextDatabase::getInstance(touchgfx::LanguageId)	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:125:10:uint16_t TypedTextDatabase::getInstanceSize()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:130:24:const touchgfx::Font** TypedTextDatabase::getFonts()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:135:23:const touchgfx::Font* TypedTextDatabase::setFont(touchgfx::FontId, const touchgfx::Font*)	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:142:6:void TypedTextDatabase::resetFont(touchgfx::FontId)	14
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:187:1:cpp)	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:124:43:const touchgfx::TypedText::TypedTextData* TypedTextDatabase::getInstance(touchgfx::LanguageId)	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:129:10:uint16_t TypedTextDatabase::getInstanceSize()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:134:24:const touchgfx::Font** TypedTextDatabase::getFonts()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:139:23:const touchgfx::Font* TypedTextDatabase::setFont(touchgfx::FontId, const touchgfx::Font*)	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:146:6:void TypedTextDatabase::resetFont(touchgfx::FontId)	14
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:191:1:cpp)	1

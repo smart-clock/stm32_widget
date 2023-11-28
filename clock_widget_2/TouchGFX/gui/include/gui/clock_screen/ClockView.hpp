@@ -24,6 +24,9 @@ public:
     virtual void buttonTimerMaxClicked();
     virtual void bottonTimerMinClicked();
 
+    virtual void toggleButtonOn();
+    virtual void toggleButtonAm();
+
     // virtual void handleDragEvent(const DragEvent& Event);
 
     virtual void hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex);
@@ -38,6 +41,7 @@ protected:
     char wifiID[20];
     char ipAddress[20];
 
+    // HOME WIDGET
     bool isTimeUpdated = false;
     int homeTimeCounter;
     int monthHome;
@@ -47,20 +51,19 @@ protected:
     int minuteHome;
     int secondHome;
 
+	// WEATHER WIDGET
     char weatherRegion[10];
     char weather[20];
     int weatherTemp;
 
+    // STOPWATCH WIDGET
     int tickCounter;
     int stopWatchHours;
     int stopWatchMinutes;
     int stopWatchSeconds;
-
     bool isStopWatchPlay = false;
     
-    static const uint32_t TICK_BLINK_INTERVAL = 180;
-    uint32_t frameCountBlinkInterval;
-
+    // TIMER WIDGET
     int timerCounter;
     bool timerWidgetDrag; // Issue #18
     int8_t timerMinute; // display value
@@ -71,6 +74,11 @@ protected:
     bool timerMin; // min drag limit
     bool timerStart; // timer start flag
 
+    // ALARM WIDGET
+    bool isAlarmOn;
+    bool isAlarmAm;
+    bool alarmActive; // true면 알람 울림
+    bool alarmCleared; // 알림 클리어
     int alarmHour;
     int alarmMinute;
 

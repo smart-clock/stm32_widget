@@ -25,7 +25,7 @@
             "IndicatorImageNormal": "__generated\\light_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\clay_theme_images_widgets_swipecontainer_medium_on_normal.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "stock",
+            "SelectedPage": "home",
             "Components": [
               {
                 "Type": "Container",
@@ -36,7 +36,7 @@
                   {
                     "Type": "TextArea",
                     "Name": "textHomeClock",
-                    "X": 170,
+                    "X": 128,
                     "Y": 83,
                     "Width": 138,
                     "Height": 61,
@@ -50,6 +50,22 @@
                     },
                     "Wildcard2": {
                       "TextId": "__SingleUse_IB3Y",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textHomeSec",
+                    "X": 266,
+                    "Y": 83,
+                    "Width": 74,
+                    "Height": 61,
+                    "TextId": "__SingleUse_EA8X",
+                    "TextRotation": "0",
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_29KG",
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
@@ -466,7 +482,7 @@
                     "X": 320,
                     "Y": 30,
                     "Width": 61,
-                    "Height": 24,
+                    "Height": 20,
                     "TextId": "__SingleUse_S02A",
                     "TextRotation": "0",
                     "Color": {
@@ -652,7 +668,7 @@
                     "X": 53,
                     "Y": 100,
                     "Width": 48,
-                    "Height": 24,
+                    "Height": 20,
                     "TextId": "__SingleUse_UXV2",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -663,7 +679,7 @@
                     "X": 53,
                     "Y": 130,
                     "Width": 62,
-                    "Height": 24,
+                    "Height": 20,
                     "TextId": "__SingleUse_1ZAU",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -952,7 +968,7 @@
           {
             "Type": "TextArea",
             "Name": "textAlarm",
-            "X": 361,
+            "X": 332,
             "Width": 48,
             "Height": 24,
             "TextId": "__SingleUse_TJPS",
@@ -975,9 +991,39 @@
             }
           },
           {
+            "Type": "TextArea",
+            "Name": "textAlarmAMPM",
+            "X": 384,
+            "Width": 30,
+            "Height": 24,
+            "TextId": "__SingleUse_UT7S",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_N4A5",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
             "Type": "Image",
-            "Name": "imageAlarm",
-            "X": 336,
+            "Name": "imageAlarmOff",
+            "X": 308,
+            "Y": 2,
+            "Width": 22,
+            "Height": 22,
+            "Visible": false,
+            "RelativeFilename": "__generated\\icon_theme_images_action_alarm_off_22_22_FFFFFF.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "imageAlarmOn",
+            "X": 308,
             "Y": 2,
             "Width": 22,
             "Height": 22,
@@ -1031,7 +1077,7 @@
                 "Name": "textArea1",
                 "X": 17,
                 "Y": 73,
-                "Width": 42,
+                "Width": 38,
                 "Height": 24,
                 "TextId": "__SingleUse_4VYD",
                 "TextRotation": "0",
@@ -1042,7 +1088,7 @@
                 "Name": "textArea2",
                 "X": 17,
                 "Y": 154,
-                "Width": 20,
+                "Width": 16,
                 "Height": 24,
                 "TextId": "__SingleUse_B3UH",
                 "TextRotation": "0",
@@ -1199,6 +1245,28 @@
             "Action": {
               "Type": "ActionShow",
               "ActionComponent": "modalWindowDebug"
+            }
+          },
+          {
+            "InteractionName": "alarmOnOff",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButtonON"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "toggleButtonOn"
+            }
+          },
+          {
+            "InteractionName": "alarmAmPm",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButtonAM"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "toggleButtonAm"
             }
           }
         ]

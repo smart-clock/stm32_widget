@@ -879,6 +879,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_clay_theme_images_widgets_swipecontainer_medium_on_normal.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_icon_theme_images_action_alarm_off_22_22_FFFFFF.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_action_alarm_off_22_22_FFFFFF.svg.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_icon_theme_images_action_alarm_on_22_22_FFFFFF.svg.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_action_alarm_on_22_22_FFFFFF.svg.cpp</locationURI>

@@ -10,6 +10,8 @@ extern "C"
 {
 	extern osMessageQueueId_t uartQueueHandle;
 	uartData_t *uartData_r;
+	extern void toggleBuzzer(void);
+	extern void toggleBuzzerOff(void);
 }
 #endif
 
@@ -33,3 +35,16 @@ void Model::tick()
 #endif
 }
 
+void Model::hwToggleBuzzer()
+{
+#ifndef SIMULATOR
+	toggleBuzzer();
+#endif /* SIMULATOR */
+}
+
+void Model::hwToggleBuzzerOff()
+{
+#ifndef SIMULATOR
+	toggleBuzzerOff();
+#endif /* SIMULATOR */
+}

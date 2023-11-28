@@ -21,3 +21,13 @@ void ClockPresenter::uart_Data(char *data)
 {
 	view.uart_Data (data);
 }
+
+void ClockPresenter::clockToggleBuzzer()
+{
+    model->hwToggleBuzzer();
+}
+
+void ClockPresenter::clockToggleBuzzerOff()
+{
+    model->hwToggleBuzzerOff();
+}

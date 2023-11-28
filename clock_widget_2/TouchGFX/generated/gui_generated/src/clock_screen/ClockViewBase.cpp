@@ -29,7 +29,7 @@ ClockViewBase::ClockViewBase() :
 
     home.setWidth(480);
     home.setHeight(272);
-    textHomeClock.setXY(170, 83);
+    textHomeClock.setXY(128, 83);
     textHomeClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textHomeClock.setLinespacing(0);
     touchgfx::Unicode::snprintf(textHomeClockBuffer1, TEXTHOMECLOCKBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_3NT3).getText());
@@ -39,6 +39,15 @@ ClockViewBase::ClockViewBase() :
     textHomeClock.resizeToCurrentText();
     textHomeClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TBRP));
     home.add(textHomeClock);
+
+    textHomeSec.setXY(266, 83);
+    textHomeSec.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textHomeSec.setLinespacing(0);
+    Unicode::snprintf(textHomeSecBuffer, TEXTHOMESEC_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_29KG).getText());
+    textHomeSec.setWildcard(textHomeSecBuffer);
+    textHomeSec.resizeToCurrentText();
+    textHomeSec.setTypedText(touchgfx::TypedText(T___SINGLEUSE_EA8X));
+    home.add(textHomeSec);
 
     textHomeDate.setXY(174, 160);
     textHomeDate.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -294,10 +303,12 @@ ClockViewBase::ClockViewBase() :
 
     toggleButtonON.setXY(341, 80);
     toggleButtonON.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_70_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_70_70_FFFFFF_SVG_ID));
+    toggleButtonON.setAction(buttonCallback);
     Alarm.add(toggleButtonON);
 
     toggleButtonAM.setXY(341, 160);
     toggleButtonAM.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_OFF_70_70_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_TOGGLE_TOGGLE_ON_70_70_FFFFFF_SVG_ID));
+    toggleButtonAM.setAction(buttonCallback);
     Alarm.add(toggleButtonAM);
 
     textAreaON.setXY(340, 61);
@@ -451,7 +462,7 @@ ClockViewBase::ClockViewBase() :
 
     swipeContainerWidget.add(stock);
 
-    swipeContainerWidget.setSelectedPage(7);
+    swipeContainerWidget.setSelectedPage(0);
     add(swipeContainerWidget);
 
     boxInfoBG.setPosition(0, 0, 480, 24);
@@ -487,7 +498,7 @@ ClockViewBase::ClockViewBase() :
     textDayUpper.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3ZNK));
     add(textDayUpper);
 
-    textAlarm.setXY(361, 0);
+    textAlarm.setXY(332, 0);
     textAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textAlarm.setLinespacing(0);
     touchgfx::Unicode::snprintf(textAlarmBuffer1, TEXTALARMBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_ILR7).getText());
@@ -498,9 +509,23 @@ ClockViewBase::ClockViewBase() :
     textAlarm.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TJPS));
     add(textAlarm);
 
-    imageAlarm.setXY(336, 2);
-    imageAlarm.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_ALARM_ON_22_22_FFFFFF_SVG_ID));
-    add(imageAlarm);
+    textAlarmAMPM.setXY(384, 0);
+    textAlarmAMPM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textAlarmAMPM.setLinespacing(0);
+    Unicode::snprintf(textAlarmAMPMBuffer, TEXTALARMAMPM_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_N4A5).getText());
+    textAlarmAMPM.setWildcard(textAlarmAMPMBuffer);
+    textAlarmAMPM.resizeToCurrentText();
+    textAlarmAMPM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UT7S));
+    add(textAlarmAMPM);
+
+    imageAlarmOff.setXY(308, 2);
+    imageAlarmOff.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_ALARM_OFF_22_22_FFFFFF_SVG_ID));
+    imageAlarmOff.setVisible(false);
+    add(imageAlarmOff);
+
+    imageAlarmOn.setXY(308, 2);
+    imageAlarmOn.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_ALARM_ON_22_22_FFFFFF_SVG_ID));
+    add(imageAlarmOn);
 
     modalWindowSetting.setBackground(touchgfx::BitmapId(BITMAP_ALTERNATE_THEME_IMAGES_CONTAINERS_MEDIUM_NARROW_OUTLINED_LIGHT_ID), 120, 1);
     modalWindowSetting.setShadeColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -657,6 +682,20 @@ void ClockViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //Show modalWindowDebug
         modalWindowDebug.setVisible(true);
         modalWindowDebug.invalidate();
+    }
+    if (&src == &toggleButtonON)
+    {
+        //alarmOnOff
+        //When toggleButtonON clicked call virtual function
+        //Call toggleButtonOn
+        toggleButtonOn();
+    }
+    if (&src == &toggleButtonAM)
+    {
+        //alarmAmPm
+        //When toggleButtonAM clicked call virtual function
+        //Call toggleButtonAm
+        toggleButtonAm();
     }
 }
 

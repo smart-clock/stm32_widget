@@ -123,6 +123,16 @@ extern void videoTaskFunc(void *argument);
 
 /* USER CODE BEGIN PFP */
 
+extern void toggleBuzzer(void)
+{
+	HAL_GPIO_TogglePin(GPIOI, GPIO_PIN_3);
+}
+
+extern void toggleBuzzerOff(void)
+{
+	HAL_GPIO_WritePin(GPIOI, GPIO_PIN_3, GPIO_PIN_RESET);
+}
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -216,7 +226,7 @@ int main(void)
 
   /* Create the queue(s) */
   /* creation of uartQueue */
-  uartQueueHandle = osMessageQueueNew (2, sizeof(uartData_t), &uartQueue_attributes);
+  uartQueueHandle = osMessageQueueNew (2, sizeof(uint8_t), &uartQueue_attributes);
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
@@ -677,13 +687,16 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOJ_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOK_CLK_ENABLE();
-  __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOI_CLK_ENABLE();
+  __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOC_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(VSYNC_FREQ_GPIO_Port, VSYNC_FREQ_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(BUZZER_GPIO_Port, BUZZER_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, FRAME_RATE_Pin|RENDER_TIME_Pin, GPIO_PIN_RESET);
@@ -704,6 +717,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(VSYNC_FREQ_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : BUZZER_Pin LCD_DISP_Pin */
+  GPIO_InitStruct.Pin = BUZZER_Pin|LCD_DISP_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOI, &GPIO_InitStruct);
+
   /*Configure GPIO pins : FRAME_RATE_Pin RENDER_TIME_Pin */
   GPIO_InitStruct.Pin = FRAME_RATE_Pin|RENDER_TIME_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -717,13 +737,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LCD_BL_CTRL_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : LCD_DISP_Pin */
-  GPIO_InitStruct.Pin = LCD_DISP_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LCD_DISP_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : MCU_ACTIVE_Pin */
   GPIO_InitStruct.Pin = MCU_ACTIVE_Pin;

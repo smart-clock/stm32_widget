@@ -6,6 +6,18 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_29KG" Alignment="Left" TypographyId="Medium_25">
+        <Translation Language="GB">99</Translation>
+      </Text>
+      <Text Id="__SingleUse_EA8X" Alignment="Center" TypographyId="Light_60">
+        <Translation Language="GB">:&lt;ss&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_N4A5" Alignment="Left" TypographyId="DubaiBold_30">
+        <Translation Language="GB">AM</Translation>
+      </Text>
+      <Text Id="__SingleUse_UT7S" Alignment="Center" TypographyId="Medium_20_EN">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_1D56" Alignment="Left" TypographyId="Bold_30_EN">
         <Translation Language="GB">000.00</Translation>
       </Text>
@@ -18,37 +30,37 @@
       <Text Id="__SingleUse_RQJH" Alignment="Right" TypographyId="Medium_25">
         <Translation Language="GB">&lt;region&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_E0MB" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_E0MB" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">Packet</Translation>
       </Text>
-      <Text Id="__SingleUse_74KH" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_74KH" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_B3UH" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_B3UH" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">IP</Translation>
       </Text>
-      <Text Id="__SingleUse_4VYD" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_4VYD" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">WiFi</Translation>
       </Text>
-      <Text Id="__SingleUse_BSU9" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_BSU9" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">id</Translation>
       </Text>
-      <Text Id="__SingleUse_XHNO" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_XHNO" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_0UUT" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_0UUT" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">ip</Translation>
       </Text>
-      <Text Id="__SingleUse_GWB9" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_GWB9" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_4YYQ" Alignment="Left" TypographyId="Medium_25_EN">
         <Translation Language="GB">Mon</Translation>
       </Text>
-      <Text Id="__SingleUse_CGY4" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_CGY4" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_2GMG" Alignment="Left" TypographyId="DubaiMedium_20_EN">
+      <Text Id="__SingleUse_2GMG" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_4NMT" Alignment="Left" TypographyId="Medium_25">
@@ -93,7 +105,7 @@
       <Text Id="__SingleUse_FUME" Alignment="Left" TypographyId="DubaiBold_30">
         <Translation Language="GB">Mon</Translation>
       </Text>
-      <Text Id="__SingleUse_3ZNK" Alignment="Center" TypographyId="DubaiMedium_20">
+      <Text Id="__SingleUse_3ZNK" Alignment="Center" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;day&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_L5KR" Alignment="Left" TypographyId="Medium_25">
@@ -144,13 +156,13 @@
       <Text Id="__SingleUse_458W" Alignment="Center" TypographyId="DubaiBold_70">
         <Translation Language="GB">66-4</Translation>
       </Text>
-      <Text Id="__SingleUse_YTIP" Alignment="Left" TypographyId="DubaiMedium_20">
+      <Text Id="__SingleUse_YTIP" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">00</Translation>
       </Text>
-      <Text Id="__SingleUse_ILR7" Alignment="Left" TypographyId="DubaiMedium_20">
+      <Text Id="__SingleUse_ILR7" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">00</Translation>
       </Text>
-      <Text Id="__SingleUse_TJPS" Alignment="Center" TypographyId="DubaiMedium_20">
+      <Text Id="__SingleUse_TJPS" Alignment="Center" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;hh&gt;:&lt;mm&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_LRH2" Alignment="Left" TypographyId="DubaiBold_70">
@@ -186,10 +198,10 @@
       <Text Id="__SingleUse_PQN4" Alignment="Center" TypographyId="Regular_70">
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_70FQ" Alignment="Center" TypographyId="DubaiMedium_20">
+      <Text Id="__SingleUse_70FQ" Alignment="Center" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;hh&gt;:&lt;mm&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_6CI5" Alignment="Center" TypographyId="DubaiMedium_20">
+      <Text Id="__SingleUse_6CI5" Alignment="Center" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;bat&gt;%</Translation>
       </Text>
       <Text Id="__SingleUse_WA0J" Alignment="Left" TypographyId="DubaiBold_30">
@@ -219,9 +231,8 @@
     <Typography Id="DubaiBold_70" Font="DUBAI-BOLD.TTF" Size="70" Bpp="8" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
     <Typography Id="Light_60" Font="DUBAI-LIGHT.TTF" Size="60" Bpp="8" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
     <Typography Id="DubaiBold_30" Font="DUBAI-BOLD.TTF" Size="30" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
-    <Typography Id="DubaiMedium_20" Font="DUBAI-MEDIUM.TTF" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0x20-0x7E" />
+    <Typography Id="Medium_20_EN" Font="DUBAI-MEDIUM.TTF" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0x20-0x7E" />
     <Typography Id="DubaiBold_20" Font="DUBAI-BOLD.TTF" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
-    <Typography Id="DubaiMedium_20_EN" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x21-0x7E" />
     <Typography Id="DubaiMedium_100" Font="DUBAI-MEDIUM.TTF" Size="250" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Medium_25" Font="DUBAI-MEDIUM.TTF" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0x20-0x7E" />
     <Typography Id="Light_25" Font="DUBAI-LIGHT.TTF" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" />

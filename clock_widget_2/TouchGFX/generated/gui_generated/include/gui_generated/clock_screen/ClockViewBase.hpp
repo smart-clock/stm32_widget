@@ -78,6 +78,14 @@ public:
     {
         // Override and implement this function in Clock
     }
+    virtual void toggleButtonOn()
+    {
+        // Override and implement this function in Clock
+    }
+    virtual void toggleButtonAm()
+    {
+        // Override and implement this function in Clock
+    }
 
 protected:
     FrontendApplication& application() {
@@ -92,6 +100,7 @@ protected:
     touchgfx::SwipeContainer swipeContainerWidget;
     touchgfx::Container home;
     touchgfx::TextAreaWithTwoWildcards textHomeClock;
+    touchgfx::TextAreaWithOneWildcard textHomeSec;
     touchgfx::TextAreaWithTwoWildcards textHomeDate;
     touchgfx::TextAreaWithOneWildcard textHomeDay;
     touchgfx::Button buttonSetting;
@@ -168,7 +177,9 @@ protected:
     touchgfx::TextAreaWithTwoWildcards textClockUpper;
     touchgfx::TextAreaWithOneWildcard textDayUpper;
     touchgfx::TextAreaWithTwoWildcards textAlarm;
-    touchgfx::Image imageAlarm;
+    touchgfx::TextAreaWithOneWildcard textAlarmAMPM;
+    touchgfx::Image imageAlarmOff;
+    touchgfx::Image imageAlarmOn;
     touchgfx::ModalWindow modalWindowSetting;
     touchgfx::TextAreaWithOneWildcard textAreaIP;
     touchgfx::TextAreaWithOneWildcard textAreaWiFi;
@@ -186,6 +197,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textHomeClockBuffer1[TEXTHOMECLOCKBUFFER1_SIZE];
     static const uint16_t TEXTHOMECLOCKBUFFER2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textHomeClockBuffer2[TEXTHOMECLOCKBUFFER2_SIZE];
+    static const uint16_t TEXTHOMESEC_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textHomeSecBuffer[TEXTHOMESEC_SIZE];
     static const uint16_t TEXTHOMEDATEBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textHomeDateBuffer1[TEXTHOMEDATEBUFFER1_SIZE];
     static const uint16_t TEXTHOMEDATEBUFFER2_SIZE = 10;
@@ -220,6 +233,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textAlarmBuffer1[TEXTALARMBUFFER1_SIZE];
     static const uint16_t TEXTALARMBUFFER2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textAlarmBuffer2[TEXTALARMBUFFER2_SIZE];
+    static const uint16_t TEXTALARMAMPM_SIZE = 4;
+    touchgfx::Unicode::UnicodeChar textAlarmAMPMBuffer[TEXTALARMAMPM_SIZE];
     static const uint16_t TEXTAREAIP_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textAreaIPBuffer[TEXTAREAIP_SIZE];
     static const uint16_t TEXTAREAWIFI_SIZE = 20;

@@ -17,6 +17,11 @@ ClockView::ClockView() :
 
     this->homeTimeCounter = 0;
     this->secondHome = 0;
+
+    this->isAlarmOn = true;
+    this->isAlarmAm = true;
+    this->alarmActive = false;
+    this->alarmCleared = false;
 }
 
 void ClockView::setupScreen()
@@ -99,6 +104,24 @@ void ClockView::handleTickEvent()
         }
     }
 
+    if(isAlarmOn && isTimeUpdated && !alarmCleared)
+    {
+    	if(isAlarmAm)
+    	{
+			if(hourHome == alarmHour)
+				if(minuteHome == alarmMinute)
+					this->alarmActive = true;
+    	}
+    	else // PM
+    	{
+			if(hourHome == (alarmHour + 12))
+				if(minuteHome == alarmMinute)
+					this->alarmActive = true;
+    	}
+    }
+
+    if(this->alarmActive) presenter->clockToggleBuzzer();
+
     // hourCurrent = presenter->getHour();
     // minuteCurrent = presenter->getMinute();
 
@@ -119,6 +142,10 @@ void ClockView::handleTickEvent()
     // Home Minute
     Unicode::snprintf(textHomeClockBuffer2, TEXTHOMECLOCKBUFFER2_SIZE, "%02d", minuteHome);
     textHomeClock.invalidate();
+
+    // Home Second
+    Unicode::snprintf(textHomeSecBuffer, TEXTHOMESEC_SIZE, "%02d", secondHome);
+    textHomeSec.invalidate();
 
     // textClockUpper Hour
     Unicode::snprintf(textClockUpperBuffer1, TEXTCLOCKUPPERBUFFER1_SIZE, "%02d", hourHome);
@@ -163,6 +190,44 @@ void ClockView::bottonTimerMinClicked()
     textTimer.invalidate();
     timerMinute = 0;
     timerSecond = 0;
+}
+
+void ClockView::toggleButtonOn()
+{
+	if(toggleButtonON.getState()) // Alarm OFF
+	{
+		imageAlarmOn.setVisible(false);
+		imageAlarmOff.setVisible(true);
+
+		this->isAlarmOn = false;
+	}
+	else // Alarm ON
+	{
+		imageAlarmOn.setVisible(true);
+		imageAlarmOff.setVisible(false);
+
+		this->isAlarmOn = true;
+	}
+
+	imageAlarmOn.invalidate();
+	imageAlarmOff.invalidate();
+}
+void ClockView::toggleButtonAm()
+{
+	if(toggleButtonAM.getState()) // Alarm PM
+	{
+		Unicode::snprintf(textAlarmAMPMBuffer, TEXTALARMAMPM_SIZE, "PM", 0);
+		textAlarmAMPM.invalidate();
+
+		this->isAlarmAm = false;
+	}
+	else // Alarm AM
+	{
+		Unicode::snprintf(textAlarmAMPMBuffer, TEXTALARMAMPM_SIZE, "AM", 0);
+		textAlarmAMPM.invalidate();
+
+		this->isAlarmAm = true;
+	}
 }
 
 void ClockView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
@@ -238,7 +303,7 @@ void ClockView::hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemInde
 void ClockView::hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
 {
     item.setText(itemIndex);
-    alarmHour = itemIndex;
+    alarmHour = itemIndex - 1;
 
     // 상단 알람 표시 업데이트
     Unicode::snprintf(textAlarmBuffer1, TEXTALARMBUFFER1_SIZE, "%02d", alarmHour);
@@ -253,7 +318,7 @@ void ClockView::minuteScrollWheelUpdateItem(alarmContainer& item, int16_t itemIn
 void ClockView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
 {
     item.setText(itemIndex);
-    alarmMinute = itemIndex;
+    alarmMinute = itemIndex - 1;
 
     // 상단 알람 표시 업데이트
     Unicode::snprintf(textAlarmBuffer2, TEXTALARMBUFFER2_SIZE, "%02d", alarmMinute);
@@ -314,6 +379,9 @@ void ClockView::uart_Data(char *data)
         temp = esp2stmPacket.substr(22, 2);
         minuteHome = stoi(temp);
 
+        temp = esp2stmPacket.substr(25, 2);
+        secondHome = stoi(temp);
+
         // Home Hour 
         Unicode::snprintf(textHomeClockBuffer1, TEXTHOMECLOCKBUFFER1_SIZE, "%02d", hourHome);
         textHomeClock.invalidate();
@@ -321,6 +389,10 @@ void ClockView::uart_Data(char *data)
         // Home Minute
         Unicode::snprintf(textHomeClockBuffer2, TEXTHOMECLOCKBUFFER2_SIZE, "%02d", minuteHome);
         textHomeClock.invalidate();
+
+        // Home Second
+        Unicode::snprintf(textHomeSecBuffer, TEXTHOMESEC_SIZE, "%02d", secondHome);
+        textHomeSec.invalidate();
 
         // Home Month
         Unicode::snprintf(textHomeDateBuffer1, TEXTHOMEDATEBUFFER1_SIZE, "%02d", monthHome);
@@ -496,6 +568,15 @@ void ClockView::uart_Data(char *data)
 		eofIndex = esp2stmPacket.find('\r');
 		temp = esp2stmPacket.substr(0, eofIndex);
 		graphStock.addDataPoint(0, stoi(temp));
+    }
+    else if(esp2stmPacket[1] == 'B' && esp2stmPacket[2] == 'U')
+    {
+    	if(alarmActive)
+		{
+    		alarmActive = false;
+    		alarmCleared = true;
+    		presenter->clockToggleBuzzerOff();
+		}
     }
 
 }

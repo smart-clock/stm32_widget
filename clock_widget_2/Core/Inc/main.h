@@ -67,6 +67,8 @@ typedef struct
 /* Private defines -----------------------------------------------------------*/
 #define VSYNC_FREQ_Pin GPIO_PIN_4
 #define VSYNC_FREQ_GPIO_Port GPIOB
+#define BUZZER_Pin GPIO_PIN_3
+#define BUZZER_GPIO_Port GPIOI
 #define FRAME_RATE_Pin GPIO_PIN_11
 #define FRAME_RATE_GPIO_Port GPIOA
 #define LCD_BL_CTRL_Pin GPIO_PIN_3
