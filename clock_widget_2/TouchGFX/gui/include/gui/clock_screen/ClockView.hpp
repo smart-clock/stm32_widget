@@ -40,6 +40,7 @@ protected:
 
     char wifiID[20];
     char ipAddress[20];
+    int background;
 
     // HOME WIDGET
     bool isTimeUpdated = false;

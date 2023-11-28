@@ -141,6 +141,8 @@
 "./Application/User/generated/image_logoST_red2.o"
 "./Application/User/generated/image_logoTouchGFX_red2.o"
 "./Application/User/generated/image_manggom.o"
+"./Application/User/generated/image_manggom2.o"
+"./Application/User/generated/image_manggom3.o"
 "./Application/User/generated/image_play_pressed_64x64.o"
 "./Application/User/generated/image_play_released_64x64.o"
 "./Application/User/generated/image_rain_128x128.o"

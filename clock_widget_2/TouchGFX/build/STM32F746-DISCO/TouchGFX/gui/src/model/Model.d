@@ -1,6 +1,8 @@
 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o: \
  TouchGFX/gui/src/model/Model.cpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp Core/Inc/main.h \
  Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  Core/Inc/stm32f7xx_hal_conf.h \
@@ -41,6 +43,10 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o: \
  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 
 TouchGFX/gui/include/gui/model/Model.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
 

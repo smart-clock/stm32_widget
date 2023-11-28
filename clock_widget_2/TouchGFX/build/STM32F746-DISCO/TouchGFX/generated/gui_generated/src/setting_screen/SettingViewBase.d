@@ -38,6 +38,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/setting_scre
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
  TouchGFX/gui/include/gui/setting_screen/SettingPresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
@@ -128,6 +129,8 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
 
 Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 

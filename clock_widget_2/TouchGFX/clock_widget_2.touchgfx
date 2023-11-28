@@ -7,10 +7,26 @@
         "Components": [
           {
             "Type": "Image",
-            "Name": "background",
+            "Name": "background1",
             "Width": 480,
             "Height": 272,
             "RelativeFilename": "manggom.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "background2",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "RelativeFilename": "manggom2.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "background3",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "RelativeFilename": "manggom3.png"
           },
           {
             "Type": "SwipeContainer",

@@ -36,6 +36,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/Front
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
  TouchGFX/gui/include/gui/common/FrontendHeap.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  Middlewares/ST/touchgfx/framework/include/common/Meta.hpp \
@@ -56,10 +57,10 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/Front
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
@@ -90,12 +91,16 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/Front
  TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
  TouchGFX/gui/include/gui/setting_screen/SettingView.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp \
  TouchGFX/gui/include/gui/setting_screen/SettingPresenter.hpp \
+ TouchGFX/gui/include/gui/packet_screen/PacketView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/packet_screen/PacketViewBase.hpp \
+ TouchGFX/gui/include/gui/packet_screen/PacketPresenter.hpp \
  TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -170,6 +175,8 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
+
 TouchGFX/gui/include/gui/common/FrontendHeap.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
@@ -210,13 +217,13 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 
@@ -278,16 +285,24 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
 
 TouchGFX/gui/include/gui/setting_screen/SettingView.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/setting_screen/SettingViewBase.hpp:
 
 TouchGFX/gui/include/gui/setting_screen/SettingPresenter.hpp:
+
+TouchGFX/gui/include/gui/packet_screen/PacketView.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/packet_screen/PacketViewBase.hpp:
+
+TouchGFX/gui/include/gui/packet_screen/PacketPresenter.hpp:
 
 TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:

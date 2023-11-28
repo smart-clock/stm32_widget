@@ -22,6 +22,8 @@ ClockView::ClockView() :
     this->isAlarmAm = true;
     this->alarmActive = false;
     this->alarmCleared = false;
+
+    this->background = 0;
 }
 
 void ClockView::setupScreen()
@@ -571,12 +573,40 @@ void ClockView::uart_Data(char *data)
     }
     else if(esp2stmPacket[1] == 'B' && esp2stmPacket[2] == 'U')
     {
-    	if(alarmActive)
+    	if(alarmActive) // Clear alarm
 		{
     		alarmActive = false;
     		alarmCleared = true;
     		presenter->clockToggleBuzzerOff();
 		}
+    	else // Change background
+    	{
+    		background++;
+    		if(background > 2) background = 0;
+    		switch(background)
+    		{
+    		    case 0 :
+    		    	background1.setVisible(true);
+    		    	background2.setVisible(false);
+    		    	background3.setVisible(false);
+    		        break;
+    		    case 1 :
+    		    	background1.setVisible(false);
+    		    	background2.setVisible(true);
+    		    	background3.setVisible(false);
+    		        break;
+    		    case 2 :
+    		    	background1.setVisible(false);
+    		    	background2.setVisible(false);
+    		    	background3.setVisible(true);
+    		    	break;
+    		    default :
+    		    	break;
+    		}
+    		background1.invalidate();
+    		background2.invalidate();
+    		background3.invalidate();
+    	}
     }
 
 }

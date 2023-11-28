@@ -17,9 +17,17 @@ ClockViewBase::ClockViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    background.setXY(0, 0);
-    background.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM_ID));
-    add(background);
+    background1.setXY(0, 0);
+    background1.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM_ID));
+    add(background1);
+
+    background2.setXY(0, 0);
+    background2.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM2_ID));
+    add(background2);
+
+    background3.setXY(0, 0);
+    background3.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM3_ID));
+    add(background3);
 
     swipeContainerWidget.setXY(0, 0);
     swipeContainerWidget.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_LIGHT_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_OFF_NORMAL_ID), touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_ON_NORMAL_ID));

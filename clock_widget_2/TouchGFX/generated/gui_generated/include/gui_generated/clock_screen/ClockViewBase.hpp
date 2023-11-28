@@ -96,7 +96,9 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Image background;
+    touchgfx::Image background1;
+    touchgfx::Image background2;
+    touchgfx::Image background3;
     touchgfx::SwipeContainer swipeContainerWidget;
     touchgfx::Container home;
     touchgfx::TextAreaWithTwoWildcards textHomeClock;

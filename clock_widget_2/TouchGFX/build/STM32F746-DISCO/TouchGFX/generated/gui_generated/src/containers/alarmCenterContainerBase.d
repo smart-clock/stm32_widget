@@ -38,6 +38,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/containers/a
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
@@ -120,6 +121,8 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
