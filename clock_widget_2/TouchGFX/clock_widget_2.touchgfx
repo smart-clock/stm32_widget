@@ -25,7 +25,7 @@
             "IndicatorImageNormal": "__generated\\light_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\clay_theme_images_widgets_swipecontainer_medium_on_normal.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "whether",
+            "SelectedPage": "stock",
             "Components": [
               {
                 "Type": "Container",
@@ -218,10 +218,10 @@
                   {
                     "Type": "TextArea",
                     "Name": "textWeather",
-                    "X": 336,
+                    "X": 267,
                     "Y": 47,
-                    "Width": 116,
-                    "Height": 29,
+                    "Width": 188,
+                    "Height": 30,
                     "TextId": "__SingleUse_RQJH",
                     "TextRotation": "0",
                     "Color": {
@@ -232,7 +232,7 @@
                     "Wildcard1": {
                       "TextId": "__SingleUse_PNB4",
                       "UseBuffer": true,
-                      "BufferSize": 10
+                      "BufferSize": 20
                     }
                   },
                   {
@@ -799,21 +799,19 @@
                     "Alpha": 150
                   },
                   {
-                    "Type": "DynamicGraph",
-                    "Name": "dynamicGraph1",
-                    "X": -129,
-                    "Y": 65,
-                    "Width": 609,
-                    "Height": 206,
-                    "DataSeed": -891326662,
-                    "NumberOfValues": 100,
-                    "MaxY": 100.0,
-                    "Precision": "1",
-                    "UseCustomVisibleDataPointRange": true,
-                    "LastIndex": 50,
+                    "Type": "StaticGraph",
+                    "Name": "graphStock",
+                    "Y": 83,
+                    "Width": 505,
+                    "Height": 189,
+                    "DataSeed": -187042437,
+                    "NumberOfValues": 22,
+                    "MaxX": 21.0,
+                    "PrecisionX": "1",
+                    "MaxY": 200.0,
+                    "MinY": 100.0,
+                    "PrecisionY": "1",
                     "XAxisScale": 1.0,
-                    "InsertRandomValues": true,
-                    "GraphType": "GraphWrapClear",
                     "GraphDrawers": [
                       {
                         "Type": "AreaDrawer",
@@ -823,11 +821,11 @@
                           "Green": 255,
                           "Blue": 255
                         },
-                        "Alpha": 130
+                        "Alpha": 124
                       },
                       {
                         "Type": "LineDrawer",
-                        "LineWidth": 3,
+                        "LineWidth": 2,
                         "FileNameImage": "",
                         "Color": {
                           "Red": 255,
@@ -841,9 +839,9 @@
                     "Type": "TextArea",
                     "Name": "textStock",
                     "X": 20,
-                    "Y": 47,
-                    "Width": 73,
-                    "Height": 30,
+                    "Y": 43,
+                    "Width": 120,
+                    "Height": 37,
                     "TextId": "__SingleUse_A88N",
                     "TextRotation": "0",
                     "Color": {
@@ -851,15 +849,19 @@
                       "Green": 255,
                       "Blue": 255
                     },
-                    "AutoSize": true
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_AKOP",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
                   },
                   {
                     "Type": "TextArea",
                     "Name": "textStockValue",
                     "X": 20,
-                    "Y": 85,
-                    "Width": 86,
-                    "Height": 30,
+                    "Y": 77,
+                    "Width": 120,
+                    "Height": 34,
                     "TextId": "__SingleUse_WA0J",
                     "TextRotation": "0",
                     "Color": {
@@ -867,7 +869,11 @@
                       "Green": 255,
                       "Blue": 255
                     },
-                    "AutoSize": true
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_1D56",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
                   }
                 ]
               }

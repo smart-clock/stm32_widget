@@ -14,6 +14,9 @@ ClockView::ClockView() :
 
     this->alarmHour = 0;
     this->alarmMinute = 0;
+
+    this->homeTimeCounter = 0;
+    this->secondHome = 0;
 }
 
 void ClockView::setupScreen()
@@ -25,6 +28,7 @@ void ClockView::setupScreen()
     stopWatchSeconds = digitalClock.getCurrentSecond();
 
     gaugeTimer.setClickAction(gaugeClickCallback);
+    graphStock.clear();
 }
 
 void ClockView::tearDownScreen()
@@ -75,6 +79,26 @@ void ClockView::handleTickEvent()
         }
     }
 
+    if(isTimeUpdated)
+    {
+    	homeTimeCounter++;
+        if(homeTimeCounter % 60 == 0)
+        {
+            if(++secondHome >= 60)
+            {
+            	secondHome = 0;
+                if(++minuteHome >= 60)
+                {
+                	minuteHome = 0;
+                    if(++hourHome >= 24)
+                    {
+                    	hourHome = 0;
+                    }
+                }
+            }
+        }
+    }
+
     // hourCurrent = presenter->getHour();
     // minuteCurrent = presenter->getMinute();
 
@@ -87,6 +111,22 @@ void ClockView::handleTickEvent()
     Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%02d", timerSecond);
     textTimer.invalidate();
     gaugeTimer.setValue(timerMinute*6);
+
+    // Home Hour
+    Unicode::snprintf(textHomeClockBuffer1, TEXTHOMECLOCKBUFFER1_SIZE, "%02d", hourHome);
+    textHomeClock.invalidate();
+
+    // Home Minute
+    Unicode::snprintf(textHomeClockBuffer2, TEXTHOMECLOCKBUFFER2_SIZE, "%02d", minuteHome);
+    textHomeClock.invalidate();
+
+    // textClockUpper Hour
+    Unicode::snprintf(textClockUpperBuffer1, TEXTCLOCKUPPERBUFFER1_SIZE, "%02d", hourHome);
+    textClockUpper.invalidate();
+
+    // textClockUpper Minute
+    Unicode::snprintf(textClockUpperBuffer2, TEXTCLOCKUPPERBUFFER2_SIZE, "%02d", minuteHome);
+    textClockUpper.invalidate();
 }
 
 void ClockView::buttonPlayClicked()
@@ -305,6 +345,8 @@ void ClockView::uart_Data(char *data)
         // textDayUpper
         Unicode::strncpy(textDayUpperBuffer, dayHome, TEXTDAYUPPER_SIZE);
         textDayUpper.invalidate();
+
+        isTimeUpdated = true;
     }
     else if(esp2stmPacket[1] == 'W' && esp2stmPacket[2] == 'T')
     {
@@ -417,4 +459,43 @@ void ClockView::uart_Data(char *data)
         imageCloud.invalidate();
         imageFog.invalidate();
     }
+    else if(esp2stmPacket[1] == 'S' && esp2stmPacket[2] == 'C')
+    {
+    	// Stock Name
+    	temp = esp2stmPacket.substr(4, 4);
+    	strncpy(stockName, temp.c_str(), TEXTREGION_SIZE);
+
+    	// Stock Value
+    	esp2stmPacket.erase(0, 9);
+    	eofIndex = esp2stmPacket.find('\r');
+    	temp = esp2stmPacket.substr(0, eofIndex);
+    	strncpy(stockValue, temp.c_str(), TEXTREGION_SIZE);
+
+    	// Stock Name
+		Unicode::strncpy(textStockBuffer, stockName, TEXTSTOCKVALUE_SIZE);
+		textStock.invalidate();
+
+    	// Stock Value
+		Unicode::strncpy(textStockValueBuffer, stockValue, TEXTSTOCKVALUE_SIZE);
+		textStockValue.invalidate();
+
+    }
+    else if(esp2stmPacket[1] == 'S' && esp2stmPacket[2] == 'M')
+    {
+    	esp2stmPacket.erase(0, 9);
+
+    	for(int i = 21; i > 0; i--)
+    	{
+    		esp2stmPacket.erase(0, eofIndex + 1);
+    		eofIndex = esp2stmPacket.find(',');
+    		temp = esp2stmPacket.substr(0, eofIndex);
+    		graphStock.addDataPoint(i, stoi(temp));
+    	}
+
+		esp2stmPacket.erase(0, eofIndex + 1);
+		eofIndex = esp2stmPacket.find('\r');
+		temp = esp2stmPacket.substr(0, eofIndex);
+		graphStock.addDataPoint(0, stoi(temp));
+    }
+
 }

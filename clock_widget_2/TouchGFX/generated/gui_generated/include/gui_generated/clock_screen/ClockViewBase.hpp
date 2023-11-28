@@ -24,7 +24,7 @@
 #include <gui/containers/alarmCenterContainer.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
-#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/Graph.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/containers/ModalWindow.hpp>
 
@@ -156,13 +156,13 @@ protected:
     touchgfx::Image imageBus2;
     touchgfx::Container stock;
     touchgfx::Box boxBlurStock;
-    touchgfx::GraphWrapAndClear<100> dynamicGraph1;
-    touchgfx::GraphElementLine dynamicGraph1Line1;
-    touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
-    touchgfx::GraphElementArea dynamicGraph1Area1;
-    touchgfx::PainterRGB565 dynamicGraph1Area1Painter;
-    touchgfx::TextArea textStock;
-    touchgfx::TextArea textStockValue;
+    touchgfx::Graph<22> graphStock;
+    touchgfx::GraphElementLine graphStockLine1;
+    touchgfx::PainterRGB565 graphStockLine1Painter;
+    touchgfx::GraphElementArea graphStockArea1;
+    touchgfx::PainterRGB565 graphStockArea1Painter;
+    touchgfx::TextAreaWithOneWildcard textStock;
+    touchgfx::TextAreaWithOneWildcard textStockValue;
     touchgfx::Box boxInfoBG;
     touchgfx::TextAreaWithOneWildcard textBattery;
     touchgfx::TextAreaWithTwoWildcards textClockUpper;
@@ -196,7 +196,7 @@ protected:
     touchgfx::Unicode::UnicodeChar textTempBuffer[TEXTTEMP_SIZE];
     static const uint16_t TEXTREGION_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textRegionBuffer[TEXTREGION_SIZE];
-    static const uint16_t TEXTWEATHER_SIZE = 10;
+    static const uint16_t TEXTWEATHER_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textWeatherBuffer[TEXTWEATHER_SIZE];
     static const uint16_t TEXTTIMERBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
@@ -206,6 +206,10 @@ protected:
     touchgfx::Unicode::UnicodeChar busTime1Buffer1[BUSTIME1BUFFER1_SIZE];
     static const uint16_t BUSTIME2BUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar busTime2Buffer1[BUSTIME2BUFFER1_SIZE];
+    static const uint16_t TEXTSTOCK_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStockBuffer[TEXTSTOCK_SIZE];
+    static const uint16_t TEXTSTOCKVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStockValueBuffer[TEXTSTOCKVALUE_SIZE];
     static const uint16_t TEXTCLOCKUPPERBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textClockUpperBuffer1[TEXTCLOCKUPPERBUFFER1_SIZE];
     static const uint16_t TEXTCLOCKUPPERBUFFER2_SIZE = 10;

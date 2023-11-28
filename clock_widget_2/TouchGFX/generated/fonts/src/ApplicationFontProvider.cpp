@@ -57,6 +57,9 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::MEDIUM_25_EN:
         // DUBAI_MEDIUM_TTF_25_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
+    case Typography::BOLD_30_EN:
+        // DUBAI_BOLD_TTF_30_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
     default:
         return 0;
     }

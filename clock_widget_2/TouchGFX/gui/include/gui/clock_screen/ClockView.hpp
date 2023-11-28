@@ -38,14 +38,17 @@ protected:
     char wifiID[20];
     char ipAddress[20];
 
+    bool isTimeUpdated = false;
+    int homeTimeCounter;
     int monthHome;
     int dateHome;
     char dayHome[4];
     int hourHome;
     int minuteHome;
+    int secondHome;
 
     char weatherRegion[10];
-    char weather[10];
+    char weather[20];
     int weatherTemp;
 
     int tickCounter;
@@ -70,6 +73,9 @@ protected:
 
     int alarmHour;
     int alarmMinute;
+
+    char stockName[10];
+    char stockValue[10];
 
     Callback<ClockView, const Gauge&, const ClickEvent&> gaugeClickCallback;
     void gaugeClickHandler(const Gauge& g, const ClickEvent& e);

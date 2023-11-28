@@ -29,6 +29,7 @@ struct Typography
     static const touchgfx::FontId MEDIUM_60 = 13;
     static const touchgfx::FontId REGULAR_70 = 14;
     static const touchgfx::FontId MEDIUM_25_EN = 15;
+    static const touchgfx::FontId BOLD_30_EN = 16;
 };
 
 struct TypographyFontIndex
@@ -49,6 +50,7 @@ struct TypographyFontIndex
     static const touchgfx::FontId MEDIUM_60 = 11;         // DUBAI_MEDIUM_TTF_60_4bpp
     static const touchgfx::FontId REGULAR_70 = 12;        // DUBAI_REGULAR_TTF_70_4bpp
     static const touchgfx::FontId MEDIUM_25_EN = 9;      // DUBAI_MEDIUM_TTF_25_4bpp
+    static const touchgfx::FontId BOLD_30_EN = 5;        // DUBAI_BOLD_TTF_30_4bpp
     static const uint16_t NUMBER_OF_FONTS = 13;
 };
 
