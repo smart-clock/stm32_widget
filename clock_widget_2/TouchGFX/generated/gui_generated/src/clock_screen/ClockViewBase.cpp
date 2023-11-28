@@ -60,6 +60,16 @@ ClockViewBase::ClockViewBase() :
     textHomeDay.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DGOO));
     home.add(textHomeDay);
 
+    buttonSetting.setXY(0, 25);
+    buttonSetting.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_6B6B6B_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_000000_SVG_ID));
+    buttonSetting.setAction(buttonCallback);
+    home.add(buttonSetting);
+
+    buttonDebugIn.setXY(1, 215);
+    buttonDebugIn.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_BUG_REPORT_55_55_6B6B6B_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_BUG_REPORT_55_55_000000_SVG_ID));
+    buttonDebugIn.setAction(buttonCallback);
+    home.add(buttonDebugIn);
+
     swipeContainerWidget.add(home);
 
     whether.setWidth(480);
@@ -96,14 +106,21 @@ ClockViewBase::ClockViewBase() :
     textWhether.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CW4O));
     whether.add(textWhether);
 
-    textRegion.setXY(107, 77);
+    textRegion.setPosition(110, 74, 116, 29);
     textRegion.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textRegion.setLinespacing(0);
     Unicode::snprintf(textRegionBuffer, TEXTREGION_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_PX5Y).getText());
     textRegion.setWildcard(textRegionBuffer);
-    textRegion.resizeToCurrentText();
     textRegion.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AL19));
     whether.add(textRegion);
+
+    textWeather.setPosition(336, 47, 116, 29);
+    textWeather.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textWeather.setLinespacing(0);
+    Unicode::snprintf(textWeatherBuffer, TEXTWEATHER_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_PNB4).getText());
+    textWeather.setWildcard(textWeatherBuffer);
+    textWeather.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RQJH));
+    whether.add(textWeather);
 
     imageWhether.setXY(267, 78);
     imageWhether.setBitmap(touchgfx::Bitmap(BITMAP_SNOW_128X128_ID));
@@ -498,7 +515,7 @@ ClockViewBase::ClockViewBase() :
 
     swipeContainerWidget.add(stock);
 
-    swipeContainerWidget.setSelectedPage(0);
+    swipeContainerWidget.setSelectedPage(1);
     add(swipeContainerWidget);
 
     boxInfoBG.setPosition(0, 0, 480, 24);
@@ -549,18 +566,63 @@ ClockViewBase::ClockViewBase() :
     imageAlarm.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_ALARM_ON_22_22_FFFFFF_SVG_ID));
     add(imageAlarm);
 
-    buttonSetting.setXY(0, 25);
-    buttonSetting.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_6B6B6B_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_000000_SVG_ID));
-    buttonSetting.setAction(buttonCallback);
-    add(buttonSetting);
+    modalWindowSetting.setBackground(touchgfx::BitmapId(BITMAP_ALTERNATE_THEME_IMAGES_CONTAINERS_MEDIUM_NARROW_OUTLINED_LIGHT_ID), 120, 1);
+    modalWindowSetting.setShadeColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    modalWindowSetting.setShadeAlpha(150);
+    modalWindowSetting.hide();
+    textAreaIP.setPosition(17, 187, 196, 23);
+    textAreaIP.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textAreaIP.setLinespacing(0);
+    Unicode::snprintf(textAreaIPBuffer, TEXTAREAIP_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_0UUT).getText());
+    textAreaIP.setWildcard(textAreaIPBuffer);
+    textAreaIP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GWB9));
+    modalWindowSetting.add(textAreaIP);
 
-    textArea1.setPosition(60, 39, 386, 44);
+    textAreaWiFi.setPosition(17, 109, 196, 23);
+    textAreaWiFi.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textAreaWiFi.setLinespacing(0);
+    Unicode::snprintf(textAreaWiFiBuffer, TEXTAREAWIFI_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_BSU9).getText());
+    textAreaWiFi.setWildcard(textAreaWiFiBuffer);
+    textAreaWiFi.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XHNO));
+    modalWindowSetting.add(textAreaWiFi);
+
+    textArea1.setXY(17, 73);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea1.setLinespacing(0);
-    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_0UUT).getText());
-    textArea1.setWildcard(textArea1Buffer);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GWB9));
-    add(textArea1);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4VYD));
+    modalWindowSetting.add(textArea1);
+
+    textArea2.setXY(17, 154);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea2.setLinespacing(0);
+    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_B3UH));
+    modalWindowSetting.add(textArea2);
+
+    buttonClock.setXY(8, 11);
+    buttonClock.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_6B6B6B_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_6B6B6B_SVG_ID));
+    buttonClock.setAction(buttonCallback);
+    modalWindowSetting.add(buttonClock);
+
+    add(modalWindowSetting);
+
+    modalWindowDebug.setBackground(touchgfx::BitmapId(BITMAP_ALTERNATE_THEME_IMAGES_CONTAINERS_MEDIUM_WIDE_OUTLINED_LIGHT_ID), 55, 1);
+    modalWindowDebug.setShadeColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    modalWindowDebug.setShadeAlpha(150);
+    modalWindowDebug.hide();
+    textAreaPacket.setPosition(15, 19, 339, 230);
+    textAreaPacket.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textAreaPacket.setLinespacing(0);
+    Unicode::snprintf(textAreaPacketBuffer, TEXTAREAPACKET_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_E0MB).getText());
+    textAreaPacket.setWildcard(textAreaPacketBuffer);
+    textAreaPacket.setTypedText(touchgfx::TypedText(T___SINGLEUSE_74KH));
+    modalWindowDebug.add(textAreaPacket);
+
+    buttonDebugOut.setXY(2, 214);
+    buttonDebugOut.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_BUG_REPORT_55_55_6B6B6B_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_BUG_REPORT_55_55_000000_SVG_ID));
+    buttonDebugOut.setAction(buttonCallback);
+    modalWindowDebug.add(buttonDebugOut);
+
+    add(modalWindowDebug);
 }
 
 ClockViewBase::~ClockViewBase()
@@ -630,10 +692,35 @@ void ClockViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     }
     if (&src == &buttonSetting)
     {
-        //goSettingScreen
-        //When buttonSetting clicked change screen to Setting
-        //Go to Setting with no screen transition
-        application().gotoSettingScreenNoTransition();
+        //showSettingWindow
+        //When buttonSetting clicked show modalWindowSetting
+        //Show modalWindowSetting
+        modalWindowSetting.setVisible(true);
+        modalWindowSetting.invalidate();
+    }
+    if (&src == &buttonClock)
+    {
+        //hideSettingWindow
+        //When buttonClock clicked hide modalWindowSetting
+        //Hide modalWindowSetting
+        modalWindowSetting.setVisible(false);
+        modalWindowSetting.invalidate();
+    }
+    if (&src == &buttonDebugOut)
+    {
+        //hideDebugWindow
+        //When buttonDebugOut clicked hide modalWindowDebug
+        //Hide modalWindowDebug
+        modalWindowDebug.setVisible(false);
+        modalWindowDebug.invalidate();
+    }
+    if (&src == &buttonDebugIn)
+    {
+        //showDebugWindow
+        //When buttonDebugIn clicked show modalWindowDebug
+        //Show modalWindowDebug
+        modalWindowDebug.setVisible(true);
+        modalWindowDebug.invalidate();
     }
 }
 

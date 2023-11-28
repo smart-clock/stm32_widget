@@ -1,2 +1,2 @@
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/images/src/BitmapDatabase.cpp:161:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	0	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/images/src/BitmapDatabase.cpp:166:10:uint16_t BitmapDatabase::getInstanceSize()	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/images/src/BitmapDatabase.cpp:169:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/images/src/BitmapDatabase.cpp:174:10:uint16_t BitmapDatabase::getInstanceSize()	0	static

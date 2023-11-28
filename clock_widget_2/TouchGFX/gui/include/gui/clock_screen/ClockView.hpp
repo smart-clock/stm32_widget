@@ -35,11 +35,18 @@ public:
 protected:
     string esp2stmPacket;
 
+    char wifiID[20];
+    char ipAddress[20];
+
     int monthHome;
     int dateHome;
     char dayHome[4];
     int hourHome;
     int minuteHome;
+
+    char weatherRegion[10];
+    char weather[10];
+    int weatherTemp;
 
     int tickCounter;
     int stopWatchHours;

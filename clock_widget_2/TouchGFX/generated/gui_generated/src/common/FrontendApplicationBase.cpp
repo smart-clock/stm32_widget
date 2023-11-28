@@ -46,16 +46,3 @@ void FrontendApplicationBase::gotoClockScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<ClockView, ClockPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
-
-// Setting
-
-void FrontendApplicationBase::gotoSettingScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSettingScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoSettingScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<SettingView, SettingPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}

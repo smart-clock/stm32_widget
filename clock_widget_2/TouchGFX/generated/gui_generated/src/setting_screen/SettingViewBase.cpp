@@ -6,8 +6,7 @@
 #include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
-SettingViewBase::SettingViewBase() :
-    buttonCallback(this, &SettingViewBase::buttonCallbackHandler)
+SettingViewBase::SettingViewBase()
 {
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -59,7 +58,6 @@ SettingViewBase::SettingViewBase() :
 
     buttonClock.setXY(0, 25);
     buttonClock.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_FFFFFF_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_SETTINGS_APPLICATIONS_55_55_6B6B6B_SVG_ID));
-    buttonClock.setAction(buttonCallback);
     add(buttonClock);
 }
 
@@ -71,15 +69,4 @@ SettingViewBase::~SettingViewBase()
 void SettingViewBase::setupScreen()
 {
 
-}
-
-void SettingViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
-{
-    if (&src == &buttonClock)
-    {
-        //goClockScreen
-        //When buttonClock clicked change screen to Clock
-        //Go to Clock with no screen transition
-        application().gotoClockScreenNoTransition();
-    }
 }

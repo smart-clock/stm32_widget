@@ -12,9 +12,9 @@
 #include <touchgfx/containers/SwipeContainer.hpp>
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/clock/DigitalClock.hpp>
-#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/Gauge.hpp>
@@ -26,6 +26,7 @@
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
 #include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
+#include <touchgfx/containers/ModalWindow.hpp>
 
 class ClockViewBase : public touchgfx::View<ClockPresenter>
 {
@@ -93,6 +94,8 @@ protected:
     touchgfx::TextAreaWithTwoWildcards textHomeClock;
     touchgfx::TextAreaWithTwoWildcards textHomeDate;
     touchgfx::TextAreaWithOneWildcard textHomeDay;
+    touchgfx::Button buttonSetting;
+    touchgfx::Button buttonDebugIn;
     touchgfx::Container whether;
     touchgfx::Box boxBlurWhether;
     touchgfx::TextAreaWithOneWildcard textTemp;
@@ -100,6 +103,7 @@ protected:
     touchgfx::TextArea textC;
     touchgfx::TextArea textWhether;
     touchgfx::TextAreaWithOneWildcard textRegion;
+    touchgfx::TextAreaWithOneWildcard textWeather;
     touchgfx::Image imageWhether;
     touchgfx::Image imageLocation;
     touchgfx::Container StopWatch;
@@ -159,8 +163,15 @@ protected:
     touchgfx::TextAreaWithOneWildcard textDayUpper;
     touchgfx::TextAreaWithTwoWildcards textAlarm;
     touchgfx::Image imageAlarm;
-    touchgfx::Button buttonSetting;
-    touchgfx::TextAreaWithOneWildcard textArea1;
+    touchgfx::ModalWindow modalWindowSetting;
+    touchgfx::TextAreaWithOneWildcard textAreaIP;
+    touchgfx::TextAreaWithOneWildcard textAreaWiFi;
+    touchgfx::TextArea textArea1;
+    touchgfx::TextArea textArea2;
+    touchgfx::Button buttonClock;
+    touchgfx::ModalWindow modalWindowDebug;
+    touchgfx::TextAreaWithOneWildcard textAreaPacket;
+    touchgfx::Button buttonDebugOut;
 
     /*
      * Wildcard Buffers
@@ -179,6 +190,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textTempBuffer[TEXTTEMP_SIZE];
     static const uint16_t TEXTREGION_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textRegionBuffer[TEXTREGION_SIZE];
+    static const uint16_t TEXTWEATHER_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textWeatherBuffer[TEXTWEATHER_SIZE];
     static const uint16_t TEXTTIMERBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
     static const uint16_t TEXTTIMERBUFFER2_SIZE = 10;
@@ -197,8 +210,12 @@ protected:
     touchgfx::Unicode::UnicodeChar textAlarmBuffer1[TEXTALARMBUFFER1_SIZE];
     static const uint16_t TEXTALARMBUFFER2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textAlarmBuffer2[TEXTALARMBUFFER2_SIZE];
-    static const uint16_t TEXTAREA1_SIZE = 257;
-    touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
+    static const uint16_t TEXTAREAIP_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textAreaIPBuffer[TEXTAREAIP_SIZE];
+    static const uint16_t TEXTAREAWIFI_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textAreaWiFiBuffer[TEXTAREAWIFI_SIZE];
+    static const uint16_t TEXTAREAPACKET_SIZE = 257;
+    touchgfx::Unicode::UnicodeChar textAreaPacketBuffer[TEXTAREAPACKET_SIZE];
 
 private:
 

@@ -25,7 +25,7 @@
             "IndicatorImageNormal": "__generated\\light_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\clay_theme_images_widgets_swipecontainer_medium_on_normal.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "home",
+            "SelectedPage": "whether",
             "Components": [
               {
                 "Type": "Container",
@@ -90,6 +90,25 @@
                       "UseBuffer": true,
                       "BufferSize": 4
                     }
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "buttonSetting",
+                    "Y": 25,
+                    "Width": 55,
+                    "Height": 55,
+                    "Pressed": "__generated\\icon_theme_images_action_settings_applications_55_55_000000.svg.png",
+                    "Released": "__generated\\icon_theme_images_action_settings_applications_55_55_6B6B6B.svg.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "buttonDebugIn",
+                    "X": 1,
+                    "Y": 215,
+                    "Width": 55,
+                    "Height": 55,
+                    "Pressed": "__generated\\icon_theme_images_action_bug_report_55_55_000000.svg.png",
+                    "Released": "__generated\\icon_theme_images_action_bug_report_55_55_6B6B6B.svg.png"
                   }
                 ]
               },
@@ -179,10 +198,10 @@
                   {
                     "Type": "TextArea",
                     "Name": "textRegion",
-                    "X": 107,
-                    "Y": 77,
-                    "Width": 71,
-                    "Height": 30,
+                    "X": 110,
+                    "Y": 74,
+                    "Width": 116,
+                    "Height": 29,
                     "TextId": "__SingleUse_AL19",
                     "TextRotation": "0",
                     "Color": {
@@ -190,9 +209,28 @@
                       "Green": 255,
                       "Blue": 255
                     },
-                    "AutoSize": true,
                     "Wildcard1": {
                       "TextId": "__SingleUse_PX5Y",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textWeather",
+                    "X": 336,
+                    "Y": 47,
+                    "Width": 116,
+                    "Height": 29,
+                    "TextId": "__SingleUse_RQJH",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_PNB4",
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
@@ -367,7 +405,7 @@
                     "X": 320,
                     "Y": 30,
                     "Width": 61,
-                    "Height": 20,
+                    "Height": 24,
                     "TextId": "__SingleUse_S02A",
                     "TextRotation": "0",
                     "Color": {
@@ -553,7 +591,7 @@
                     "X": 53,
                     "Y": 100,
                     "Width": 48,
-                    "Height": 20,
+                    "Height": 24,
                     "TextId": "__SingleUse_UXV2",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -564,7 +602,7 @@
                     "X": 53,
                     "Y": 130,
                     "Width": 62,
-                    "Height": 20,
+                    "Height": 24,
                     "TextId": "__SingleUse_1ZAU",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -879,28 +917,121 @@
             "RelativeFilename": "__generated\\icon_theme_images_action_alarm_on_22_22_FFFFFF.svg.png"
           },
           {
-            "Type": "Button",
-            "Name": "buttonSetting",
-            "Y": 25,
-            "Width": 55,
-            "Height": 55,
-            "Pressed": "__generated\\icon_theme_images_action_settings_applications_55_55_000000.svg.png",
-            "Released": "__generated\\icon_theme_images_action_settings_applications_55_55_6B6B6B.svg.png"
+            "Type": "ModalWindow",
+            "Name": "modalWindowSetting",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "FileName": "__generated\\alternate_theme_images_containers_medium_narrow_outlined_light.png",
+            "ModalX": 120,
+            "ModalY": 1,
+            "ModalWidth": 240,
+            "ModalHeight": 270,
+            "Alpha": 150,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textAreaIP",
+                "X": 17,
+                "Y": 187,
+                "Width": 196,
+                "Height": 23,
+                "TextId": "__SingleUse_GWB9",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_0UUT",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textAreaWiFi",
+                "X": 17,
+                "Y": 109,
+                "Width": 196,
+                "Height": 23,
+                "TextId": "__SingleUse_XHNO",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_BSU9",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1",
+                "X": 17,
+                "Y": 73,
+                "Width": 42,
+                "Height": 24,
+                "TextId": "__SingleUse_4VYD",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea2",
+                "X": 17,
+                "Y": 154,
+                "Width": 20,
+                "Height": 24,
+                "TextId": "__SingleUse_B3UH",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "Button",
+                "Name": "buttonClock",
+                "X": 8,
+                "Y": 11,
+                "Width": 55,
+                "Height": 55,
+                "Pressed": "__generated\\icon_theme_images_action_settings_applications_55_55_6B6B6B.svg.png",
+                "Released": "__generated\\icon_theme_images_action_settings_applications_55_55_6B6B6B.svg.png"
+              }
+            ]
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 60,
-            "Y": 39,
-            "Width": 386,
-            "Height": 44,
-            "TextId": "__SingleUse_GWB9",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_0UUT",
-              "UseBuffer": true,
-              "BufferSize": 257
-            }
+            "Type": "ModalWindow",
+            "Name": "modalWindowDebug",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "FileName": "__generated\\alternate_theme_images_containers_medium_wide_outlined_light.png",
+            "ModalX": 55,
+            "ModalY": 1,
+            "ModalWidth": 370,
+            "ModalHeight": 270,
+            "Alpha": 150,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textAreaPacket",
+                "X": 15,
+                "Y": 19,
+                "Width": 339,
+                "Height": 230,
+                "TextId": "__SingleUse_74KH",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_E0MB",
+                  "UseBuffer": true,
+                  "BufferSize": 257
+                }
+              },
+              {
+                "Type": "Button",
+                "Name": "buttonDebugOut",
+                "X": 2,
+                "Y": 214,
+                "Width": 55,
+                "Height": 55,
+                "Pressed": "__generated\\icon_theme_images_action_bug_report_55_55_000000.svg.png",
+                "Released": "__generated\\icon_theme_images_action_bug_report_55_55_6B6B6B.svg.png"
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -960,15 +1091,47 @@
             }
           },
           {
-            "InteractionName": "goSettingScreen",
+            "InteractionName": "showSettingWindow",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "buttonSetting"
             },
             "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Setting"
+              "Type": "ActionShow",
+              "ActionComponent": "modalWindowSetting"
+            }
+          },
+          {
+            "InteractionName": "hideSettingWindow",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonClock"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "modalWindowSetting"
+            }
+          },
+          {
+            "InteractionName": "hideDebugWindow",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonDebugOut"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "modalWindowDebug"
+            }
+          },
+          {
+            "InteractionName": "showDebugWindow",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonDebugIn"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "modalWindowDebug"
             }
           }
         ]
@@ -1082,20 +1245,7 @@
             "Released": "__generated\\icon_theme_images_action_settings_applications_55_55_FFFFFF.svg.png"
           }
         ],
-        "Interactions": [
-          {
-            "InteractionName": "goClockScreen",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonClock"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Clock"
-            }
-          }
-        ]
+        "Interactions": []
       },
       {
         "Name": "Packet",

@@ -23,9 +23,6 @@ public:
     // Clock
     void gotoClockScreenNoTransition();
 
-    // Setting
-    void gotoSettingScreenNoTransition();
-
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -33,9 +30,6 @@ protected:
 
     // Clock
     void gotoClockScreenNoTransitionImpl();
-
-    // Setting
-    void gotoSettingScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

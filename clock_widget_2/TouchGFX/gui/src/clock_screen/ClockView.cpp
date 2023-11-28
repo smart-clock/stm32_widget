@@ -222,20 +222,44 @@ void ClockView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, in
 
 void ClockView::uart_Data(char *data)
 {
-	textArea1.setWideTextAction(touchgfx::WIDE_TEXT_WORDWRAP);
-	Unicode::strncpy(textArea1Buffer, data, TEXTAREA1_SIZE);
-	textArea1.invalidate();
+	// Show esp2stmPacket at modalWindowDebug
+	textAreaPacket.setWideTextAction(touchgfx::WIDE_TEXT_WORDWRAP);
+	Unicode::strncpy(textAreaPacketBuffer, data, TEXTAREAPACKET_SIZE);
+	textAreaPacket.invalidate();
 
     esp2stmPacket.assign(data, data + 256);
 
-    if(esp2stmPacket[1] == 'D' && esp2stmPacket[2] == 'A')
+    string temp = "";
+    int index = 0;
+    int eofIndex = 0;
+    if(esp2stmPacket[1] == 'W' && esp2stmPacket[2] == 'F')
     {
-        string temp;
-
-        temp = esp2stmPacket.substr(9, 10);
+		for(index = 4; index < 257; index++)
+		{
+			if(data[index] != '\r') wifiID[index - 4] = data[index];
+			else if(data[index] == '\r') break;
+		}
+		wifiID[index] = '\0';
+		Unicode::strncpy(textAreaWiFiBuffer, wifiID, TEXTAREAWIFI_SIZE);
+		textAreaWiFi.invalidate();
+    }
+    else if(esp2stmPacket[1] == 'I' && esp2stmPacket[2] == 'P')
+    {
+		for(index = 4; index < 257; index++)
+		{
+			if(data[index] != '\r') ipAddress[index - 4] = data[index];
+			else if(data[index] == '\r') break;
+		}
+		ipAddress[index] = '\0';
+		Unicode::strncpy(textAreaIPBuffer, ipAddress, TEXTAREAIP_SIZE);
+		textAreaWiFi.invalidate();
+    }
+    else if(esp2stmPacket[1] == 'D' && esp2stmPacket[2] == 'A')
+    {
+        temp = esp2stmPacket.substr(9, 2);
         monthHome = stoi(temp);
         
-        temp = esp2stmPacket.substr(12, 13);
+        temp = esp2stmPacket.substr(12, 2);
         dateHome = stoi(temp);
 
         // temp = esp2stmPacket.substr(15, 17) + "\0";
@@ -244,10 +268,10 @@ void ClockView::uart_Data(char *data)
         dayHome[2] = data[17];
         dayHome[3] = '\0';
 
-        temp = esp2stmPacket.substr(19, 20);
+        temp = esp2stmPacket.substr(19, 2);
         hourHome = stoi(temp);
 
-        temp = esp2stmPacket.substr(22, 23);
+        temp = esp2stmPacket.substr(22, 2);
         minuteHome = stoi(temp);
 
         // Home Hour 
@@ -281,5 +305,30 @@ void ClockView::uart_Data(char *data)
         // textDayUpper
         Unicode::strncpy(textDayUpperBuffer, dayHome, TEXTDAYUPPER_SIZE);
         textDayUpper.invalidate();
+    }
+    else if(esp2stmPacket[1] == 'W' && esp2stmPacket[2] == 'T')
+    {
+    	eofIndex = esp2stmPacket.find(',');
+    	temp = esp2stmPacket.substr(4, eofIndex - 4);
+    	strncpy(weatherRegion, temp.c_str(), TEXTREGION_SIZE);
+
+    	esp2stmPacket.erase(0, eofIndex + 1);
+    	eofIndex = esp2stmPacket.find(',');
+    	temp = esp2stmPacket.substr(0, eofIndex);
+    	strncpy(weather, temp.c_str(), TEXTWEATHER_SIZE);
+
+    	esp2stmPacket.erase(0, eofIndex + 1);
+    	eofIndex = esp2stmPacket.find('\r');
+    	temp = esp2stmPacket.substr(0, eofIndex);
+    	weatherTemp = stoi(temp);
+
+		Unicode::strncpy(textRegionBuffer, weatherRegion, TEXTREGION_SIZE);
+    	textRegion.invalidate();
+
+		Unicode::strncpy(textWeatherBuffer, weather, TEXTWEATHER_SIZE);
+		textWeather.invalidate();
+
+        Unicode::snprintf(textTempBuffer, TEXTTEMP_SIZE, "%02d", weatherTemp);
+        textTemp.invalidate();
     }
 }

@@ -14,12 +14,12 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cp
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:128:6:void ClockView::gaugeClickHandler(const touchgfx::Gauge&, const touchgfx::ClickEvent&)	0	static
 C:\ST\STM32CubeIDE_1.13.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/c++/11.3.1/bits/basic_string.h:6619:3:int std::__cxx11::stoi(const string&, std::size_t*, int)	40	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:3:1:ClockView::ClockView()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:285:1:cpp)	0	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:285:1:cpp)	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:335:1:cpp)	0	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:335:1:cpp)	0	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:19:6:virtual void ClockView::setupScreen()	16	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:198:6:virtual void ClockView::hourScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	16	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:213:6:virtual void ClockView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer&, int16_t)	16	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:223:6:virtual void ClockView::uart_Data(char*)	80	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:223:6:virtual void ClockView::uart_Data(char*)	88	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:35:6:virtual void ClockView::handleTickEvent()	24	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:110:6:virtual void ClockView::buttonTimerMaxClicked()	8	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:119:6:virtual void ClockView::bottonTimerMinClicked()	8	static
