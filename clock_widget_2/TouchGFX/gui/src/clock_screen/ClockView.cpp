@@ -250,52 +250,51 @@ void ClockView::gaugeClickHandler(const Gauge& g, const ClickEvent& e)
     }
 }
 
-// handleDragEvent 오버라이딩 시에 Scroll Wheel 위젯 애니매이션 자연스럽지 않음 #20
-// void ClockView::handleDragEvent(const DragEvent& Event)
-// {
+//handleDragEvent 오버라이딩 시에 Scroll Wheel 위젯 애니매이션 자연스럽지 않음 #20
+void ClockView::handleDragEvent(const DragEvent& Event)
+{
+    if(timerWidgetDrag)
+    {
+        int16_t timerDragX = Event.getNewX();
+        int16_t timerDragY = Event.getNewY();
 
-//     if(timerWidgetDrag)
-//     {
-//         int16_t timerDragX = Event.getNewX();
-//         int16_t timerDragY = Event.getNewY();
+        timerOfCurAng = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
 
-//         timerOfCurAng = CWRUtil::angle<int>(timerDragX - 240, timerDragY - 124);
+        if(timerOfPreAng > 340 && timerOfCurAng < 20)
+        {
+            timerMax = true;
+        }
+        else if(timerOfPreAng < 20 && timerOfCurAng > 340)
+        {
+            timerMin = true;
+        }
 
-//         if(timerOfPreAng > 340 && timerOfCurAng < 20)
-//         {
-//             timerMax = true;
-//         }
-//         else if(timerOfPreAng < 20 && timerOfCurAng > 340)
-//         {
-//             timerMin = true;
-//         }
+        if(timerMax)
+        {
+            gaugeTimer.setValue(360);
+            timerMinute = 60;
+        }
+        else if(timerMin)
+        {
+            gaugeTimer.setValue(0);
+            timerMinute = 0;
+        }
+        else
+        {
+            gaugeTimer.setValue(timerOfCurAng);
+            timerMinute = timerOfCurAng/6;
+        }
 
-//         if(timerMax)
-//         {
-//             gaugeTimer.setValue(360);
-//             timerMinute = 60;
-//         }
-//         else if(timerMin)
-//         {
-//             gaugeTimer.setValue(0);
-//             timerMinute = 0;
-//         }
-//         else
-//         {
-//             gaugeTimer.setValue(timerOfCurAng);
-//             timerMinute = timerOfCurAng/6;
-//         }
+        Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
+        textTimer.invalidate();
 
-//         Unicode::snprintf(textTimerBuffer1, TEXTTIMERBUFFER1_SIZE, "%02d", timerMinute);
-//         textTimer.invalidate();
+        timerSecond = 0;
+        Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%02d", timerSecond);
+        textTimer.invalidate();
 
-//         timerSecond = 0;
-//         Unicode::snprintf(textTimerBuffer2, TEXTTIMERBUFFER2_SIZE, "%02d", timerSecond);
-//         textTimer.invalidate();
-
-//         timerOfPreAng = timerOfCurAng;
-//     }
-// }
+        timerOfPreAng = timerOfCurAng;
+    }
+}
 
 void ClockView::hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex)
 {
@@ -536,11 +535,13 @@ void ClockView::uart_Data(char *data)
     else if(esp2stmPacket[1] == 'S' && esp2stmPacket[2] == 'C')
     {
     	// Stock Name
-    	temp = esp2stmPacket.substr(4, 4);
+    	esp2stmPacket.erase(0, 4);
+    	eofIndex = esp2stmPacket.find(',');
+    	temp = esp2stmPacket.substr(0, eofIndex);
     	strncpy(stockName, temp.c_str(), TEXTREGION_SIZE);
 
     	// Stock Value
-    	esp2stmPacket.erase(0, 9);
+    	esp2stmPacket.erase(0, eofIndex + 1);
     	eofIndex = esp2stmPacket.find('\r');
     	temp = esp2stmPacket.substr(0, eofIndex);
     	strncpy(stockValue, temp.c_str(), TEXTREGION_SIZE);
@@ -556,17 +557,16 @@ void ClockView::uart_Data(char *data)
     }
     else if(esp2stmPacket[1] == 'S' && esp2stmPacket[2] == 'M')
     {
-    	esp2stmPacket.erase(0, 9);
+    	esp2stmPacket.erase(0, 8); // only for IBM (3 charactor)
 
     	for(int i = 21; i > 0; i--)
     	{
-    		esp2stmPacket.erase(0, eofIndex + 1);
     		eofIndex = esp2stmPacket.find(',');
     		temp = esp2stmPacket.substr(0, eofIndex);
+    		esp2stmPacket.erase(0, eofIndex + 1);
     		graphStock.addDataPoint(i, stoi(temp));
     	}
 
-		esp2stmPacket.erase(0, eofIndex + 1);
 		eofIndex = esp2stmPacket.find('\r');
 		temp = esp2stmPacket.substr(0, eofIndex);
 		graphStock.addDataPoint(0, stoi(temp));

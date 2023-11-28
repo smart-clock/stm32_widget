@@ -23,10 +23,12 @@ ClockViewBase::ClockViewBase() :
 
     background2.setXY(0, 0);
     background2.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM2_ID));
+    background2.setVisible(false);
     add(background2);
 
     background3.setXY(0, 0);
     background3.setBitmap(touchgfx::Bitmap(BITMAP_MANGGOM3_ID));
+    background3.setVisible(false);
     add(background3);
 
     swipeContainerWidget.setXY(0, 0);
@@ -229,7 +231,7 @@ ClockViewBase::ClockViewBase() :
     buttonTimerMin.setAction(buttonCallback);
     Timer.add(buttonTimerMin);
 
-    circleGaugeBackground.setPosition(140, 24, 200, 200);
+    circleGaugeBackground.setPosition(140, 39, 200, 200);
     circleGaugeBackground.setCenter(100, 100);
     circleGaugeBackground.setRadius(100);
     circleGaugeBackground.setLineWidth(0);
@@ -239,7 +241,7 @@ ClockViewBase::ClockViewBase() :
     Timer.add(circleGaugeBackground);
 
     gaugeTimer.setBackground(touchgfx::Bitmap(BITMAP_CLOCK_ID));
-    gaugeTimer.setPosition(140, 24, 200, 200);
+    gaugeTimer.setPosition(140, 39, 200, 200);
     gaugeTimer.setCenter(100, 100);
     gaugeTimer.setStartEndAngle(-2, 358);
     gaugeTimer.setRange(0, 360);
@@ -437,7 +439,7 @@ ClockViewBase::ClockViewBase() :
     graphStock.setGraphAreaMargin(0, 0, 0, 0);
     graphStock.setGraphAreaPadding(0, 0, 0, 0);
     graphStock.setGraphRangeX(0, 21);
-    graphStock.setGraphRangeY(100, 200);
+    graphStock.setGraphRangeY(140, 160);
     graphStockLine1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     graphStockLine1.setPainter(graphStockLine1Painter);
     graphStockLine1.setLineWidth(2);

@@ -448,7 +448,7 @@
                     "Type": "Circle",
                     "Name": "circleGaugeBackground",
                     "X": 140,
-                    "Y": 24,
+                    "Y": 39,
                     "Width": 200,
                     "Height": 200,
                     "Color": {
@@ -466,7 +466,7 @@
                     "Type": "Gauge",
                     "Name": "gaugeTimer",
                     "X": 140,
-                    "Y": 24,
+                    "Y": 39,
                     "Width": 200,
                     "Height": 200,
                     "FileNameBackground": "clock.png",
@@ -840,8 +840,8 @@
                     "NumberOfValues": 22,
                     "MaxX": 21.0,
                     "PrecisionX": "1",
-                    "MaxY": 200.0,
-                    "MinY": 100.0,
+                    "MaxY": 160.0,
+                    "MinY": 140.0,
                     "PrecisionY": "1",
                     "XAxisScale": 1.0,
                     "GraphDrawers": [

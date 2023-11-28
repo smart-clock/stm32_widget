@@ -27,7 +27,7 @@ public:
     virtual void toggleButtonOn();
     virtual void toggleButtonAm();
 
-    // virtual void handleDragEvent(const DragEvent& Event);
+    virtual void handleDragEvent(const DragEvent& Event);
 
     virtual void hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemIndex);
     virtual void hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
