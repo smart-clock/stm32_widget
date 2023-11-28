@@ -122,9 +122,40 @@ ClockViewBase::ClockViewBase() :
     textWeather.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RQJH));
     whether.add(textWeather);
 
-    imageWhether.setXY(267, 78);
-    imageWhether.setBitmap(touchgfx::Bitmap(BITMAP_SNOW_128X128_ID));
-    whether.add(imageWhether);
+    imageSnow.setXY(267, 78);
+    imageSnow.setBitmap(touchgfx::Bitmap(BITMAP_SNOW_128X128_ID));
+    imageSnow.setVisible(false);
+    whether.add(imageSnow);
+
+    imageRain.setXY(267, 78);
+    imageRain.setBitmap(touchgfx::Bitmap(BITMAP_RAIN_128X128_ID));
+    imageRain.setVisible(false);
+    whether.add(imageRain);
+
+    imageDrizzel.setXY(267, 78);
+    imageDrizzel.setBitmap(touchgfx::Bitmap(BITMAP_DRIZZEL_128X128_ID));
+    imageDrizzel.setVisible(false);
+    whether.add(imageDrizzel);
+
+    imageThunder.setXY(267, 78);
+    imageThunder.setBitmap(touchgfx::Bitmap(BITMAP_THUNDER_128X128_ID));
+    imageThunder.setVisible(false);
+    whether.add(imageThunder);
+
+    imageFog.setXY(267, 78);
+    imageFog.setBitmap(touchgfx::Bitmap(BITMAP_FOG_128X128_ID));
+    imageFog.setVisible(false);
+    whether.add(imageFog);
+
+    imageClear.setXY(267, 78);
+    imageClear.setBitmap(touchgfx::Bitmap(BITMAP_SUN_128X128_ID));
+    imageClear.setVisible(false);
+    whether.add(imageClear);
+
+    imageCloud.setXY(267, 78);
+    imageCloud.setBitmap(touchgfx::Bitmap(BITMAP_CLOUD_128X128_ID));
+    imageCloud.setVisible(false);
+    whether.add(imageCloud);
 
     imageLocation.setXY(73, 77);
     imageLocation.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_MAPS_LOCATION_PIN_30_30_FFFFFF_SVG_ID));

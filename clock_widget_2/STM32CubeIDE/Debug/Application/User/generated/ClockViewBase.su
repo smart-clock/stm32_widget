@@ -96,7 +96,7 @@
 ../../TouchGFX/generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp:73:18:virtual void ClockViewBase::buttonTimerMaxClicked()	0	static
 ../../TouchGFX/generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp:77:18:virtual void ClockViewBase::bottonTimerMinClicked()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<ClockPresenter>::~View()	0	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:727:6:void ClockViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	24	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:758:6:void ClockViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	24	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = alarmContainer; int SIZE = 4]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = alarmCenterContainer; int SIZE = 2]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<ClockViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
@@ -121,7 +121,7 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:virtual touchgfx::Callback<ClockViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<ClockViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:virtual touchgfx::ClickListener<touchgfx::Gauge>::~ClickListener()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:656:6:void ClockViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:687:6:void ClockViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:43:18:virtual void touchgfx::TextAreaWithWildcardBase::invalidateContent() const	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1176:18:virtual void touchgfx::AbstractDataGraph::invalidateContent() const	8	static
@@ -149,9 +149,9 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1270:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenXQ5(int) const	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:152:18:virtual void touchgfx::ScrollWheelWithSelectionStyle::initialize()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:633:6:virtual void ClockViewBase::setupScreen()	16	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:664:6:virtual void ClockViewBase::setupScreen()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<alarmContainer, 4>::DrawableListItems()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<alarmCenterContainer, 2>::DrawableListItems()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:10:1:ClockViewBase::ClockViewBase()	408	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:628:1:ClockViewBase::~ClockViewBase()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:628:1:virtual ClockViewBase::~ClockViewBase()	8	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:10:1:ClockViewBase::ClockViewBase()	432	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:659:1:ClockViewBase::~ClockViewBase()	8	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/clock_screen/ClockViewBase.cpp:659:1:virtual ClockViewBase::~ClockViewBase()	8	static

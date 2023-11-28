@@ -308,27 +308,113 @@ void ClockView::uart_Data(char *data)
     }
     else if(esp2stmPacket[1] == 'W' && esp2stmPacket[2] == 'T')
     {
+    	// City
     	eofIndex = esp2stmPacket.find(',');
     	temp = esp2stmPacket.substr(4, eofIndex - 4);
     	strncpy(weatherRegion, temp.c_str(), TEXTREGION_SIZE);
 
+    	// Weather
     	esp2stmPacket.erase(0, eofIndex + 1);
     	eofIndex = esp2stmPacket.find(',');
     	temp = esp2stmPacket.substr(0, eofIndex);
     	strncpy(weather, temp.c_str(), TEXTWEATHER_SIZE);
 
+    	// Temp
     	esp2stmPacket.erase(0, eofIndex + 1);
     	eofIndex = esp2stmPacket.find('\r');
     	temp = esp2stmPacket.substr(0, eofIndex);
     	weatherTemp = stoi(temp);
 
+    	// City Text
 		Unicode::strncpy(textRegionBuffer, weatherRegion, TEXTREGION_SIZE);
     	textRegion.invalidate();
 
+		// Weather Text
 		Unicode::strncpy(textWeatherBuffer, weather, TEXTWEATHER_SIZE);
 		textWeather.invalidate();
 
+		// Temp Text
         Unicode::snprintf(textTempBuffer, TEXTTEMP_SIZE, "%02d", weatherTemp);
         textTemp.invalidate();
+
+        // Weather Image
+        if(strcmp(weather, "Snow") == 0)
+        {
+        	imageSnow.setVisible(true); // This
+        	imageRain.setVisible(false);
+        	imageDrizzel.setVisible(false);
+        	imageThunder.setVisible(false);
+        	imageClear.setVisible(false);
+        	imageCloud.setVisible(false);
+        	imageFog.setVisible(false);
+        }
+        else if(strcmp(weather, "Rain") == 0)
+        {
+        	imageSnow.setVisible(false);
+        	imageRain.setVisible(true); // This
+        	imageDrizzel.setVisible(false);
+        	imageThunder.setVisible(false);
+        	imageClear.setVisible(false);
+        	imageCloud.setVisible(false);
+        	imageFog.setVisible(false);
+        }
+        else if(strcmp(weather, "Drizzel") == 0)
+        {
+        	imageSnow.setVisible(false);
+        	imageRain.setVisible(false);
+        	imageDrizzel.setVisible(true); // This
+        	imageThunder.setVisible(false);
+        	imageClear.setVisible(false);
+        	imageCloud.setVisible(false);
+        	imageFog.setVisible(false);
+        }
+        else if(strcmp(weather, "Thunderstorm") == 0)
+        {
+        	imageSnow.setVisible(false);
+        	imageRain.setVisible(false);
+        	imageDrizzel.setVisible(false);
+        	imageThunder.setVisible(true); // This
+        	imageClear.setVisible(false);
+        	imageCloud.setVisible(false);
+        	imageFog.setVisible(false);
+        }
+        else if(strcmp(weather, "Clear") == 0)
+        {
+        	imageSnow.setVisible(false);
+        	imageRain.setVisible(false);
+        	imageDrizzel.setVisible(false);
+        	imageThunder.setVisible(false);
+        	imageClear.setVisible(true); // This
+        	imageCloud.setVisible(false);
+        	imageFog.setVisible(false);
+        }
+        else if(strcmp(weather, "Clouds") == 0)
+        {
+        	imageSnow.setVisible(false);
+        	imageRain.setVisible(false);
+        	imageDrizzel.setVisible(false);
+        	imageThunder.setVisible(false);
+        	imageClear.setVisible(false);
+        	imageCloud.setVisible(true); // This
+        	imageFog.setVisible(false);
+        }
+        else
+        {
+        	imageSnow.setVisible(false);
+        	imageRain.setVisible(false);
+        	imageDrizzel.setVisible(false);
+        	imageThunder.setVisible(false);
+        	imageClear.setVisible(false);
+        	imageCloud.setVisible(false);
+        	imageFog.setVisible(true); // This
+        }
+
+        imageSnow.invalidate();
+        imageRain.invalidate();
+        imageDrizzel.invalidate();
+        imageThunder.invalidate();
+        imageClear.invalidate();
+        imageCloud.invalidate();
+        imageFog.invalidate();
     }
 }

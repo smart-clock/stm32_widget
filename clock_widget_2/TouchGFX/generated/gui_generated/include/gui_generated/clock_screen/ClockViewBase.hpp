@@ -104,7 +104,13 @@ protected:
     touchgfx::TextArea textWhether;
     touchgfx::TextAreaWithOneWildcard textRegion;
     touchgfx::TextAreaWithOneWildcard textWeather;
-    touchgfx::Image imageWhether;
+    touchgfx::Image imageSnow;
+    touchgfx::Image imageRain;
+    touchgfx::Image imageDrizzel;
+    touchgfx::Image imageThunder;
+    touchgfx::Image imageFog;
+    touchgfx::Image imageClear;
+    touchgfx::Image imageCloud;
     touchgfx::Image imageLocation;
     touchgfx::Container StopWatch;
     touchgfx::Box boxBlurStop;

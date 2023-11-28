@@ -237,12 +237,73 @@
                   },
                   {
                     "Type": "Image",
-                    "Name": "imageWhether",
+                    "Name": "imageSnow",
                     "X": 267,
                     "Y": 78,
                     "Width": 128,
                     "Height": 128,
+                    "Visible": false,
                     "RelativeFilename": "snow_128x128.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageRain",
+                    "X": 267,
+                    "Y": 78,
+                    "Width": 128,
+                    "Height": 128,
+                    "Visible": false,
+                    "RelativeFilename": "rain_128x128.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageDrizzel",
+                    "X": 267,
+                    "Y": 78,
+                    "Width": 128,
+                    "Height": 128,
+                    "Visible": false,
+                    "RelativeFilename": "drizzel_128x128.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageThunder",
+                    "X": 267,
+                    "Y": 78,
+                    "Width": 128,
+                    "Height": 128,
+                    "Visible": false,
+                    "RelativeFilename": "thunder_128x128.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageFog",
+                    "X": 267,
+                    "Y": 78,
+                    "Width": 128,
+                    "Height": 128,
+                    "Visible": false,
+                    "RelativeFilename": "fog_128x128.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageClear",
+                    "X": 267,
+                    "Y": 78,
+                    "Width": 128,
+                    "Height": 128,
+                    "Visible": false,
+                    "RelativeFilename": "sun_128x128.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageCloud",
+                    "X": 267,
+                    "Y": 78,
+                    "Width": 128,
+                    "Height": 128,
+                    "Visible": false,
+                    "RelativeFilename": "cloud_128x128.png"
                   },
                   {
                     "Type": "Image",
