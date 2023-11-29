@@ -14,8 +14,7 @@ KEEP extern const touchgfx::GlyphNode glyphs_DUBAI_LIGHT_TTF_60_8bpp[] FONT_TABL
     {  7467, 0x0037,  25,  40,  40,   4,  32,   0,   0, 0x00 }, // seven
     {  8467, 0x0038,  28,  42,  41,   2,  32,   0,   0, 0x00 }, // eight
     {  9643, 0x0039,  26,  42,  41,   3,  32,   0,   0, 0x00 }, // nine
-    { 10735, 0x003A,   6,  24,  23,   2,  10,   0,   0, 0x00 }, // colon
-    { 10879, 0x003F,  23,  42,  41,   1,  26,   0,   0, 0x00 }  // question
+    { 10735, 0x003F,  23,  42,  41,   1,  26,   0,   0, 0x00 }  // question
 };
 
 // DUBAI_LIGHT_TTF_60_8bpp
@@ -34,6 +33,6 @@ touchgfx::GeneratedFont& getFont_DUBAI_LIGHT_TTF_60_8bpp();
 
 touchgfx::GeneratedFont& getFont_DUBAI_LIGHT_TTF_60_8bpp()
 {
-    static touchgfx::GeneratedFont DUBAI_LIGHT_TTF_60_8bpp(glyphs_DUBAI_LIGHT_TTF_60_8bpp, 12, 61, 60, 0, 0, 8, 0, 0, 0, unicodes_DUBAI_LIGHT_TTF_60_8bpp, kerning_DUBAI_LIGHT_TTF_60_8bpp, 63, 0, 0, &DUBAI_LIGHT_TTF_contextualFormsTable);
+    static touchgfx::GeneratedFont DUBAI_LIGHT_TTF_60_8bpp(glyphs_DUBAI_LIGHT_TTF_60_8bpp, 11, 61, 60, 0, 0, 8, 0, 0, 0, unicodes_DUBAI_LIGHT_TTF_60_8bpp, kerning_DUBAI_LIGHT_TTF_60_8bpp, 63, 0, 0, &DUBAI_LIGHT_TTF_contextualFormsTable);
     return DUBAI_LIGHT_TTF_60_8bpp;
 }

@@ -35,7 +35,7 @@
             "Height": 272,
             "SwipeCutoff": 50,
             "ShowPageIndicator": true,
-            "PageIndicatorX": 160,
+            "PageIndicatorX": 170,
             "PageIndicatorY": 250,
             "CenteredX": true,
             "IndicatorImageNormal": "__generated\\light_theme_images_widgets_swipecontainer_medium_off_normal.png",
@@ -54,7 +54,7 @@
                     "Name": "textHomeClock",
                     "X": 128,
                     "Y": 83,
-                    "Width": 138,
+                    "Width": 140,
                     "Height": 61,
                     "TextId": "__SingleUse_TBRP",
                     "TextRotation": "0",
@@ -75,7 +75,7 @@
                     "Name": "textHomeSec",
                     "X": 266,
                     "Y": 83,
-                    "Width": 74,
+                    "Width": 76,
                     "Height": 61,
                     "TextId": "__SingleUse_EA8X",
                     "TextRotation": "0",
@@ -345,6 +345,215 @@
                     "Width": 30,
                     "Height": 30,
                     "RelativeFilename": "__generated\\icon_theme_images_maps_location_pin_30_30_FFFFFF.svg.png"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "Bus",
+                "Width": 480,
+                "Height": 272,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "boxBlurBus",
+                    "Y": -1,
+                    "Width": 480,
+                    "Height": 274,
+                    "Alpha": 150
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "busRoute",
+                    "X": 58,
+                    "Y": 74,
+                    "Width": 168,
+                    "Height": 82,
+                    "TextId": "__SingleUse_458W",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_7A6P",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "busStation",
+                    "X": 58,
+                    "Y": 165,
+                    "Width": 123,
+                    "Height": 30,
+                    "TextId": "__SingleUse_LCF4",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_UOZ8",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "busTime1",
+                    "X": 255,
+                    "Y": 88,
+                    "Width": 48,
+                    "Height": 30,
+                    "TextId": "__SingleUse_05J5",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_JREN",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "busTime2",
+                    "X": 370,
+                    "Y": 88,
+                    "Width": 48,
+                    "Height": 30,
+                    "TextId": "__SingleUse_BW3Y",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_S0SF",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageBus1",
+                    "X": 254,
+                    "Y": 136,
+                    "Width": 65,
+                    "Height": 65,
+                    "RelativeFilename": "__generated\\icon_theme_images_maps_departure_board_65_65_FFFFFF.svg.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "imageBus2",
+                    "X": 367,
+                    "Y": 133,
+                    "Width": 65,
+                    "Height": 65,
+                    "RelativeFilename": "__generated\\icon_theme_images_maps_departure_board_65_65_FFFFFF.svg.png"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "stock",
+                "Width": 480,
+                "Height": 272,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "boxBlurStock",
+                    "Y": -1,
+                    "Width": 480,
+                    "Height": 274,
+                    "Alpha": 150
+                  },
+                  {
+                    "Type": "StaticGraph",
+                    "Name": "graphStock",
+                    "Y": 83,
+                    "Width": 505,
+                    "Height": 189,
+                    "DataSeed": -187042437,
+                    "NumberOfValues": 22,
+                    "MaxX": 21.0,
+                    "PrecisionX": "1",
+                    "MaxY": 160.0,
+                    "MinY": 140.0,
+                    "PrecisionY": "1",
+                    "XAxisScale": 1.0,
+                    "GraphDrawers": [
+                      {
+                        "Type": "AreaDrawer",
+                        "FileNameImage": "",
+                        "Color": {
+                          "Red": 255,
+                          "Green": 255,
+                          "Blue": 255
+                        },
+                        "Alpha": 124
+                      },
+                      {
+                        "Type": "LineDrawer",
+                        "LineWidth": 2,
+                        "FileNameImage": "",
+                        "Color": {
+                          "Red": 255,
+                          "Green": 255,
+                          "Blue": 255
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textStock",
+                    "X": 20,
+                    "Y": 43,
+                    "Width": 120,
+                    "Height": 37,
+                    "TextId": "__SingleUse_A88N",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_AKOP",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textStockValue",
+                    "X": 20,
+                    "Y": 77,
+                    "Width": 120,
+                    "Height": 34,
+                    "TextId": "__SingleUse_WA0J",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_1D56",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
                   }
                 ]
               },
@@ -637,277 +846,71 @@
                     "AutoSize": true
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "calendar",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "boxBlurCal",
+                "Y": -1,
+                "Width": 480,
+                "Height": 274,
+                "Alpha": 150
               },
               {
-                "Type": "Container",
-                "Name": "calendar",
-                "Width": 480,
-                "Height": 272,
-                "Components": [
-                  {
-                    "Type": "Box",
-                    "Name": "boxBlurCal",
-                    "Y": -1,
-                    "Width": 480,
-                    "Height": 274,
-                    "Alpha": 150
-                  },
-                  {
-                    "Type": "ScrollList",
-                    "Name": "scrollList1",
-                    "X": 203,
-                    "Y": 30,
-                    "Width": 150,
-                    "Height": 200,
-                    "NumberofItems": 10,
-                    "Easing": "Back",
-                    "EasingOption": "Out",
-                    "SwipeAcceleration": 1.0,
-                    "DragAcceleration": 1.0
-                  },
-                  {
-                    "Type": "Box",
-                    "Name": "boxScheduleBack",
-                    "X": 43,
-                    "Y": 86,
-                    "Width": 116,
-                    "Height": 77,
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    }
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textScheduleTime",
-                    "X": 53,
-                    "Y": 100,
-                    "Width": 48,
-                    "Height": 20,
-                    "TextId": "__SingleUse_UXV2",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textSchedule",
-                    "X": 53,
-                    "Y": 130,
-                    "Width": 62,
-                    "Height": 20,
-                    "TextId": "__SingleUse_1ZAU",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  }
-                ]
+                "Type": "ScrollList",
+                "Name": "scrollList1",
+                "X": 203,
+                "Y": 30,
+                "Width": 150,
+                "Height": 200,
+                "NumberofItems": 10,
+                "Easing": "Back",
+                "EasingOption": "Out",
+                "SwipeAcceleration": 1.0,
+                "DragAcceleration": 1.0
               },
               {
-                "Type": "Container",
-                "Name": "Bus",
-                "Width": 480,
-                "Height": 272,
-                "Components": [
-                  {
-                    "Type": "Box",
-                    "Name": "boxBlurBus",
-                    "Y": -1,
-                    "Width": 480,
-                    "Height": 274,
-                    "Alpha": 150
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "busRoute",
-                    "X": 58,
-                    "Y": 74,
-                    "Width": 141,
-                    "Height": 84,
-                    "TextId": "__SingleUse_458W",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "busStation",
-                    "X": 88,
-                    "Y": 165,
-                    "Width": 80,
-                    "Height": 30,
-                    "TextId": "__SingleUse_LCF4",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "busTime1",
-                    "X": 240,
-                    "Y": 88,
-                    "Width": 93,
-                    "Height": 30,
-                    "TextId": "__SingleUse_05J5",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "AutoSize": true,
-                    "Wildcard1": {
-                      "TextId": "__SingleUse_JREN",
-                      "UseBuffer": true,
-                      "BufferSize": 10
-                    },
-                    "Wildcard2": {
-                      "TextId": "__SingleUse_1MSQ"
-                    }
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "busTime2",
-                    "X": 353,
-                    "Y": 88,
-                    "Width": 93,
-                    "Height": 30,
-                    "TextId": "__SingleUse_BW3Y",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "AutoSize": true,
-                    "Wildcard1": {
-                      "TextId": "__SingleUse_S0SF",
-                      "UseBuffer": true,
-                      "BufferSize": 10
-                    },
-                    "Wildcard2": {
-                      "TextId": "__SingleUse_G9NH"
-                    }
-                  },
-                  {
-                    "Type": "Image",
-                    "Name": "imageBus1",
-                    "X": 254,
-                    "Y": 136,
-                    "Width": 65,
-                    "Height": 65,
-                    "RelativeFilename": "__generated\\icon_theme_images_maps_departure_board_65_65_FFFFFF.svg.png"
-                  },
-                  {
-                    "Type": "Image",
-                    "Name": "imageBus2",
-                    "X": 367,
-                    "Y": 133,
-                    "Width": 65,
-                    "Height": 65,
-                    "RelativeFilename": "__generated\\icon_theme_images_maps_departure_board_65_65_FFFFFF.svg.png"
-                  }
-                ]
+                "Type": "Box",
+                "Name": "boxScheduleBack",
+                "X": 43,
+                "Y": 86,
+                "Width": 116,
+                "Height": 77,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
               },
               {
-                "Type": "Container",
-                "Name": "stock",
-                "Width": 480,
-                "Height": 272,
-                "Components": [
-                  {
-                    "Type": "Box",
-                    "Name": "boxBlurStock",
-                    "Y": -1,
-                    "Width": 480,
-                    "Height": 274,
-                    "Alpha": 150
-                  },
-                  {
-                    "Type": "StaticGraph",
-                    "Name": "graphStock",
-                    "Y": 83,
-                    "Width": 505,
-                    "Height": 189,
-                    "DataSeed": -187042437,
-                    "NumberOfValues": 22,
-                    "MaxX": 21.0,
-                    "PrecisionX": "1",
-                    "MaxY": 160.0,
-                    "MinY": 140.0,
-                    "PrecisionY": "1",
-                    "XAxisScale": 1.0,
-                    "GraphDrawers": [
-                      {
-                        "Type": "AreaDrawer",
-                        "FileNameImage": "",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "Alpha": 124
-                      },
-                      {
-                        "Type": "LineDrawer",
-                        "LineWidth": 2,
-                        "FileNameImage": "",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textStock",
-                    "X": 20,
-                    "Y": 43,
-                    "Width": 120,
-                    "Height": 37,
-                    "TextId": "__SingleUse_A88N",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "Wildcard1": {
-                      "TextId": "__SingleUse_AKOP",
-                      "UseBuffer": true,
-                      "BufferSize": 10
-                    }
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textStockValue",
-                    "X": 20,
-                    "Y": 77,
-                    "Width": 120,
-                    "Height": 34,
-                    "TextId": "__SingleUse_WA0J",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "Wildcard1": {
-                      "TextId": "__SingleUse_1D56",
-                      "UseBuffer": true,
-                      "BufferSize": 10
-                    }
-                  }
-                ]
+                "Type": "TextArea",
+                "Name": "textScheduleTime",
+                "X": 53,
+                "Y": 100,
+                "Width": 48,
+                "Height": 20,
+                "TextId": "__SingleUse_UXV2",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textSchedule",
+                "X": 53,
+                "Y": 130,
+                "Width": 62,
+                "Height": 20,
+                "TextId": "__SingleUse_1ZAU",
+                "TextRotation": "0",
+                "AutoSize": true
               }
             ]
           },
@@ -933,7 +936,9 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_OW5R"
+              "TextId": "__SingleUse_OW5R",
+              "UseBuffer": true,
+              "BufferSize": 10
             }
           },
           {

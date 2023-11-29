@@ -14,9 +14,11 @@
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/graph/Graph.hpp>
+#include <touchgfx/widgets/graph/GraphElements.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/Gauge.hpp>
 #include <touchgfx/mixins/ClickListener.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp>
@@ -24,8 +26,6 @@
 #include <gui/containers/alarmCenterContainer.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
-#include <touchgfx/widgets/graph/Graph.hpp>
-#include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/containers/ModalWindow.hpp>
 
 class ClockViewBase : public touchgfx::View<ClockPresenter>
@@ -123,6 +123,23 @@ protected:
     touchgfx::Image imageClear;
     touchgfx::Image imageCloud;
     touchgfx::Image imageLocation;
+    touchgfx::Container Bus;
+    touchgfx::Box boxBlurBus;
+    touchgfx::TextAreaWithOneWildcard busRoute;
+    touchgfx::TextAreaWithOneWildcard busStation;
+    touchgfx::TextAreaWithOneWildcard busTime1;
+    touchgfx::TextAreaWithOneWildcard busTime2;
+    touchgfx::Image imageBus1;
+    touchgfx::Image imageBus2;
+    touchgfx::Container stock;
+    touchgfx::Box boxBlurStock;
+    touchgfx::Graph<22> graphStock;
+    touchgfx::GraphElementLine graphStockLine1;
+    touchgfx::PainterRGB565 graphStockLine1Painter;
+    touchgfx::GraphElementArea graphStockArea1;
+    touchgfx::PainterRGB565 graphStockArea1Painter;
+    touchgfx::TextAreaWithOneWildcard textStock;
+    touchgfx::TextAreaWithOneWildcard textStockValue;
     touchgfx::Container StopWatch;
     touchgfx::Box boxBlurStop;
     touchgfx::DigitalClock digitalClock;
@@ -157,23 +174,6 @@ protected:
     touchgfx::Box boxScheduleBack;
     touchgfx::TextArea textScheduleTime;
     touchgfx::TextArea textSchedule;
-    touchgfx::Container Bus;
-    touchgfx::Box boxBlurBus;
-    touchgfx::TextArea busRoute;
-    touchgfx::TextArea busStation;
-    touchgfx::TextAreaWithTwoWildcards busTime1;
-    touchgfx::TextAreaWithTwoWildcards busTime2;
-    touchgfx::Image imageBus1;
-    touchgfx::Image imageBus2;
-    touchgfx::Container stock;
-    touchgfx::Box boxBlurStock;
-    touchgfx::Graph<22> graphStock;
-    touchgfx::GraphElementLine graphStockLine1;
-    touchgfx::PainterRGB565 graphStockLine1Painter;
-    touchgfx::GraphElementArea graphStockArea1;
-    touchgfx::PainterRGB565 graphStockArea1Painter;
-    touchgfx::TextAreaWithOneWildcard textStock;
-    touchgfx::TextAreaWithOneWildcard textStockValue;
     touchgfx::Box boxInfoBG;
     touchgfx::TextAreaWithOneWildcard textBattery;
     touchgfx::TextAreaWithTwoWildcards textClockUpper;
@@ -213,18 +213,24 @@ protected:
     touchgfx::Unicode::UnicodeChar textRegionBuffer[TEXTREGION_SIZE];
     static const uint16_t TEXTWEATHER_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textWeatherBuffer[TEXTWEATHER_SIZE];
-    static const uint16_t TEXTTIMERBUFFER1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
-    static const uint16_t TEXTTIMERBUFFER2_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textTimerBuffer2[TEXTTIMERBUFFER2_SIZE];
-    static const uint16_t BUSTIME1BUFFER1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar busTime1Buffer1[BUSTIME1BUFFER1_SIZE];
-    static const uint16_t BUSTIME2BUFFER1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar busTime2Buffer1[BUSTIME2BUFFER1_SIZE];
+    static const uint16_t BUSROUTE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar busRouteBuffer[BUSROUTE_SIZE];
+    static const uint16_t BUSSTATION_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar busStationBuffer[BUSSTATION_SIZE];
+    static const uint16_t BUSTIME1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar busTime1Buffer[BUSTIME1_SIZE];
+    static const uint16_t BUSTIME2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar busTime2Buffer[BUSTIME2_SIZE];
     static const uint16_t TEXTSTOCK_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textStockBuffer[TEXTSTOCK_SIZE];
     static const uint16_t TEXTSTOCKVALUE_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textStockValueBuffer[TEXTSTOCKVALUE_SIZE];
+    static const uint16_t TEXTTIMERBUFFER1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textTimerBuffer1[TEXTTIMERBUFFER1_SIZE];
+    static const uint16_t TEXTTIMERBUFFER2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textTimerBuffer2[TEXTTIMERBUFFER2_SIZE];
+    static const uint16_t TEXTBATTERY_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textBatteryBuffer[TEXTBATTERY_SIZE];
     static const uint16_t TEXTCLOCKUPPERBUFFER1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textClockUpperBuffer1[TEXTCLOCKUPPERBUFFER1_SIZE];
     static const uint16_t TEXTCLOCKUPPERBUFFER2_SIZE = 10;

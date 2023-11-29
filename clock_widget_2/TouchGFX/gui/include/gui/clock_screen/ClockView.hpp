@@ -40,6 +40,7 @@ protected:
 
     char wifiID[20];
     char ipAddress[20];
+    int battery;
     int background;
 
     // HOME WIDGET
@@ -83,8 +84,15 @@ protected:
     int alarmHour;
     int alarmMinute;
 
+    // STOCK WIDGET
     char stockName[10];
     char stockValue[10];
+
+    // BUS WIDGET
+    char busName[10];
+    int station;
+    int busPredictTime1;
+    int busPredictTime2;
 
     Callback<ClockView, const Gauge&, const ClickEvent&> gaugeClickCallback;
     void gaugeClickHandler(const Gauge& g, const ClickEvent& e);

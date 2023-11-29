@@ -33,7 +33,7 @@ ClockViewBase::ClockViewBase() :
 
     swipeContainerWidget.setXY(0, 0);
     swipeContainerWidget.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_LIGHT_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_OFF_NORMAL_ID), touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_WIDGETS_SWIPECONTAINER_MEDIUM_ON_NORMAL_ID));
-    swipeContainerWidget.setPageIndicatorXY(160, 250);
+    swipeContainerWidget.setPageIndicatorXY(170, 250);
     swipeContainerWidget.setSwipeCutoff(50);
     swipeContainerWidget.setEndSwipeElasticWidth(50);
 
@@ -181,6 +181,103 @@ ClockViewBase::ClockViewBase() :
     whether.add(imageLocation);
 
     swipeContainerWidget.add(whether);
+
+    Bus.setWidth(480);
+    Bus.setHeight(272);
+    boxBlurBus.setPosition(0, -1, 480, 274);
+    boxBlurBus.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurBus.setAlpha(150);
+    Bus.add(boxBlurBus);
+
+    busRoute.setPosition(58, 74, 168, 82);
+    busRoute.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    busRoute.setLinespacing(0);
+    Unicode::snprintf(busRouteBuffer, BUSROUTE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_7A6P).getText());
+    busRoute.setWildcard(busRouteBuffer);
+    busRoute.setTypedText(touchgfx::TypedText(T___SINGLEUSE_458W));
+    Bus.add(busRoute);
+
+    busStation.setPosition(58, 165, 123, 30);
+    busStation.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    busStation.setLinespacing(0);
+    Unicode::snprintf(busStationBuffer, BUSSTATION_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_UOZ8).getText());
+    busStation.setWildcard(busStationBuffer);
+    busStation.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LCF4));
+    Bus.add(busStation);
+
+    busTime1.setXY(255, 88);
+    busTime1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    busTime1.setLinespacing(0);
+    Unicode::snprintf(busTime1Buffer, BUSTIME1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_JREN).getText());
+    busTime1.setWildcard(busTime1Buffer);
+    busTime1.resizeToCurrentText();
+    busTime1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_05J5));
+    Bus.add(busTime1);
+
+    busTime2.setXY(370, 88);
+    busTime2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    busTime2.setLinespacing(0);
+    Unicode::snprintf(busTime2Buffer, BUSTIME2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_S0SF).getText());
+    busTime2.setWildcard(busTime2Buffer);
+    busTime2.resizeToCurrentText();
+    busTime2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BW3Y));
+    Bus.add(busTime2);
+
+    imageBus1.setXY(254, 136);
+    imageBus1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_MAPS_DEPARTURE_BOARD_65_65_FFFFFF_SVG_ID));
+    Bus.add(imageBus1);
+
+    imageBus2.setXY(367, 133);
+    imageBus2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_MAPS_DEPARTURE_BOARD_65_65_FFFFFF_SVG_ID));
+    Bus.add(imageBus2);
+
+    swipeContainerWidget.add(Bus);
+
+    stock.setWidth(480);
+    stock.setHeight(272);
+    boxBlurStock.setPosition(0, -1, 480, 274);
+    boxBlurStock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxBlurStock.setAlpha(150);
+    stock.add(boxBlurStock);
+
+    graphStock.setPosition(0, 83, 505, 189);
+    graphStock.setScaleX(1);
+    graphStock.setScaleY(1);
+    graphStock.setGraphAreaMargin(0, 0, 0, 0);
+    graphStock.setGraphAreaPadding(0, 0, 0, 0);
+    graphStock.setGraphRangeX(0, 21);
+    graphStock.setGraphRangeY(140, 160);
+    graphStockLine1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    graphStockLine1.setPainter(graphStockLine1Painter);
+    graphStockLine1.setLineWidth(2);
+    graphStock.addGraphElement(graphStockLine1);
+
+    graphStockArea1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    graphStockArea1.setPainter(graphStockArea1Painter);
+    graphStockArea1.setBaseline(0);
+    graphStockArea1.setAlpha(124);
+    graphStock.addGraphElement(graphStockArea1);
+
+
+    stock.add(graphStock);
+
+    textStock.setPosition(20, 43, 120, 37);
+    textStock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textStock.setLinespacing(0);
+    Unicode::snprintf(textStockBuffer, TEXTSTOCK_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AKOP).getText());
+    textStock.setWildcard(textStockBuffer);
+    textStock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A88N));
+    stock.add(textStock);
+
+    textStockValue.setPosition(20, 77, 120, 34);
+    textStockValue.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textStockValue.setLinespacing(0);
+    Unicode::snprintf(textStockValueBuffer, TEXTSTOCKVALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1D56).getText());
+    textStockValue.setWildcard(textStockValueBuffer);
+    textStockValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WA0J));
+    stock.add(textStockValue);
+
+    swipeContainerWidget.add(stock);
 
     StopWatch.setWidth(480);
     StopWatch.setHeight(272);
@@ -341,8 +438,11 @@ ClockViewBase::ClockViewBase() :
 
     swipeContainerWidget.add(Alarm);
 
-    calendar.setWidth(480);
-    calendar.setHeight(272);
+    swipeContainerWidget.setSelectedPage(0);
+    add(swipeContainerWidget);
+
+    calendar.setPosition(0, 0, 480, 272);
+    calendar.setVisible(false);
     boxBlurCal.setPosition(0, -1, 480, 274);
     boxBlurCal.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     boxBlurCal.setAlpha(150);
@@ -375,105 +475,7 @@ ClockViewBase::ClockViewBase() :
     textSchedule.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1ZAU));
     calendar.add(textSchedule);
 
-    swipeContainerWidget.add(calendar);
-
-    Bus.setWidth(480);
-    Bus.setHeight(272);
-    boxBlurBus.setPosition(0, -1, 480, 274);
-    boxBlurBus.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    boxBlurBus.setAlpha(150);
-    Bus.add(boxBlurBus);
-
-    busRoute.setXY(58, 74);
-    busRoute.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    busRoute.setLinespacing(0);
-    busRoute.setTypedText(touchgfx::TypedText(T___SINGLEUSE_458W));
-    Bus.add(busRoute);
-
-    busStation.setXY(88, 165);
-    busStation.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    busStation.setLinespacing(0);
-    busStation.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LCF4));
-    Bus.add(busStation);
-
-    busTime1.setXY(240, 88);
-    busTime1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    busTime1.setLinespacing(0);
-    touchgfx::Unicode::snprintf(busTime1Buffer1, BUSTIME1BUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_JREN).getText());
-    busTime1.setWildcard1(busTime1Buffer1);
-    busTime1.setWildcard2(touchgfx::TypedText(T___SINGLEUSE_1MSQ).getText());
-    busTime1.resizeToCurrentText();
-    busTime1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_05J5));
-    Bus.add(busTime1);
-
-    busTime2.setXY(353, 88);
-    busTime2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    busTime2.setLinespacing(0);
-    touchgfx::Unicode::snprintf(busTime2Buffer1, BUSTIME2BUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_S0SF).getText());
-    busTime2.setWildcard1(busTime2Buffer1);
-    busTime2.setWildcard2(touchgfx::TypedText(T___SINGLEUSE_G9NH).getText());
-    busTime2.resizeToCurrentText();
-    busTime2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BW3Y));
-    Bus.add(busTime2);
-
-    imageBus1.setXY(254, 136);
-    imageBus1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_MAPS_DEPARTURE_BOARD_65_65_FFFFFF_SVG_ID));
-    Bus.add(imageBus1);
-
-    imageBus2.setXY(367, 133);
-    imageBus2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_MAPS_DEPARTURE_BOARD_65_65_FFFFFF_SVG_ID));
-    Bus.add(imageBus2);
-
-    swipeContainerWidget.add(Bus);
-
-    stock.setWidth(480);
-    stock.setHeight(272);
-    boxBlurStock.setPosition(0, -1, 480, 274);
-    boxBlurStock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    boxBlurStock.setAlpha(150);
-    stock.add(boxBlurStock);
-
-    graphStock.setPosition(0, 83, 505, 189);
-    graphStock.setScaleX(1);
-    graphStock.setScaleY(1);
-    graphStock.setGraphAreaMargin(0, 0, 0, 0);
-    graphStock.setGraphAreaPadding(0, 0, 0, 0);
-    graphStock.setGraphRangeX(0, 21);
-    graphStock.setGraphRangeY(140, 160);
-    graphStockLine1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    graphStockLine1.setPainter(graphStockLine1Painter);
-    graphStockLine1.setLineWidth(2);
-    graphStock.addGraphElement(graphStockLine1);
-
-    graphStockArea1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    graphStockArea1.setPainter(graphStockArea1Painter);
-    graphStockArea1.setBaseline(0);
-    graphStockArea1.setAlpha(124);
-    graphStock.addGraphElement(graphStockArea1);
-
-
-    stock.add(graphStock);
-
-    textStock.setPosition(20, 43, 120, 37);
-    textStock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textStock.setLinespacing(0);
-    Unicode::snprintf(textStockBuffer, TEXTSTOCK_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AKOP).getText());
-    textStock.setWildcard(textStockBuffer);
-    textStock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A88N));
-    stock.add(textStock);
-
-    textStockValue.setPosition(20, 77, 120, 34);
-    textStockValue.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textStockValue.setLinespacing(0);
-    Unicode::snprintf(textStockValueBuffer, TEXTSTOCKVALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1D56).getText());
-    textStockValue.setWildcard(textStockValueBuffer);
-    textStockValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WA0J));
-    stock.add(textStockValue);
-
-    swipeContainerWidget.add(stock);
-
-    swipeContainerWidget.setSelectedPage(0);
-    add(swipeContainerWidget);
+    add(calendar);
 
     boxInfoBG.setPosition(0, 0, 480, 24);
     boxInfoBG.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -483,7 +485,8 @@ ClockViewBase::ClockViewBase() :
     textBattery.setXY(435, 0);
     textBattery.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textBattery.setLinespacing(0);
-    textBattery.setWildcard(touchgfx::TypedText(T___SINGLEUSE_OW5R).getText());
+    Unicode::snprintf(textBatteryBuffer, TEXTBATTERY_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_OW5R).getText());
+    textBattery.setWildcard(textBatteryBuffer);
     textBattery.resizeToCurrentText();
     textBattery.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6CI5));
     add(textBattery);

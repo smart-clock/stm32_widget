@@ -6,10 +6,16 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_UOZ8" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Station</Translation>
+      </Text>
+      <Text Id="__SingleUse_7A6P" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
       <Text Id="__SingleUse_29KG" Alignment="Left" TypographyId="Medium_25">
         <Translation Language="GB">99</Translation>
       </Text>
-      <Text Id="__SingleUse_EA8X" Alignment="Center" TypographyId="Light_60">
+      <Text Id="__SingleUse_EA8X" Alignment="Center" TypographyId="Medium_60">
         <Translation Language="GB">:&lt;ss&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_N4A5" Alignment="Left" TypographyId="DubaiBold_30">
@@ -123,20 +129,17 @@
       <Text Id="__SingleUse_XXQ4" Alignment="Center" TypographyId="Medium_25">
         <Translation Language="GB">&lt;mm&gt;/&lt;dd&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_TBRP" Alignment="Center" TypographyId="Light_60">
+      <Text Id="__SingleUse_TBRP" Alignment="Center" TypographyId="Medium_60">
         <Translation Language="GB">&lt;hh&gt;:&lt;mm&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_G9NH" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_S0SF" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_BW3Y" Alignment="Right" TypographyId="Medium_25">
-        <Translation Language="GB">&lt;min&gt;m &lt;sec&gt;s</Translation>
+        <Translation Language="GB">&lt;min&gt;m</Translation>
       </Text>
       <Text Id="__SingleUse_OW5R" Alignment="Left" TypographyId="DubaiBold_30">
-        <Translation Language="GB">99</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_6C3U" Alignment="Left" TypographyId="DubaiBold_30">
         <Translation Language="GB">99</Translation>
@@ -144,17 +147,14 @@
       <Text Id="__SingleUse_O7C8" Alignment="Left" TypographyId="DubaiBold_30">
         <Translation Language="GB">99</Translation>
       </Text>
-      <Text Id="__SingleUse_LCF4" Alignment="Center" TypographyId="DubaiBold_30">
-        <Translation Language="GB">29031</Translation>
-      </Text>
-      <Text Id="__SingleUse_1MSQ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">00</Translation>
+      <Text Id="__SingleUse_LCF4" Alignment="Left" TypographyId="DubaiBold_30">
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_JREN" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">00</Translation>
       </Text>
-      <Text Id="__SingleUse_458W" Alignment="Center" TypographyId="DubaiBold_70">
-        <Translation Language="GB">66-4</Translation>
+      <Text Id="__SingleUse_458W" Alignment="Left" TypographyId="DubaiBold_70">
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_YTIP" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">00</Translation>
@@ -211,7 +211,7 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_05J5" Alignment="Right" TypographyId="Medium_25">
-        <Translation Language="GB">&lt;min&gt;m &lt;sec&gt;s</Translation>
+        <Translation Language="GB">&lt;min&gt;m</Translation>
       </Text>
       <Text Id="__SingleUse_1ZAU" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">school</Translation>
@@ -228,7 +228,7 @@
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="DubaiBold_70" Font="DUBAI-BOLD.TTF" Size="70" Bpp="8" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
+    <Typography Id="DubaiBold_70" Font="DUBAI-BOLD.TTF" Size="70" Bpp="8" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0x0A-0x7E" />
     <Typography Id="Light_60" Font="DUBAI-LIGHT.TTF" Size="60" Bpp="8" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
     <Typography Id="DubaiBold_30" Font="DUBAI-BOLD.TTF" Size="30" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0-9" />
     <Typography Id="Medium_20_EN" Font="DUBAI-MEDIUM.TTF" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0x20-0x7E" />
@@ -237,7 +237,7 @@
     <Typography Id="Medium_25" Font="DUBAI-MEDIUM.TTF" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0x20-0x7E" />
     <Typography Id="Light_25" Font="DUBAI-LIGHT.TTF" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" />
     <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Medium_60" Font="DUBAI-MEDIUM.TTF" Size="60" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Medium_60" Font="DUBAI-MEDIUM.TTF" Size="60" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" />
     <Typography Id="Regular_70" Font="DUBAI-REGULAR.TTF" Size="70" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
     <Typography Id="Medium_25_EN" Font="DUBAI-MEDIUM.TTF" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x0A-0x7E" />
     <Typography Id="Bold_30_EN" Font="DUBAI-BOLD.TTF" Size="30" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x21-0x7E" />

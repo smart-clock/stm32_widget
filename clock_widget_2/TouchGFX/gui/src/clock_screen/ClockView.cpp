@@ -24,6 +24,11 @@ ClockView::ClockView() :
     this->alarmCleared = false;
 
     this->background = 0;
+    this->battery = 0;
+
+    this->station = 0;
+    this->busPredictTime1 = 0;
+    this->busPredictTime2 = 0;
 }
 
 void ClockView::setupScreen()
@@ -360,6 +365,14 @@ void ClockView::uart_Data(char *data)
 		Unicode::strncpy(textAreaIPBuffer, ipAddress, TEXTAREAIP_SIZE);
 		textAreaWiFi.invalidate();
     }
+    else if(esp2stmPacket[1] == 'B' && esp2stmPacket[2] == 'T')
+    {
+    	temp = esp2stmPacket.substr(4, 2);
+    	battery = stoi(temp);
+
+		Unicode::snprintf(textBatteryBuffer, TEXTBATTERY_SIZE, "%02d", battery);
+		textBattery.invalidate();
+    }
     else if(esp2stmPacket[1] == 'D' && esp2stmPacket[2] == 'A')
     {
         temp = esp2stmPacket.substr(9, 2);
@@ -531,6 +544,48 @@ void ClockView::uart_Data(char *data)
         imageClear.invalidate();
         imageCloud.invalidate();
         imageFog.invalidate();
+    }
+    else if(esp2stmPacket[1] == 'B' && esp2stmPacket[2] == 'S')
+    {
+    	// Bus Name
+    	esp2stmPacket.erase(0, 4);
+    	eofIndex = esp2stmPacket.find(',');
+    	temp = esp2stmPacket.substr(0, eofIndex);
+    	strncpy(busName, temp.c_str(), 10);
+
+    	// Station
+    	esp2stmPacket.erase(0, eofIndex + 1);
+    	eofIndex = esp2stmPacket.find(',');
+    	temp = esp2stmPacket.substr(0, eofIndex);
+    	station = stoi(temp);
+
+    	// Predict Time1
+    	esp2stmPacket.erase(0, eofIndex + 1);
+    	eofIndex = esp2stmPacket.find(',');
+    	temp = esp2stmPacket.substr(0, eofIndex);
+    	busPredictTime1 = stoi(temp);
+
+    	// Predict Time2
+    	esp2stmPacket.erase(0, eofIndex + 1);
+    	eofIndex = esp2stmPacket.find(',');
+    	temp = esp2stmPacket.substr(0, eofIndex);
+    	busPredictTime2 = stoi(temp);
+
+    	// Bus Name
+		Unicode::strncpy(busRouteBuffer, busName, BUSROUTE_SIZE);
+		busRoute.invalidate();
+
+    	// Station
+        Unicode::snprintf(busStationBuffer, BUSSTATION_SIZE, "%02d", station);
+        busStation.invalidate();
+
+        // Predict Time1
+        Unicode::snprintf(busTime1Buffer, BUSTIME1_SIZE, "%02d", busPredictTime1);
+        busTime1.invalidate();
+
+        // Predict Time2
+        Unicode::snprintf(busTime2Buffer, BUSTIME2_SIZE, "%02d", busPredictTime2);
+        busTime2.invalidate();
     }
     else if(esp2stmPacket[1] == 'S' && esp2stmPacket[2] == 'C')
     {
