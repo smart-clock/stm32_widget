@@ -42,6 +42,7 @@ protected:
     char ipAddress[20];
     int battery;
     int background;
+    int currentPage;
 
     // HOME WIDGET
     bool isTimeUpdated = false;

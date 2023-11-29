@@ -628,13 +628,15 @@ void ClockView::uart_Data(char *data)
     }
     else if(esp2stmPacket[1] == 'B' && esp2stmPacket[2] == 'U')
     {
+    	currentPage = swipeContainerWidget.getSelectedPage();
+
     	if(alarmActive) // Clear alarm
 		{
     		alarmActive = false;
     		alarmCleared = true;
     		presenter->clockToggleBuzzerOff();
 		}
-    	else // Change background
+    	else if(currentPage == 0)// Change background When HOME WIDGET
     	{
     		background++;
     		if(background > 2) background = 0;
@@ -661,6 +663,11 @@ void ClockView::uart_Data(char *data)
     		background1.invalidate();
     		background2.invalidate();
     		background3.invalidate();
+
+    	}
+    	else if(currentPage != 0) // Go HOME WIDGET
+    	{
+    		swipeContainerWidget.setSelectedPage(0);
     	}
     }
 

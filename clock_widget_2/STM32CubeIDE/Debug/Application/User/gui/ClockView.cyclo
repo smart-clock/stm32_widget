@@ -19,8 +19,8 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cp
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:882:16:static int touchgfx::CWRUtil::_angle(touchgfx::CWRUtil::Q5, touchgfx::CWRUtil::Q5, touchgfx::CWRUtil::Q5&)	3
 C:\ST\STM32CubeIDE_1.13.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/c++/11.3.1/bits/basic_string.h:6619:3:int std::__cxx11::stoi(const string&, std::size_t*, int)	3
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:3:1:ClockView::ClockView()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:667:1:cpp)	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:667:1:cpp)	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:674:1:cpp)	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:674:1:cpp)	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:34:6:virtual void ClockView::setupScreen()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:202:6:virtual void ClockView::toggleButtonOn()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:222:6:virtual void ClockView::toggleButtonAm()	2
@@ -30,4 +30,4 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cp
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:184:6:virtual void ClockView::buttonTimerMaxClicked()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:193:6:virtual void ClockView::bottonTimerMinClicked()	1
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:259:6:virtual void ClockView::handleDragEvent(const touchgfx::DragEvent&)	11
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:334:6:virtual void ClockView::uart_Data(char*)	29
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/clock_screen/ClockView.cpp:334:6:virtual void ClockView::uart_Data(char*)	30
