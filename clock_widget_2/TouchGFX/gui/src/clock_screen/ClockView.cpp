@@ -29,6 +29,8 @@ ClockView::ClockView() :
     this->station = 0;
     this->busPredictTime1 = 0;
     this->busPredictTime2 = 0;
+
+    this->alarmBuzzerTerm = 0;
 }
 
 void ClockView::setupScreen()
@@ -127,7 +129,19 @@ void ClockView::handleTickEvent()
     	}
     }
 
-    if(this->alarmActive) presenter->clockToggleBuzzer();
+    if(this->alarmActive)
+	{
+    	alarmBuzzerTerm++;
+    	if(alarmBuzzerTerm % 30 == 0)
+    	{
+    		presenter->clockToggleBuzzer();
+    	}
+	}
+    else
+    {
+    	alarmBuzzerTerm = 0;
+    	presenter->clockToggleBuzzerOff();
+    }
 
     // hourCurrent = presenter->getHour();
     // minuteCurrent = presenter->getMinute();
@@ -308,6 +322,8 @@ void ClockView::hourScrollWheelUpdateItem(alarmContainer& item, int16_t itemInde
 
 void ClockView::hourScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
 {
+	alarmCleared = false;
+
     item.setText(itemIndex);
     alarmHour = itemIndex - 1;
 
@@ -323,6 +339,8 @@ void ClockView::minuteScrollWheelUpdateItem(alarmContainer& item, int16_t itemIn
 
 void ClockView::minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex)
 {
+	alarmCleared = false;
+
     item.setText(itemIndex);
     alarmMinute = itemIndex - 1;
 
@@ -381,7 +399,6 @@ void ClockView::uart_Data(char *data)
         temp = esp2stmPacket.substr(12, 2);
         dateHome = stoi(temp);
 
-        // temp = esp2stmPacket.substr(15, 17) + "\0";
         dayHome[0] = data[15];
         dayHome[1] = data[16];
         dayHome[2] = data[17];
@@ -681,7 +698,6 @@ void ClockView::respondUserButton()
 	{
 		alarmActive = false;
 		alarmCleared = true;
-		presenter->clockToggleBuzzerOff();
 	}
 	else if(currentPage == 0)// Change background When HOME WIDGET
 	{

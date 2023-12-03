@@ -13,13 +13,13 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_UOZ8" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">29405</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_7A6P" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">66-4</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_29KG" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">30</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_EA8X" Alignment="Center" TypographyId="Medium_60">
         <Translation Language="GB">:&lt;ss&gt;</Translation>
@@ -31,13 +31,13 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_1D56" Alignment="Left" TypographyId="Bold_30_EN">
-        <Translation Language="GB">183.78</Translation>
+        <Translation Language="GB">000.00</Translation>
       </Text>
       <Text Id="__SingleUse_AKOP" Alignment="Left" TypographyId="Bold_30_EN">
-        <Translation Language="GB">AAPL</Translation>
+        <Translation Language="GB">STOCK</Translation>
       </Text>
       <Text Id="__SingleUse_PNB4" Alignment="Left" TypographyId="DubaiBold_70">
-        <Translation Language="GB">weather</Translation>
+        <Translation Language="GB">Weather</Translation>
       </Text>
       <Text Id="__SingleUse_RQJH" Alignment="Right" TypographyId="Medium_25">
         <Translation Language="GB">&lt;region&gt;</Translation>
@@ -67,7 +67,7 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_4YYQ" Alignment="Left" TypographyId="Medium_25_EN">
-        <Translation Language="GB">Tue</Translation>
+        <Translation Language="GB">DAY</Translation>
       </Text>
       <Text Id="__SingleUse_CGY4" Alignment="Left" TypographyId="Medium_20_EN">
         <Translation Language="GB">New Text</Translation>
@@ -94,13 +94,13 @@
         <Translation Language="GB">WiFi</Translation>
       </Text>
       <Text Id="__SingleUse_PX5Y" Alignment="Left" TypographyId="DubaiBold_70">
-        <Translation Language="GB">Yongin</Translation>
+        <Translation Language="GB">City</Translation>
       </Text>
       <Text Id="__SingleUse_AQKR" Alignment="Center" TypographyId="DubaiBold_70">
         <Translation Language="GB">C</Translation>
       </Text>
       <Text Id="__SingleUse_5ECF" Alignment="Left" TypographyId="DubaiBold_20">
-        <Translation Language="GB">03</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_VQ07" Alignment="Center" TypographyId="DubaiBold_20">
         <Translation Language="GB">O</Translation>
@@ -115,22 +115,22 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_FUME" Alignment="Left" TypographyId="DubaiBold_30">
-        <Translation Language="GB">Mon</Translation>
+        <Translation Language="GB">DAY</Translation>
       </Text>
       <Text Id="__SingleUse_3ZNK" Alignment="Center" TypographyId="Medium_20_EN">
         <Translation Language="GB">&lt;day&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_L5KR" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">28</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_1INA" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">11</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_IB3Y" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">15</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_3NT3" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">03</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_XXQ4" Alignment="Center" TypographyId="Medium_25">
         <Translation Language="GB">&lt;mm&gt;/&lt;dd&gt;</Translation>
@@ -139,25 +139,25 @@
         <Translation Language="GB">&lt;hh&gt;:&lt;mm&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_S0SF" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">15</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_BW3Y" Alignment="Right" TypographyId="Medium_25">
         <Translation Language="GB">&lt;min&gt;m</Translation>
       </Text>
       <Text Id="__SingleUse_OW5R" Alignment="Left" TypographyId="DubaiBold_30">
-        <Translation Language="GB">82</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_6C3U" Alignment="Left" TypographyId="DubaiBold_30">
-        <Translation Language="GB">15</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_O7C8" Alignment="Left" TypographyId="DubaiBold_30">
-        <Translation Language="GB">03</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_LCF4" Alignment="Left" TypographyId="DubaiBold_30">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_JREN" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">6</Translation>
+        <Translation Language="GB">00</Translation>
       </Text>
       <Text Id="__SingleUse_458W" Alignment="Left" TypographyId="DubaiBold_70">
         <Translation Language="GB">&lt;value&gt;</Translation>

@@ -133,7 +133,7 @@ ClockViewBase::ClockViewBase() :
     textRegion.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AL19));
     whether.add(textRegion);
 
-    textWeather.setPosition(267, 47, 188, 30);
+    textWeather.setPosition(268, 58, 188, 30);
     textWeather.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textWeather.setLinespacing(0);
     Unicode::snprintf(textWeatherBuffer, TEXTWEATHER_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_PNB4).getText());
@@ -196,7 +196,7 @@ ClockViewBase::ClockViewBase() :
     busRoute.setTypedText(touchgfx::TypedText(T___SINGLEUSE_458W));
     Bus.add(busRoute);
 
-    busStation.setPosition(58, 165, 123, 30);
+    busStation.setPosition(60, 165, 123, 30);
     busStation.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     busStation.setLinespacing(0);
     Unicode::snprintf(busStationBuffer, BUSSTATION_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_UOZ8).getText());
@@ -204,7 +204,7 @@ ClockViewBase::ClockViewBase() :
     busStation.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LCF4));
     Bus.add(busStation);
 
-    busTime1.setXY(255, 88);
+    busTime1.setXY(262, 94);
     busTime1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     busTime1.setLinespacing(0);
     Unicode::snprintf(busTime1Buffer, BUSTIME1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_JREN).getText());
@@ -213,7 +213,7 @@ ClockViewBase::ClockViewBase() :
     busTime1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_05J5));
     Bus.add(busTime1);
 
-    busTime2.setXY(370, 88);
+    busTime2.setXY(371, 96);
     busTime2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     busTime2.setLinespacing(0);
     Unicode::snprintf(busTime2Buffer, BUSTIME2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_S0SF).getText());

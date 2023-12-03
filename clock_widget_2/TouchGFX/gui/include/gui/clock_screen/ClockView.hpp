@@ -85,6 +85,7 @@ protected:
     bool alarmCleared; // 알림 클리어
     int alarmHour;
     int alarmMinute;
+    int alarmBuzzerTerm;
 
     // STOCK WIDGET
     char stockName[10];
