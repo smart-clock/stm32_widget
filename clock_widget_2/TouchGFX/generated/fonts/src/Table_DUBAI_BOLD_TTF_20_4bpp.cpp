@@ -4,7 +4,8 @@
 
 FONT_TABLE_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::GlyphNode glyphs_DUBAI_BOLD_TTF_20_4bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE = {
-    {     0, 0x002F,  10,  18,  15,   0,  11,   0,   4, 0x00 }, // slash
+    {     0, 0x0020,   0,   0,   0,   0,   5,   0,   0, 0x00 }, // space
+    {     0, 0x002F,  10,  18,  15,   0,  11,   0,   5, 0x00 }, // slash
     {    90, 0x0030,  11,  13,  13,   0,  11,   0,   0, 0x00 }, // zero
     {   168, 0x0031,   9,  13,  13,   1,  11,   0,   0, 0x00 }, // one
     {   233, 0x0032,  10,  13,  13,   0,  11,   0,   0, 0x00 }, // two
@@ -15,13 +16,18 @@ KEEP extern const touchgfx::GlyphNode glyphs_DUBAI_BOLD_TTF_20_4bpp[] FONT_TABLE
     {   584, 0x0037,  10,  13,  13,   0,  11,   0,   0, 0x00 }, // seven
     {   649, 0x0038,  11,  13,  13,   0,  11,   0,   0, 0x00 }, // eight
     {   727, 0x0039,  10,  13,  13,   0,  11,   0,   0, 0x00 }, // nine
-    {   792, 0x003F,   9,  13,  13,   0,   9,   4,   1, 0x00 }, // question
-    {   857, 0x0041,  13,  13,  13,   0,  13,   5,   4, 0x00 }, // A
-    {   948, 0x0046,  10,  13,  13,   1,  11,   0,   0, 0x00 }, // F
-    {  1013, 0x004D,  15,  13,  13,   1,  17,   0,   0, 0x00 }, // M
-    {  1117, 0x004E,  12,  13,  13,   1,  14,   0,   0, 0x00 }, // N
-    {  1195, 0x004F,  14,  13,  13,   0,  15,   9,   1, 0x00 }, // O
-    {  1286, 0x0050,  11,  13,  13,   1,  12,   0,   0, 0x00 }  // P
+    {   792, 0x003F,   9,  13,  13,   0,   9,   5,   1, 0x00 }, // question
+    {   857, 0x0041,  13,  13,  13,   0,  13,   6,   4, 0x00 }, // A
+    {   948, 0x0044,  12,  13,  13,   1,  14,   0,   0, 0x00 }, // D
+    {  1026, 0x0046,  10,  13,  13,   1,  11,   0,   0, 0x00 }, // F
+    {  1091, 0x0048,  12,  13,  13,   1,  14,   0,   0, 0x00 }, // H
+    {  1169, 0x004D,  15,  13,  13,   1,  17,   0,   0, 0x00 }, // M
+    {  1273, 0x004E,  12,  13,  13,   1,  14,   0,   0, 0x00 }, // N
+    {  1351, 0x004F,  14,  13,  13,   0,  15,  10,   1, 0x00 }, // O
+    {  1442, 0x0050,  11,  13,  13,   1,  12,   0,   0, 0x00 }, // P
+    {  1520, 0x0057,  19,  13,  13,   0,  19,   0,   0, 0x00 }, // W
+    {  1650, 0x006D,  14,   9,   9,   1,  16,  11,   1, 0x00 }, // m
+    {  1713, 0x0073,   9,   9,   9,   0,   9,  12,   1, 0x00 }  // s
 };
 
 // DUBAI_BOLD_TTF_20_4bpp
@@ -134,6 +140,6 @@ touchgfx::GeneratedFont& getFont_DUBAI_BOLD_TTF_20_4bpp();
 
 touchgfx::GeneratedFont& getFont_DUBAI_BOLD_TTF_20_4bpp()
 {
-    static touchgfx::GeneratedFont DUBAI_BOLD_TTF_20_4bpp(glyphs_DUBAI_BOLD_TTF_20_4bpp, 18, 23, 20, 0, 0, 4, 1, 0, 0, unicodes_DUBAI_BOLD_TTF_20_4bpp, kerning_DUBAI_BOLD_TTF_20_4bpp, 63, 0, 0, &DUBAI_BOLD_TTF_contextualFormsTable);
+    static touchgfx::GeneratedFont DUBAI_BOLD_TTF_20_4bpp(glyphs_DUBAI_BOLD_TTF_20_4bpp, 24, 23, 20, 0, 0, 4, 1, 0, 0, unicodes_DUBAI_BOLD_TTF_20_4bpp, kerning_DUBAI_BOLD_TTF_20_4bpp, 63, 0, 0, &DUBAI_BOLD_TTF_contextualFormsTable);
     return DUBAI_BOLD_TTF_20_4bpp;
 }

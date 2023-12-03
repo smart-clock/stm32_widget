@@ -42,7 +42,8 @@ void ClockView::setupScreen()
     stopWatchSeconds = digitalClock.getCurrentSecond();
 
     gaugeTimer.setClickAction(gaugeClickCallback);
-    graphStock.clear();
+    // graphStock.clear();
+    dynamicStockGraph.clear();
 }
 
 void ClockView::tearDownScreen()
@@ -632,61 +633,55 @@ void ClockView::uart_Data(char *data)
     	eofIndex = esp2stmPacket.find(',');
     	esp2stmPacket.erase(0, eofIndex + 1); // only for IBM (3 charactor)
 
+        int stockMonth[22] = {};
+        int stockMin = 1000;
+        int stockMax = 0;
+
     	for(int i = 21; i > 0; i--)
     	{
     		eofIndex = esp2stmPacket.find(',');
     		temp = esp2stmPacket.substr(0, eofIndex);
     		esp2stmPacket.erase(0, eofIndex + 1);
-    		graphStock.addDataPoint(i, stoi(temp));
-    	}
+    		
+            // graphStock.addDataPoint(i, stoi(temp));
 
+            stockMonth[i] = stoi(temp);
+    	}
+        
 		eofIndex = esp2stmPacket.find('\r');
 		temp = esp2stmPacket.substr(0, eofIndex);
-		graphStock.addDataPoint(0, stoi(temp));
-    }
-    else if(esp2stmPacket[1] == 'B' && esp2stmPacket[2] == 'U')
-    {
-//    	currentPage = swipeContainerWidget.getSelectedPage();
-//
-//    	if(alarmActive) // Clear alarm
-//		{
-//    		alarmActive = false;
-//    		alarmCleared = true;
-//    		presenter->clockToggleBuzzerOff();
-//		}
-//    	else if(currentPage == 0)// Change background When HOME WIDGET
-//    	{
-//    		background++;
-//    		if(background > 2) background = 0;
-//    		switch(background)
-//    		{
-//    		    case 0 :
-//    		    	background1.setVisible(true);
-//    		    	background2.setVisible(false);
-//    		    	background3.setVisible(false);
-//    		        break;
-//    		    case 1 :
-//    		    	background1.setVisible(false);
-//    		    	background2.setVisible(true);
-//    		    	background3.setVisible(false);
-//    		        break;
-//    		    case 2 :
-//    		    	background1.setVisible(false);
-//    		    	background2.setVisible(false);
-//    		    	background3.setVisible(true);
-//    		    	break;
-//    		    default :
-//    		    	break;
-//    		}
-//    		background1.invalidate();
-//    		background2.invalidate();
-//    		background3.invalidate();
-//
-//    	}
-//    	else if(currentPage != 0) // Go HOME WIDGET
-//    	{
-//    		swipeContainerWidget.setSelectedPage(0);
-//    	}
+        stockMonth[0] = stoi(temp);
+		// graphStock.addDataPoint(0, stoi(temp));
+        
+
+        for(int i = 0; i < 22; i++)
+        {
+            if(stockMin > stockMonth[i]) stockMin = stockMonth[i];
+            if(stockMax < stockMonth[i]) stockMax = stockMonth[i];
+        }
+
+        int stockRangeYMin = 0;
+        int stockRangeYMax = 0;
+
+        stockRangeYMin = (stockMin / 10) * 10;
+        stockRangeYMax = ((stockMax + 9) / 10) * 10;
+
+        if((stockMax + 5) >= stockRangeYMax)
+        {
+
+        }
+        else
+        {
+            stockRangeYMax -= 5;
+        }
+
+        dynamicStockGraph.setGraphRangeY(stockRangeYMin, stockRangeYMax);
+        dynamicStockGraph.invalidate();
+
+        for(int i = 0; i < 22; i++)
+        {
+            dynamicStockGraph.addDataPoint(stockMonth[i]);
+        }
     }
 }
 

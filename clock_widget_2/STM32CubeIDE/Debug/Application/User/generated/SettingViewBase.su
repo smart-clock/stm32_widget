@@ -41,4 +41,4 @@ C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/setti
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:36:7:touchgfx::Widget::Widget()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	8	static
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/setting_screen/SettingViewBase.cpp:9:1:SettingViewBase::SettingViewBase()	104	static
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/generated/gui_generated/src/setting_screen/SettingViewBase.cpp:9:1:SettingViewBase::SettingViewBase()	96	static

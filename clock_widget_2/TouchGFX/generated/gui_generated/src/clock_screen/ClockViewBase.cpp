@@ -239,7 +239,92 @@ ClockViewBase::ClockViewBase() :
     boxBlurStock.setAlpha(150);
     stock.add(boxBlurStock);
 
-    graphStock.setPosition(0, 83, 505, 189);
+    textStock.setPosition(14, 40, 96, 35);
+    textStock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textStock.setLinespacing(0);
+    Unicode::snprintf(textStockBuffer, TEXTSTOCK_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AKOP).getText());
+    textStock.setWildcard(textStockBuffer);
+    textStock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A88N));
+    stock.add(textStock);
+
+    textStockValue.setXY(115, 45);
+    textStockValue.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textStockValue.setLinespacing(0);
+    Unicode::snprintf(textStockValueBuffer, TEXTSTOCKVALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1D56).getText());
+    textStockValue.setWildcard(textStockValueBuffer);
+    textStockValue.resizeToCurrentText();
+    textStockValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WA0J));
+    stock.add(textStockValue);
+
+    textStock1ww.setXY(262, 55);
+    textStock1ww.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textStock1ww.setLinespacing(0);
+    textStock1ww.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SDMX));
+    stock.add(textStock1ww);
+
+    textStock1w.setXY(407, 55);
+    textStock1w.setColor(touchgfx::Color::getColorFromRGB(255, 140, 69));
+    textStock1w.setLinespacing(0);
+    textStock1w.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IDGA));
+    stock.add(textStock1w);
+
+    dynamicStockGraph.setPosition(6, 78, 480, 207);
+    dynamicStockGraph.setScale(1);
+    dynamicStockGraph.setGraphRangeX(0, 21);
+    dynamicStockGraph.setXAxisFactor(1);
+    dynamicStockGraph.setXAxisOffset(0);
+    dynamicStockGraph.setGraphAreaMargin(20, 20, 20, 20);
+    dynamicStockGraph.setGraphAreaPadding(0, 10, 0, 0);
+    dynamicStockGraph.setGraphRangeY(100, 200);
+    dynamicStockGraphMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    dynamicStockGraphMajorYAxisGrid.setInterval(5);
+    dynamicStockGraphMajorYAxisGrid.setLineWidth(1);
+    dynamicStockGraphMajorYAxisGrid.setScale(1);
+    dynamicStockGraph.addGraphElement(dynamicStockGraphMajorYAxisGrid);
+
+    dynamicStockGraphMajorYAxisLabel.setInterval(5);
+    dynamicStockGraphMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_FX94));
+    dynamicStockGraphMajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    dynamicStockGraphMajorYAxisLabel.setScale(1);
+    dynamicStockGraph.addLeftElement(dynamicStockGraphMajorYAxisLabel);
+
+    dynamicStockGraphLine1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    dynamicStockGraphLine1.setPainter(dynamicStockGraphLine1Painter);
+    dynamicStockGraphLine1.setLineWidth(2);
+    dynamicStockGraph.addGraphElement(dynamicStockGraphLine1);
+
+    dynamicStockGraphArea1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    dynamicStockGraphArea1.setPainter(dynamicStockGraphArea1Painter);
+    dynamicStockGraphArea1.setBaseline(0);
+    dynamicStockGraphArea1.setAlpha(124);
+    dynamicStockGraph.addGraphElement(dynamicStockGraphArea1);
+
+
+    dynamicStockGraph.addDataPoint(143.83963f);
+    dynamicStockGraph.addDataPoint(131.71926f);
+    dynamicStockGraph.addDataPoint(147.30796f);
+    dynamicStockGraph.addDataPoint(109.20623f);
+    dynamicStockGraph.addDataPoint(160.96194f);
+    dynamicStockGraph.addDataPoint(184.61124f);
+    dynamicStockGraph.addDataPoint(148.55113f);
+    dynamicStockGraph.addDataPoint(175.90581f);
+    dynamicStockGraph.addDataPoint(135.85651f);
+    dynamicStockGraph.addDataPoint(105.66406f);
+    dynamicStockGraph.addDataPoint(158.44101f);
+    dynamicStockGraph.addDataPoint(142.76025f);
+    dynamicStockGraph.addDataPoint(163.87894f);
+    dynamicStockGraph.addDataPoint(195.9317f);
+    dynamicStockGraph.addDataPoint(133.41055f);
+    dynamicStockGraph.addDataPoint(138.44014f);
+    dynamicStockGraph.addDataPoint(140.82531f);
+    dynamicStockGraph.addDataPoint(110.45153f);
+    dynamicStockGraph.addDataPoint(173.57067f);
+    dynamicStockGraph.addDataPoint(176.99343f);
+    dynamicStockGraph.addDataPoint(150.22465f);
+    dynamicStockGraph.addDataPoint(176.91443f);
+    stock.add(dynamicStockGraph);
+
+    graphStock.setPosition(0, -206, 505, 189);
     graphStock.setScaleX(1);
     graphStock.setScaleY(1);
     graphStock.setGraphAreaMargin(0, 0, 0, 0);
@@ -259,22 +344,6 @@ ClockViewBase::ClockViewBase() :
 
 
     stock.add(graphStock);
-
-    textStock.setPosition(20, 43, 120, 37);
-    textStock.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textStock.setLinespacing(0);
-    Unicode::snprintf(textStockBuffer, TEXTSTOCK_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AKOP).getText());
-    textStock.setWildcard(textStockBuffer);
-    textStock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A88N));
-    stock.add(textStock);
-
-    textStockValue.setPosition(20, 77, 120, 34);
-    textStockValue.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textStockValue.setLinespacing(0);
-    Unicode::snprintf(textStockValueBuffer, TEXTSTOCKVALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1D56).getText());
-    textStockValue.setWildcard(textStockValueBuffer);
-    textStockValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WA0J));
-    stock.add(textStockValue);
 
     swipeContainerWidget.add(stock);
 
@@ -437,7 +506,7 @@ ClockViewBase::ClockViewBase() :
 
     swipeContainerWidget.add(Alarm);
 
-    swipeContainerWidget.setSelectedPage(0);
+    swipeContainerWidget.setSelectedPage(3);
     add(swipeContainerWidget);
 
     calendar.setPosition(0, 0, 480, 272);

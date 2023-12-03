@@ -14,9 +14,12 @@
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/graph/Graph.hpp>
+#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
+#include <touchgfx/widgets/graph/GraphLabels.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/graph/Graph.hpp>
+#include <touchgfx/mixins/Draggable.hpp>
 #include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/Gauge.hpp>
@@ -133,13 +136,22 @@ protected:
     touchgfx::Image imageBus2;
     touchgfx::Container stock;
     touchgfx::Box boxBlurStock;
-    touchgfx::Graph<22> graphStock;
+    touchgfx::TextAreaWithOneWildcard textStock;
+    touchgfx::TextAreaWithOneWildcard textStockValue;
+    touchgfx::TextArea textStock1ww;
+    touchgfx::TextArea textStock1w;
+    touchgfx::GraphWrapAndClear<22> dynamicStockGraph;
+    touchgfx::GraphElementGridY dynamicStockGraphMajorYAxisGrid;
+    touchgfx::GraphLabelsY dynamicStockGraphMajorYAxisLabel;
+    touchgfx::GraphElementLine dynamicStockGraphLine1;
+    touchgfx::PainterRGB565 dynamicStockGraphLine1Painter;
+    touchgfx::GraphElementArea dynamicStockGraphArea1;
+    touchgfx::PainterRGB565 dynamicStockGraphArea1Painter;
+    touchgfx::Draggable< touchgfx::Graph<22> > graphStock;
     touchgfx::GraphElementLine graphStockLine1;
     touchgfx::PainterRGB565 graphStockLine1Painter;
     touchgfx::GraphElementArea graphStockArea1;
     touchgfx::PainterRGB565 graphStockArea1Painter;
-    touchgfx::TextAreaWithOneWildcard textStock;
-    touchgfx::TextAreaWithOneWildcard textStockValue;
     touchgfx::Container StopWatch;
     touchgfx::Box boxBlurStop;
     touchgfx::DigitalClock digitalClock;
