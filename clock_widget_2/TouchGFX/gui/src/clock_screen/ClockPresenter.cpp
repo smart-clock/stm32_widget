@@ -31,3 +31,8 @@ void ClockPresenter::clockToggleBuzzerOff()
 {
     model->hwToggleBuzzerOff();
 }
+
+void ClockPresenter::userButton()
+{
+	view.respondUserButton();
+}

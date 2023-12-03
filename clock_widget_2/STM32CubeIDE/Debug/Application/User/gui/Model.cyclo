@@ -1,4 +1,4 @@
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/model/Model.cpp:18:1:Model::Model()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/model/Model.cpp:24:6:void Model::tick()	3
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/model/Model.cpp:38:6:void Model::hwToggleBuzzer()	1
-C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/model/Model.cpp:45:6:void Model::hwToggleBuzzerOff()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/model/Model.cpp:20:1:Model::Model()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/model/Model.cpp:26:6:void Model::tick()	4
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/model/Model.cpp:45:6:void Model::hwToggleBuzzer()	1
+C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/model/Model.cpp:52:6:void Model::hwToggleBuzzerOff()	1

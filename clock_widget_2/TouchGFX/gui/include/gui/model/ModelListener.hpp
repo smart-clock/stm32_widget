@@ -16,6 +16,7 @@ public:
     }
 
      virtual void uart_Data(char *data) {}; // {} 있어야 uart_Date define 됨
+     virtual void userButton() {};
 protected:
     Model* model;
 };

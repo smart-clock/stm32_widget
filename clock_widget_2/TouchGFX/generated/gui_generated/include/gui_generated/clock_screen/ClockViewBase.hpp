@@ -180,6 +180,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard textDayUpper;
     touchgfx::TextAreaWithTwoWildcards textAlarm;
     touchgfx::TextAreaWithOneWildcard textAlarmAMPM;
+    touchgfx::TextAreaWithOneWildcard textAlarmAMPM_1;
     touchgfx::Image imageAlarmOff;
     touchgfx::Image imageAlarmOn;
     touchgfx::ModalWindow modalWindowSetting;
@@ -243,6 +244,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textAlarmBuffer2[TEXTALARMBUFFER2_SIZE];
     static const uint16_t TEXTALARMAMPM_SIZE = 4;
     touchgfx::Unicode::UnicodeChar textAlarmAMPMBuffer[TEXTALARMAMPM_SIZE];
+    static const uint16_t TEXTALARMAMPM_1_SIZE = 4;
+    touchgfx::Unicode::UnicodeChar textAlarmAMPM_1Buffer[TEXTALARMAMPM_1_SIZE];
     static const uint16_t TEXTAREAIP_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textAreaIPBuffer[TEXTAREAIP_SIZE];
     static const uint16_t TEXTAREAWIFI_SIZE = 20;

@@ -1,4 +1,5 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:19:virtual void ModelListener::uart_Data(char*)	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:19:19:virtual void ModelListener::userButton()	0	static
 ../../TouchGFX/gui/include/gui/setting_screen/SettingPresenter.hpp:28:13:SettingPresenter::~SettingPresenter()	0	static
 C:/Github/stm32_widget/clock_widget_2/TouchGFX/gui/src/setting_screen/SettingPresenter.cpp:10:6:virtual void SettingPresenter::activate()	0	static
 ../../TouchGFX/gui/include/gui/setting_screen/SettingPresenter.hpp:28:13:virtual SettingPresenter::~SettingPresenter()	8	static

@@ -612,7 +612,8 @@ void ClockView::uart_Data(char *data)
     }
     else if(esp2stmPacket[1] == 'S' && esp2stmPacket[2] == 'M')
     {
-    	esp2stmPacket.erase(0, 8); // only for IBM (3 charactor)
+    	eofIndex = esp2stmPacket.find(',');
+    	esp2stmPacket.erase(0, eofIndex + 1); // only for IBM (3 charactor)
 
     	for(int i = 21; i > 0; i--)
     	{
@@ -628,47 +629,91 @@ void ClockView::uart_Data(char *data)
     }
     else if(esp2stmPacket[1] == 'B' && esp2stmPacket[2] == 'U')
     {
-    	currentPage = swipeContainerWidget.getSelectedPage();
-
-    	if(alarmActive) // Clear alarm
-		{
-    		alarmActive = false;
-    		alarmCleared = true;
-    		presenter->clockToggleBuzzerOff();
-		}
-    	else if(currentPage == 0)// Change background When HOME WIDGET
-    	{
-    		background++;
-    		if(background > 2) background = 0;
-    		switch(background)
-    		{
-    		    case 0 :
-    		    	background1.setVisible(true);
-    		    	background2.setVisible(false);
-    		    	background3.setVisible(false);
-    		        break;
-    		    case 1 :
-    		    	background1.setVisible(false);
-    		    	background2.setVisible(true);
-    		    	background3.setVisible(false);
-    		        break;
-    		    case 2 :
-    		    	background1.setVisible(false);
-    		    	background2.setVisible(false);
-    		    	background3.setVisible(true);
-    		    	break;
-    		    default :
-    		    	break;
-    		}
-    		background1.invalidate();
-    		background2.invalidate();
-    		background3.invalidate();
-
-    	}
-    	else if(currentPage != 0) // Go HOME WIDGET
-    	{
-    		swipeContainerWidget.setSelectedPage(0);
-    	}
+//    	currentPage = swipeContainerWidget.getSelectedPage();
+//
+//    	if(alarmActive) // Clear alarm
+//		{
+//    		alarmActive = false;
+//    		alarmCleared = true;
+//    		presenter->clockToggleBuzzerOff();
+//		}
+//    	else if(currentPage == 0)// Change background When HOME WIDGET
+//    	{
+//    		background++;
+//    		if(background > 2) background = 0;
+//    		switch(background)
+//    		{
+//    		    case 0 :
+//    		    	background1.setVisible(true);
+//    		    	background2.setVisible(false);
+//    		    	background3.setVisible(false);
+//    		        break;
+//    		    case 1 :
+//    		    	background1.setVisible(false);
+//    		    	background2.setVisible(true);
+//    		    	background3.setVisible(false);
+//    		        break;
+//    		    case 2 :
+//    		    	background1.setVisible(false);
+//    		    	background2.setVisible(false);
+//    		    	background3.setVisible(true);
+//    		    	break;
+//    		    default :
+//    		    	break;
+//    		}
+//    		background1.invalidate();
+//    		background2.invalidate();
+//    		background3.invalidate();
+//
+//    	}
+//    	else if(currentPage != 0) // Go HOME WIDGET
+//    	{
+//    		swipeContainerWidget.setSelectedPage(0);
+//    	}
     }
+}
 
+void ClockView::respondUserButton()
+{
+	currentPage = swipeContainerWidget.getSelectedPage();
+
+	if(alarmActive) // Clear alarm
+	{
+		alarmActive = false;
+		alarmCleared = true;
+		presenter->clockToggleBuzzerOff();
+	}
+	else if(currentPage == 0)// Change background When HOME WIDGET
+	{
+		background++;
+		if(background > 2) background = 0;
+		switch(background)
+		{
+		    case 0 :
+		    	background1.setVisible(true);
+		    	background2.setVisible(false);
+		    	background3.setVisible(false);
+		        break;
+		    case 1 :
+		    	background1.setVisible(false);
+		    	background2.setVisible(true);
+		    	background3.setVisible(false);
+		        break;
+		    case 2 :
+		    	background1.setVisible(false);
+		    	background2.setVisible(false);
+		    	background3.setVisible(true);
+		    	break;
+		    default :
+		    	break;
+		}
+		background1.invalidate();
+		background2.invalidate();
+		background3.invalidate();
+
+	}
+	else if(currentPage != 0) // Go HOME WIDGET
+	{
+		swipeContainerWidget.setSelectedPage(0);
+	}
 }

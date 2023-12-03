@@ -5,11 +5,13 @@
 #include "main.h"
 #include "cmsis_os2.h"
 #include <cstring>
+#include <stdbool.h>
 
 extern "C"
 {
 	extern osMessageQueueId_t uartQueueHandle;
 	uartData_t *uartData_r;
+	extern bool button;
 	extern void toggleBuzzer(void);
 	extern void toggleBuzzerOff(void);
 }
@@ -31,6 +33,11 @@ void Model::tick()
 			strncpy(RData, uartData_r->Data, uartData_r->size);
 			modelListener->uart_Data(RData);
 		}
+	}
+	if(button)
+	{
+		modelListener->userButton();
+		button = false;
 	}
 #endif
 }

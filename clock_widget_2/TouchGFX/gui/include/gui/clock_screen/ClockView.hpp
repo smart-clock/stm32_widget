@@ -35,6 +35,7 @@ public:
     virtual void minuteScrollWheelUpdateCenterItem(alarmCenterContainer& item, int16_t itemIndex);
 
     virtual void uart_Data(char *data);
+    void respondUserButton();
 protected:
     string esp2stmPacket;
 

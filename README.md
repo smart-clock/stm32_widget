@@ -1,15 +1,16 @@
 # smart_clock
 
+# Pin
+
+- D0(PC7) : USART6 RX (ESP32 P05)
+- D1(PC6) : USART6 TX (ESP32 P04)
+- D2(PG6) : button
+- D7(PI3) : buzzer
+
 ## Protocol
 
 1. 모든 데이터는 `char` 타입
 2. UART BAUDRATE `115200`
-
-### STM -> ESP
-
-| SOF | P_ID | DATA (ex) | EOF  | 설명                                  | 주기  |
-| --- | ---- | --------- | ---- | ------------------------------------- | ----- |
-| *   | BZ^  | 1         | '\n' | 0 : Buzzer Off <br> 1 : Buzzer Toggle | Event |
 
 ### ESP -> STM
 

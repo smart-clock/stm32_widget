@@ -1,8 +1,9 @@
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:763:6:StartDefaultTask	1
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:126:13:toggleBuzzer	1
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:131:13:toggleBuzzerOff	1
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:144:6:HAL_UARTEx_RxEventCallback	2
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:272:6:SystemClock_Config	1
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:164:5:main	3
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:821:6:HAL_TIM_PeriodElapsedCallback	2
-C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:838:6:Error_Handler	1
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:773:6:StartDefaultTask	1
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:127:13:toggleBuzzer	1
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:132:13:toggleBuzzerOff	1
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:146:6:HAL_UARTEx_RxEventCallback	2
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:274:6:SystemClock_Config	1
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:166:5:main	3
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:756:6:HAL_GPIO_EXTI_Callback	2
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:831:6:HAL_TIM_PeriodElapsedCallback	2
+C:/Github/stm32_widget/clock_widget_2/Core/Src/main.c:848:6:Error_Handler	1

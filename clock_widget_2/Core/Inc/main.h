@@ -77,8 +77,9 @@ typedef struct
 #define RENDER_TIME_GPIO_Port GPIOA
 #define LCD_DISP_Pin GPIO_PIN_12
 #define LCD_DISP_GPIO_Port GPIOI
-#define MCU_ACTIVE_Pin GPIO_PIN_6
-#define MCU_ACTIVE_GPIO_Port GPIOG
+#define BUTTON_Pin GPIO_PIN_6
+#define BUTTON_GPIO_Port GPIOG
+#define BUTTON_EXTI_IRQn EXTI9_5_IRQn
 
 /* USER CODE BEGIN Private defines */
 

@@ -112,7 +112,7 @@
                     "Name": "textHomeDay",
                     "X": 255,
                     "Y": 160,
-                    "Width": 47,
+                    "Width": 37,
                     "Height": 30,
                     "TextId": "__SingleUse_DGOO",
                     "TextRotation": "0",
@@ -334,7 +334,6 @@
                     "Y": 78,
                     "Width": 128,
                     "Height": 128,
-                    "Visible": false,
                     "RelativeFilename": "cloud_128x128.png"
                   },
                   {
@@ -407,7 +406,7 @@
                     "Name": "busTime1",
                     "X": 255,
                     "Y": 88,
-                    "Width": 48,
+                    "Width": 34,
                     "Height": 30,
                     "TextId": "__SingleUse_05J5",
                     "TextRotation": "0",
@@ -1027,6 +1026,27 @@
             "AutoSize": true,
             "Wildcard1": {
               "TextId": "__SingleUse_N4A5",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAlarmAMPM_1",
+            "X": 384,
+            "Y": -41,
+            "Width": 30,
+            "Height": 24,
+            "TextId": "__SingleUse_620U",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_QNRG",
               "UseBuffer": true,
               "BufferSize": 4
             }

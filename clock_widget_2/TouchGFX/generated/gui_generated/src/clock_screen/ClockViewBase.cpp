@@ -173,7 +173,6 @@ ClockViewBase::ClockViewBase() :
 
     imageCloud.setXY(267, 78);
     imageCloud.setBitmap(touchgfx::Bitmap(BITMAP_CLOUD_128X128_ID));
-    imageCloud.setVisible(false);
     whether.add(imageCloud);
 
     imageLocation.setXY(73, 77);
@@ -530,6 +529,15 @@ ClockViewBase::ClockViewBase() :
     textAlarmAMPM.resizeToCurrentText();
     textAlarmAMPM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UT7S));
     add(textAlarmAMPM);
+
+    textAlarmAMPM_1.setXY(384, -41);
+    textAlarmAMPM_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textAlarmAMPM_1.setLinespacing(0);
+    Unicode::snprintf(textAlarmAMPM_1Buffer, TEXTALARMAMPM_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_QNRG).getText());
+    textAlarmAMPM_1.setWildcard(textAlarmAMPM_1Buffer);
+    textAlarmAMPM_1.resizeToCurrentText();
+    textAlarmAMPM_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_620U));
+    add(textAlarmAMPM_1);
 
     imageAlarmOff.setXY(308, 2);
     imageAlarmOff.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_ALARM_OFF_22_22_FFFFFF_SVG_ID));
