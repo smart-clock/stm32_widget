@@ -92,7 +92,8 @@ Application/User/gui/ClockView.o: \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/alarmCenterContainerBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp
 ../../TouchGFX/gui/include/gui/clock_screen/ClockView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/clock_screen/ClockViewBase.hpp:
 ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
@@ -186,3 +187,4 @@ Application/User/gui/ClockView.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:

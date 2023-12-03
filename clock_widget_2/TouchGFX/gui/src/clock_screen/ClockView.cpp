@@ -1,4 +1,5 @@
 #include <gui/clock_screen/ClockView.hpp>
+#include <touchgfx/Color.hpp>
 
 ClockView::ClockView() :
     gaugeClickCallback(this, &ClockView::gaugeClickHandler)
@@ -673,6 +674,27 @@ void ClockView::uart_Data(char *data)
         else
         {
             stockRangeYMax -= 5;
+        }
+
+        if(stockMonth[21] > stockMonth[0])
+        {
+            dynamicStockGraphLine1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+            dynamicStockGraphLine1.setPainter(dynamicStockGraphLine1Painter);
+
+            dynamicStockGraphArea1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+            dynamicStockGraphArea1.setPainter(dynamicStockGraphArea1Painter);
+            dynamicStockGraphArea1.setBaseline(0);
+            dynamicStockGraphArea1.setAlpha(50);
+        }
+        else
+        {
+            dynamicStockGraphLine1Painter.setColor(touchgfx::Color::getColorFromRGB(0, 0, 255));
+            dynamicStockGraphLine1.setPainter(dynamicStockGraphLine1Painter);
+
+            dynamicStockGraphArea1Painter.setColor(touchgfx::Color::getColorFromRGB(0, 0, 255));
+            dynamicStockGraphArea1.setPainter(dynamicStockGraphArea1Painter);
+            dynamicStockGraphArea1.setBaseline(0);
+            dynamicStockGraphArea1.setAlpha(50);
         }
 
         dynamicStockGraph.setGraphRangeY(stockRangeYMin, stockRangeYMax);
