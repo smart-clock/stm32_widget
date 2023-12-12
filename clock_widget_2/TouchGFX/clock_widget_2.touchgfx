@@ -41,7 +41,7 @@
             "IndicatorImageNormal": "__generated\\light_theme_images_widgets_swipecontainer_medium_off_normal.png",
             "IndicatorImageHighlight": "__generated\\clay_theme_images_widgets_swipecontainer_medium_on_normal.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "stock",
+            "SelectedPage": "home",
             "Components": [
               {
                 "Type": "Container",
@@ -55,7 +55,7 @@
                     "X": 128,
                     "Y": 83,
                     "Width": 140,
-                    "Height": 61,
+                    "Height": 101,
                     "TextId": "__SingleUse_TBRP",
                     "TextRotation": "0",
                     "AutoSize": true,
@@ -76,7 +76,7 @@
                     "X": 266,
                     "Y": 83,
                     "Width": 76,
-                    "Height": 61,
+                    "Height": 101,
                     "TextId": "__SingleUse_EA8X",
                     "TextRotation": "0",
                     "AutoSize": true,
@@ -92,7 +92,7 @@
                     "X": 174,
                     "Y": 160,
                     "Width": 69,
-                    "Height": 30,
+                    "Height": 42,
                     "TextId": "__SingleUse_XXQ4",
                     "TextRotation": "0",
                     "AutoSize": true,
@@ -113,7 +113,7 @@
                     "X": 255,
                     "Y": 160,
                     "Width": 45,
-                    "Height": 30,
+                    "Height": 42,
                     "TextId": "__SingleUse_DGOO",
                     "TextRotation": "0",
                     "AutoSize": true,
@@ -164,7 +164,7 @@
                     "X": 77,
                     "Y": 120,
                     "Width": 76,
-                    "Height": 84,
+                    "Height": 118,
                     "TextId": "__SingleUse_EI1R",
                     "TextRotation": "0",
                     "Color": {
@@ -185,7 +185,7 @@
                     "X": 155,
                     "Y": 133,
                     "Width": 15,
-                    "Height": 23,
+                    "Height": 34,
                     "TextId": "__SingleUse_VQ07",
                     "TextRotation": "0",
                     "Color": {
@@ -201,7 +201,7 @@
                     "X": 171,
                     "Y": 118,
                     "Width": 40,
-                    "Height": 84,
+                    "Height": 118,
                     "TextId": "__SingleUse_AQKR",
                     "TextRotation": "0",
                     "Color": {
@@ -217,7 +217,7 @@
                     "X": 239,
                     "Y": -56,
                     "Width": 57,
-                    "Height": 30,
+                    "Height": 51,
                     "TextId": "__SingleUse_CW4O",
                     "TextRotation": "0",
                     "Color": {
@@ -407,7 +407,7 @@
                     "X": 262,
                     "Y": 94,
                     "Width": 48,
-                    "Height": 30,
+                    "Height": 42,
                     "TextId": "__SingleUse_05J5",
                     "TextRotation": "0",
                     "Color": {
@@ -428,7 +428,7 @@
                     "X": 371,
                     "Y": 96,
                     "Width": 48,
-                    "Height": 30,
+                    "Height": 42,
                     "TextId": "__SingleUse_BW3Y",
                     "TextRotation": "0",
                     "Color": {
@@ -503,7 +503,7 @@
                     "X": 115,
                     "Y": 45,
                     "Width": 86,
-                    "Height": 30,
+                    "Height": 51,
                     "TextId": "__SingleUse_WA0J",
                     "TextRotation": "0",
                     "Color": {
@@ -524,7 +524,7 @@
                     "X": 262,
                     "Y": 55,
                     "Width": 208,
-                    "Height": 23,
+                    "Height": 34,
                     "TextId": "__SingleUse_SDMX",
                     "TextRotation": "0",
                     "Color": {
@@ -540,7 +540,7 @@
                     "X": 407,
                     "Y": 55,
                     "Width": 25,
-                    "Height": 23,
+                    "Height": 34,
                     "TextId": "__SingleUse_IDGA",
                     "TextRotation": "0",
                     "Color": {
@@ -618,44 +618,6 @@
                       "TextRotation": "0",
                       "Position": "Left"
                     }
-                  },
-                  {
-                    "Type": "StaticGraph",
-                    "Name": "graphStock",
-                    "Y": -206,
-                    "Width": 505,
-                    "Height": 189,
-                    "DataSeed": -1723382328,
-                    "NumberOfValues": 22,
-                    "MaxX": 21.0,
-                    "PrecisionX": "1",
-                    "MaxY": 160.0,
-                    "MinY": 140.0,
-                    "PrecisionY": "1",
-                    "XAxisScale": 1.0,
-                    "GraphDrawers": [
-                      {
-                        "Type": "AreaDrawer",
-                        "FileNameImage": "",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "Alpha": 124
-                      },
-                      {
-                        "Type": "LineDrawer",
-                        "LineWidth": 2,
-                        "FileNameImage": "",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        }
-                      }
-                    ],
-                    "Draggable": true
                   }
                 ]
               },
@@ -809,7 +771,7 @@
                     "X": 320,
                     "Y": 30,
                     "Width": 61,
-                    "Height": 20,
+                    "Height": 24,
                     "TextId": "__SingleUse_S02A",
                     "TextRotation": "0",
                     "Color": {
@@ -905,7 +867,7 @@
                     "X": 340,
                     "Y": 61,
                     "Width": 76,
-                    "Height": 23,
+                    "Height": 34,
                     "TextId": "__SingleUse_T9QU",
                     "TextRotation": "0",
                     "Color": {
@@ -921,7 +883,7 @@
                     "X": 341,
                     "Y": 143,
                     "Width": 70,
-                    "Height": 23,
+                    "Height": 34,
                     "TextId": "__SingleUse_KHJB",
                     "TextRotation": "0",
                     "Color": {
@@ -937,7 +899,7 @@
                     "X": 174,
                     "Y": 83,
                     "Width": 14,
-                    "Height": 84,
+                    "Height": 118,
                     "TextId": "__SingleUse_LRH2",
                     "TextRotation": "0",
                     "Color": {
@@ -998,7 +960,7 @@
                 "X": 53,
                 "Y": 100,
                 "Width": 48,
-                "Height": 20,
+                "Height": 24,
                 "TextId": "__SingleUse_UXV2",
                 "TextRotation": "0",
                 "AutoSize": true
@@ -1009,7 +971,7 @@
                 "X": 53,
                 "Y": 130,
                 "Width": 62,
-                "Height": 20,
+                "Height": 24,
                 "TextId": "__SingleUse_1ZAU",
                 "TextRotation": "0",
                 "AutoSize": true
@@ -1028,7 +990,7 @@
             "Name": "textBattery",
             "X": 435,
             "Width": 41,
-            "Height": 24,
+            "Height": 34,
             "TextId": "__SingleUse_6CI5",
             "TextRotation": "0",
             "Color": {
@@ -1048,7 +1010,7 @@
             "Name": "textClockUpper",
             "X": 2,
             "Width": 48,
-            "Height": 24,
+            "Height": 34,
             "TextId": "__SingleUse_70FQ",
             "TextRotation": "0",
             "Color": {
@@ -1073,7 +1035,7 @@
             "Name": "textDayUpper",
             "X": 55,
             "Width": 37,
-            "Height": 24,
+            "Height": 34,
             "TextId": "__SingleUse_3ZNK",
             "TextRotation": "0",
             "Color": {
@@ -1093,7 +1055,7 @@
             "Name": "textAlarm",
             "X": 332,
             "Width": 48,
-            "Height": 24,
+            "Height": 34,
             "TextId": "__SingleUse_TJPS",
             "TextRotation": "0",
             "Color": {
@@ -1118,7 +1080,7 @@
             "Name": "textAlarmAMPM",
             "X": 384,
             "Width": 30,
-            "Height": 24,
+            "Height": 34,
             "TextId": "__SingleUse_UT7S",
             "TextRotation": "0",
             "Color": {
@@ -1129,27 +1091,6 @@
             "AutoSize": true,
             "Wildcard1": {
               "TextId": "__SingleUse_N4A5",
-              "UseBuffer": true,
-              "BufferSize": 4
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textAlarmAMPM_1",
-            "X": 384,
-            "Y": -41,
-            "Width": 30,
-            "Height": 24,
-            "TextId": "__SingleUse_620U",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_QNRG",
               "UseBuffer": true,
               "BufferSize": 4
             }
@@ -1222,7 +1163,7 @@
                 "X": 17,
                 "Y": 73,
                 "Width": 38,
-                "Height": 24,
+                "Height": 34,
                 "TextId": "__SingleUse_4VYD",
                 "TextRotation": "0",
                 "AutoSize": true
@@ -1233,7 +1174,7 @@
                 "X": 17,
                 "Y": 154,
                 "Width": 16,
-                "Height": 24,
+                "Height": 34,
                 "TextId": "__SingleUse_B3UH",
                 "TextRotation": "0",
                 "AutoSize": true
@@ -1414,149 +1355,6 @@
             }
           }
         ]
-      },
-      {
-        "Name": "Setting",
-        "Components": [
-          {
-            "Type": "Image",
-            "Name": "background",
-            "Width": 480,
-            "Height": 272,
-            "RelativeFilename": "manggom.png"
-          },
-          {
-            "Type": "Box",
-            "Name": "boxBlurStop_1",
-            "Y": -1,
-            "Width": 480,
-            "Height": 274,
-            "Alpha": 150
-          },
-          {
-            "Type": "Box",
-            "Name": "boxInfoBG_1",
-            "Width": 480,
-            "Height": 24,
-            "Alpha": 71
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 93,
-            "Y": 80,
-            "Width": 48,
-            "Height": 30,
-            "TextId": "__SingleUse_VK0F",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_2",
-            "X": 243,
-            "Y": 80,
-            "Width": 24,
-            "Height": 30,
-            "TextId": "__SingleUse_HROV",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_IW8X",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_3",
-            "X": 243,
-            "Y": 136,
-            "Width": 81,
-            "Height": 30,
-            "TextId": "__SingleUse_K6CF",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_4NMT",
-              "UseBuffer": true,
-              "BufferSize": 50
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1",
-            "X": 93,
-            "Y": 136,
-            "Width": 112,
-            "Height": 30,
-            "TextId": "__SingleUse_2GIX",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "Button",
-            "Name": "buttonClock",
-            "Y": 25,
-            "Width": 55,
-            "Height": 55,
-            "Pressed": "__generated\\icon_theme_images_action_settings_applications_55_55_6B6B6B.svg.png",
-            "Released": "__generated\\icon_theme_images_action_settings_applications_55_55_FFFFFF.svg.png"
-          }
-        ],
-        "Interactions": []
-      },
-      {
-        "Name": "Packet",
-        "Components": [
-          {
-            "Type": "Box",
-            "Name": "box1",
-            "Width": 480,
-            "Height": 272,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 40,
-            "Y": 39,
-            "Width": 400,
-            "Height": 195,
-            "TextId": "__SingleUse_2GMG",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_CGY4",
-              "UseBuffer": true,
-              "BufferSize": 257
-            }
-          }
-        ],
-        "Interactions": []
       }
     ],
     "CustomContainerDefinitions": [

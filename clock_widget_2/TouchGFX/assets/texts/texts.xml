@@ -15,12 +15,6 @@
       <Text Id="__SingleUse_FX94" Alignment="Right" TypographyId="Small">
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_QNRG" Alignment="Left" TypographyId="DubaiBold_30">
-        <Translation Language="GB">AM</Translation>
-      </Text>
-      <Text Id="__SingleUse_620U" Alignment="Center" TypographyId="Medium_20_EN">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
       <Text Id="__SingleUse_UOZ8" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">00</Translation>
       </Text>
@@ -77,30 +71,6 @@
       </Text>
       <Text Id="__SingleUse_4YYQ" Alignment="Left" TypographyId="Medium_25_EN">
         <Translation Language="GB">DAY</Translation>
-      </Text>
-      <Text Id="__SingleUse_CGY4" Alignment="Left" TypographyId="Medium_20_EN">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_2GMG" Alignment="Left" TypographyId="Medium_20_EN">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_4NMT" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">address</Translation>
-      </Text>
-      <Text Id="__SingleUse_IW8X" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">ID</Translation>
-      </Text>
-      <Text Id="__SingleUse_K6CF" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_HROV" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">&lt;wifi&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_2GIX" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">IP Address</Translation>
-      </Text>
-      <Text Id="__SingleUse_VK0F" Alignment="Left" TypographyId="Medium_25">
-        <Translation Language="GB">WiFi</Translation>
       </Text>
       <Text Id="__SingleUse_PX5Y" Alignment="Left" TypographyId="DubaiBold_70">
         <Translation Language="GB">City</Translation>
